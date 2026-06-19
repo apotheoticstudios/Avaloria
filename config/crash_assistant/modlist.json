@@ -29,6 +29,14 @@
     "curseForgeHash": 2421938229,
     "modrinthHash": "24943e5efe95c10367259a7bbd13874ca56ebf0a"
   },
+  "AmbientEnvironment-forge-1.20.1-11.0.0.1.jar": {
+    "jarName": "AmbientEnvironment-forge-1.20.1-11.0.0.1.jar",
+    "modId": "ambientenvironment",
+    "name": "Ambient Environment",
+    "version": "11.0.0.1",
+    "curseForgeHash": 381440644,
+    "modrinthHash": "03c839b24e5a19f8225400be354f8ffd9572e47f"
+  },
   "AmbientSounds_FORGE_v6.3.8_mc1.20.1.jar": {
     "jarName": "AmbientSounds_FORGE_v6.3.8_mc1.20.1.jar",
     "modId": "ambientsounds",
@@ -117,6 +125,22 @@
     "curseForgeHash": 3277503590,
     "modrinthHash": "0b0a3ff3b244fa191b3f9580547071dee46f7276"
   },
+  "BiomeParticleWeather-v4.1.0-1.20.1-Forge.jar": {
+    "jarName": "BiomeParticleWeather-v4.1.0-1.20.1-Forge.jar",
+    "modId": "impactfulweather",
+    "name": "Biome Particle Weather",
+    "version": "4.1.0",
+    "curseForgeHash": 3553660243,
+    "modrinthHash": "52a1bba94f9bf32ebcdf244da7f8676b4dc0bc2b"
+  },
+  "biomereplacer-2.1-hippo-forge.jar": {
+    "jarName": "biomereplacer-2.1-hippo-forge.jar",
+    "modId": "biome_replacer",
+    "name": "Biome Replacer",
+    "version": "2.1-hippo",
+    "curseForgeHash": 1843209547,
+    "modrinthHash": "382cb16421baa0a4f1e02bb44e64d1a0f4d40e0e"
+  },
   "Bookshelf-Forge-1.20.1-20.2.15.jar": {
     "jarName": "Bookshelf-Forge-1.20.1-20.2.15.jar",
     "modId": "bookshelf",
@@ -140,6 +164,14 @@
     "version": "1.3.146",
     "curseForgeHash": 4160167965,
     "modrinthHash": "0b782d12b4ac3b03a94c28f32e9b2d5587d1dd50"
+  },
+  "citresewn-1.20.1-5.jar": {
+    "jarName": "citresewn-1.20.1-5.jar",
+    "modId": "citresewn",
+    "name": "CIT Resewn",
+    "version": "1.20.1-5",
+    "curseForgeHash": 3126551083,
+    "modrinthHash": "496393d1fc170bafccd6016cd5d93ab52b4a101c"
   },
   "cleanswing-1.20-1.8.jar": {
     "jarName": "cleanswing-1.20-1.8.jar",
@@ -241,6 +273,14 @@
     "version": "1.20.1-1.0.23",
     "curseForgeHash": 4282386808,
     "modrinthHash": "843b16ca88bc5c390bb22a2a84437e6bffdd43dd"
+  },
+  "cosycritters-0.3.2+1.20.1-forge.jar": {
+    "jarName": "cosycritters-0.3.2+1.20.1-forge.jar",
+    "modId": "cosycritters",
+    "name": "Cosy Critters \u0026 Creepy Crawlies",
+    "version": "0.3.2",
+    "curseForgeHash": 792318888,
+    "modrinthHash": "ea2c53b109f9181282b9897e9c5c8a3beac76576"
   },
   "CrashAssistant-forge-1.19-1.20.1-1.11.10.jar": {
     "jarName": "CrashAssistant-forge-1.19-1.20.1-1.11.10.jar",
@@ -607,6 +647,14 @@
     "curseForgeHash": 686879422,
     "modrinthHash": "54301c2db5467e0f9f5c504887436f358335331f"
   },
+  "grim-kingdoms-lost-structures-ruins-v1.0.3 1.20.jar": {
+    "jarName": "grim-kingdoms-lost-structures-ruins-v1.0.3 1.20.jar",
+    "modId": "mr_grim_kingdomsloststructuresruins",
+    "name": "Grim kingdoms: Lost structures \u0026 ruins",
+    "version": "1-v1.0.3",
+    "curseForgeHash": 161680144,
+    "modrinthHash": "0cbe5b526eb115e7930688a2f1a649933385e013"
+  },
   "huge-structure-blocks-1.0.9-forge.jar": {
     "jarName": "huge-structure-blocks-1.0.9-forge.jar",
     "modId": "hugestructureblocks",
@@ -622,6 +670,14 @@
     "version": "1.3.0",
     "curseForgeHash": 296187825,
     "modrinthHash": "55fde23d7602924ba4772d441fb5a78d562be238"
+  },
+  "illagerstructures-forge-1.20.1-0.0.1.jar": {
+    "jarName": "illagerstructures-forge-1.20.1-0.0.1.jar",
+    "modId": "illagerstructures",
+    "name": "Illager Structures",
+    "version": "0.0.1",
+    "curseForgeHash": 404820385,
+    "modrinthHash": "6c2772e7e979edd22aba260550d6187307d4e1a8"
   },
   "ImmediatelyFast-Forge-1.5.4+1.20.4.jar": {
     "jarName": "ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
@@ -700,6 +756,14 @@
     "curseForgeHash": 3653368747,
     "modrinthHash": "8bc66a40a4d9f0346be43d054594c8a807602650"
   },
+  "legionary-1.0.1-forge-1.20.1.jar": {
+    "jarName": "legionary-1.0.1-forge-1.20.1.jar",
+    "modId": "legionary",
+    "name": "legionary",
+    "version": "1.0.1",
+    "curseForgeHash": 1526380346,
+    "modrinthHash": "a3269cdfe1e914dedc5eb89629f9dd5f7a24363b"
+  },
   "letmedespawn-1.20.x-forge-1.5.0.jar": {
     "jarName": "letmedespawn-1.20.x-forge-1.5.0.jar",
     "modId": "letmedespawn",
@@ -764,14 +828,6 @@
     "curseForgeHash": 3093105983,
     "modrinthHash": "2b0535b04efef6202368939b3e1db4cd77f7ef35"
   },
-  "mebahel-creatures-draugr-1.8.5-fabric-1.20.1.jar": {
-    "jarName": "mebahel-creatures-draugr-1.8.5-fabric-1.20.1.jar",
-    "modId": "mebahelcreaturesdraugr",
-    "name": "mebahelcreaturesdraugr",
-    "version": "1.8.5-fabric-1.20.1",
-    "curseForgeHash": 1577362961,
-    "modrinthHash": "cd01c5d019052c659dc28911570249f1ad2f07fc"
-  },
   "mebahels-api-1.0.20-fabric-1.20.1.jar": {
     "jarName": "mebahels-api-1.0.20-fabric-1.20.1.jar",
     "modId": "mebahels-api",
@@ -779,6 +835,14 @@
     "version": "1.0.20-fabric-1.20.1",
     "curseForgeHash": 2102682071,
     "modrinthHash": "dc197f4745c28e2ca6caaac76f5e73daac51a5ef"
+  },
+  "mobbattlemusic-1.20.1-1.1.1.2-all.jar": {
+    "jarName": "mobbattlemusic-1.20.1-1.1.1.2-all.jar",
+    "modId": "mobbattlemusic",
+    "name": "Mob Battle Music",
+    "version": "1.20.1-1.1.1.2",
+    "curseForgeHash": 1610724840,
+    "modrinthHash": "29e57913f65c56a4f7c056c15454ade1c8e384b1"
   },
   "modernfix-forge-5.27.51+mc1.20.1.jar": {
     "jarName": "modernfix-forge-5.27.51+mc1.20.1.jar",
@@ -819,6 +883,14 @@
     "version": "2.25.1",
     "curseForgeHash": 3001740257,
     "modrinthHash": "d751153e722a4e014691c83f39f5b07c6ec5333c"
+  },
+  "mysticsbiomes-1.20.1-3.5.2.jar": {
+    "jarName": "mysticsbiomes-1.20.1-3.5.2.jar",
+    "modId": "mysticsbiomes",
+    "name": "Mystic\u0027s Biomes",
+    "version": "3.5.2",
+    "curseForgeHash": 1593039507,
+    "modrinthHash": "8885cd714a5db38afaab7e85c05ca08e7fe30e6a"
   },
   "NaturesCompass-1.20.1-1.12.0-forge.jar": {
     "jarName": "NaturesCompass-1.20.1-1.12.0-forge.jar",
@@ -1011,6 +1083,22 @@
     "version": "2.4.0",
     "curseForgeHash": 3758397571,
     "modrinthHash": "5c6c0bfb8975b2b93887bdf3c28d7e5e7b91fd3c"
+  },
+  "simplybows-forge-0.1.2.jar": {
+    "jarName": "simplybows-forge-0.1.2.jar",
+    "modId": "simplybows",
+    "name": "Simply Bows",
+    "version": "0.1.2",
+    "curseForgeHash": 4107835338,
+    "modrinthHash": "aadbca589ad3dd0fefdcefa547cd8edbf7c3e0ac"
+  },
+  "SimplyTooltips-forge-0.1.3.jar": {
+    "jarName": "SimplyTooltips-forge-0.1.3.jar",
+    "modId": "simplytooltips",
+    "name": "Simply Tooltips",
+    "version": "0.1.3",
+    "curseForgeHash": 1799655241,
+    "modrinthHash": "596efde95030834a6c863fbb475b7396d6258531"
   },
   "skinlayers3d-forge-1.11.2-mc1.20.1.jar": {
     "jarName": "skinlayers3d-forge-1.11.2-mc1.20.1.jar",

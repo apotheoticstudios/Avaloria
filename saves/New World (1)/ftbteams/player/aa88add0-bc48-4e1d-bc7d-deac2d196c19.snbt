@@ -8,7 +8,7 @@
 	properties: {
 		"ftbteams:display_name": "_Apotheotic_"
 		"ftbteams:description": ""
-		"ftbteams:color": "#B5FF59"
+		"ftbteams:color": "#59C5FF"
 		"ftbteams:free_to_join": 0b
 		"ftbteams:max_msg_history_size": 1000
 	}
