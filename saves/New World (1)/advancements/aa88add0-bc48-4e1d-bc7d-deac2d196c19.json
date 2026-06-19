@@ -1,0 +1,56 @@
+{
+  "foolish:ab_foolish": {
+    "criteria": {
+      "ab_foolish_0": "2026-06-19 13:11:34 +1000"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2026-06-19 13:17:37 +1000"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2026-06-19 13:17:37 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-06-19 13:11:34 +1000"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2026-06-19 13:18:35 +1000"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2026-06-19 13:11:34 +1000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sunflower_plains": "2026-06-19 13:16:18 +1000",
+      "minecraft:windswept_hills": "2026-06-19 13:16:41 +1000",
+      "minecraft:river": "2026-06-19 13:12:05 +1000",
+      "minecraft:swamp": "2026-06-19 13:11:32 +1000",
+      "minecraft:flower_forest": "2026-06-19 13:16:37 +1000",
+      "minecraft:plains": "2026-06-19 13:11:39 +1000"
+    },
+    "done": false
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2026-06-19 13:18:35 +1000"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

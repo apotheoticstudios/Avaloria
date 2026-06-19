@@ -1,0 +1,17 @@
+{
+	id: "aa88add0-bc48-4e1d-bc7d-deac2d196c19"
+	type: "player"
+	player_name: "_Apotheotic_"
+	ranks: {
+		aa88add0-bc48-4e1d-bc7d-deac2d196c19: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "_Apotheotic_"
+		"ftbteams:description": ""
+		"ftbteams:color": "#B5FF59"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}

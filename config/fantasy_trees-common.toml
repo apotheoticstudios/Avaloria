@@ -1,0 +1,30 @@
+
+["Fantasy Trees Config"]
+	#Can grow fantasy trees
+	can_grow_fantasy_sapling = true
+	#Tree growth delay
+	#Range: 0 ~ 100
+	growth_delay = 7
+	#Trees grown from saplings replace blocks
+	override_blocks = true
+	#Fantasy forest biome weight
+	#Range: 0 ~ 100
+	oak_region_weight = 10
+	#Fantasy taiga biome weight
+	#Range: 0 ~ 100
+	spruce_region_weight = 10
+	#Fantasy birch forest biome weight
+	#Range: 0 ~ 100
+	birch_region_weight = 10
+	#Fantasy dark forest biome weight
+	#Range: 0 ~ 100
+	dark_oak_region_weight = 10
+	#Fantasy jungle biome weight
+	#Range: 0 ~ 100
+	jungle_region_weight = 10
+	#Fantasy savanna biome weight
+	#Range: 0 ~ 100
+	savanna_region_weight = 10
+	#Should tree blocks emit light
+	glowing_trees = true
+

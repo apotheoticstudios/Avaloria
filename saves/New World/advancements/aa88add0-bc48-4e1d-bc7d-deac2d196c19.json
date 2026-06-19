@@ -1,0 +1,81 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_slopes": "2026-06-19 14:32:09 +1000",
+      "minecraft:taiga": "2026-06-19 14:35:32 +1000",
+      "minecraft:cherry_grove": "2026-06-19 14:03:17 +1000",
+      "minecraft:birch_forest": "2026-06-19 14:02:29 +1000",
+      "minecraft:savanna_plateau": "2026-06-19 14:12:58 +1000",
+      "minecraft:dark_forest": "2026-06-19 14:01:47 +1000",
+      "minecraft:sparse_jungle": "2026-06-19 14:28:18 +1000",
+      "minecraft:river": "2026-06-19 14:12:49 +1000",
+      "minecraft:stony_shore": "2026-06-19 14:02:06 +1000",
+      "minecraft:grove": "2026-06-19 14:02:28 +1000",
+      "minecraft:frozen_peaks": "2026-06-19 14:32:34 +1000",
+      "minecraft:meadow": "2026-06-19 14:02:49 +1000",
+      "minecraft:plains": "2026-06-19 14:03:12 +1000"
+    },
+    "done": false
+  },
+  "foolish:ab_foolish": {
+    "criteria": {
+      "ab_foolish_0": "2026-06-19 14:01:50 +1000"
+    },
+    "done": true
+  },
+  "stellarity:cursed_tome/root": {
+    "criteria": {
+      "requirement": "2026-06-19 14:01:50 +1000"
+    },
+    "done": true
+  },
+  "ancientstructures:root": {
+    "criteria": {
+      "tick": "2026-06-19 14:01:50 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-06-19 14:01:50 +1000"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2026-06-19 14:01:50 +1000"
+    },
+    "done": true
+  },
+  "stellarity:dragons_den/cursed_tome/root": {
+    "criteria": {
+      "requirement": "2026-06-19 14:01:50 +1000"
+    },
+    "done": true
+  },
+  "dawnoftimebuilder:root": {
+    "criteria": {
+      "tick": "2026-06-19 14:01:50 +1000"
+    },
+    "done": true
+  },
+  "saintsdragons:encounter_dragon": {
+    "criteria": {
+      "encounter_dragon": "2026-06-19 14:32:35 +1000"
+    },
+    "done": true
+  },
+  "souls_like_bosses:root": {
+    "criteria": {
+      "auto_grant": "2026-06-19 14:27:17 +1000"
+    },
+    "done": true
+  },
+  "mebahelcreaturesdraugr:root": {
+    "criteria": {
+      "root_unlocked": "2026-06-19 14:27:17 +1000"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

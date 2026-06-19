@@ -1,0 +1,7 @@
+{
+	"shown_reasons": {
+		"MissingUnsupportedDependencies": true,
+		"Atio6axx": true,
+		"FeatureOrderCycle": true
+	}
+}
