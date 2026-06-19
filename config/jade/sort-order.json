@@ -49,8 +49,12 @@
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
   "minecraft:zombie_villager": null,
+  "opposing_force:skyvern_segment": null,
   "saintsdragons:dragon_info": null,
   "saintsdragons:egg_timer": null,
+  "supplementaries:hat_stand": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null,
   "treechop:plugin": null,
   "waystones:waystone": null
 }

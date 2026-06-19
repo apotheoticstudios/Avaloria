@@ -63,8 +63,14 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "opposing_force": {
+    "skyvern_segment": true
+  },
   "jadeaddons.lootr": {
     "info": true
+  },
+  "supplementaries": {
+    "hat_stand": true
   },
   "jade": {
     "coordinates.rel": false,
