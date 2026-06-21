@@ -3,7 +3,7 @@
 	#Boss Bar Style.
 	#0: Default, 1: Still Style, 2: Dynamic Style
 	#Range: 0 ~ 2
-	boss_bar_style = 1
+	boss_bar_style = 2
 	#Boss Bar Number Offset X.
 	#Range: -150 ~ 300
 	boss_bar_number_offset_x = 0
@@ -24,12 +24,12 @@
 	boss_clear_when_no_target = true
 	#Multiplier for boss attributes health.
 	#Range: 0.0625 ~ 10.0
-	boss_attributes_multiplier_health = 0.5
+	boss_attributes_multiplier_health = 0.05
 	#Multiplier for boss attributes damage.
 	#Range: 0.0625 ~ 10.0
-	boss_attributes_multiplier_damage = 0.5
+	boss_attributes_multiplier_damage = 0.4
 	#Should the boss have no physics? Only for some bosses.
-	boss_no_physics = true
+	boss_no_physics = false
 	#Should the boss leave on day? Only for some bosses.
 	boss_leave_on_day = false
 	#Should bosses random stroll when have no target? 

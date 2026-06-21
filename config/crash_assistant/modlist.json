@@ -322,13 +322,13 @@
     "curseForgeHash": 2349378493,
     "modrinthHash": "0e4a2e181653a02e5ab71d7e6a673e8e2e4e5dbe"
   },
-  "defaultoptions-forge-1.20.1-18.0.4.jar": {
-    "jarName": "defaultoptions-forge-1.20.1-18.0.4.jar",
+  "defaultoptions-forge-1.20.1-18.0.5.jar": {
+    "jarName": "defaultoptions-forge-1.20.1-18.0.5.jar",
     "modId": "defaultoptions",
     "name": "Default Options",
-    "version": "18.0.4",
-    "curseForgeHash": 3843138404,
-    "modrinthHash": "37ef64d3ae7fda292c882ee949a0280bf6c7f033"
+    "version": "18.0.5",
+    "curseForgeHash": 4092597210,
+    "modrinthHash": "dddab6a5ff092b4535e9fdfb01e1e011afb90e57"
   },
   "doubledoors-1.20.1-7.2.jar": {
     "jarName": "doubledoors-1.20.1-7.2.jar",
@@ -386,6 +386,14 @@
     "curseForgeHash": 3504336343,
     "modrinthHash": "0328a8350cf0a6d1c44265367a077649088b354b"
   },
+  "enchantmentlevelcapindicator-1.20.1-1.1.jar": {
+    "jarName": "enchantmentlevelcapindicator-1.20.1-1.1.jar",
+    "modId": "enchantmentlevelcapindicator",
+    "name": "Enchantment Level Cap Indicator",
+    "version": "1.1",
+    "curseForgeHash": 1511043282,
+    "modrinthHash": "7b72b5902fb57d3a01daa450e1eef9476b5cefc2"
+  },
   "entity_model_features-3.2.4-1.20.1-forge.jar": {
     "jarName": "entity_model_features-3.2.4-1.20.1-forge.jar",
     "modId": "entity_model_features",
@@ -402,13 +410,13 @@
     "curseForgeHash": 1697260817,
     "modrinthHash": "e13ba95a0388d7d5b1f479e5bd7e2df78e4c4a23"
   },
-  "entityculling-forge-1.10.4-mc1.20.1.jar": {
-    "jarName": "entityculling-forge-1.10.4-mc1.20.1.jar",
+  "entityculling-forge-1.10.5-mc1.20.1.jar": {
+    "jarName": "entityculling-forge-1.10.5-mc1.20.1.jar",
     "modId": "entityculling",
     "name": "EntityCulling",
-    "version": "1.10.4",
-    "curseForgeHash": 949433711,
-    "modrinthHash": "18dc9205922f820c265b96076bd417837715d73e"
+    "version": "1.10.5",
+    "curseForgeHash": 4018169999,
+    "modrinthHash": "b818f6d792b79f4ec116c89704e70292bd6f72b5"
   },
   "Epic Dungeons 1.2.0 (1.20+).jar": {
     "jarName": "Epic Dungeons 1.2.0 (1.20+).jar",
@@ -578,6 +586,14 @@
     "curseForgeHash": 4158393027,
     "modrinthHash": "b8e3488ca2463072b633b8cc7d90fe0ba35dcefa"
   },
+  "foolishfixmod-1.2.0.jar": {
+    "jarName": "foolishfixmod-1.2.0.jar",
+    "modId": "foolishfixmod",
+    "name": "Foolish Fix Mod",
+    "version": "1.2.0",
+    "curseForgeHash": 1263992248,
+    "modrinthHash": "9234663ca4594cf6dadcf395d492d41b9e7c4c4a"
+  },
   "forgottenruins-forge-1.20.1-0.0.13.jar": {
     "jarName": "forgottenruins-forge-1.20.1-0.0.13.jar",
     "modId": "forgottenruins",
@@ -618,13 +634,13 @@
     "curseForgeHash": 816412664,
     "modrinthHash": "c49023f5d471aa1ba7fc624d2565fe9e82b7117e"
   },
-  "fusion-1.3.1-forge-mc1.20.1.jar": {
-    "jarName": "fusion-1.3.1-forge-mc1.20.1.jar",
+  "fusion-1.3.2-forge-mc1.20.1.jar": {
+    "jarName": "fusion-1.3.2-forge-mc1.20.1.jar",
     "modId": "fusion",
     "name": "Fusion",
-    "version": "1.3.1",
-    "curseForgeHash": 2061418863,
-    "modrinthHash": "77a3978a19b6de478e701b9cfa62c4dca53acd02"
+    "version": "1.3.2",
+    "curseForgeHash": 1840116309,
+    "modrinthHash": "5e4baf9e81237c692802f8079ea4c2580dd2e0e6"
   },
   "fzzy_config-0.7.6+1.20.1+forge.jar": {
     "jarName": "fzzy_config-0.7.6+1.20.1+forge.jar",
@@ -634,13 +650,13 @@
     "curseForgeHash": 3620637257,
     "modrinthHash": "2e9ca1c5f028c251e1bc18b9ebaa06d401c8e624"
   },
-  "geckolib-forge-1.20.1-4.8.3.jar": {
-    "jarName": "geckolib-forge-1.20.1-4.8.3.jar",
+  "geckolib-forge-1.20.1-4.8.4.jar": {
+    "jarName": "geckolib-forge-1.20.1-4.8.4.jar",
     "modId": "geckolib",
     "name": "GeckoLib 4",
-    "version": "4.8.3",
-    "curseForgeHash": 4092514766,
-    "modrinthHash": "5428765c6c2e2135da6ee01f2f0478fa0db6aee7"
+    "version": "4.8.4",
+    "curseForgeHash": 3690314662,
+    "modrinthHash": "81982cc287f80ffabb2fd36d22cc95e4255c739d"
   },
   "gml-4.0.11-all.jar": {
     "jarName": "gml-4.0.11-all.jar",
@@ -670,6 +686,14 @@
     "version": "1.0.9",
     "curseForgeHash": 2134247833,
     "modrinthHash": "8dc220c1fb37bcbc8910faa595862aa449e3a397"
+  },
+  "Iceberg-1.20.1-forge-1.1.25.jar": {
+    "jarName": "Iceberg-1.20.1-forge-1.1.25.jar",
+    "modId": "iceberg",
+    "name": "Iceberg",
+    "version": "1.1.25",
+    "curseForgeHash": 263977206,
+    "modrinthHash": "d551ff55814cfb01403b812459ee5a02b020d87b"
   },
   "Icterine-forge-1.20.0-1-1.3.0.jar": {
     "jarName": "Icterine-forge-1.20.0-1-1.3.0.jar",
@@ -702,6 +726,14 @@
     "version": "0.1.6",
     "curseForgeHash": 4080136516,
     "modrinthHash": "ec8fcbf02234751ed64e658e8bad4995cfcd0b11"
+  },
+  "ItemBorders-1.20.1-forge-1.2.2.jar": {
+    "jarName": "ItemBorders-1.20.1-forge-1.2.2.jar",
+    "modId": "itemborders",
+    "name": "Item Borders",
+    "version": "1.2.2",
+    "curseForgeHash": 2251334462,
+    "modrinthHash": "cf42466689489348e1e3a5df00d2ce6c65dd978a"
   },
   "Jade-1.20.1-Forge-11.13.2.jar": {
     "jarName": "Jade-1.20.1-Forge-11.13.2.jar",
@@ -788,6 +820,14 @@
     "curseForgeHash": 1593487584,
     "modrinthHash": "360727042ae8579f5cdc95650953b39ea30fabfa"
   },
+  "Life Steal Enchant 1.0.0 - 1.20.1.jar": {
+    "jarName": "Life Steal Enchant 1.0.0 - 1.20.1.jar",
+    "modId": "life_steal_enchantment",
+    "name": "Life Steal Enchantment",
+    "version": "1.0.0",
+    "curseForgeHash": 1260627192,
+    "modrinthHash": "a23735b1a00b05a84eae5e8172de8089017a71d4"
+  },
   "lmft-1.0.4+1.20.1-forge.jar": {
     "jarName": "lmft-1.0.4+1.20.1-forge.jar",
     "modId": "lmft",
@@ -795,6 +835,14 @@
     "version": "1.0.4+1.20.1",
     "curseForgeHash": 1956694745,
     "modrinthHash": "e44a12eb51813b16faaab89b8073ec63c746c1b0"
+  },
+  "loot_journal-forge-1.20.1-6.2.1.jar": {
+    "jarName": "loot_journal-forge-1.20.1-6.2.1.jar",
+    "modId": "loot_journal",
+    "name": "Loot Journal",
+    "version": "6.2.1",
+    "curseForgeHash": 3762546015,
+    "modrinthHash": "7a817be0df116a6a2ff51260e3ba1eecad3eeb8d"
   },
   "lootr-forge-1.20-0.7.35.94.jar": {
     "jarName": "lootr-forge-1.20-0.7.35.94.jar",
@@ -980,6 +1028,14 @@
     "curseForgeHash": 1956610132,
     "modrinthHash": "1da5744853d17979033d5ee3cd4251b8340ea7be"
   },
+  "ParticleEffects-1.4.0+1.20.1+forge.jar": {
+    "jarName": "ParticleEffects-1.4.0+1.20.1+forge.jar",
+    "modId": "particle_effects",
+    "name": "Particle Effects",
+    "version": "1.4.0+1.20.1+forge",
+    "curseForgeHash": 3232321445,
+    "modrinthHash": "6a58b0e9b2aa1106ab8649f12a3631049f48869d"
+  },
   "Paxi-1.20-Forge-4.0.jar": {
     "jarName": "Paxi-1.20-Forge-4.0.jar",
     "modId": "paxi",
@@ -1027,6 +1083,30 @@
     "version": "0.49.10+1.20.1",
     "curseForgeHash": 3179981898,
     "modrinthHash": "e4afd6f512cc06311320357ed974cee586e031c3"
+  },
+  "PresenceFootsteps-1.20.1-1.9.1-beta.1.jar": {
+    "jarName": "PresenceFootsteps-1.20.1-1.9.1-beta.1.jar",
+    "modId": "presencefootsteps",
+    "name": "Presence Footsteps (Forge)",
+    "version": "1.20.1-1.9.1-beta.1",
+    "curseForgeHash": 1633971404,
+    "modrinthHash": "6ccb76043763f929a11f1857a57b41bb70ab7512"
+  },
+  "primal-1.1.6+1.20.1.jar": {
+    "jarName": "primal-1.1.6+1.20.1.jar",
+    "modId": "primal",
+    "name": "Primal",
+    "version": "1.1.6",
+    "curseForgeHash": 3912445102,
+    "modrinthHash": "2b8442238978a7d83d5a46b21342ce111db4e924"
+  },
+  "Prism-1.20.1-forge-1.0.5.jar": {
+    "jarName": "Prism-1.20.1-forge-1.0.5.jar",
+    "modId": "prism",
+    "name": "Prism",
+    "version": "1.0.5",
+    "curseForgeHash": 1812222466,
+    "modrinthHash": "bcb4bbb1052f49ed4fe6e7d5d7f91f68d45c3fe3"
   },
   "PuzzlesLib-v8.1.33-1.20.1-Forge.jar": {
     "jarName": "PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
@@ -1220,14 +1300,6 @@
     "curseForgeHash": 1988549846,
     "modrinthHash": "326d65a29981de28016e3828370d68a8f63e1798"
   },
-  "terra_entity-1.2.3-all.jar": {
-    "jarName": "terra_entity-1.2.3-all.jar",
-    "modId": "terra_entity",
-    "name": "Terra Entity",
-    "version": "1.2.3",
-    "curseForgeHash": 2688314702,
-    "modrinthHash": "b2477cd95ce8bfa4399762adf754fcbf32039217"
-  },
   "TerraBlender-forge-1.20.1-3.0.1.10.jar": {
     "jarName": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
     "modId": "terrablender",
@@ -1275,6 +1347,30 @@
     "version": "0.19.0",
     "curseForgeHash": 1372756668,
     "modrinthHash": "ac5a20b5a2fd9ed7d6e9a0c033f53307947e5f3f"
+  },
+  "visual_keybinder-1.20.1 - 0.1.12.jar": {
+    "jarName": "visual_keybinder-1.20.1 - 0.1.12.jar",
+    "modId": "visual_keybinder",
+    "name": "Raw\u0027s Visual Keybinder",
+    "version": "1.20.1 - 0.1.12",
+    "curseForgeHash": 2820780522,
+    "modrinthHash": "88a524a32d540e49438bab2b28d3f8188eac1fa3"
+  },
+  "VisualWorkbench-v8.0.1-1.20.1-Forge.jar": {
+    "jarName": "VisualWorkbench-v8.0.1-1.20.1-Forge.jar",
+    "modId": "visualworkbench",
+    "name": "Visual Workbench",
+    "version": "8.0.1",
+    "curseForgeHash": 2699356434,
+    "modrinthHash": "563804910a7ebb1082c1eedca363b16e2c572459"
+  },
+  "waveycapes-forge-1.9.2-mc1.20.1.jar": {
+    "jarName": "waveycapes-forge-1.9.2-mc1.20.1.jar",
+    "modId": "waveycapes",
+    "name": "WaveyCapes",
+    "version": "1.9.2",
+    "curseForgeHash": 673564914,
+    "modrinthHash": "0dcbf62895dce320df784586880eb49e106a6962"
   },
   "waystones-forge-1.20.1-14.1.20.jar": {
     "jarName": "waystones-forge-1.20.1-14.1.20.jar",

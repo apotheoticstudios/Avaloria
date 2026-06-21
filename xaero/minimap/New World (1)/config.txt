@@ -10,5 +10,7 @@ sortReversed:false
 ignoreHeightmaps:false
 
 //dimension types (DO NOT EDIT)
+dimensionType:minecraft$the_nether:minecraft$the_nether
+dimensionType:foolish$stellar_hollow:foolish$stellar_hollow
 dimensionType:minecraft$overworld:minecraft$overworld
 //server waypoints

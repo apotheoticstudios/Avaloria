@@ -1,0 +1,7 @@
+
+#Foolish Fix Configuration
+[biomes]
+	#List of Foolish biomes that should NOT generate.
+	#Example: ["foolish:aspen_forest", "foolish:darkened_forest"]
+	disabledBiomes = []
+

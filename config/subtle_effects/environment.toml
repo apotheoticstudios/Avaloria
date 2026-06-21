@@ -81,14 +81,21 @@ spawnableBlocks = [
     "minecraft:pink_petals",
     "minecraft:flowering_azalea"
 ]
-defaultDensity = 3
+defaultDensity = 5
 ignoredSeasons = "DEFAULT"
 fireflyType = "ORIGINAL"
-fireflySoundVolume = 1.0
+fireflySoundVolume = 0.85110295
 onlyAllowInHabitatBiomes = true
 habitatBiomes = [
     "minecraft:swamp",
-    "minecraft:mangrove_swamp"
+    "minecraft:mangrove_swamp",
+    "fantasy_trees:fantasy_taiga",
+    "fantasy_trees:fantasy_savanna",
+    "fantasy_trees:fantasy_jungle",
+    "fantasy_trees:fantasy_forest",
+    "fantasy_trees:fantasy_dark_forest",
+    "fantasy_trees:fantasy_birch_forest",
+    "foolish:storm_jungle"
 ]
 habitatBiomeDensity = 3
 
