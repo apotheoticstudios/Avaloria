@@ -1,424 +1,254 @@
 {
-  "foolish:ab_foolish": {
+  "lootr:1chest": {
     "criteria": {
-      "ab_foolish_0": "2026-06-20 08:49:03 +1000"
+      "opened_chest": "2026-06-22 16:22:17 +1000"
     },
     "done": true
   },
-  "stellarity:cursed_tome/root": {
+  "foolish:the_submerged_forest": {
     "criteria": {
-      "requirement": "2026-06-20 08:49:03 +1000"
+      "the_submerged_forest_0": "2026-06-22 16:06:10 +1000"
     },
     "done": true
-  },
-  "ancientstructures:root": {
-    "criteria": {
-      "tick": "2026-06-20 08:49:03 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/crafting_table": {
-    "criteria": {
-      "unlock_right_away": "2026-06-20 08:49:03 +1000"
-    },
-    "done": true
-  },
-  "lootr:root": {
-    "criteria": {
-      "always_true": "2026-06-20 08:49:03 +1000"
-    },
-    "done": true
-  },
-  "stellarity:dragons_den/cursed_tome/root": {
-    "criteria": {
-      "requirement": "2026-06-20 08:49:03 +1000"
-    },
-    "done": true
-  },
-  "dawnoftimebuilder:root": {
-    "criteria": {
-      "tick": "2026-06-20 08:49:03 +1000"
-    },
-    "done": true
-  },
-  "souls_like_bosses:root": {
-    "criteria": {
-      "auto_grant": "2026-06-20 08:49:03 +1000"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:snowy_slopes": "2026-06-20 08:49:20 +1000",
-      "minecraft:taiga": "2026-06-20 09:00:49 +1000",
-      "minecraft:birch_forest": "2026-06-20 09:02:16 +1000",
-      "minecraft:beach": "2026-06-20 09:11:51 +1000",
-      "minecraft:sparse_jungle": "2026-06-20 09:02:22 +1000",
-      "minecraft:snowy_plains": "2026-06-21 08:34:09 +1000",
-      "minecraft:grove": "2026-06-21 10:13:05 +1000",
-      "minecraft:swamp": "2026-06-21 10:15:21 +1000",
-      "minecraft:forest": "2026-06-20 09:01:17 +1000",
-      "minecraft:ice_spikes": "2026-06-20 08:49:04 +1000",
-      "minecraft:ocean": "2026-06-20 09:10:54 +1000",
-      "minecraft:frozen_peaks": "2026-06-21 10:12:34 +1000",
-      "minecraft:old_growth_birch_forest": "2026-06-20 09:02:17 +1000",
-      "minecraft:windswept_gravelly_hills": "2026-06-21 09:29:01 +1000",
-      "minecraft:savanna": "2026-06-20 09:07:45 +1000",
-      "minecraft:plains": "2026-06-20 08:50:03 +1000"
-    },
-    "done": false
   },
   "mysticsbiomes:recipes/transportation/tropical_boat": {
     "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "foolish:chlorophyll_kingdom": {
+    "criteria": {
+      "chlorophyll_kingdom_0": "2026-06-22 16:05:17 +1000"
+    },
+    "done": true
+  },
+  "foolish:ab_foolish": {
+    "criteria": {
+      "ab_foolish_0": "2026-06-22 16:00:45 +1000"
     },
     "done": true
   },
   "mysticsbiomes:recipes/transportation/black_cherry_boat": {
     "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "stellarity:cursed_tome/root": {
+    "criteria": {
+      "requirement": "2026-06-22 16:00:45 +1000"
     },
     "done": true
   },
   "mysticsbiomes:recipes/transportation/peach_boat": {
     "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
+      "in_water": "2026-06-22 16:00:54 +1000"
     },
     "done": true
   },
-  "mysticsbiomes:recipes/transportation/sea_foam_boat": {
+  "ancientstructures:root": {
     "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/cherry_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "mysticsbiomes:recipes/transportation/spring_raft": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/bamboo_raft": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/birch_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/oak_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "mysticsbiomes:recipes/transportation/lavender_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/mangrove_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "mysticsbiomes:recipes/transportation/strawberry_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/acacia_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "mysticsbiomes:recipes/transportation/vanilla_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/jungle_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "mysticsbiomes:recipes/transportation/maple_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "in_water": "2026-06-20 09:01:22 +1000"
-    },
-    "done": true
-  },
-  "mysticsbiomes:mysticsbiomes/root": {
-    "criteria": {
-      "tropics": "2026-06-20 09:01:49 +1000"
-    },
-    "done": true
-  },
-  "lootr:1chest": {
-    "criteria": {
-      "opened_chest": "2026-06-20 09:08:51 +1000"
-    },
-    "done": true
-  },
-  "lootr:social": {
-    "criteria": {
-      "opened_barrel": "2026-06-21 09:17:34 +1000",
-      "opened_chest": "2026-06-20 09:08:51 +1000"
-    },
-    "done": false
-  },
-  "stellarity:events/on_death": {
-    "criteria": {
-      "requirement": "2026-06-20 09:36:18 +1000"
-    },
-    "done": true
-  },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_by_something": "2026-06-20 09:36:18 +1000"
-    },
-    "done": true
-  },
-  "lootr:1barrel": {
-    "criteria": {
-      "opened_barrel": "2026-06-21 09:17:34 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:main/root": {
-    "criteria": {
-      "seeds": "2026-06-21 09:25:34 +1000"
-    },
-    "done": true
-  },
-  "minecraft:story/enter_the_nether": {
-    "criteria": {
-      "entered_nether": "2026-06-21 09:35:25 +1000"
-    },
-    "done": true
-  },
-  "minecraft:nether/root": {
-    "criteria": {
-      "entered_nether": "2026-06-21 09:35:25 +1000"
-    },
-    "done": true
-  },
-  "luminous_nether:fungal_plains_advancement": {
-    "criteria": {
-      "fungal_plains_advancement_0": "2026-06-21 09:35:33 +1000"
-    },
-    "done": true
-  },
-  "minecraft:nether/explore_nether": {
-    "criteria": {
-      "minecraft:crimson_forest": "2026-06-21 09:38:38 +1000",
-      "minecraft:nether_wastes": "2026-06-21 09:41:24 +1000",
-      "minecraft:warped_forest": "2026-06-21 09:38:42 +1000"
-    },
-    "done": false
-  },
-  "stellarity:nether/a_piece_of_otherworld": {
-    "criteria": {
-      "criteria": "2026-06-21 09:38:42 +1000"
-    },
-    "done": true
-  },
-  "minecraft:nether/find_bastion": {
-    "criteria": {
-      "bastion": "2026-06-21 09:38:42 +1000"
-    },
-    "done": true
-  },
-  "minecraft:nether/loot_bastion": {
-    "criteria": {
-      "loot_bastion_hoglin_stable": "2026-06-21 09:40:33 +1000"
-    },
-    "done": true
-  },
-  "armoroftheages:recipes/combat/unlock_netherite_head": {
-    "criteria": {
-      "has_netherite_helmet": "2026-06-21 09:46:16 +1000"
-    },
-    "done": true
-  },
-  "armoroftheages:recipes/combat/unlock_netherite_chest": {
-    "criteria": {
-      "has_netherite_chestplate": "2026-06-21 09:46:17 +1000"
-    },
-    "done": true
-  },
-  "armoroftheages:recipes/combat/unlock_netherite_legs": {
-    "criteria": {
-      "has_netherite_leggings": "2026-06-21 09:46:18 +1000"
-    },
-    "done": true
-  },
-  "minecraft:nether/netherite_armor": {
-    "criteria": {
-      "netherite_armor": "2026-06-21 09:46:20 +1000"
-    },
-    "done": true
-  },
-  "armoroftheages:recipes/combat/unlock_netherite_feet": {
-    "criteria": {
-      "has_netherite_boots": "2026-06-21 09:46:20 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/chest": {
-    "criteria": {
-      "has_lots_of_items": "2026-06-21 09:46:28 +1000"
-    },
-    "done": true
-  },
-  "minecraft:husbandry/root": {
-    "criteria": {
-      "consumed_item": "2026-06-21 09:47:07 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/food/milk_bottle": {
-    "criteria": {
-      "has_milk_bucket": "2026-06-21 09:47:23 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/onion_soup": {
-    "criteria": {
-      "has_any_ingredient": "2026-06-21 09:47:23 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/pumpkin_soup": {
-    "criteria": {
-      "has_any_ingredient": "2026-06-21 09:47:23 +1000"
-    },
-    "done": true
-  },
-  "supplementaries:recipes/pancake_fd": {
-    "criteria": {
-      "forge:milk": "2026-06-21 09:47:23 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/glow_berry_custard": {
-    "criteria": {
-      "has_any_ingredient": "2026-06-21 09:47:23 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/hot_cocoa": {
-    "criteria": {
-      "has_any_ingredient": "2026-06-21 09:47:23 +1000"
-    },
-    "done": true
-  },
-  "minecraft:adventure/kill_all_mobs": {
-    "criteria": {
-      "minecraft:skeleton": "2026-06-21 10:12:13 +1000",
-      "minecraft:magma_cube": "2026-06-21 09:58:22 +1000",
-      "minecraft:wither_skeleton": "2026-06-21 10:12:58 +1000",
-      "minecraft:zombie": "2026-06-21 10:10:51 +1000"
-    },
-    "done": false
-  },
-  "minecraft:adventure/kill_a_mob": {
-    "criteria": {
-      "minecraft:magma_cube": "2026-06-21 09:58:22 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/dog_food": {
-    "criteria": {
-      "has_any_ingredient": "2026-06-21 10:11:01 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/building_blocks/organic_compost_from_rotten_flesh": {
-    "criteria": {
-      "has_rotten_flesh": "2026-06-21 10:11:01 +1000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/bone_meal": {
-    "criteria": {
-      "has_bone": "2026-06-21 10:12:14 +1000"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/bone_broth": {
-    "criteria": {
-      "has_bone": "2026-06-21 10:12:14 +1000"
-    },
-    "done": true
-  },
-  "foolish:wish_upon_a_star": {
-    "criteria": {
-      "wish_upon_a_star_0": "2026-06-21 10:17:49 +1000"
-    },
-    "done": true
-  },
-  "foolish:great_depression": {
-    "criteria": {
-      "great_depression_0": "2026-06-21 10:17:57 +1000"
-    },
-    "done": true
-  },
-  "foolish:nuclear_winter": {
-    "criteria": {
-      "nuclear_winter_0": "2026-06-21 10:18:48 +1000"
-    },
-    "done": true
-  },
-  "foolish:forest_of_flame": {
-    "criteria": {
-      "forest_of_flame_0": "2026-06-21 10:19:00 +1000"
+      "tick": "2026-06-22 16:00:45 +1000"
     },
     "done": true
   },
   "foolish:sands_of_time_advancement": {
     "criteria": {
-      "sands_of_time_advancement_0": "2026-06-21 10:31:54 +1000"
+      "sands_of_time_advancement_0": "2026-06-22 16:15:50 +1000"
     },
     "done": true
   },
-  "foolish:the_better_rotten_flesh": {
+  "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "the_better_rotten_flesh_0": "2026-06-21 10:37:19 +1000"
+      "unlock_right_away": "2026-06-22 16:00:45 +1000"
     },
     "done": true
   },
-  "foolish:mutilator_advancement": {
+  "mysticsbiomes:recipes/transportation/sea_foam_boat": {
     "criteria": {
-      "mutilator_advancement_0": "2026-06-21 10:35:37 +1000"
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2026-06-22 16:00:45 +1000"
+    },
+    "done": true
+  },
+  "mysticsbiomes:recipes/transportation/spring_raft": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "mysticsbiomes:mysticsbiomes/root": {
+    "criteria": {
+      "lavender_meadow": "2026-06-22 16:21:15 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "mysticsbiomes:recipes/transportation/lavender_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "lootr:social": {
+    "criteria": {
+      "opened_barrel": "2026-06-22 16:25:40 +1000",
+      "opened_chest": "2026-06-22 16:22:17 +1000"
+    },
+    "done": false
+  },
+  "stellarity:dragons_den/cursed_tome/root": {
+    "criteria": {
+      "requirement": "2026-06-22 16:00:45 +1000"
+    },
+    "done": true
+  },
+  "foolish:blood_red_fields": {
+    "criteria": {
+      "blood_red_fields_0": "2026-06-22 16:05:12 +1000"
+    },
+    "done": true
+  },
+  "foolish:sacilite_bloom_advancement": {
+    "criteria": {
+      "sacilite_bloom_advancement_0": "2026-06-22 16:04:57 +1000"
+    },
+    "done": true
+  },
+  "mysticsbiomes:recipes/transportation/strawberry_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "dawnoftimebuilder:root": {
+    "criteria": {
+      "tick": "2026-06-22 16:00:45 +1000"
+    },
+    "done": true
+  },
+  "foolish:enter_storm_jungle": {
+    "criteria": {
+      "enter_storm_jungle_0": "2026-06-22 16:06:30 +1000"
+    },
+    "done": true
+  },
+  "lootr:1barrel": {
+    "criteria": {
+      "opened_barrel": "2026-06-22 16:25:40 +1000"
+    },
+    "done": true
+  },
+  "foolish:forest_of_flame": {
+    "criteria": {
+      "forest_of_flame_0": "2026-06-22 16:24:07 +1000"
+    },
+    "done": true
+  },
+  "souls_like_bosses:root": {
+    "criteria": {
+      "auto_grant": "2026-06-22 16:00:45 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "mysticsbiomes:recipes/transportation/vanilla_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_slopes": "2026-06-22 16:30:06 +1000",
+      "minecraft:cherry_grove": "2026-06-22 16:21:44 +1000",
+      "minecraft:birch_forest": "2026-06-22 16:00:54 +1000",
+      "minecraft:windswept_hills": "2026-06-22 16:01:13 +1000",
+      "minecraft:savanna_plateau": "2026-06-22 16:22:09 +1000",
+      "minecraft:dripstone_caves": "2026-06-22 16:20:46 +1000",
+      "minecraft:grove": "2026-06-22 16:30:08 +1000",
+      "minecraft:jagged_peaks": "2026-06-22 16:30:07 +1000",
+      "minecraft:forest": "2026-06-22 16:01:10 +1000",
+      "minecraft:windswept_forest": "2026-06-22 16:00:46 +1000",
+      "minecraft:meadow": "2026-06-22 16:29:57 +1000",
+      "minecraft:savanna": "2026-06-22 16:22:14 +1000",
+      "minecraft:plains": "2026-06-22 16:19:44 +1000"
+    },
+    "done": false
+  },
+  "foolish:the_sacilic_graveyard": {
+    "criteria": {
+      "the_sacilic_graveyard_0": "2026-06-22 16:05:19 +1000"
+    },
+    "done": true
+  },
+  "foolish:wish_upon_a_star": {
+    "criteria": {
+      "wish_upon_a_star_0": "2026-06-22 16:04:55 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "mysticsbiomes:recipes/transportation/maple_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2026-06-22 16:00:54 +1000"
     },
     "done": true
   },
