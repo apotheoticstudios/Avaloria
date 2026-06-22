@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:wildlife_spawns/cold_waters",
+  "spawners": [
+    {
+      "type": "primal:walrus",
+      "weight": 4,
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "type": "luminous_beasts:frigid_gator",
+      "weight": 1,
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ]
+}

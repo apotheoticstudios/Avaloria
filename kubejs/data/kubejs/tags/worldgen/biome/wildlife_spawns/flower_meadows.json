@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cherry_grove",
+    "minecraft:flower_forest",
+    "minecraft:meadow",
+    "minecraft:sunflower_plains",
+    "mysticsbiomes:autumnal_grove",
+    "mysticsbiomes:lavender_meadow",
+    "mysticsbiomes:strawberry_fields",
+    "foolish:overgrowth",
+    "foolish:sacilite_bloom"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:meadow",
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "mysticsbiomes:autumnal_grove",
+    "mysticsbiomes:lavender_meadow",
+    "mysticsbiomes:lush_oasis",
+    "mysticsbiomes:strawberry_fields",
+    "foolish:oasis",
+    "foolish:overgrowth"
+  ]
+}

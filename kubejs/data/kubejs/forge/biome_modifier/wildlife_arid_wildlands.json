@@ -1,0 +1,60 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:wildlife_spawns/arid_wildlands",
+  "spawners": [
+    {
+      "type": "primal:lion",
+      "weight": 3,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "primal:snake",
+      "weight": 3,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "legendarycreatures:scorpion",
+      "weight": 8,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "legendarycreatures:scorpion_baby",
+      "weight": 5,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "legendarycreatures:scarab",
+      "weight": 12,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "luminous_beasts:sand_crab",
+      "weight": 3,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "luminous_butterflies:charaxes",
+      "weight": 18,
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "type": "luminous_butterflies:ringlet",
+      "weight": 14,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "luminous_butterflies:buckeye",
+      "weight": 12,
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ]
+}

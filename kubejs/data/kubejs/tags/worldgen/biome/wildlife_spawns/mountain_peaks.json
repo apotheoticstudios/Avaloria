@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_mountain",
+    "minecraft:stony_peaks",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:windswept_hills",
+    "foolish:frigid_mountains",
+    "foolish:highlands",
+    "foolish:ledged_cliffs"
+  ]
+}

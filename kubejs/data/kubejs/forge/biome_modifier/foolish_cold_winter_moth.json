@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:foolish_spawns/cold_supplemental",
+  "spawners": {
+    "type": "foolish:winter_moth",
+    "weight": 3,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

@@ -101,6 +101,14 @@
     "curseForgeHash": 3762486546,
     "modrinthHash": "76d6b2d0f2a3c9842587ad20666ba419cd8c1efa"
   },
+  "BadMobs-1.20.1-19.0.4.jar": {
+    "jarName": "BadMobs-1.20.1-19.0.4.jar",
+    "modId": "badmobs",
+    "name": "BadMobs",
+    "version": "19.0.4",
+    "curseForgeHash": 3818215639,
+    "modrinthHash": "100f29f6c425688bcbd77d1a3b99b12e18f019cd"
+  },
   "BadOptimizations-2.4.1-1.20.1.jar": {
     "jarName": "BadOptimizations-2.4.1-1.20.1.jar",
     "modId": "badoptimizations",
@@ -124,6 +132,14 @@
     "version": "1.9.0",
     "curseForgeHash": 3277503590,
     "modrinthHash": "0b0a3ff3b244fa191b3f9580547071dee46f7276"
+  },
+  "bigger_vanilla_trees-forge-1.20-1.0.jar": {
+    "jarName": "bigger_vanilla_trees-forge-1.20-1.0.jar",
+    "modId": "bigger_vanilla_trees",
+    "name": "bigger_vanilla_trees-forge",
+    "version": "1.0",
+    "curseForgeHash": 705013127,
+    "modrinthHash": "ecdf4dc22d7fc15944680432692931c82988c582"
   },
   "BiomeParticleWeather-v4.1.0-1.20.1-Forge.jar": {
     "jarName": "BiomeParticleWeather-v4.1.0-1.20.1-Forge.jar",
@@ -908,14 +924,6 @@
     "curseForgeHash": 1690546752,
     "modrinthHash": "4e542422df2b3146a2a9d130ce6535de64868e7f"
   },
-  "mobbattlemusic-1.20.1-1.1.1.2-all.jar": {
-    "jarName": "mobbattlemusic-1.20.1-1.1.1.2-all.jar",
-    "modId": "mobbattlemusic",
-    "name": "Mob Battle Music",
-    "version": "1.20.1-1.1.1.2",
-    "curseForgeHash": 1610724840,
-    "modrinthHash": "29e57913f65c56a4f7c056c15454ade1c8e384b1"
-  },
   "modernfix-forge-5.27.51+mc1.20.1.jar": {
     "jarName": "modernfix-forge-5.27.51+mc1.20.1.jar",
     "modId": "modernfix",
@@ -1131,6 +1139,14 @@
     "version": "1.0.5",
     "curseForgeHash": 1812222466,
     "modrinthHash": "bcb4bbb1052f49ed4fe6e7d5d7f91f68d45c3fe3"
+  },
+  "puffish_biome_dither-1.0.0-1.19.2-forge.jar": {
+    "jarName": "puffish_biome_dither-1.0.0-1.19.2-forge.jar",
+    "modId": "puffish_biome_dither",
+    "name": "Pufferfish\u0027s Biome Dither",
+    "version": "1.0.0",
+    "curseForgeHash": 3386814690,
+    "modrinthHash": "a7b06b88bc6e4f8434435d668f48db444ee36587"
   },
   "PuzzlesLib-v8.1.33-1.20.1-Forge.jar": {
     "jarName": "PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
@@ -1444,13 +1460,13 @@
     "curseForgeHash": 3263469048,
     "modrinthHash": "5b2be59a71add73676596d0d3350b832552bac70"
   },
-  "xaeroworldmap-forge-1.20.1-1.41.0.jar": {
-    "jarName": "xaeroworldmap-forge-1.20.1-1.41.0.jar",
+  "xaeroworldmap-forge-1.20.1-1.41.2.jar": {
+    "jarName": "xaeroworldmap-forge-1.20.1-1.41.2.jar",
     "modId": "xaeroworldmap",
     "name": "Xaero\u0027s World Map",
-    "version": "1.41.0",
-    "curseForgeHash": 2246022767,
-    "modrinthHash": "f2c63673810ff7b87a7fee40d34e70a04fc80ef6"
+    "version": "1.41.2",
+    "curseForgeHash": 856638396,
+    "modrinthHash": "a60d4c8e04a65ffe82f1ac89ab28a52f357fbbf2"
   },
   "xmxw-2.10.1+1.20.1-forge.jar": {
     "jarName": "xmxw-2.10.1+1.20.1-forge.jar",

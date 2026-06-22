@@ -1,0 +1,66 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:wildlife_spawns/flower_meadows",
+  "spawners": [
+    {
+      "type": "luminous_butterflies:monarch",
+      "weight": 25,
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "type": "luminous_butterflies:blue_monarch",
+      "weight": 8,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "luminous_butterflies:spring_azure",
+      "weight": 18,
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "type": "luminous_butterflies:yellow_swallowtail",
+      "weight": 18,
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "type": "luminous_butterflies:black_swallowtail",
+      "weight": 10,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "legendarycreatures:butterfly",
+      "weight": 20,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "legendarycreatures:ladybug",
+      "weight": 18,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "mysticsbiomes:butterfly",
+      "weight": 12,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "mysticsbiomes:caterpillar",
+      "weight": 8,
+      "minCount": 1,
+      "maxCount": 3
+    },
+    {
+      "type": "opposing_force:ladybug",
+      "weight": 8,
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ]
+}

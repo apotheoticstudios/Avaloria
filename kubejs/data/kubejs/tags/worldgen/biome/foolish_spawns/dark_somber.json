@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_taiga",
+    "minecraft:dark_forest",
+    "minecraft:mangrove_swamp",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:swamp"
+  ]
+}

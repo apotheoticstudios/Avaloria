@@ -1,0 +1,30 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:wildlife_spawns/mystic_pastures",
+  "spawners": [
+    {
+      "type": "mysticsbiomes:chocolate_cow",
+      "weight": 3,
+      "minCount": 2,
+      "maxCount": 4
+    },
+    {
+      "type": "mysticsbiomes:strawberry_cow",
+      "weight": 3,
+      "minCount": 2,
+      "maxCount": 4
+    },
+    {
+      "type": "mysticsbiomes:vanilla_cow",
+      "weight": 3,
+      "minCount": 2,
+      "maxCount": 4
+    },
+    {
+      "type": "mysticsbiomes:rainbow_chicken",
+      "weight": 5,
+      "minCount": 2,
+      "maxCount": 4
+    }
+  ]
+}

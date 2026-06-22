@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lush_caves",
+    "minecraft:mangrove_swamp",
+    "minecraft:river",
+    "minecraft:swamp",
+    "mysticsbiomes:lagoon",
+    "foolish:miserable_mire",
+    "foolish:storm_jungle",
+    "foolish:toxic_wake"
+  ]
+}

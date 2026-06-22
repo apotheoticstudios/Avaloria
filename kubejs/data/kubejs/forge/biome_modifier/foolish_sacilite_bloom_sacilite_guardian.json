@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:foolish_spawns/sacilite_bloom",
+  "spawners": {
+    "type": "foolish:sacilite_guardian",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

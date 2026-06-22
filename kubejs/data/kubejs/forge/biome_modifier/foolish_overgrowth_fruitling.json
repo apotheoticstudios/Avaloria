@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:foolish_spawns/overgrowth",
+  "spawners": {
+    "type": "foolish:fruitling",
+    "weight": 6,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

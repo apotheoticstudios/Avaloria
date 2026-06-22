@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:foolish_spawns/storm_jungle",
+  "spawners": {
+    "type": "foolish:torrent",
+    "weight": 4,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

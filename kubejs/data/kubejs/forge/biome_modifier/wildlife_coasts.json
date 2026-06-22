@@ -1,0 +1,24 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:wildlife_spawns/coasts",
+  "spawners": [
+    {
+      "type": "legendarycreatures:hermit_crab",
+      "weight": 12,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "luminous_beasts:sand_crab",
+      "weight": 8,
+      "minCount": 1,
+      "maxCount": 2
+    },
+    {
+      "type": "mysticsbiomes:sea_otter",
+      "weight": 4,
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ]
+}

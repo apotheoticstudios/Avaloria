@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_taiga",
+    "minecraft:dark_forest",
+    "minecraft:grove",
+    "minecraft:old_growth_birch_forest",
+    "foolish:boreal_grove",
+    "foolish:darkened_forest",
+    "foolish:permafrost_fields",
+    "foolish:somber_forest"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kubejs:foolish_spawns/wasteland",
+  "spawners": {
+    "type": "foolish:terasch_worm",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

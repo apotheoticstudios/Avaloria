@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_beach",
+    "minecraft:stony_shore",
+    "mysticsbiomes:lagoon",
+    "mysticsbiomes:tropics",
+    "foolish:toxic_wake"
+  ]
+}
