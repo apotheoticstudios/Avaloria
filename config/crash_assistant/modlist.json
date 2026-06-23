@@ -687,6 +687,14 @@
     "curseForgeHash": 1714752762,
     "modrinthHash": "1b8899ea5a9fd45f2adf8bbb25651a0a95dc6020"
   },
+  "goblins-0.9-forge-1.20.1.jar": {
+    "jarName": "goblins-0.9-forge-1.20.1.jar",
+    "modId": "goblins",
+    "name": "goblins",
+    "version": "0.9",
+    "curseForgeHash": 1261040546,
+    "modrinthHash": "2d7512c469f67144fc1a0302f978a83f51cf3b30"
+  },
   "gpumemleakfix-1.20.1-1.8.jar": {
     "jarName": "gpumemleakfix-1.20.1-1.8.jar",
     "modId": "gpumemleakfix",
@@ -790,6 +798,14 @@
     "version": "7.4.0",
     "curseForgeHash": 3810453319,
     "modrinthHash": "9f0f94ed3dd661b542e92d10aa40c8426117b36c"
+  },
+  "kobolds-0.8-forge-1.20.1.jar": {
+    "jarName": "kobolds-0.8-forge-1.20.1.jar",
+    "modId": "kobolds",
+    "name": "kobolds",
+    "version": "0.8",
+    "curseForgeHash": 3524137633,
+    "modrinthHash": "108011e2a4d55e4f6c952550fa30525201e8e895"
   },
   "kotlinforforge-4.12.0-all.jar": {
     "jarName": "kotlinforforge-4.12.0-all.jar",
@@ -1027,6 +1043,14 @@
     "version": "1.8.0",
     "curseForgeHash": 516527841,
     "modrinthHash": "984f774e71790deaec674c7587bd24e0711871b2"
+  },
+  "ogres-0.9-forge-1.20.1.jar": {
+    "jarName": "ogres-0.9-forge-1.20.1.jar",
+    "modId": "ogres",
+    "name": "ogres",
+    "version": "0.9",
+    "curseForgeHash": 1358751535,
+    "modrinthHash": "3347427a05359d72f867ecc026f6052b52e109c6"
   },
   "Opposing-Force-1.20.1-2.0.3.jar": {
     "jarName": "Opposing-Force-1.20.1-2.0.3.jar",
@@ -1395,6 +1419,14 @@
     "version": "0.19.0",
     "curseForgeHash": 1372756668,
     "modrinthHash": "ac5a20b5a2fd9ed7d6e9a0c033f53307947e5f3f"
+  },
+  "trolls-0.9-forge-1.20.1.jar": {
+    "jarName": "trolls-0.9-forge-1.20.1.jar",
+    "modId": "trolls",
+    "name": "trolls",
+    "version": "0.9",
+    "curseForgeHash": 1152336610,
+    "modrinthHash": "a7baf01af20f44e8ba9f739c9e454b752b30e77d"
   },
   "visual_keybinder-1.20.1 - 0.1.12.jar": {
     "jarName": "visual_keybinder-1.20.1 - 0.1.12.jar",

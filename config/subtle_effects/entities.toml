@@ -79,8 +79,8 @@ heartbeatVolume = 1.0
 heartBeatingWaitTime = 3
 
 [dustClouds]
-scale = 2.0
-alpha = 1.0
+scale = 1.2042279
+alpha = 0.65042895
 preventWhenRaining = false
 flyIntoWall = true
 lessViewBlocking = false
