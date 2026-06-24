@@ -314,13 +314,13 @@
     "curseForgeHash": 915431175,
     "modrinthHash": "b70324f326cffc2c01e4eee9bf48f808f92bda10"
   },
-  "CreativeCore_FORGE_v2.12.38_mc1.20.1.jar": {
-    "jarName": "CreativeCore_FORGE_v2.12.38_mc1.20.1.jar",
+  "CreativeCore_FORGE_v2.12.39_mc1.20.1.jar": {
+    "jarName": "CreativeCore_FORGE_v2.12.39_mc1.20.1.jar",
     "modId": "creativecore",
     "name": "CreativeCore",
-    "version": "2.12.38",
-    "curseForgeHash": 1408451101,
-    "modrinthHash": "1004b6ae4e494039e28b14f2ba3ebe6b182487a8"
+    "version": "2.12.39",
+    "curseForgeHash": 3260091100,
+    "modrinthHash": "aef9a8ebdf0be50b6bd8da8ab4153f5085f71a80"
   },
   "creeperoverhaul-3.0.2-forge.jar": {
     "jarName": "creeperoverhaul-3.0.2-forge.jar",
@@ -1284,13 +1284,13 @@
     "curseForgeHash": 3282139098,
     "modrinthHash": "b2ca73744ab7ad3fa35a4946256a469d34d05c7c"
   },
-  "sophisticatedcore-1.20.1-1.3.55.2031.jar": {
-    "jarName": "sophisticatedcore-1.20.1-1.3.55.2031.jar",
+  "sophisticatedcore-1.20.1-1.3.56.2042.jar": {
+    "jarName": "sophisticatedcore-1.20.1-1.3.56.2042.jar",
     "modId": "sophisticatedcore",
     "name": "Sophisticated Core",
-    "version": "1.3.55.2031",
-    "curseForgeHash": 2625259747,
-    "modrinthHash": "a6692d8c0d8cf50fdd7b19976de4e55bb01cdffa"
+    "version": "1.3.56.2042",
+    "curseForgeHash": 122135301,
+    "modrinthHash": "62698715c9f514a0f76b19fd58a55d97d04c4bb4"
   },
   "Souls_Like_Bosses_3_4_Forge+Fabric+Quilt_1_20_1.jar": {
     "jarName": "Souls_Like_Bosses_3_4_Forge+Fabric+Quilt_1_20_1.jar",
@@ -1348,13 +1348,13 @@
     "curseForgeHash": 2711624359,
     "modrinthHash": "7eec1e4d46a731c6da0b0135915529e21621a81d"
   },
-  "structurify-forge-2.0.25+mc1.20.1.jar": {
-    "jarName": "structurify-forge-2.0.25+mc1.20.1.jar",
+  "structurify-forge-2.0.27+mc1.20.1.jar": {
+    "jarName": "structurify-forge-2.0.27+mc1.20.1.jar",
     "modId": "structurify",
     "name": "Structurify",
-    "version": "2.0.25",
-    "curseForgeHash": 3412957532,
-    "modrinthHash": "488cb9770e15d14b586db1c79bc84f420c606c86"
+    "version": "2.0.27",
+    "curseForgeHash": 618559439,
+    "modrinthHash": "7f266fe4eb43c6fa099f84786c740c45843edc2c"
   },
   "SubtleEffects-forge-1.20.1-1.14.3.jar": {
     "jarName": "SubtleEffects-forge-1.20.1-1.14.3.jar",
@@ -1387,6 +1387,14 @@
     "version": "1.3.1",
     "curseForgeHash": 3980758767,
     "modrinthHash": "b6ca6809a796171e3caaa9d380ab59cf79cc2bf7"
+  },
+  "tmg-1.3.jar": {
+    "jarName": "tmg-1.3.jar",
+    "modId": "tmg",
+    "name": "The Merchants Guild",
+    "version": "1.3",
+    "curseForgeHash": 4126039551,
+    "modrinthHash": "187480779bdf04cd362594551bf25cf1a72afb3a"
   },
   "ToastControl-1.20.1-8.0.3.jar": {
     "jarName": "ToastControl-1.20.1-8.0.3.jar",
