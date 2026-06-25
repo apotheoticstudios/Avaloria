@@ -107,7 +107,7 @@
 		# Dimensions that should not have any title displayed when the player enters them.
 		# Example: "[minecraft:overworld, minecraft:the_nether]"
 		# Default: "[]"
-		"Blacklisted Dimensions" = "[]"
+		"Blacklisted Dimensions" = "[minecraft:overworld]"
 		# Whether or not the dimension text should be centered on the screen.
 		# The Text X Offset and Text Y Offset options are relative to the center of the screen if this is enabled.
 		# Default: true
