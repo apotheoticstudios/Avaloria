@@ -7,21 +7,21 @@
 	#Raevyx additionally requires a thunderstorm for natural/chunk-generation spawning.
 	#Raevyx spawn settings
 	#Range: 0 ~ 5000
-	raevyxSpawnWeight = 1
+	raevyxSpawnWeight = 5
 	#Range: 1 ~ 10
 	raevyxMinGroupSize = 1
 	#Range: 1 ~ 10
 	raevyxMaxGroupSize = 2
 	#Stegonaut spawn settings
 	#Range: 0 ~ 5000
-	stegonautSpawnWeight = 5
+	stegonautSpawnWeight = 25
 	#Range: 1 ~ 10
 	stegonautMinGroupSize = 1
 	#Range: 1 ~ 10
 	stegonautMaxGroupSize = 4
 	#Cindervane spawn settings
 	#Range: 0 ~ 5000
-	cindervaneSpawnWeight = 3
+	cindervaneSpawnWeight = 15
 	#Range: 1 ~ 10
 	cindervaneMinGroupSize = 1
 	#Range: 1 ~ 10
@@ -30,7 +30,7 @@
 	cindervaneEggBlockWorldgen = true
 	#Varasuchus spawn settings
 	#Range: 0 ~ 5000
-	varasuchusSpawnWeight = 2
+	varasuchusSpawnWeight = 10
 	#Range: 1 ~ 10
 	varasuchusMinGroupSize = 1
 	#Range: 1 ~ 10
@@ -39,21 +39,21 @@
 	varasuchusEggBlockWorldgen = true
 	#Ignivorus spawn settings
 	#Range: 0 ~ 5000
-	ignivorusSpawnWeight = 1
+	ignivorusSpawnWeight = 5
 	#Range: 1 ~ 10
 	ignivorusMinGroupSize = 1
 	#Range: 1 ~ 10
 	ignivorusMaxGroupSize = 1
 	#Volitans spawn settings (custom underwater spawner for ocean/wetland habitats)
 	#Range: 0 ~ 5000
-	volitansSpawnWeight = 1
+	volitansSpawnWeight = 5
 	#Range: 1 ~ 10
 	volitansMinGroupSize = 1
 	#Range: 1 ~ 10
 	volitansMaxGroupSize = 1
 	#Nulljaw spawn settings (End-floating dragon)
 	#Range: 0 ~ 5000
-	nulljawSpawnWeight = 4
+	nulljawSpawnWeight = 18
 	#Range: 1 ~ 10
 	nulljawMinGroupSize = 4
 	#Range: 1 ~ 10

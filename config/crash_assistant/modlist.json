@@ -277,19 +277,6 @@
     "curseForgeHash": 2626029621,
     "modrinthHash": "ae69a0712c73411a2d804eec7abce271529e273d"
   },
-  "Connector-1.0.0-beta.48+1.20.1.jar": {
-    "jarName": "Connector-1.0.0-beta.48+1.20.1.jar",
-    "curseForgeHash": 3157067501,
-    "modrinthHash": "23f4a45b2ea66548fddff299326cd56e2d9e5cf8"
-  },
-  "ConnectorExtras-1.11.2+1.20.1.jar": {
-    "jarName": "ConnectorExtras-1.11.2+1.20.1.jar",
-    "modId": "connectorextras",
-    "name": "Connector Extras",
-    "version": "1.11.2+1.20.1",
-    "curseForgeHash": 668546353,
-    "modrinthHash": "9336db4e6ce458bccf7724c039f0371e822397ae"
-  },
   "Corgilib-Forge-1.20.1-4.0.3.4.jar": {
     "jarName": "Corgilib-Forge-1.20.1-4.0.3.4.jar",
     "modId": "corgilib",
@@ -932,14 +919,6 @@
     "curseForgeHash": 3093105983,
     "modrinthHash": "2b0535b04efef6202368939b3e1db4cd77f7ef35"
   },
-  "mebahels-api-1.0.20-fabric-1.20.1.jar": {
-    "jarName": "mebahels-api-1.0.20-fabric-1.20.1.jar",
-    "modId": "mebahels-api",
-    "name": "Mebahel\u0027s API",
-    "version": "1.0.20-fabric-1.20.1",
-    "curseForgeHash": 2102682071,
-    "modrinthHash": "dc197f4745c28e2ca6caaac76f5e73daac51a5ef"
-  },
   "meteor_shower-0.0.4.2.jar": {
     "jarName": "meteor_shower-0.0.4.2.jar",
     "modId": "meteor_shower",
@@ -1299,14 +1278,6 @@
     "version": "1.3.56.2042",
     "curseForgeHash": 122135301,
     "modrinthHash": "62698715c9f514a0f76b19fd58a55d97d04c4bb4"
-  },
-  "Souls_Like_Bosses_3_4_Forge+Fabric+Quilt_1_20_1.jar": {
-    "jarName": "Souls_Like_Bosses_3_4_Forge+Fabric+Quilt_1_20_1.jar",
-    "modId": "souls_like_bosses",
-    "name": "Souls Like Bosses",
-    "version": "3.4",
-    "curseForgeHash": 3950943082,
-    "modrinthHash": "768328ce352c50e24a0b52a3bf2a45776fe1e4f8"
   },
   "sound-physics-remastered-forge-1.20.1-1.5.1.jar": {
     "jarName": "sound-physics-remastered-forge-1.20.1-1.5.1.jar",
