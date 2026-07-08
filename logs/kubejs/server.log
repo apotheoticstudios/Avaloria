@@ -1,11 +1,22 @@
-[10:09:05] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[10:09:05] [INIT] Loaded plugins:
-[10:09:05] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[10:09:05] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[10:09:05] [INFO] example.js#5: Hello, World! (Loaded server scripts)
-[10:09:05] [INFO] Loaded script server_scripts:example.js in 0.0 s
-[10:09:05] [INFO] Loaded 1/1 KubeJS server scripts in 0.005 s with 0 errors and 0 warnings
-[10:09:05] [INFO] Scripts loaded
-[10:09:05] [WARN] Due to the way Minecraft resource loading works, KubeJS' server.log may not contain everything that happened in your server scripts on initial world creation.
-[10:09:05] [WARN] You can still see the full log (including past reloads) in your latest.log file.
-[10:09:22] [INFO] Server resource reload complete!
+[22:40:19] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[22:40:19] [INIT] Loaded plugins:
+[22:40:19] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[22:40:19] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[22:40:19] [INFO] Loaded script server_scripts:armor.js in 0.01 s
+[22:40:19] [INFO] Loaded script server_scripts:enchantments.js in 0.0 s
+[22:40:19] [INFO] Loaded 2/2 KubeJS server scripts in 0.017 s with 0 errors and 0 warnings
+[22:40:19] [INFO] Scripts loaded
+[22:40:19] [INFO] Initializing recipe event...
+[22:40:29] [INFO] Processing recipes...
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_hoe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_shovel_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_armor_boots_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_armor_body_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_armor_leggings_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_armor_helmet_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_pickaxe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_sword_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [WARN] Failed to parse recipe 'ogres:ogre_axe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[22:40:29] [INFO] Found 4265 recipes in 52.97 ms
+[22:40:30] [INFO] Posted recipe events in 382.0 ms
+[22:40:30] [INFO] Added 4 recipes, removed 4 recipes, modified 0 recipes, with 0 failed recipes in 26.72 ms

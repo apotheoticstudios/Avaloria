@@ -253,6 +253,17 @@
         "value": 1024
       }
     },
+    "small_end_features:atributopuedesaltardoble": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "terra_entity:player.whip_range": {
       "enabled": false,
       "min": {
