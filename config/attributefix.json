@@ -231,6 +231,17 @@
         "value": 2048
       }
     },
+    "monsterexpansion:defense": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "minecraft:generic.flying_speed": {
       "enabled": true,
       "min": {
