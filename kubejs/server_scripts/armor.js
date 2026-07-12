@@ -1,271 +1,88 @@
-// priority: 0
-
 var SYSTEM_CONFIG = {
     debug: false,
     tiers: {
-        LEATHER: { name: 'leather', hammer: 'minecraft:wooden_hoe' },
-        IRON:    { name: 'iron',    hammer: 'minecraft:iron_pickaxe' },
-        GOLD:    { name: 'gold',    hammer: 'minecraft:golden_pickaxe' },
-        DIAMOND: { name: 'diamond', hammer: 'minecraft:diamond_pickaxe' }
+        LEATHER:      { name: 'leather',         hammer: 'minecraft:wooden_axe',                            },
+        WOOD:         { name: 'wood',            hammer: 'minecraft:wooden_hoe',                            },
+        STONE:        { name: 'stone',           hammer: 'minecraft:stone_pickaxe',                         },
+        IRON:         { name: 'iron',            hammer: 'lowlands_clothing:blacksmith_hammer',             },
+        GOLD:         { name: 'gold',            hammer: 'minecraft:golden_hoe',                            },
+        DIAMOND:      { name: 'diamond',         hammer: 'farmersdelight:diamond_knife',                    },
+        BONE:         { name: 'bone',            hammer: 'opposing_force:sawblade',                         },
+        NETHERITE:    { name: 'netherite',       hammer: 'minecraft:netherite_hoe',                         },
+        STELLAR:      { name: 'stellar',         hammer: 'foolish:meteordrive_hammer',                      },
     }
-};
-
-/**
- * Base Constructor for all equipment sets
- */
-function EquipmentSet(mod, prefix, itemClass) {
-    this.mod = mod;
-    this.prefix = prefix;
-    this.itemClass = itemClass; 
-    this.ids = [];
-    this.materialCosts = {}; 
-    this.itemTier = SYSTEM_CONFIG.tiers.IRON;
-}
-
-EquipmentSet.prototype.modifyAttributes = function() {
-    // Logic for procedurally generated JSON attributes
-};
-
-/**
- * ArmorSet Constructor
- */
-function ArmorSet(mod, prefix, type) {
-    EquipmentSet.call(this, mod, prefix, "armor");
-    
-    var suffixes = ["helmet", "chestplate", "leggings", "boots"];
-    if (type === "chest")       { suffixes = ["head", "chest", "legs", "feet"]; } 
-    else if (type === "tunic")  { suffixes = ["cowl", "tunic", "pants", "boots"]; } 
-    else if (type === "coat")   { suffixes = ["hood", "coat", "trousers", "boots"]; } 
-    else if (type === "robes")  { suffixes = ["mask", "robes", "trousers", "boots"]; } 
-    else if (type === "attires") { suffixes = ["hat", "attires", "trousers", "boots"]; } 
-    else if (type === "suit")   { suffixes = ["mask", "suit", "trousers", "boots"]; } 
-    else if (type === "rags")   { suffixes = ["hood", "rags", "trousers", "boots"]; }
-
-    var self = this;
-    this.ids = suffixes.map(function(s) {
-        return self.mod + ":" + self.prefix + "_" + s;
-    });
-}
-
-ArmorSet.prototype = Object.create(EquipmentSet.prototype);
-ArmorSet.prototype.constructor = ArmorSet;
-
-// Crafting method implementation
-ArmorSet.prototype.from_crafting = function(event, main, secondary, gem) {
-    var maps = [
-        ['MSM', 'M M'],
-        ['M M', 'MGM', 'SMS'],
-        ['MMM', 'S S', 'M M'],
-        ['S S', 'M M']
-    ];
-
-    var baseCounts = [
-        { M: 4, S: 1, G: 0 },
-        { M: 5, S: 2, G: 1 },
-        { M: 5, S: 2, G: 0 },
-        { M: 4, S: 2, G: 0 }
-    ];
-
-    for (var i = 0; i < 4; i++) {
-        var itemId = this.ids[i];
-        event.remove({ output: itemId });
-
-        var key = { M: main, S: main };
-        if (i === 1) { key.G = main; }
-
-        if (secondary) { key.S = secondary; }
-        if (gem && i === 1) { key.G = gem; }
-
-        event.shaped(itemId, maps[i], key);
-
-        this.materialCosts[itemId] = {
-            mainItem: main,
-            secondaryItem: secondary || null,
-            tertiaryItem: null,
-            gemItem: gem || null,
-            mainCount: baseCounts[i].M + (!secondary ? baseCounts[i].S : 0) + (!gem && i === 1 ? baseCounts[i].G : 0),
-            secondaryCount: secondary ? baseCounts[i].S : 0,
-            tertiaryCount: 0,
-            gemCount: (gem && i === 1) ? baseCounts[i].G : 0
-        };
-    }
-    return this;
-};
-
-// Foundry method implementation
-ArmorSet.prototype.from_foundry = function(event, main, secondary, tertiary, gem) {
-    var maps = [
-        [' HGH ', 'GMMMG', 'HM MH', 'MT TM', 'T   T'],
-        ['HH HH', 'GMMMG', 'HTGTH', ' GMG ', ' MMM '],
-        [' GGG ', 'HMTMH', 'MT TM', 'MG GM', 'H   H'],
-        [' H H ', ' M M ', ' T T ', 'GM MG', 'HG GH']
-    ];
-
-    var self = this;
-    maps.forEach(function(pattern, i) {
-        var itemId = self.ids[i];
-        event.remove({ output: itemId });
-
-        event.custom({
-            type: "monsterexpansion:foundry",
-            pattern: pattern,
-            key: {
-                G: { item: gem },
-                H: { item: secondary },
-                T: { item: tertiary },
-                M: { item: main }
-            },
-            result: { item: itemId, count: 1 }
-        });
-
-        var fullStr = pattern.join('');
-        self.materialCosts[itemId] = {
-            mainItem: main,
-            secondaryItem: secondary,
-            tertiaryItem: tertiary,
-            gemItem: gem,
-            mainCount: (fullStr.match(/M/g) || []).length,
-            secondaryCount: (fullStr.match(/H/g) || []).length,
-            tertiaryCount: (fullStr.match(/T/g) || []).length,
-            gemCount: (fullStr.match(/G/g) || []).length
-        };
-    });
-    return this;
-};
-
-/**
- * Dynamic Scrapping Recipe Generator with Scaled NBT Percent Formulas
- */
-ArmorSet.prototype.registerScrapRecipes = function(event) {
-    var self = this;
-    var hammerItem = self.itemTier.hammer;
-
-    this.ids.forEach(function(itemId) {
-        var costs = self.materialCosts[itemId];
-        if (!costs) return;
-
-        var totalMaterials = (costs.mainCount || 0) + (costs.secondaryCount || 0) + (costs.tertiaryCount || 0) + (costs.gemCount || 0);
-        if (totalMaterials === 0) return;
-
-        // Formula Step 1: Base total denominator calculation (+1 modifier)
-        var formulaDivisor = totalMaterials + 1;
-
-        // Formula Step 2: Durability chunk removal percentage
-        var reductionRate = 1.0 / formulaDivisor;
-        var maxDurability = Item.of(itemId).getItem().getMaxDamage();
-        var durDmg = Math.round(maxDurability * reductionRate);
-
-        // Pre-calculate clean truncated percentage strings
-        var mainPercentStr = Math.round((costs.mainCount / formulaDivisor) * 100) + "%";
-        var secPercentStr = Math.round((costs.secondaryCount / formulaDivisor) * 100) + "%";
-        var tertPercentStr = Math.round((costs.tertiaryCount / formulaDivisor) * 100) + "%";
-        var gemPercentStr = Math.round((costs.gemCount / formulaDivisor) * 100) + "%";
-        var durPercentStr = Math.round(reductionRate * 100) + "%";
-
-        // --- 1. Pre-build the complete NBT object for the recipe output ---
-        var baseNBT = {
-            TargetArmor: itemId,
-            Rewards: {
-                main:      costs.mainCount ?      { id: costs.mainItem } : null,
-                secondary: costs.secondaryCount ? { id: costs.secondaryItem } : null,
-                tertiary:  costs.tertiaryCount ?  { id: costs.tertiaryItem } : null,
-                gem:       costs.gemCount ?       { id: costs.gemItem } : null
-            },
-            display: {
-                Name: '{"text":"Equipment Scrap","color":"gold","italic":false}',
-                Lore: []
-            }
-        };
-
-        // Populate descriptions with updated formula percentages
-        baseNBT.display.Lore.push('{"text":"Extracting salvage will consume ' + durPercentStr + ' durability.","color":"yellow","italic":false}');
-        baseNBT.display.Lore.push('{"text":"--- Expected Yields ---","color":"gray","italic":false}');
-
-        if (costs.mainCount) {
-            baseNBT.display.Lore.push('{"text":"• Main Material: ","color":"white","italic":false,"extra":[{"text":"' + mainPercentStr + '","color":"green"}]}');
-        }
-        if (costs.secondaryCount) {
-            baseNBT.display.Lore.push('{"text":"• Secondary Material: ","color":"gray","italic":false,"extra":[{"text":"' + secPercentStr + '","color":"dark_green"}]}');
-        }
-        if (costs.tertiaryCount) {
-            baseNBT.display.Lore.push('{"text":"• Tertiary Material: ","color":"dark_gray","italic":false,"extra":[{"text":"' + tertPercentStr + '","color":"gold"}]}');
-        }
-        if (costs.gemCount) {
-            baseNBT.display.Lore.push('{"text":"• Embedded Gems: ","color":"aqua","italic":false,"extra":[{"text":"' + gemPercentStr + '","color":"light_purple"}]}');
-        }
-
-        // --- 2. Register the shapeless recipe with explicit NBT output ---
-        event.shapeless(Item.of('kubejs:custom_scrap_box').withNBT(baseNBT), [itemId, hammerItem])
-        .damageIngredient(hammerItem, 1) 
-        .damageIngredient(itemId, durDmg) 
-        .modifyResult(function(gridInv, resultStack) {
-            var armorStack = null;
-            for (var i = 0; i < 9; i++) {
-                var slotItem = gridInv.get(i);
-                if (slotItem && slotItem.id === itemId) {
-                    armorStack = slotItem;
-                    break;
-                }
-            }
-
-            if (!armorStack) return resultStack;
-
-            var currentDamage = armorStack.getDamageValue();
-            var remainingDurability = maxDurability - currentDamage;
-            var actualDamageToApply = Math.min(durDmg, remainingDurability);
-            
-            var nbt = resultStack.getOrCreateTag();
-            nbt.putInt('DmgToApply', actualDamageToApply);
-
-            return resultStack;
-        });
-    });
 };
 
 /**
  * Global Registration Map
  */
 var armor_sets = {
-    leather: new ArmorSet("minecraft", "leather", "chestplate"),
-    iron: new ArmorSet("minecraft", "iron", "chestplate"),
-    gold: new ArmorSet("minecraft", "golden", "chestplate"),
-    diamond: new ArmorSet("minecraft", "diamond", "chestplate")
+    // --- Vanilla Minecraft ---
+    leather: new ArmorSet("minecraft", "leather", "chestplate").setTier("LEATHER").withCrafting("minecraft:leather"),
+    chainmail: new ArmorSet("minecraft", "chainmail", "chestplate").setTier("IRON").withCrafting("minecraft:chain", "minecraft:coal"),
+    iron: new ArmorSet("minecraft", "iron", "chestplate").setTier("IRON").withCrafting("minecraft:iron_ingot"),
+    gold: new ArmorSet("minecraft", "golden", "chestplate").setTier("GOLD").withCrafting("minecraft:gold_ingot"),
+    diamond: new ArmorSet("minecraft", "diamond", "chestplate").setTier("DIAMOND").withCrafting("minecraft:diamond"),
+    netherite: new ArmorSet("minecraft", "netherite", "chestplate").setTier("NETHERITE").withCrafting("minecraft:gold_block", "minecraft:netherite_ingot", "minecraft:ender_eye"), //TODO change gem
+
+    // --- Foolish Mod ---
+    coccinium: new ArmorSet("foolish", "coccinium_armor", "chestplate").setTier("IRON").withCrafting("foolish:coccinium", "minecraft:iron_ingot"),
+    blunt_armor: new ArmorSet("foolish", "blunt_armor", "chestplate").setTier("NETHERITE").withCrafting("foolish:blunt_metal_ingot", "foolish:inferal_alloy_plate_item", "minecraft:netherite_ingot"),
+    keepsteel: new ArmorSet("foolish", "keepsteel", "chestplate").setTier("NETHERITE").withFoundry("foolish:enderslate", "foolish:chorus_leather", "foolish:rotary_core", "foolish:keepsteel_ingot"),
+    stellar_armor: new ArmorSet("foolish", "stellar_armor", "chestplate").setTier("STELLAR").withFoundry("foolish:infernal_alloy_plate", "minecraft:netherite_scrap", "foolish:star_shard", "minecraft:diamond_block"),
+
+    // --- Armor of the Ages ---
+    anubis: new ArmorSet("armoroftheages", "anubis_armor", "chest").setTier("NETHERITE").withFoundry("minecraft:lapis_block", "minecraft:gold_block", "minecraft:netherite_scrap", "lowlands_clothing:laced_woolen_fabric"),
+    centurion: new ArmorSet("armoroftheages", "centurion_armor", "chest").setTier("GOLD").withCrafting("minecraft:gold_ingot", "minecraft:red_wool", "minecraft:iron_block"),
+    exalted_aurum: new ArmorSet("armoroftheages", "exalted_aurum_armor", "chest").setTier("NETHERITE").withFoundry("minecraft:red_wool", "minecraft:gold_block", "minecraft:netherite_scrap", "minecraft:redstone_block"),
+    holy_armor: new ArmorSet("armoroftheages", "holy_armor", "chest").setTier("NETHERITE").withFoundry("minecraft:iron_block", "minecraft:gold_block", "minecraft:netherite_scrap", "minecraft:emerald_block"),
+    iron_plate: new ArmorSet("armoroftheages", "iron_plate_armor", "chest").setTier("IRON").withCrafting("minecraft:iron_block", "lowlands_clothing:heavy_iron_ingot"),
+    japanese_light: new ArmorSet("armoroftheages", "japanese_light_armor", "chest").setTier("LEATHER").withCrafting("minecraft:leather", "minecraft:string", "minecraft:redstone"),
+    o_yoroi: new ArmorSet("armoroftheages", "o_yoroi_armor", "chest").setTier("IRON").withCrafting("minecraft:redstone_block", "minecraft:coal_block", "minecraft:iron_block"),
+    pharaoh: new ArmorSet("armoroftheages", "pharaoh_armor", "chest").setTier("DIAMOND").withCrafting("minecraft:diamond_ingot", "minecraft:gold_ingot", "minecraft:white_wool"),
+    quetzalcoatl: new ArmorSet("armoroftheages", "quetzalcoatl_armor", "chest").setTier("NETHERITE").withFoundry("ogres:ogre_bone", "minecraft:egg", "minecraft:netherite_scrap", "supplementaries:feather_block"),
+    raijin: new ArmorSet("armoroftheages", "raijin_armor", "chest").setTier("NETHERITE").withFoundry("foolish:electrical_charge", "minecraft:lightning_rod", "minecraft:netherite_scrap", "minecraft:copper_block"),
+
+    // --- Lowlands Clothing ---
+    guard_captain: new ArmorSet("lowlands_clothing", "guard_captain_armor", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:laced_woolen_fabric", "minecraft:iron_ingot"),
+    mercenary_swordsman: new ArmorSet("lowlands_clothing", "mercenary_swordman", "chestplate").setTier("IRON").withCrafting("lowlands_clothing:laced_woolen_fabric", "minecraft:iron_ingot"),
+    mountainmen: new ArmorSet("lowlands_clothing", "mountainmenclothes", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:furpelt", "minecraft:leather"),
+    snowtiger: new ArmorSet("lowlands_clothing", "snowtigerarmor", "chestplate").setTier("NETHERITE").withCrafting("lowlands_clothing:furpelt", "minecraft:netherite_scrap", "minecraft:goat_horn"),
+    ratcatcher: new ArmorSet("lowlands_clothing", "ratcatcherrobes", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:cloth_fabric", "lowlands_clothing:woolen_fabric", "minecraft:iron_ingot"),
+    executor: new ArmorSet("lowlands_clothing", "executorarmor", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:cloth_fabric", "minecraft:black_wool", "minecraft:iron_axe"),
+    furnacemaster: new ArmorSet("lowlands_clothing", "furnacemasteramor", "chestplate").setTier("IRON").withCrafting("minecraft:iron_ingot", "minecraft:lantern", "minecraft:blast_furnace"),
+    highlands_kilt: new ArmorSet("lowlands_clothing", "highlandslongkilt", "chestplate", [3]).setTier("LEATHER").withCrafting("minecraft:white_wool", "minecraft:yellow_wool", "minecraft:lantern"),
+    plague_doctor: new ArmorSet("lowlands_clothing", "plague_doctor_suit", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:cloth_fabric", "lowlands_clothing:treated_leather", "#bloomingnature:small_flower"),
+    penitent_rags: new ArmorSet("lowlands_clothing", "penitent_rags", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:cloth_fabric", "minecraft:string", "minecraft:rabbit_hide"),
+    winged_cavalry: new ArmorSet("lowlands_clothing", "wingedcavaleryarmor", "chestplate").setTier("IRON").withCrafting("minecraft:iron_ingot", "minecraft:feather", "minecraft:firework_rocket"),
+    axolotl: new ArmorSet("lowlands_clothing", "axolotl_armor", "chestplate").setTier("IRON").withCrafting("lowlands_clothing:axolotl_iron", "minecraft:flowering_azalea", "minecraft:spore_blossom"),
+    norsian: new ArmorSet("lowlands_clothing", "norsian_armor", "chestplate").setTier("IRON").withCrafting("minecraft:iron_ingot", "lowlands_clothing:furpelt", "minecraft:goat_horn"),
+    wald_knight: new ArmorSet("lowlands_clothing", "wald_knight_armor", "chestplate").setTier("IRON").withCrafting("minecraft:iron_ingot", "#minecraft:saplings", "minecraft:dark_oak_wood"),
+    maskerade: new ArmorSet("lowlands_clothing", "maskerade_armor", "chestplate").setTier("GOLD").withCrafting("minecraft:gold_ingot", "lowlands_clothing:cloth_fabric", "minecraft:totem_of_undying"),
+    bret_corsair: new ArmorSet("lowlands_clothing", "bret_corsair_armor", "chestplate").setTier("LEATHER").withCrafting("minecraft:woolen_fabric", "minecraft:kelp"),
+    bret_clothes: new ArmorSet("lowlands_clothing", "bret_clothes", "chestplate").setTier("GOLD").withCrafting("minecraft:gold_ingot", "minecraft:prismarine_crystals", "minecraft:heart_of_the_sea"),
+    depth_scaphander: new ArmorSet("lowlands_clothing", "depth_scaphander", "chestplate").setTier("GOLD").withCrafting("minecraft:copper_ingot", "minecraft:prismarine_crystals", "minecraft:prismarine_crystals"),
+    gamekeeper: new ArmorSet("lowlands_clothing", "gamekeeper_attires", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:laced_woolen_fabric", "minecraft:bone", "minecraft:lead"),
+    netherborn_pirate: new ArmorSet("lowlands_clothing", "netherborn_pirate", "chestplate").setTier("NETHERITE").withFoundry("minecraft:red_nether_bricks", "minecraft:glowstone", "minecraft:netherite_scrap", "minecraft:blaze_rod"),
+    swampland_folks: new ArmorSet("lowlands_clothing", "swampland_folks_attires", "chestplate", [4]).setTier("LEATHER").withCrafting("lowlands_clothing:wetlands_fabric", "lowlands_clothing:treated_leather", "minecraft:slime_ball"),
+    siege_armor: new ArmorSet("lowlands_clothing", "siege_armor", "chestplate").setTier("NETHERITE").withFoundry("lowlands_clothing:heavy_iron_ingot", "minecraft:iron_block", "minecraft:netherite_scrap", "minecraft:emerald_block"),
+    gatesentry: new ArmorSet("lowlands_clothing", "gatesentry_armor", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:treated_leather", "minecraft:iron_ingot", "minecraft:lantern"),
+
+    // --- Opposing Force ---
+    bone: new ArmorSet("opposing_force", "bone", "chestplate").setTier("BONE").withCrafting("opposing_force:heavy_bone", "foolish:elongated_bone", "philipsruins:broken_bone"),
+    slug_baron: new ArmorSet("opposing_force", "slug_baron", "chestplate").setTier("NETHERITE").withFoundry("minecraft:copper_block", "opposing_force:slug_eggs", "minecraft:netherite_scrap", "minecraft:moss_block"),
+    deepwoven: new ArmorSet("opposing_force", "deepwoven", "tunic").setTier("LEATHER").withCrafting("opposing_force:deep_silk", "opposing_force:umber_fang"),
+    recon_knight: new ArmorSet("opposing_force", "recon_knight", "chestplate").setTier("GOLD").withCrafting("opposing_force:electric_alloy", "opposing_force:electric_charge"),
+    wooden: new ArmorSet("opposing_force", "wooden", "cover").setTier("WOOD").withCrafting("#minecraft:logs_that_burn"),
+    stone: new ArmorSet("opposing_force", "stone", "chestplate").setTier("STONE").withCrafting("#minecraft:stone_tool_materials"),
+    emerald: new ArmorSet("opposing_force", "emerald", "mask").setTier("DIAMOND").withFoundry("minecraft:diamond", "minecraft:emerald", "minecraft:emerald_block", "minecraft:lapis_block"),
+
+    // --- Monster Expansion ---
+    skrythe: new ArmorSet("monsterexpansion", "skrythe", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:skrythe_armorplate", "monsterexpansion:skrythe_wing_membrane", "minecraft:nether_star", "minecraft:netherite_ingot"),
+    rhyza: new ArmorSet("monsterexpansion", "rhyza", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:rhyza_fur", "monsterexpansion:rhyza_scale", "minecraft:netherite_ingot", "monsterexpansion:glowstone"),
+    rakoth: new ArmorSet("monsterexpansion", "rakoth", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:rakoth_underplate", "monsterexpansion:sedimentary_scarp_shell", "minecraft:netherite_ingot", "monsterexpansion:rakoth_carapace"),
+    leivekilth: new ArmorSet("monsterexpansion", "leivekilth", "chestplate").setTier("DIAMOND"),
+
+    // --- Ogres ---
+    ogre: new ArmorSet("ogres", "ogre_armor", "chestplate").setTier("LEATHER").withCrafting("ogres:ogre_skin")
 };
-
-ServerEvents.recipes(function(event) {
-    armor_sets.leather.itemTier = SYSTEM_CONFIG.tiers.LEATHER;
-    armor_sets.iron.itemTier = SYSTEM_CONFIG.tiers.IRON;
-    armor_sets.gold.itemTier = SYSTEM_CONFIG.tiers.GOLD;
-    armor_sets.diamond.itemTier = SYSTEM_CONFIG.tiers.DIAMOND;
-
-    armor_sets.leather.from_crafting(event, "minecraft:leather");
-    armor_sets.iron.from_crafting(event, "minecraft:iron_ingot", "minecraft:coal");
-
-    Object.keys(armor_sets).forEach(function(setName) {
-        var armor = armor_sets[setName];
-        if (armor.materialCosts && Object.keys(armor.materialCosts).length > 0) {
-            armor.registerScrapRecipes(event);
-        }
-    });
-});
-
-/**
- * Handle Unpacking Event on Server
- */
-PlayerEvents.inventoryChanged(function(event) {
-    var player = event.player;
-    if (!player || player.level.isClientSide()) return;
-
-    var item = event.item;
-    if (item.id === 'kubejs:custom_scrap_box' && item.nbt && item.nbt.Rewards) {
-        var rewards = item.nbt.Rewards;
-        
-        if (rewards.main)      { player.give(Item.of(rewards.main.id)); }
-        if (rewards.secondary) { player.give(Item.of(rewards.secondary.id)); }
-        if (rewards.tertiary)  { player.give(Item.of(rewards.tertiary.id)); }
-        if (rewards.gem)       { player.give(Item.of(rewards.gem.id)); }
-
-        item.setCount(0);
-        player.playSound('minecraft:block.anvil.use', 0.6, 1.2);
-    }
-});
