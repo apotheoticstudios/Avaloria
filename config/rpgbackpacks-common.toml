@@ -1,0 +1,18 @@
+
+["Backpack Inventory Sizes"]
+	#Number of inventory slots in the Leather Backpack
+	#Range: 1 ~ 999
+	leatherBackpackSlots = 27
+	#Number of inventory slots in the Iron Backpack
+	#Range: 1 ~ 999
+	ironBackpackSlots = 36
+	#Number of inventory slots in the Golden Backpack
+	#Range: 1 ~ 999
+	goldenBackpackSlots = 45
+	#Number of inventory slots in the Diamond Backpack
+	#Range: 1 ~ 999
+	diamondBackpackSlots = 60
+	#Number of inventory slots in the Netherite Backpack
+	#Range: 1 ~ 999
+	netheriteBackpackSlots = 77
+
