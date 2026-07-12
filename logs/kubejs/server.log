@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [02:12:29] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
 [02:12:29] [INIT] Loaded plugins:
 [02:12:29] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
@@ -26,3 +27,17 @@
 [02:12:30] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_chestplate[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":["HH HH","GMMMG","HTGTH"," GMG "," MMM "],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_chestplate","count":1}}: Unknown item 'monsterexpansion:glowstone'
 [02:12:30] [INFO] Added 428 recipes, removed 203 recipes, modified 0 recipes, with 4 failed recipes in 14.72 ms
 [02:12:36] [INFO] Server resource reload complete!
+=======
+[11:30:27] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[11:30:27] [INIT] Loaded plugins:
+[11:30:27] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[11:30:27] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[11:30:27] [INFO] Loaded script server_scripts:nochatspam.js in 0.0 s
+[11:30:27] [INFO] Loaded script server_scripts:armor.js in 0.004 s
+[11:30:27] [INFO] Loaded 2/2 KubeJS server scripts in 0.011 s with 0 errors and 0 warnings
+[11:30:27] [INFO] Scripts loaded
+[11:30:27] [INFO] Initializing recipe event...
+[11:30:27] [WARN] Due to the way Minecraft resource loading works, KubeJS' server.log may not contain everything that happened in your server scripts on initial world creation.
+[11:30:27] [WARN] You can still see the full log (including past reloads) in your latest.log file.
+[11:30:48] [INFO] Server resource reload complete!
+>>>>>>> be50937ae2cfa145077150a66fcd5ee767fbf527
