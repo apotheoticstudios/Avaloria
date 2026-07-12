@@ -1,6 +1,0 @@
-[11:26:11] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[11:26:11] [INIT] Loaded plugins:
-[11:26:11] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[11:26:11] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[11:26:12] [INFO] Loaded script startup_scripts:scrapping.js in 0.041 s
-[11:26:12] [INFO] Loaded 1/1 KubeJS startup scripts in 0.473 s with 0 errors and 0 warnings
