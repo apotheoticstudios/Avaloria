@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-[2026-07-11 19:31:33.382] [INFO] [StartupScripts]: Running script: startup/example.jexl
-=======
-[2026-07-12 11:28:54.292] [INFO] [StartupScripts]: Running script: startup/example.jexl
->>>>>>> be50937ae2cfa145077150a66fcd5ee767fbf527
+[2026-07-12 11:25:58.072] [INFO] [StartupScripts]: Running script: startup/example.jexl

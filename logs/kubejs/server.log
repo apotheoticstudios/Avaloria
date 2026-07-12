@@ -1,43 +1,28 @@
-<<<<<<< HEAD
-[02:12:29] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[02:12:29] [INIT] Loaded plugins:
-[02:12:29] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[02:12:29] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[02:12:29] [INFO] Loaded script server_scripts:armor_helper.js in 0.015 s
-[02:12:29] [INFO] Loaded script server_scripts:nochatspam.js in 0.0 s
-[02:12:29] [INFO] Loaded script server_scripts:armor.js in 0.001 s
-[02:12:29] [INFO] Loaded 3/3 KubeJS server scripts in 0.05 s with 0 errors and 0 warnings
-[02:12:29] [INFO] Scripts loaded
-[02:12:29] [INFO] Initializing recipe event...
-[02:12:30] [INFO] Processing recipes...
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_hoe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_shovel_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_armor_boots_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_armor_body_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_armor_leggings_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_armor_helmet_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_pickaxe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_sword_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [WARN] Failed to parse recipe 'ogres:ogre_axe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
-[02:12:30] [INFO] Found 4275 recipes in 21.41 ms
-[02:12:30] [INFO] Posted recipe events in 144.0 ms
-[02:12:30] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_helmet[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":[" HGH ","GMMMG","HM MH","MT TM","T   T"],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_helmet","count":1}}: Unknown item 'monsterexpansion:glowstone'
-[02:12:30] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_leggings[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":[" GGG ","HMTMH","MT TM","MG GM","H   H"],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_leggings","count":1}}: Unknown item 'monsterexpansion:glowstone'
-[02:12:30] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_boots[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":[" H H "," M M "," T T ","GM MG","HG GH"],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_boots","count":1}}: Unknown item 'monsterexpansion:glowstone'
-[02:12:30] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_chestplate[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":["HH HH","GMMMG","HTGTH"," GMG "," MMM "],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_chestplate","count":1}}: Unknown item 'monsterexpansion:glowstone'
-[02:12:30] [INFO] Added 428 recipes, removed 203 recipes, modified 0 recipes, with 4 failed recipes in 14.72 ms
-[02:12:36] [INFO] Server resource reload complete!
-=======
-[11:30:27] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[11:30:27] [INIT] Loaded plugins:
-[11:30:27] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[11:30:27] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[11:30:27] [INFO] Loaded script server_scripts:nochatspam.js in 0.0 s
-[11:30:27] [INFO] Loaded script server_scripts:armor.js in 0.004 s
-[11:30:27] [INFO] Loaded 2/2 KubeJS server scripts in 0.011 s with 0 errors and 0 warnings
-[11:30:27] [INFO] Scripts loaded
-[11:30:27] [INFO] Initializing recipe event...
-[11:30:27] [WARN] Due to the way Minecraft resource loading works, KubeJS' server.log may not contain everything that happened in your server scripts on initial world creation.
-[11:30:27] [WARN] You can still see the full log (including past reloads) in your latest.log file.
-[11:30:48] [INFO] Server resource reload complete!
->>>>>>> be50937ae2cfa145077150a66fcd5ee767fbf527
+[11:26:28] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[11:26:28] [INIT] Loaded plugins:
+[11:26:28] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[11:26:28] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[11:26:28] [INFO] Loaded script server_scripts:armor_helper.js in 0.009 s
+[11:26:28] [INFO] Loaded script server_scripts:nochatspam.js in 0.001 s
+[11:26:28] [INFO] Loaded script server_scripts:armor.js in 0.008 s
+[11:26:28] [INFO] Loaded 3/3 KubeJS server scripts in 0.025 s with 0 errors and 0 warnings
+[11:26:28] [INFO] Scripts loaded
+[11:26:28] [INFO] Initializing recipe event...
+[11:26:32] [INFO] Processing recipes...
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_hoe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_shovel_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_armor_boots_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_armor_body_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_armor_leggings_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_armor_helmet_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_pickaxe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_sword_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [WARN] Failed to parse recipe 'ogres:ogre_axe_recipe[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'template' can't be empty!
+[11:26:32] [INFO] Found 4345 recipes in 43.45 ms
+[11:26:33] [INFO] Posted recipe events in 398.7 ms
+[11:26:33] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_leggings[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":[" GGG ","HMTMH","MT TM","MG GM","H   H"],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_leggings","count":1}}: Unknown item 'monsterexpansion:glowstone'
+[11:26:33] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_boots[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":[" H H "," M M "," T T ","GM MG","HG GH"],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_boots","count":1}}: Unknown item 'monsterexpansion:glowstone'
+[11:26:33] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_helmet[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":[" HGH ","GMMMG","HM MH","MT TM","T   T"],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_helmet","count":1}}: Unknown item 'monsterexpansion:glowstone'
+[11:26:33] [WARN] Error parsing recipe avaloria:from_foundry_monsterexpansion_rhyza_chestplate[monsterexpansion:foundry]: {"type":"monsterexpansion:foundry","pattern":["HH HH","GMMMG","HTGTH"," GMG "," MMM "],"key":{"G":{"item":"monsterexpansion:glowstone"},"H":{"item":"monsterexpansion:rhyza_scale"},"T":{"item":"minecraft:netherite_ingot"},"M":{"item":"monsterexpansion:rhyza_fur"}},"result":{"item":"monsterexpansion:rhyza_chestplate","count":1}}: Unknown item 'monsterexpansion:glowstone'
+[11:26:33] [INFO] Added 428 recipes, removed 203 recipes, modified 0 recipes, with 4 failed recipes in 28.97 ms
+[11:27:37] [INFO] Server resource reload complete!
