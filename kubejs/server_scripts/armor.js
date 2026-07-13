@@ -79,9 +79,10 @@ var armor_sets = {
 
     // --- Monster Expansion ---
     skrythe: new ArmorSet("monsterexpansion", "skrythe", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:skrythe_armorplate", "monsterexpansion:skrythe_wing_membrane", "minecraft:nether_star", "minecraft:netherite_ingot"),
-    rhyza: new ArmorSet("monsterexpansion", "rhyza", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:rhyza_fur", "monsterexpansion:rhyza_scale", "minecraft:netherite_ingot", "monsterexpansion:glowstone"),
+    rhyza: new ArmorSet("monsterexpansion", "rhyza", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:rhyza_fur", "monsterexpansion:rhyza_scale", "minecraft:netherite_ingot", "minecraft:glowstone"),
     rakoth: new ArmorSet("monsterexpansion", "rakoth", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:rakoth_underplate", "monsterexpansion:sedimentary_scarp_shell", "minecraft:netherite_ingot", "monsterexpansion:rakoth_carapace"),
-    leivekilth: new ArmorSet("monsterexpansion", "leivekilth", "chestplate").setTier("DIAMOND"),
+    leivekilth: new ArmorSet("monsterexpansion", "leivekilth", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:leivekilth_armorplate", "monsterexpansion:hoarfrost_shard", "monsterexpansion:leivekilth_rimepelt", "minecraft:netherite_ingot"),
+    ignathos: new ArmorSet("monsterexpansion", "ignathos", "chestplate").setTier("NETHERITE").withFoundry("monsterexpansion:ignathos_hide", "monsterexpansion:ignathos_feather", "minecraft:netherite_scrap", "monsterexpansion:ignathos_talon"),
 
     // --- Ogres ---
     ogre: new ArmorSet("ogres", "ogre_armor", "chestplate").setTier("LEATHER").withCrafting("ogres:ogre_skin")
