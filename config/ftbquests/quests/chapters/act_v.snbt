@@ -1,0 +1,56 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act_v"
+	group: "61FCFB164DAE895F"
+	id: "5E7C7585A5DF9CDF"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "35704C9EFB4B1CBA"
+			tasks: [{
+				entity: "monsterexpansion:leivekilth"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "6C93F466B8DA5BCB"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0F45ACD32F2F85A6"
+			tasks: [{
+				entity: "saintsdragons:ignivorus"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "7AAE83C3C4B93E7F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+	]
+	title: "Act V"
+}

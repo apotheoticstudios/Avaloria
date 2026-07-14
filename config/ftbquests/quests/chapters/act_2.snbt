@@ -1,0 +1,288 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act_2"
+	group: "61FCFB164DAE895F"
+	id: "3E55AC5528BADA8B"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "1FB06FEDD5BB3228"
+			tasks: [{
+				id: "26D97A64547D0DDD"
+				item: "saintsdragons:volitans_spine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "253C7CD0AE3C4E35"
+			tasks: [{
+				entity: "saintsdragons:raevyx"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "7E91DA4D16522842"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4E706E621E78790D"
+			tasks: [{
+				id: "73444768C412D92E"
+				item: "saintsdragons:varasuchus_scale"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "00551D267A9B3AA4"
+			tasks: [{
+				entity: "saintsdragons:varasuchus"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "3A10650F992D471D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4B8C3A106EF06E5D"
+			tasks: [{
+				entity: "luminous_nether:soul_furnace"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "2299916016319A65"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "658B41B78CD6D4CA"
+			tasks: [{
+				entity: "luminous_nether:basalt_executioner"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0993306EEB6D0871"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "43C201CFFB2A94E2"
+			tasks: [{
+				entity: "luminous_beasts:the_scarecrow"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "76C15ECC0BA5B5BF"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6B278F815CFC604B"
+			tasks: [{
+				entity: "monsterexpansion:ignathos"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "539A5A05F0D5D5BE"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "56685780E084C557"
+			tasks: [{
+				count: 12L
+				id: "3DCDC8D5B80BF210"
+				item: { Count: 12, id: "minecraft:ender_eye" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5311E7F9F2571F11"
+			tasks: [{
+				id: "6C9677CC53E3945C"
+				structure: "minecraft:stronghold"
+				type: "structure"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4A5E106AD9462698"
+			tasks: [{
+				dimension: "bbv:endnew"
+				id: "17A743D49601C69E"
+				type: "dimension"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "31720F6CD67AF884"
+			tasks: [{
+				entity: "bbv:the_ender_dragonoverworld"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "01F65EF002501EB1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "20D03AC80766E664"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "4F06BD28568C2EAE"
+				type: "dimension"
+			}]
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "12304C25A54D0EDC"
+			tasks: [{
+				entity: "monsterexpansion:rhyza"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "6DA3033D2B0CA592"
+				type: "kill"
+				value: 1L
+			}]
+			x: 23.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "432874174B22DA10"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "74B1CA9615647B49"
+				type: "dimension"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7423C5D3DF99DDDE"
+			tasks: [{
+				entity: "minecraft:wither_skull"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "51A32EE7DDE79504"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+	]
+	title: "Act II"
+}

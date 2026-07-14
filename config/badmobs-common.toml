@@ -1822,20 +1822,6 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 
-#Options for the sophisticatedbackpacks mod.
-[sophisticatedbackpacks]
-
-	#Spawning options for sophisticatedbackpacks:everlasting_backpack_item
-	[sophisticatedbackpacks.everlasting_backpack_item]
-		#Should the entity be allowed to spawn normally?
-		allowNormalSpawning = true
-		#Should spawners be able to spawn the entity?
-		allowSpawners = true
-		#Should spawn eggs be able to spawn the entity?
-		allowSpawnEggs = true
-		#Should the entity spawn via mob conversion? i.e. villager -> zombie
-		allowConversions = true
-
 #Options for the foolish mod.
 [foolish]
 
@@ -7391,6 +7377,20 @@
 
 	#Spawning options for blueprint:falling_block
 	[blueprint.falling_block]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+
+#Options for the overpacked mod.
+[overpacked]
+
+	#Spawning options for overpacked:giant_backpack
+	[overpacked.giant_backpack]
 		#Should the entity be allowed to spawn normally?
 		allowNormalSpawning = true
 		#Should spawners be able to spawn the entity?

@@ -1,0 +1,321 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act_1"
+	group: "61FCFB164DAE895F"
+	id: "7A7FC3D4D86A543D"
+	images: [{
+		entity_vis_enabled: true
+		entity_vis_entity: "theinkarena:ink_titan"
+		entity_vis_idle_mode: "USE_GLOBAL"
+		entity_vis_offset_x: 0.0f
+		entity_vis_offset_y: 0.0f
+		entity_vis_rotation: 0.0f
+		entity_vis_silhouette: false
+		entity_vis_size: 5.0f
+		entity_vis_spin_mode: "USE_GLOBAL"
+		entity_vis_walk_mode: "USE_GLOBAL"
+		height: 1.0d
+		image: ""
+		rotation: 0.0d
+		width: 1.0d
+		x: 0.5d
+		y: -2.5d
+	}]
+	order_index: 1
+	quest_links: [{
+		id: "49387BF2ADC9FE26"
+		linked_quest: "689400837A10EB1D"
+		x: -1.0d
+		y: 0.5d
+	}]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "47E8009EB42D5D94"
+			tasks: [{
+				entity: "theinkarena:ink_titan"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "7F91D9221D2DF3A3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4E86F4899BE1495E"
+			tasks: [{
+				id: "282C83E3CDC1AED8"
+				item: "theinkarena:ink_waste"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "02F4E0B9F92B8F2F"
+			tasks: [{
+				entity: "opposing_force:skyvern"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "41E137467D2E9BB3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5AAFD59DF249101E"
+			tasks: [{
+				entity: "opposing_force:guzzler"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "148E2A67028901D5"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "14CDE8611D4668B8"
+			tasks: [{
+				id: "1B44033B88236D35"
+				item: "opposing_force:guzzler_scales"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "796A54F04D2956C6"
+			tasks: [{
+				id: "12C058D007DC249F"
+				item: "opposing_force:skyvern_egg"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1BFB3EA92C64FA7C"
+			tasks: [{
+				id: "220841F57F3D1070"
+				item: "opposing_force:skyvern_head"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6EA6A2BBB9187EDF"
+			tasks: [{
+				entity: "saintsdragons:volitans"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "72670AFD48363846"
+				type: "kill"
+				value: 1L
+			}]
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7E9ACEFFDF18C895"
+			tasks: [{
+				entity: "luminous_beasts:sea_viper"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "302F4D22FCD0E63A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "341FB2AA40A43E79"
+			tasks: [{
+				entity: "luminous_beasts:tree_ent"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "4D74B7C990D05AE1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "784DDDB43A0ADEDE"
+			tasks: [{
+				entity: "luminous_beasts:golden_hermit_king"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0E8E9C6EF18C46EC"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "02A09C529A75E481"
+			tasks: [{
+				entity: "luminous_beasts:bone_stalker"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0D5B093BDC16ED1F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "33FD7B81A3BEB00A"
+			tasks: [{
+				entity: "luminous_beasts:yeti"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "1EA713D32416AA3B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: -3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5146B7A5107490F4"
+			tasks: [{
+				entity: "luminous_beasts:vile_gator"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "147F165D09FA1EAD"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3D7F697DF377EC93"
+			tasks: [{
+				entity: "luminous_beasts:mummy"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0D3F58C8A0A6030C"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: -7.5d
+		}
+	]
+	title: "Act I"
+}

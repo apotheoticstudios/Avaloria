@@ -1,0 +1,170 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "prologue"
+	group: "61FCFB164DAE895F"
+	id: "120317F05E0A16A0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "07316F5FC72883E9"
+			tasks: [{
+				id: "50D0ADDECBB1B2D4"
+				title: "Here You Are"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07316F5FC72883E9"]
+			entity_vis_size: 1.0f
+			id: "75C7135332A281B7"
+			tasks: [{
+				id: "4A9E881BC0B12B0C"
+				title: "You Exist"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["75C7135332A281B7"]
+			entity_vis_size: 1.0f
+			id: "2EDCD9D1384BBF73"
+			tasks: [{
+				id: "24AE053AF0D91D50"
+				title: "In This World"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2EDCD9D1384BBF73"]
+			entity_vis_size: 1.0f
+			id: "591FF9100E236A70"
+			tasks: [{
+				id: "45278507153A3AA5"
+				title: "Of Mystery"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["591FF9100E236A70"]
+			entity_vis_size: 1.0f
+			id: "23969033A0FB0E37"
+			tasks: [{
+				id: "5D709B7DD8CB429D"
+				title: "And Enchantment."
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["23969033A0FB0E37"]
+			entity_vis_size: 1.0f
+			id: "5FADC4BCE1607375"
+			rewards: [{
+				id: "2CC50FFA78F73696"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "30523FAAD83E2DB0"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					id: "11D461E5D1DEA934"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5FADC4BCE1607375"]
+			entity_vis_size: 1.0f
+			id: "5403865941F9DB96"
+			tasks: [{
+				entity: "minecraft:zombie"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "358F35977C685E4B"
+				type: "kill"
+				value: 3L
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5403865941F9DB96"]
+			entity_vis_size: 1.0f
+			icon: {
+				Count: 1
+				id: "explorerscompass:explorerscompass"
+				tag: { }
+			}
+			id: "77F083BF1DB92B93"
+			tasks: [
+				{
+					id: "6202E63B28A00B50"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0405F758145178C3"
+					item: { Count: 4, id: "minecraft:cracked_stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0AADC36C34F86206"
+					item: { Count: 4, id: "minecraft:cobweb" }
+					type: "item"
+				}
+				{
+					id: "3F20F7E3083E7DEC"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77F083BF1DB92B93"]
+			entity_vis_size: 1.0f
+			id: "689400837A10EB1D"
+			tasks: [{
+				id: "7F0E040563E2FE9C"
+				structure: "theinkarena:ink_arena_structure"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+	]
+	title: "Prologue"
+}
