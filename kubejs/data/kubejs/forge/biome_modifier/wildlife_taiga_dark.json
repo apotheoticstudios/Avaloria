@@ -21,18 +21,6 @@
       "maxCount": 3
     },
     {
-      "type": "luminous_beasts:albino_moth",
-      "weight": 5,
-      "minCount": 1,
-      "maxCount": 2
-    },
-    {
-      "type": "luminous_beasts:luminous_moth",
-      "weight": 5,
-      "minCount": 1,
-      "maxCount": 2
-    },
-    {
       "type": "luminous_butterflies:mourning_cloak",
       "weight": 8,
       "minCount": 1,

@@ -4,7 +4,7 @@
   "spawners": {
     "type": "foolish:winter_moth",
     "weight": 3,
-    "minCount": 2,
-    "maxCount": 4
+    "minCount": 1,
+    "maxCount": 1
   }
 }
