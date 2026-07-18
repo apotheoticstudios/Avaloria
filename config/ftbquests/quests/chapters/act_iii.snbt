@@ -107,6 +107,8 @@
 			dependencies: ["153A350527377CD5"]
 			entity_vis_size: 1.0f
 			id: "1EA046F5540281D0"
+			shape: "none"
+			size: 4.0d
 			tasks: [{
 				entity: "foolish:astralis"
 				entity_use_tag: false
