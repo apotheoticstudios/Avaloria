@@ -25,6 +25,12 @@
       "weight": 5,
       "minCount": 2,
       "maxCount": 4
+    },
+    {
+      "type": "minecraft:rabbit",
+      "weight": 9,
+      "minCount": 1,
+      "maxCount": 4
     }
   ]
 }

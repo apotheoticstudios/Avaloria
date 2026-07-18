@@ -75,9 +75,9 @@
 
 ["Beast Pit Configuration"]
 	#Determines the max number of Beast pits that can be lit at any given time per world
-	"Allowed Beast Pit Number" = 2.0
+	"Allowed Beast Pit Number" = 1000.0
 	#Determines how long the Beast Pit stays lit (in ticks, default is 300)
-	"Beast Pit Lit Timer" = 100.0
+	"Beast Pit Lit Timer" = 200.0
 	#NOT WORKING AT THE MOMENT
 	"Beast Pit Spawning Radius" = 16.0
 

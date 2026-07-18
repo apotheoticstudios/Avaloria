@@ -4,13 +4,13 @@
   "spawners": [
     {
       "type": "primal:bear",
-      "weight": 3,
+      "weight": 5,
       "minCount": 1,
       "maxCount": 2
     },
     {
       "type": "lowlands_clothing:grizzly_bear",
-      "weight": 3,
+      "weight": 4,
       "minCount": 1,
       "maxCount": 2
     },
@@ -22,15 +22,15 @@
     },
     {
       "type": "luminous_beasts:albino_moth",
-      "weight": 5,
+      "weight": 1,
       "minCount": 1,
-      "maxCount": 2
+      "maxCount": 1
     },
     {
       "type": "luminous_beasts:luminous_moth",
-      "weight": 5,
+      "weight": 1,
       "minCount": 1,
-      "maxCount": 2
+      "maxCount": 1
     },
     {
       "type": "luminous_butterflies:mourning_cloak",
@@ -40,9 +40,15 @@
     },
     {
       "type": "luminous_butterflies:little_wood",
-      "weight": 8,
+      "weight": 9,
       "minCount": 1,
       "maxCount": 2
+    },
+    {
+      "type": "minecraft:rabbit",
+      "weight": 9,
+      "minCount": 1,
+      "maxCount": 4
     }
   ]
 }

@@ -9,17 +9,6 @@
 	quests: [
 		{
 			entity_vis_size: 1.0f
-			id: "1FB06FEDD5BB3228"
-			tasks: [{
-				id: "26D97A64547D0DDD"
-				item: "saintsdragons:volitans_spine"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
 			id: "253C7CD0AE3C4E35"
 			tasks: [{
 				entity: "saintsdragons:raevyx"
@@ -37,19 +26,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "4E706E621E78790D"
-			tasks: [{
-				id: "73444768C412D92E"
-				item: "saintsdragons:varasuchus_scale"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 0.0d
+			x: 4.0d
+			y: -2.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -282,6 +260,28 @@
 			}]
 			x: 6.0d
 			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "426100535F0325FF"
+			tasks: [{
+				entity: "luminous_beasts:warped_mushlin_king"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "71F66AF3B4946E63"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 4.0d
 		}
 	]
 	title: "Act II"

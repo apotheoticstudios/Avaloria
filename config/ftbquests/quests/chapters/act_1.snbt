@@ -31,6 +31,7 @@
 	}]
 	quests: [
 		{
+			dependencies: ["689400837A10EB1D"]
 			entity_vis_size: 1.0f
 			id: "47E8009EB42D5D94"
 			tasks: [{
@@ -53,6 +54,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["47E8009EB42D5D94"]
 			entity_vis_size: 1.0f
 			id: "4E86F4899BE1495E"
 			tasks: [{
@@ -64,6 +66,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["796A54F04D2956C6"]
 			entity_vis_size: 1.0f
 			id: "02F4E0B9F92B8F2F"
 			tasks: [{
@@ -86,6 +89,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["4E86F4899BE1495E"]
 			entity_vis_size: 1.0f
 			id: "5AAFD59DF249101E"
 			tasks: [{
@@ -108,6 +112,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["5AAFD59DF249101E"]
 			entity_vis_size: 1.0f
 			id: "14CDE8611D4668B8"
 			tasks: [{
@@ -119,6 +124,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["14CDE8611D4668B8"]
 			entity_vis_size: 1.0f
 			id: "796A54F04D2956C6"
 			tasks: [{
@@ -130,6 +136,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["02F4E0B9F92B8F2F"]
 			entity_vis_size: 1.0f
 			id: "1BFB3EA92C64FA7C"
 			tasks: [{
@@ -141,6 +148,15 @@
 			y: 0.5d
 		}
 		{
+			dependencies: [
+				"5146B7A5107490F4"
+				"02A09C529A75E481"
+				"3D7F697DF377EC93"
+				"7E9ACEFFDF18C895"
+				"341FB2AA40A43E79"
+				"33FD7B81A3BEB00A"
+				"784DDDB43A0ADEDE"
+			]
 			entity_vis_size: 1.0f
 			id: "6EA6A2BBB9187EDF"
 			tasks: [{
@@ -163,6 +179,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["1BFB3EA92C64FA7C"]
 			entity_vis_size: 1.0f
 			id: "7E9ACEFFDF18C895"
 			tasks: [{
@@ -185,6 +202,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["1BFB3EA92C64FA7C"]
 			entity_vis_size: 1.0f
 			id: "341FB2AA40A43E79"
 			tasks: [{
@@ -207,6 +225,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["1BFB3EA92C64FA7C"]
 			entity_vis_size: 1.0f
 			id: "784DDDB43A0ADEDE"
 			tasks: [{
@@ -229,6 +248,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["1BFB3EA92C64FA7C"]
 			entity_vis_size: 1.0f
 			id: "02A09C529A75E481"
 			tasks: [{
@@ -251,6 +271,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["1BFB3EA92C64FA7C"]
 			entity_vis_size: 1.0f
 			id: "33FD7B81A3BEB00A"
 			tasks: [{
@@ -273,6 +294,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["1BFB3EA92C64FA7C"]
 			entity_vis_size: 1.0f
 			id: "5146B7A5107490F4"
 			tasks: [{
@@ -295,6 +317,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["1BFB3EA92C64FA7C"]
 			entity_vis_size: 1.0f
 			id: "3D7F697DF377EC93"
 			tasks: [{
