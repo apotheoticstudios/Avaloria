@@ -4,32 +4,85 @@
 	filename: "epilogue"
 	group: "61FCFB164DAE895F"
 	id: "1AFD952EB7D69EFF"
+	images: [
+		{
+			height: 10.0d
+			image: "luminous_nether:textures/screens/mendingoutline.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 10.0d
+			image: "luminous_nether:textures/screens/mendingoutline.png"
+			rotation: 180.0d
+			width: 10.0d
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			height: 2.0d
+			image: "bbv:textures/screens/enderdragonbar1.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: 5.0d
+		}
+	]
 	order_index: 6
 	quest_links: [ ]
-	quests: [{
-		entity_vis_size: 1.0f
-		icon_scale: 2.0d
-		id: "1E1E6B87BFCF546F"
-		shape: "none"
-		size: 4.0d
-		tasks: [{
-			entity: "netherman:azazel"
-			entity_use_tag: false
-			entity_vis_idle_mode: "USE_GLOBAL"
-			entity_vis_offset_x: 0.0f
-			entity_vis_offset_y: 0.0f
-			entity_vis_rotation: 0.0f
-			entity_vis_silhouette_mode: "NONE"
+	quests: [
+		{
 			entity_vis_size: 1.0f
-			entity_vis_spin_mode: "USE_GLOBAL"
-			entity_vis_use_as_quest_icon: false
-			entity_vis_walk_mode: "USE_GLOBAL"
-			id: "583DD16C2E24486E"
-			type: "kill"
-			value: 1L
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+			icon_scale: 2.0d
+			id: "1E1E6B87BFCF546F"
+			shape: "none"
+			size: 2.5d
+			tasks: [{
+				entity: "netherman:azazel"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "583DD16C2E24486E"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "41A04622E5723FD9"
+			shape: "none"
+			size: 4.0d
+			tasks: [{
+				entity: "bbv:the_ender_dragonoverworld"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "2EAADF9C8058653F"
+				title: "Slay &l&6The Dragon of Ender"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+	]
 	title: "Epilogue"
 }
