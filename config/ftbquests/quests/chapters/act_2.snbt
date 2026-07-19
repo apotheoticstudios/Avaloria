@@ -70,8 +70,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 9.5d
+			y: 4.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -93,7 +93,7 @@
 				value: 1L
 			}]
 			x: 8.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -115,7 +115,7 @@
 				value: 1L
 			}]
 			x: 8.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -137,73 +137,6 @@
 				value: 1L
 			}]
 			x: 10.0d
-			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "56685780E084C557"
-			tasks: [{
-				count: 12L
-				id: "3DCDC8D5B80BF210"
-				item: { Count: 12, id: "minecraft:ender_eye" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "5311E7F9F2571F11"
-			tasks: [{
-				id: "6C9677CC53E3945C"
-				structure: "minecraft:stronghold"
-				type: "structure"
-			}]
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "4A5E106AD9462698"
-			tasks: [{
-				dimension: "bbv:endnew"
-				id: "17A743D49601C69E"
-				type: "dimension"
-			}]
-			x: 16.0d
-			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "31720F6CD67AF884"
-			tasks: [{
-				entity: "bbv:the_ender_dragonoverworld"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "01F65EF002501EB1"
-				type: "kill"
-				value: 1L
-			}]
-			x: 18.0d
-			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "20D03AC80766E664"
-			tasks: [{
-				dimension: "minecraft:the_end"
-				id: "4F06BD28568C2EAE"
-				type: "dimension"
-			}]
-			x: 20.5d
 			y: 0.0d
 		}
 		{
@@ -238,28 +171,6 @@
 			}]
 			x: 6.0d
 			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "7423C5D3DF99DDDE"
-			tasks: [{
-				entity: "minecraft:wither_skull"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "51A32EE7DDE79504"
-				type: "kill"
-				value: 1L
-			}]
-			x: 6.0d
-			y: 2.0d
 		}
 		{
 			entity_vis_size: 1.0f

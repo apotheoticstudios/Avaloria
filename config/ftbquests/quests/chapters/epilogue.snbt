@@ -34,13 +34,13 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["35704C9EFB4B1CBA"]
 			entity_vis_size: 1.0f
-			icon_scale: 2.0d
-			id: "1E1E6B87BFCF546F"
+			id: "0F45ACD32F2F85A6"
 			shape: "none"
-			size: 2.5d
+			size: 6.0d
 			tasks: [{
-				entity: "netherman:azazel"
+				entity: "saintsdragons:ignivorus"
 				entity_use_tag: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
@@ -51,7 +51,7 @@
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "583DD16C2E24486E"
+				id: "7AAE83C3C4B93E7F"
 				type: "kill"
 				value: 1L
 			}]
@@ -60,9 +60,7 @@
 		}
 		{
 			entity_vis_size: 1.0f
-			id: "41A04622E5723FD9"
-			shape: "none"
-			size: 4.0d
+			id: "31720F6CD67AF884"
 			tasks: [{
 				entity: "bbv:the_ender_dragonoverworld"
 				entity_use_tag: false
@@ -75,13 +73,12 @@
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "2EAADF9C8058653F"
-				title: "Slay &l&6The Dragon of Ender"
+				id: "01F65EF002501EB1"
 				type: "kill"
 				value: 1L
 			}]
 			x: 0.0d
-			y: 10.0d
+			y: 9.0d
 		}
 	]
 	title: "Epilogue"

@@ -8,7 +8,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["20D03AC80766E664"]
 			entity_vis_size: 1.0f
 			id: "31301B881C4337EB"
 			rewards: [{
@@ -422,7 +421,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["20D03AC80766E664"]
 			entity_vis_size: 1.0f
 			id: "3CBB8B26CBE2418D"
 			tasks: [{
