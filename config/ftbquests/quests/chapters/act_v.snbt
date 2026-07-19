@@ -8,8 +8,11 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["4194B9C408C245EB"]
 			entity_vis_size: 1.0f
 			id: "35704C9EFB4B1CBA"
+			shape: "none"
+			size: 4.0d
 			tasks: [{
 				entity: "monsterexpansion:leivekilth"
 				entity_use_tag: false
@@ -26,7 +29,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -34,7 +37,7 @@
 			icon_scale: 2.0d
 			id: "1E1E6B87BFCF546F"
 			shape: "none"
-			size: 2.5d
+			size: 1.5d
 			tasks: [{
 				entity: "netherman:azazel"
 				entity_use_tag: false
@@ -51,10 +54,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
+			x: -2.25d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1E1E6B87BFCF546F"]
 			entity_vis_size: 1.0f
 			id: "56685780E084C557"
 			tasks: [{
@@ -63,10 +67,11 @@
 				item: { Count: 12, id: "minecraft:ender_eye" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["56685780E084C557"]
 			entity_vis_size: 1.0f
 			id: "5311E7F9F2571F11"
 			tasks: [{
@@ -74,10 +79,11 @@
 				structure: "minecraft:stronghold"
 				type: "structure"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["5311E7F9F2571F11"]
 			entity_vis_size: 1.0f
 			id: "4A5E106AD9462698"
 			tasks: [{
@@ -85,7 +91,44 @@
 				id: "17A743D49601C69E"
 				type: "dimension"
 			}]
-			x: 3.0d
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4A5E106AD9462698"]
+			entity_vis_size: 1.0f
+			id: "3CBB8B26CBE2418D"
+			tasks: [{
+				id: "2AEA6A78218F8D6B"
+				structure: "foolish:end_keep"
+				type: "structure"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3CBB8B26CBE2418D"]
+			description: ["The source of end-game equipment!"]
+			entity_vis_size: 1.0f
+			id: "4194B9C408C245EB"
+			subtitle: "Fun miniboss!"
+			tasks: [{
+				entity: "foolish:end_knight"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "5F9F13D8AD8CD14F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.5d
 			y: 4.0d
 		}
 	]

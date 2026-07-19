@@ -5,7 +5,7 @@ const BANNED_BOSSES = [
 ];
 
 // Configurable ambush system settings
-const AMBUSH_CHECK_COOLDOWN = 12000; // 10 minutes in ticks (20 ticks = 1 second)
+const AMBUSH_CHECK_COOLDOWN = 1200; // 10 minutes in ticks (20 ticks = 1 second)
 const WARNING_COUNTDOWN_TIME = 5; // 5 seconds warning structure countdown
 const BOSSBAR_DESPAWN_DISTANCE = 64; // Distance at which boss bar disappears if player runs away
 
@@ -17,11 +17,11 @@ const GRID_BOSSES_CONFIG = [
     { boss: 'saintsdragons:volitans', biome: '#kubejs:wildlife_spawns/coasts', prereq: "opposing_force:skyvern", color: 'blue' },
     { boss: 'saintsdragons:raevyx', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'red' },
     { boss: 'saintsdragons:varasuchus', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'purple' }, // Example of multiple requirements
-    // { boss: 'saintsdragons:ignivorus', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'red' }, // TODO: END SHIT
+    { boss: 'saintsdragons:ignivorus', biome: '#c:in_overworld', prereq: 'saintsdragons:ignivorus', color: 'red' }, // TODO: END SHIT
     { boss: 'monsterexpansion:ignathos', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: ["luminous_beasts:the_scarecrow", "luminous_beasts:basalt_executioner"], color: 'red' },
     { boss: 'monsterexpansion:rakoth', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: 'foolish:astralis', color: 'yellow' },
     { boss: 'monsterexpansion:skrythe', biome: '#kubejs:wildlife_spawns/mountain_peaks', prereq: 'foolish:astralis', color: 'white' },
-    { boss: 'monsterexpansion:leivekilth', biome: '#kubejs:wildlife_spawns/cold_waters', prereq: 'netherman:azazel', color: 'blue' }
+    { boss: 'monsterexpansion:leivekilth', biome: '#kubejs:wildlife_spawns/cold_waters', prereq: 'foolish:end_knight', color: 'blue' }
 ];
 
 const GRID_BOSSES = GRID_BOSSES_CONFIG.map(cfg => cfg.boss);
@@ -125,13 +125,14 @@ EntityEvents.spawned(event => {
 EntityEvents.death(event => {
     const entity = event.entity;
     const source = event.source;
+
     if (!entity || !source || !source.actual) return;
+    const deadEntityId = entity.type;
     
     const player = source.actual;
     if (!player.isPlayer()) return;
 
     const server = event.level.server;
-    const deadEntityId = entity.type;
     let pUUID = player.uuid.toString();
     
     let trackingKey = `grid_prereq_killed_${pUUID}_${deadEntityId}`;
@@ -182,22 +183,22 @@ ServerEvents.tick(event => {
         let level = player.level;
         let pUUID = player.uuid.toString();
 
-        let currentBiomeHolder = level.getBiome(player.block);
-        let biomeId = player.block.biomeId.toString(); 
+        // MATCHING YOUR SCRIPT: Grab the true registry biome key via the correct block position object
+        let blockPos = player.blockPosition();
+        let biomeKey = level.getBiome(blockPos).unwrapKey().orElse(null);
+        let biomeId = biomeKey ? biomeKey.location().toString() : "unknown";
 
-        // Gather all unique prerequisite IDs present across the configurations
-        let checkedPrereqs = [];
+        let unlockedPrereqs = [];
         GRID_BOSSES_CONFIG.forEach(cfg => {
-            let prereqs = Array.isArray(cfg.prereq) ? cfg.prereq : [cfg.prereq];
-            prereqs.forEach(p => {
-                if (!checkedPrereqs.includes(p)) checkedPrereqs.push(p);
+            let requirements = Array.isArray(cfg.prereq) ? cfg.prereq : [cfg.prereq];
+            requirements.forEach(req => {
+                let trackingKey = `grid_prereq_killed_${pUUID}_${req}`;
+                if (server.persistentData.getBoolean(trackingKey) === true) {
+                    if (!unlockedPrereqs.includes(req)) {
+                        unlockedPrereqs.push(req);
+                    }
+                }
             });
-        });
-
-        // Filter out which ones this player has actually defeated
-        let unlockedPrereqs = checkedPrereqs.filter(prereq => {
-            let trackingKey = `grid_prereq_killed_${pUUID}_${prereq}`;
-            return server.persistentData.getBoolean(trackingKey) === true;
         });
         
         console.log(`[BossSystem] Diagnostic -> Player: ${player.username} | Current Biome: ${biomeId} | Defeated Prereqs: [${unlockedPrereqs.join(', ') || 'None'}]`);
@@ -212,9 +213,8 @@ ServerEvents.tick(event => {
             return;
         }
 
-        // Step 2: Check matching configurations supporting BOTH exact IDs, #tags, AND multi-prereqs
+        // Step 2: Check matching configurations supporting BOTH exact IDs, #tags, and multi-prereqs
         let availableBosses = GRID_BOSSES_CONFIG.filter(cfg => {
-            // Convert prereq property into an array format if specified as a plain string string
             let requirements = Array.isArray(cfg.prereq) ? cfg.prereq : [cfg.prereq];
 
             // Verify ALL listed prerequisites are satisfied
@@ -225,16 +225,40 @@ ServerEvents.tick(event => {
 
             if (!satisfiesAllPrereqs) return false;
 
-            // Handle standard Tag parsing versus direct string references
-            if (cfg.biome.startsWith('#')) {
-                return currentBiomeHolder.is(Utils.id(cfg.biome.substring(1)));
+            let targetBiomeRule = cfg.biome;
+            let isTagCheck = targetBiomeRule.startsWith('#');
+            let ruleClean = isTagCheck ? targetBiomeRule.substring(1) : targetBiomeRule;
+
+            // Plain string ID check
+            if (!isTagCheck && biomeId === ruleClean) return true;
+
+            // Proven, reflection-safe tag validation loop
+            if (isTagCheck) {
+                let currentBiomeHolder = level.getBiome(blockPos);
+                try {
+                    let hasTagMatch = false;
+                    let iterator = currentBiomeHolder.tags().iterator();
+                    while (iterator.hasNext()) {
+                        let tag = iterator.next();
+                        let finalTag = tag.location ? tag.location().toString() : tag.toString();
+                        if (finalTag === ruleClean) {
+                            hasTagMatch = true;
+                            break;
+                        }
+                    }
+                    if (hasTagMatch) return true;
+                } catch(e) {
+                    if (typeof currentBiomeHolder.hasTag === 'function') {
+                        if (currentBiomeHolder.hasTag(ruleClean) || currentBiomeHolder.hasTag('#' + ruleClean)) return true;
+                    }
+                }
             }
             
-            return cfg.biome === biomeId;
+            return false;
         });
 
         if (availableBosses.length === 0) {
-            console.log(`[BossSystem] Loop Progress: Player ${player.username} has Bad Omen, but no registered boss configurations match their current biome conditions and multi-prereq requirements.`);
+            console.log(`[BossSystem] Loop Progress: Player ${player.username} has Bad Omen, but no registered boss configurations match their current biome conditions.`);
             return;
         }
 

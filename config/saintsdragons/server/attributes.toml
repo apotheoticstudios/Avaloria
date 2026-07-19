@@ -143,12 +143,12 @@
 [ignivorus]
 	#Core Attributes
 	#Range: 1.0 ~ 100000.0
-	max_health = 700.0
+	max_health = 1350.0
 	#Range: 0.0 ~ 100000.0
-	armor = 4.0
+	armor = 8.0
 	#Base rider flying speed
 	#Range: 0.0 ~ 2.0
-	flying_speed = 0.35
+	flying_speed = 0.45
 	#Multiplier for wild flying speed only
 	#Range: 0.05 ~ 10.0
 	wild_flying_speed_multiplier = 1.0
@@ -217,7 +217,7 @@
 	#Legacy taming (true = simple food taming, false = special mechanics)
 	legacy_taming = false
 	#Aggressive wild behavior
-	aggressive_wild = false
+	aggressive_wild = true
 
 #Stegonaut Dragon Attributes
 [stegonaut]

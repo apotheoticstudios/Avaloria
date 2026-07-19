@@ -8,6 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["1EA046F5540281D0"]
 			entity_vis_size: 1.0f
 			id: "6A9FD62C54B153E8"
 			tasks: [{
@@ -30,6 +31,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1EA046F5540281D0"]
 			entity_vis_size: 1.0f
 			id: "626A672E61E386F0"
 			tasks: [{

@@ -36,9 +36,20 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["532D91FBFE0D64E6"]
+			dependencies: [
+				"532D91FBFE0D64E6"
+				"6AF1F2CDE1D215EE"
+				"148262083B77AF0C"
+				"16C83E03A9003529"
+				"684439622ED920FA"
+				"03F97FC0ED60130C"
+				"1DD2E6ABF827CFB6"
+				"5D724EF120503F9A"
+				"00DB52C2AEB54047"
+			]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "04FE087760785A67"
 			tasks: [{
 				entity_vis_idle_mode: "USE_GLOBAL"
@@ -63,6 +74,7 @@
 			dependencies: [
 				"31301B881C4337EB"
 				"532D91FBFE0D64E6"
+				"629A2B4DE686BF86"
 			]
 			entity_vis_size: 1.0f
 			id: "16CD578BDF31BC4B"
@@ -93,6 +105,7 @@
 				"04FE087760785A67"
 			]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "153A350527377CD5"
 			tasks: [{
 				id: "74C54BE0DC043E32"
@@ -419,40 +432,6 @@
 			}]
 			x: 6.0d
 			y: -5.5d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "3CBB8B26CBE2418D"
-			tasks: [{
-				id: "2AEA6A78218F8D6B"
-				structure: "foolish:end_keep"
-				type: "structure"
-			}]
-			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["3CBB8B26CBE2418D"]
-			entity_vis_size: 1.0f
-			id: "4194B9C408C245EB"
-			tasks: [{
-				entity: "foolish:end_knight"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "5F9F13D8AD8CD14F"
-				type: "kill"
-				value: 1L
-			}]
-			x: 1.5d
-			y: -3.0d
 		}
 		{
 			dependencies: ["4A25DF0E981BD44B"]

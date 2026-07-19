@@ -98,12 +98,41 @@ BlockEvents.rightClicked(event => {
     
     const heldItem = player.getMainHandItem();
     const offHandItem = player.getOffHandItem();
-    const biome = level.getBiome(block.pos);
-    
-    let biomeKey = biome.unwrapKey().orElse(null);
-    let currentBiomeId = biomeKey ? biomeKey.location().toString() : "unknown";
+    const dimensionId = level.dimension.toString();
     
     console.log(`[Beast Summoner] Interaction detected by player: ${player.username}`);
+    
+    // --- SPECIAL CONDITION: SAINTSDRAGONS:IGNIVORUS ---
+    if (dimensionId === 'bbv:endnew' && heldItem.id === 'minecraft:dragon_egg') {
+        // Verify the bedrock pillar: block directly below pit, and block below that one
+        let firstBelow = block.pos.below();
+        let secondBelow = firstBelow.below();
+        
+        let isPillar = level.getBlock(firstBelow).id === 'minecraft:bedrock' && 
+                       level.getBlock(secondBelow).id === 'minecraft:bedrock';
+                       
+        if (isPillar) {
+            // Deterministic position: exactly 20 blocks above the beast pit
+            const spawnPos = block.pos.above(20);
+            
+            if (!player.isCreative()) {
+                server.runCommandSilent(`clear ${player.username} minecraft:dragon_egg 1`);
+            }
+            
+            block.set('minecraft:air');
+            player.setStatusMessage("§6The skies tear open... Ignivorus descends!§r");
+            
+            // Trigger cinematic sequence using the deterministic spawn position
+            triggerCinematicSpawn(server, level, player, spawnPos, 'saintsdragons:ignivorus');
+            event.success();
+            return;
+        }
+    }
+    
+    // --- FALLBACK TO STANDARD BEAST SUMMONS ---
+    const biome = level.getBiome(block.pos);
+    let biomeKey = biome.unwrapKey().orElse(null);
+    let currentBiomeId = biomeKey ? biomeKey.location().toString() : "unknown";
     
     const match = BEAST_SUMMONS.find(cfg => {
         if (heldItem.id !== cfg.itemId) return false;
@@ -153,7 +182,14 @@ BlockEvents.rightClicked(event => {
     block.set('minecraft:air');
     player.setStatusMessage("§6Something ancient stirs... prepare yourself!§r");
 
-    // --- CINEMATIC SEQUENCING (~5 Seconds total) ---
+    // Trigger standard cinematic sequence
+    triggerCinematicSpawn(server, level, player, spawnPos, match.mobId);
+    event.success();
+});
+
+// --- HELPER FUNCTION FOR CINEMATIC SEQUENCING ---
+// Extracted to keep the main event clean and reusable for both standard and special spawns
+function triggerCinematicSpawn(server, level, player, spawnPos, mobId) {
     server.runCommandSilent(`weather thunder`);
 
     let lightningDelays = [0, 20, 40, 60, 80, 95];
@@ -166,44 +202,40 @@ BlockEvents.rightClicked(event => {
             if (index === lightningDelays.length - 1) {
                 server.runCommandSilent(`execute in ${level.dimension.toString()} at ${spawnPos.x} ${spawnPos.y} ${spawnPos.z} run playsound minecraft:entity.wither.spawn host @a ~ ~ ~ 1.0 1.0`);
 
-                let entity = level.createEntity(match.mobId);
+                let entity = level.createEntity(mobId);
                 entity.setPosition(spawnPos.x, spawnPos.y, spawnPos.z);
                 
                 entity.persistentData.putBoolean('IsBeastSummon', true);
-                entity.persistentData.putString('BeastMobId', match.mobId);
+                entity.persistentData.putString('BeastMobId', mobId);
                 entity.persistentData.putString('SummonerUUID', player.uuid.toString());
                 entity.persistentData.putBoolean('allow_boss_spawn', true);
 
                 entity.mergeNbt({
                     ForgeData: {
                         IsBeastSummon: true,
-                        BeastMobId: match.mobId,
+                        BeastMobId: mobId,
                         SummonerUUID: player.uuid.toString()
                     }
                 });
                 
                 entity.spawn();
-                
-                // NEW: Applies the glowing effect for 10 seconds (200 ticks), hiding visual particle swirls
+
                 server.runCommandSilent(`effect give ${entity.uuid.toString()} minecraft:glowing 10 0 true`);
                 
                 let bossbarId = `beast_bar_${entity.uuid.toString().replace(/-/g, '_')}`;
-                let cleanMobName = match.mobId.split(':')[1].replace(/_/g, ' ').toUpperCase();
+                let cleanMobName = mobId.split(':')[1].replace(/_/g, ' ').toUpperCase();
                 let maxHp = Math.ceil(entity.maxHealth);
                 
                 server.runCommandSilent(`bossbar add ${bossbarId} "${cleanMobName}"`);
                 server.runCommandSilent(`bossbar set ${bossbarId} max ${maxHp}`);
                 server.runCommandSilent(`bossbar set ${bossbarId} color red`);
                 server.runCommandSilent(`bossbar set ${bossbarId} style progress`);
-                // Global visibility assignment omitted here; handled dynamically below
                 
-                console.log(`[Beast Summoner] Successfully summoned ${match.mobId}. Bossbar tracking initialized with max HP (${maxHp}): ${bossbarId}`);
+                console.log(`[Beast Summoner] Successfully summoned ${mobId}. Bossbar tracking initialized with max HP (${maxHp}): ${bossbarId}`);
             }
         });
     });
-
-    event.success();
-});
+}
 
 // --- LEVEL TICK MONITORING (Updates BossBar Data & Clean Removal) ---
 LevelEvents.tick(event => {

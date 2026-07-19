@@ -34,8 +34,13 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["35704C9EFB4B1CBA"]
+			dependencies: [
+				"35704C9EFB4B1CBA"
+				"31720F6CD67AF884"
+			]
 			entity_vis_size: 1.0f
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "0F45ACD32F2F85A6"
 			shape: "none"
 			size: 6.0d
@@ -61,6 +66,8 @@
 		{
 			entity_vis_size: 1.0f
 			id: "31720F6CD67AF884"
+			shape: "none"
+			size: 4.0d
 			tasks: [{
 				entity: "bbv:the_ender_dragonoverworld"
 				entity_use_tag: false
@@ -70,7 +77,7 @@
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_spin_mode: "FORCE_ON"
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "01F65EF002501EB1"
