@@ -357,14 +357,6 @@
     "curseForgeHash": 3260091100,
     "modrinthHash": "aef9a8ebdf0be50b6bd8da8ab4153f5085f71a80"
   },
-  "creeperoverhaul-3.0.2-forge.jar": {
-    "jarName": "creeperoverhaul-3.0.2-forge.jar",
-    "modId": "creeperoverhaul",
-    "name": "Creeper Overhaul",
-    "version": "3.0.2",
-    "curseForgeHash": 176422656,
-    "modrinthHash": "01e3275d3eb586c953ac786b1afee6e473eef947"
-  },
   "cultofazazelforge-1.1.4.9a.jar": {
     "jarName": "cultofazazelforge-1.1.4.9a.jar",
     "modId": "netherman",
@@ -1039,13 +1031,13 @@
     "curseForgeHash": 3451808054,
     "modrinthHash": "ef5d493515f17206e560e8c18acdaa75b036238d"
   },
-  "modernfix-forge-5.27.65+mc1.20.1.jar": {
-    "jarName": "modernfix-forge-5.27.65+mc1.20.1.jar",
+  "modernfix-forge-5.27.66+mc1.20.1.jar": {
+    "jarName": "modernfix-forge-5.27.66+mc1.20.1.jar",
     "modId": "modernfix",
     "name": "ModernFix",
-    "version": "5.27.65+mc1.20.1",
-    "curseForgeHash": 149405828,
-    "modrinthHash": "b8814679c6d44febdafbb3b6fee54b6845ee3865"
+    "version": "5.27.66+mc1.20.1",
+    "curseForgeHash": 3972845838,
+    "modrinthHash": "322fdb7aadc06b540cff69a2a0a513bf37050f0f"
   },
   "monsterexpansion-1.20.1-v0.7.4.jar": {
     "jarName": "monsterexpansion-1.20.1-v0.7.4.jar",
@@ -1327,13 +1319,13 @@
     "curseForgeHash": 1086106655,
     "modrinthHash": "08ddef7ff6a0934f316fbac37b2a00599c9c577c"
   },
-  "recipeessentials-1.20.1-4.0.jar": {
-    "jarName": "recipeessentials-1.20.1-4.0.jar",
+  "recipeessentials-1.20.1-4.1.jar": {
+    "jarName": "recipeessentials-1.20.1-4.1.jar",
     "modId": "recipeessentials",
     "name": "recipeessentials mod",
-    "version": "1.20.1-4.0",
-    "curseForgeHash": 3293360904,
-    "modrinthHash": "6e50995efefdef6f77f0289200a17ae4c18cde75"
+    "version": "1.20.1-4.1",
+    "curseForgeHash": 2529214632,
+    "modrinthHash": "c2e961462610cc696ab77abc9d36c12f405acb20"
   },
   "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
     "jarName": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
