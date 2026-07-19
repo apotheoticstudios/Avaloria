@@ -1,0 +1,36 @@
+{
+    "sources": [
+        {
+            "type": "paletted_permutations",
+            "textures": [
+                "trims/items/leggings_trim",
+                "trims/items/chestplate_trim",
+                "trims/items/helmet_trim",
+                "trims/items/boots_trim"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "gold": "trims/color_palettes/gold",
+                "emerald": "trims/color_palettes/emerald",
+                "diamond": "trims/color_palettes/diamond",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "netherite": "trims/color_palettes/netherite",
+                "prismarine": "lenny:trims/color_palettes/prismarine",
+                "netherite_scrap": "lenny:trims/color_palettes/netherite_scrap",
+                "obsidian": "lenny:trims/color_palettes/obsidian",
+                "crying_obsidian": "lenny:trims/color_palettes/crying_obsidian",
+                "netherrack": "lenny:trims/color_palettes/netherrack",
+                "popped_chorus_fruit": "lenny:trims/color_palettes/popped_chorus_fruit",
+                "ender_pearl": "lenny:trims/color_palettes/ender_pearl",
+                "magma_cream": "lenny:trims/color_palettes/magma_cream",
+                "glowstone_dust": "lenny:trims/color_palettes/glowstone_dust",
+                "echo_shard": "lenny:trims/color_palettes/echo_shard"
+            }
+        }
+    ]
+}

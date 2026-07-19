@@ -1,0 +1,20 @@
+{
+    "sources": [
+        {
+            "type": "paletted_permutations",
+            "palette_key": "lenny:trims/color_palettes/trim_palette",
+            "permutations": {
+                "prismarine": "lenny:trims/color_palettes/prismarine",
+                "netherite_scrap": "lenny:trims/color_palettes/netherite_scrap",
+                "obsidian": "lenny:trims/color_palettes/obsidian",
+                "crying_obsidian": "lenny:trims/color_palettes/crying_obsidian",
+                "netherrack": "lenny:trims/color_palettes/netherrack",
+                "popped_chorus_fruit": "lenny:trims/color_palettes/popped_chorus_fruit",
+                "ender_pearl": "lenny:trims/color_palettes/ender_pearl",
+                "magma_cream": "lenny:trims/color_palettes/magma_cream",
+                "glowstone_dust": "lenny:trims/color_palettes/glowstone_dust",
+                "echo_shard": "lenny:trims/color_palettes/echo_shard"
+            }
+        }
+    ]
+}

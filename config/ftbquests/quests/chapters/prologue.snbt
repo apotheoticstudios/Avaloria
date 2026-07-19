@@ -75,6 +75,7 @@
 				item: "waystones:waystone"
 				type: "item"
 			}]
+			subtitle: "Set up a quick base!"
 			tasks: [
 				{
 					id: "30523FAAD83E2DB0"

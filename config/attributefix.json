@@ -88,6 +88,17 @@
         "value": 1024
       }
     },
+    "functionalarmortrim:thorns": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "terra_entity:player.summon_damage": {
       "enabled": false,
       "min": {
@@ -231,6 +242,17 @@
         "value": 2048
       }
     },
+    "functionalarmortrim:night_vision": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "monsterexpansion:defense": {
       "enabled": false,
       "min": {
@@ -262,6 +284,28 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "functionalarmortrim:fire_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "functionalarmortrim:gossip_boost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "small_end_features:atributopuedesaltardoble": {
@@ -361,6 +405,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "functionalarmortrim:experience_boost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "minecraft:horse.jump_strength": {

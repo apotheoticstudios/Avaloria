@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "armor"
+	group: "43EDEE406998F8A6"
+	id: "528D4E07DBF3E454"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Armor"
+}

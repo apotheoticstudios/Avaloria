@@ -12,3 +12,8 @@ ItemEvents.modification(event => {
         item.maxStackSize = 16
     })
 })
+MoreJSEvents.registerPotionBrewing((event) => {
+    event.removeByCustom((brewing) => {
+        return true
+    });
+});

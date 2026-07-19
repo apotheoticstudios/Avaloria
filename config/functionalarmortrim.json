@@ -1,0 +1,179 @@
+{
+    "minecraft:iron_ingot": [
+        {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "amount": 1.0
+        }
+    ],
+    "minecraft:diamond": [
+        {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "amount": 1.0
+        },
+        {
+            "attribute": "minecraft:generic.armor",
+            "operation": "addition",
+            "amount": 2.0
+        }
+    ],
+    "minecraft:netherite_ingot": [
+        {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "amount": 1.0
+        },
+        {
+            "attribute": "minecraft:generic.armor",
+            "operation": "addition",
+            "amount": 2.0
+        },
+        {
+            "attribute": "functionalarmortrim:fire_resistance",
+            "operation": "addition",
+            "amount": 0.5
+        }
+    ],
+    "minecraft:redstone": [
+        {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "amount": 0.2
+        },
+        {
+            "attribute": "forge:step_height_addition",
+            "operation": "addition",
+            "amount": 0.5
+        }
+    ],
+    "minecraft:copper_ingot": [
+        {
+            "attribute": "forge:swim_speed",
+            "operation": "multiply_total",
+            "amount": 0.1
+        }
+    ],
+    "minecraft:amethyst_shard": [
+        {
+            "attribute": "functionalarmortrim:night_vision",
+            "operation": "addition",
+            "amount": 0.5
+        }
+    ],
+    "minecraft:lapis_lazuli": [
+        {
+            "attribute": "functionalarmortrim:experience_boost",
+            "operation": "multiply_total",
+            "amount": 0.2
+        }
+    ],
+    "minecraft:quartz": [
+        {
+            "attribute": "minecraft:generic.attack_knockback",
+            "operation": "addition",
+            "amount": 0.2
+        }
+    ],
+    "minecraft:emerald": [
+        {
+            "attribute": "functionalarmortrim:gossip_boost",
+            "operation": "multiply_total",
+            "amount": 0.1
+        }
+    ],
+    "minecraft:gold_ingot": [
+        {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "amount": 0.1
+        }
+    ],
+    "foolish:blunt_ingot": [
+        {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "amount": 2.0
+        }
+    ],
+    "minecraft:crying_obsidian": [
+        {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "amount": 3.0
+        },
+        {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "amount": -0.1
+        }
+    ],
+    "minecraft:echo_shard": [
+        {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "amount": 0.25
+        }
+    ],
+    "minecraft:ender_pearl": [
+        {
+            "attribute": "forge:entity_reach",
+            "operation": "addition",
+            "amount": 0.25
+        }
+    ],
+    "minecraft:glowstone_dust": [
+        {
+            "attribute": "functionalarmortrim:night_vision",
+            "operation": "addition",
+            "amount": 1
+        }
+    ],
+    "minecraft:magma_cream": [
+        {
+            "attribute": "functionalarmortrim:fire_resistance",
+            "operation": "addition",
+            "amount": 0.5
+        }
+    ],
+    "minecraft:netherite_scrap": [
+        {
+            "attribute": "functionalarmortrim:fire_resistance",
+            "operation": "addition",
+            "amount": 0.25
+        },
+        {
+            "attribute": "minecraft:generic.armor",
+            "operation": "addition",
+            "amount": 1.0
+        }
+    ],
+    "minecraft:netherrack": [
+        {
+            "attribute": "functionalarmortrim:fire_resistance",
+            "operation": "addition",
+            "amount": 0.25
+        }
+    ],
+    "minecraft:obsidian": [
+        {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "amount": 2.0
+        }
+    ],
+    "minecraft:popped_chorus_fruit": [
+        {
+            "attribute": "forge:entity_reach",
+            "operation": "addition",
+            "amount": 0.5
+        }
+    ],
+    "minecraft:prismarine_shard": [
+        {
+            "attribute": "forge:swim_speed",
+            "operation": "multiply_total",
+            "amount": 0.2
+        }
+    ]
+}

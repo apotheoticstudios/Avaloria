@@ -5,7 +5,7 @@ const BANNED_BOSSES = [
 ];
 
 // Configurable ambush system settings
-const AMBUSH_CHECK_COOLDOWN = 1200; // 10 minutes in ticks (20 ticks = 1 second)
+const AMBUSH_CHECK_COOLDOWN = 12000; // 10 minutes in ticks (20 ticks = 1 second)
 const WARNING_COUNTDOWN_TIME = 5; // 5 seconds warning structure countdown
 const BOSSBAR_DESPAWN_DISTANCE = 64; // Distance at which boss bar disappears if player runs away
 
