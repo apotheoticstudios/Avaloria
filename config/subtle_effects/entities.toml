@@ -70,8 +70,8 @@ seasons = "DEFAULT"
 additionalBiomes = [  ]
 
 [humanoids.player]
-enableBreathingEffectsInCreative = true
-stomachGrowlingThreshold = 6
+enableBreathingEffectsInCreative = false
+stomachGrowlingThreshold = 0
 stomachGrowlingVolume = 1.0
 stomachGrowlingWaitTime = 15
 heartBeatingThreshold = 6
