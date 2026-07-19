@@ -94,6 +94,14 @@
         "isSelected": true
       },
       {
+        "path": "config/blueprint-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config/blueprint-common.toml",
+        "isSelected": true
+      },
+      {
         "path": "config/chat_heads.json5",
         "isSelected": true
       },
@@ -198,6 +206,14 @@
         "isSelected": true
       },
       {
+        "path": "config/curios-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config/curios-common.toml",
+        "isSelected": true
+      },
+      {
         "path": "config/dawnoftimebuilder",
         "isSelected": true
       },
@@ -214,11 +230,11 @@
         "isSelected": true
       },
       {
-        "path": "config/defaultoptions/options.txt",
+        "path": "config/defaultoptions-common.toml",
         "isSelected": true
       },
       {
-        "path": "config/defaultoptions-common.toml",
+        "path": "config/disenchanting.toml",
         "isSelected": true
       },
       {
@@ -362,6 +378,62 @@
         "isSelected": true
       },
       {
+        "path": "config/ftb-quests-entity-vis",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftb-quests-entity-vis/client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapter_groups.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapters",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapters/act_1.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapters/act_2.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapters/act_iii.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapters/act_iv.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapters/act_v.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapters/epilogue.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/chapters/prologue.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config/ftbquests/quests/data.snbt",
+        "isSelected": true
+      },
+      {
         "path": "config/fzzy_config",
         "isSelected": true
       },
@@ -482,6 +554,14 @@
         "isSelected": true
       },
       {
+        "path": "config/jeresources-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config/jeresources.toml",
+        "isSelected": true
+      },
+      {
         "path": "config/legendarycreatures",
         "isSelected": true
       },
@@ -578,38 +658,6 @@
         "isSelected": true
       },
       {
-        "path": "config/mebahelcreaturesdraugr",
-        "isSelected": true
-      },
-      {
-        "path": "config/mebahelcreaturesdraugr/combat_balancing_config.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/mebahelcreaturesdraugr/entity_armor_config.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/mebahelcreaturesdraugr/entity_damage_config.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/mebahelcreaturesdraugr/entity_health_config.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/mebahelcreaturesdraugr/multiplayer_chest_config.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/mebahelcreaturesdraugr/README.txt",
-        "isSelected": true
-      },
-      {
-        "path": "config/mebahelcreaturesdraugr/spawn_rate_config.json",
-        "isSelected": true
-      },
-      {
         "path": "config/meteor_shower",
         "isSelected": true
       },
@@ -634,7 +682,15 @@
         "isSelected": true
       },
       {
+        "path": "config/monsterexpansion-client.toml",
+        "isSelected": true
+      },
+      {
         "path": "config/monsterexpansion-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config/monsterexpansion-rolls.toml",
         "isSelected": true
       },
       {
@@ -659,6 +715,22 @@
       },
       {
         "path": "config/naturescompass-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config/netherdescent",
+        "isSelected": true
+      },
+      {
+        "path": "config/netherdescent/mob_spawn.json",
+        "isSelected": true
+      },
+      {
+        "path": "config/netherdescent/world_generation.json",
+        "isSelected": true
+      },
+      {
+        "path": "config/netherman-common.toml",
         "isSelected": true
       },
       {
@@ -890,6 +962,10 @@
         "isSelected": true
       },
       {
+        "path": "config/rpgbackpacks-common.toml",
+        "isSelected": true
+      },
+      {
         "path": "config/saintsdragons",
         "isSelected": true
       },
@@ -1002,31 +1078,47 @@
         "isSelected": true
       },
       {
-        "path": "config/spark/tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/about.txt",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-64498cad282a-libasyncProfiler.so.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-66a308e4ca4d-profile-data.jfr.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-a75a769f45e1-libasyncProfiler.so.tmp",
-        "isSelected": true
-      },
-      {
         "path": "config/spell_engine",
         "isSelected": true
       },
       {
         "path": "config/spell_power",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit/descriptions",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit/descriptions/Starter_Gear.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit/descriptions/Starter.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit/kits",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit/kits/inactive",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit/kits/inactive/Starter.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit/kits/Starter_Gear.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config/starterkit.json5",
         "isSelected": true
       },
       {
@@ -1218,14 +1310,6 @@
         "isSelected": true
       },
       {
-        "path": "config/xaero/minimap/profiles/entity_radar_categories",
-        "isSelected": true
-      },
-      {
-        "path": "config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json",
-        "isSelected": true
-      },
-      {
         "path": "config/xaero/minimap/profiles/info_display_config",
         "isSelected": true
       },
@@ -1290,22 +1374,6 @@
         "isSelected": false
       },
       {
-        "path": "crash-reports/crash-2026-06-19_12.50.06-server.txt",
-        "isSelected": false
-      },
-      {
-        "path": "crash-reports/crash-2026-06-19_13.08.22-client.txt",
-        "isSelected": false
-      },
-      {
-        "path": "crash-reports/crash-2026-06-19_13.09.41-client.txt",
-        "isSelected": false
-      },
-      {
-        "path": "crash-reports/crash-2026-06-19_14.25.52-fml.txt",
-        "isSelected": false
-      },
-      {
         "path": "crash-reports/crash-2026-06-21_08.20.18-fml.txt",
         "isSelected": false
       },
@@ -1331,6 +1399,10 @@
       },
       {
         "path": "crash-reports/crash-2026-07-06_09.20.15-fml.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports/crash-2026-07-12_11.27.37-fml.txt",
         "isSelected": false
       },
       {
@@ -1367,6 +1439,10 @@
       },
       {
         "path": "downloads",
+        "isSelected": false
+      },
+      {
+        "path": "hs_err_pid35004.log",
         "isSelected": false
       },
       {
@@ -1414,6 +1490,10 @@
         "isSelected": true
       },
       {
+        "path": "kubejs/client_scripts/RemoveCratesJEI.js",
+        "isSelected": true
+      },
+      {
         "path": "kubejs/config",
         "isSelected": true
       },
@@ -1427,6 +1507,22 @@
       },
       {
         "path": "kubejs/data",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/data/foolish",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/data/foolish/worldgen",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/data/foolish/worldgen/structure",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/data/foolish/worldgen/structure/stellar_portal_structure.json",
         "isSelected": true
       },
       {
@@ -1826,7 +1922,31 @@
         "isSelected": true
       },
       {
-        "path": "kubejs/server_scripts/example.js",
+        "path": "kubejs/server_scripts/armor_helper.js",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/server_scripts/armor.js",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/server_scripts/boss_progression",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/server_scripts/boss_progression/boss_filter.js",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/server_scripts/durability_fix.js",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/server_scripts/MultiMachineRecipe.js",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/server_scripts/nochatspam.js",
         "isSelected": true
       },
       {
@@ -1834,7 +1954,11 @@
         "isSelected": true
       },
       {
-        "path": "kubejs/startup_scripts/example.js",
+        "path": "kubejs/startup_scripts/potion_stacking.js",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs/startup_scripts/scrapping.js",
         "isSelected": true
       },
       {
@@ -1846,19 +1970,19 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/5678_1783296100272_app.jar",
+        "path": "local/crash_assistant/97331_1784335295137_app.jar",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/5678_1783296100272_args.info",
+        "path": "local/crash_assistant/97331_1784335295137_args.info",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/5678_1783296100272_mod.jar",
+        "path": "local/crash_assistant/97331_1784335295137_mod.jar",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/5678_1783296100272.info",
+        "path": "local/crash_assistant/97331_1784335295137.info",
         "isSelected": false
       },
       {
@@ -1866,11 +1990,7 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/gpu-detect-jni-README.MD",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/joined_world_pid5678.tmp",
+        "path": "local/crash_assistant/joined_world_pid97331.tmp",
         "isSelected": false
       },
       {
@@ -1914,6 +2034,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/ancore-4.0.1-forge-1.20.1.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/appleskin-forge-mc1.20.1-2.5.1.jar.mod_data.json",
         "isSelected": false
       },
@@ -1923,10 +2047,6 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/Armor of the Ages-forge-1.20.1-1.3.15.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/astrological-1.20.1-1.7.0.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -1954,6 +2074,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/bbv-2.03-forge-1.20.1.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/BetterThirdPerson-Forge-1.20-1.9.0.jar.mod_data.json",
         "isSelected": false
       },
@@ -1974,11 +2098,15 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/biosphericalexpansion-1.20.x-2.1.1.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/blessfulled-0.6.jar.mod_data.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/blessfulled-0.6.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/blueprint-1.20.1-7.1.4.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v4/bobo_lib-1.1-1.20.1-forge.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2022,10 +2150,6 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/collective-1.20.1-8.29.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
         "path": "local/crash_assistant/mod_data_cache_v4/collective-1.20.1-8.31.jar.mod_data.json",
         "isSelected": false
       },
@@ -2046,15 +2170,11 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/Connector-1.0.0-beta.48+1.20.1.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
         "path": "local/crash_assistant/mod_data_cache_v4/Connector-1.0.0-beta.49+1.20.1.jar.mod_data.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/ConnectorExtras-1.11.2+1.20.1.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/Controlling-forge-1.20.1-12.0.2.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2070,11 +2190,15 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/cosycritters-0.3.3+1.20.1-forge.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/CrashAssistant-forge-1.19-1.20.1-1.11.10.jar.mod_data.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/CreativeCore_FORGE_v2.12.38_mc1.20.1.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/CrashAssistant-forge-1.19-1.20.1-1.11.11.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2090,7 +2214,15 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/cultofazazelforge-1.1.4.9a.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/cupboard-1.20.1-3.7.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v4/curios-forge-5.14.1+1.20.1.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2107,6 +2239,10 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/defaultoptions-forge-1.20.1-18.0.5.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v4/Disenchanting-forge-1.20.1-2.2.4.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2130,6 +2266,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/dynamicwaters-11.1.2.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/dynamicwaters-9.1.0.jar.mod_data.json",
         "isSelected": false
       },
@@ -2139,10 +2279,6 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/eatinganimation-1.20.1-5.1.0.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/ecosphericalexpansion-1.20.x-2.4.6.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2166,23 +2302,23 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/entityculling-forge-1.10.4-mc1.20.1.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
         "path": "local/crash_assistant/mod_data_cache_v4/entityculling-forge-1.10.5-mc1.20.1.jar.mod_data.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/Epic Dungeons 1.2.0 (1.20+).jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/Epic Dungeons 1.2.2.jar.mod_data.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/Epic Villages 1.3.1 (1.20+).jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/Epic Dungeons 1.2.3.jar.mod_data.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/Epic Witch Huts v1.2.0 (1.20+).jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/Epic Villages 1.3.2.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v4/Epic Witch Huts v1.3.1.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2250,10 +2386,6 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/flerovium-forge-1.20.1-1.2.18-all.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
         "path": "local/crash_assistant/mod_data_cache_v4/flerovium-forge-1.20.1-1.2.19-all.jar.mod_data.json",
         "isSelected": false
       },
@@ -2282,15 +2414,15 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/ftb-quests-entity-vis-1.5.0-1.20.1.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/ftb-quests-forge-2001.4.22.jar.mod_data.json",
         "isSelected": false
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/ftb-teams-forge-2001.3.2.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/fusion-1.2.12-forge-mc1.20.1.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2319,10 +2451,6 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/fzzy_config-0.7.6+1.20.1+forge.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/geckolib-forge-1.20.1-4.8.3.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2362,10 +2490,6 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/ImmediatelyFast-Forge-1.5.4+1.20.4.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
         "path": "local/crash_assistant/mod_data_cache_v4/ImmediatelyFast-Forge-1.5.5+1.20.4.jar.mod_data.json",
         "isSelected": false
       },
@@ -2375,10 +2499,6 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/ItemBorders-1.20.1-forge-1.2.2.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/Ixeris-4.5.0+1.20.1-forge.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2395,6 +2515,10 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/jei-1.20.1-forge-15.20.0.133.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v4/JustEnoughResources-1.20.1-1.4.0.247.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2446,6 +2570,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/lootjs-forge-1.20.1-2.13.1.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/lootr-forge-1.20-0.7.35.94.jar.mod_data.json",
         "isSelected": false
       },
@@ -2462,6 +2590,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/Luminous Nether V1.3.3 - Forge 1.20.1.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/LuminousTag V1.1 - Forge 1.20.1.jar.mod_data.json",
         "isSelected": false
       },
@@ -2470,11 +2602,7 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/mebahel-creatures-draugr-1.8.5-fabric-1.20.1.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/mebahels-api-1.0.20-fabric-1.20.1.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/MendedMending-1.0.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2482,11 +2610,11 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/mobbattlemusic-1.20.1-1.1.1.2-all.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/MMStorage-2.1-forge-1.20.1.jar.mod_data.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/modernfix-forge-5.27.51+mc1.20.1.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/mobbattlemusic-1.20.1-1.1.1.2-all.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2494,7 +2622,7 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/mokels bossfight kinora 1.0.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/modernfix-forge-5.27.65+mc1.20.1.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2503,6 +2631,14 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/monsterexpansion-1.20.1-v0.7.0.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v4/monsterexpansion-1.20.1-v0.7.3.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v4/monsterexpansion-1.20.1-v0.7.4.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2570,6 +2706,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/overpacked-2.0.1-1.20.1-forge.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/packetfixer-3.3.2-1.18-1.20.4-merged.jar.mod_data.json",
         "isSelected": false
       },
@@ -2630,6 +2770,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/Quest Kill Task-0.2.0+1.20.1-forge.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/radium-mc1.20.1-0.12.4+git.26c9d8e.jar.mod_data.json",
         "isSelected": false
       },
@@ -2654,6 +2798,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/rpg_backpacks-5.0.3-forge-1.20.x.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/runes-0.9.13+1.20.1.jar.mod_data.json",
         "isSelected": false
       },
@@ -2662,15 +2810,15 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v4/Searchables-forge-1.20.1-1.0.3.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v4/SereneShrubbery-Forge-1.20.1-v2.4.0.jar.mod_data.json",
         "isSelected": false
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/seriousplayeranimations-1.1.1.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/simpleraces-1.0.2-forge-1.20.1.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2694,19 +2842,11 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/sophisticatedbackpacks-1.20.1-3.24.58.1917.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
         "path": "local/crash_assistant/mod_data_cache_v4/sophisticatedbackpacks-1.20.1-3.24.58.1934.jar.mod_data.json",
         "isSelected": false
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/sophisticatedbackpacks-1.20.1-3.24.59.1960.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/sophisticatedcore-1.20.1-1.3.55.2031.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2722,15 +2862,11 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/Souls_Like_Bosses_3_4_Forge+Fabric+Quilt_1_20_1.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/sophisticatedcore-1.20.1-1.3.66.2138.jar.mod_data.json",
         "isSelected": false
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/sound-physics-remastered-forge-1.20.1-1.5.1.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/spark-1.10.53-forge.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2766,10 +2902,6 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/structurify-forge-2.0.25+mc1.20.1.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
         "path": "local/crash_assistant/mod_data_cache_v4/structurify-forge-2.0.28+mc1.20.1.jar.mod_data.json",
         "isSelected": false
       },
@@ -2783,10 +2915,6 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v4/sway-1.1.1-fabric+1.20.1.jar.mod_data.json",
-        "isSelected": false
-      },
-      {
-        "path": "local/crash_assistant/mod_data_cache_v4/terra_entity-1.2.3-all.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2854,7 +2982,7 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/wits-1.1.0+1.20.1-forge.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/wits-1.1.1+1.20.1-forge.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2862,11 +2990,11 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/xaerominimap-forge-1.20.1-26.1.0.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/xaerominimap-forge-1.20.1-26.2.0.jar.mod_data.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/xaeroworldmap-forge-1.20.1-1.41.0.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/xaerominimap-forge-1.20.1-26.4.2.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2874,7 +3002,11 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/mod_data_cache_v4/xmxw-2.10.1+1.20.1-forge.jar.mod_data.json",
+        "path": "local/crash_assistant/mod_data_cache_v4/xaeroworldmap-forge-1.20.1-1.42.0.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v4/xaeroworldmap-forge-1.20.1-1.44.2.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -2898,11 +3030,15 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/renderer_pid5678.tmp",
+        "path": "local/crash_assistant/normal_stop_pid97331.tmp",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/successful_launch_pid5678.tmp",
+        "path": "local/crash_assistant/renderer_pid97331.tmp",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/successful_launch_pid97331.tmp",
         "isSelected": false
       },
       {
@@ -2943,30 +3079,6 @@
       },
       {
         "path": "logs",
-        "isSelected": false
-      },
-      {
-        "path": "logs/2026-06-19-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/2026-06-19-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/2026-06-19-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/2026-06-19-4.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/2026-06-19-5.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/2026-06-19-6.log.gz",
         "isSelected": false
       },
       {
@@ -3070,43 +3182,15 @@
         "isSelected": false
       },
       {
+        "path": "logs/2026-07-12-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/2026-07-12-2.log.gz",
+        "isSelected": false
+      },
+      {
         "path": "logs/crash_assistant",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_12-39-51.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_12-51-37.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_13-08-04.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_13-08-59.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_13-10-58.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_13-27-35.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_13-51-22.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_14-01-05.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-06-19_14-25-40.log.gz",
         "isSelected": false
       },
       {
@@ -3158,6 +3242,14 @@
         "isSelected": false
       },
       {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-07-12_11-15-57.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-07-12_11-27-26.log.gz",
+        "isSelected": false
+      },
+      {
         "path": "logs/crash_assistant/crash_assistant_app.log",
         "isSelected": false
       },
@@ -3186,10 +3278,6 @@
         "isSelected": false
       },
       {
-        "path": "logs/modlist.txt",
-        "isSelected": false
-      },
-      {
         "path": "logs/stderr_stream.log",
         "isSelected": false
       },
@@ -3202,7 +3290,7 @@
         "isSelected": false
       },
       {
-        "path": "logs/telemetry/20260706-1.json.gz",
+        "path": "logs/telemetry/20260712-1.json.gz",
         "isSelected": false
       },
       {
@@ -3246,250 +3334,6 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_acacia_large_1_98a9b531a9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_acacia_large_3_9ac332329f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_acacia_small_1_dc8c5f4ee8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_acacia_small_2_684ac51af7.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_acacia_small_3_55ddc94aac.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_large_1_b992adbeda.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_medium_1_30d51b3bcd.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_medium_2_2f364dfcb1.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_medium_3_7a6fdc96f8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_medium_4_565ceae42b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_1_5f33c241f1.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_10_367bef30f8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_2_b49228a805.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_3_127704d85c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_4_9026055b52.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_5_b917f76ed4.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_6_7eac910e65.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_7_0650d89008.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_8_b32363cab3.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_birch_small_9_a5e1a77b2e.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_dark_oak_large_2_e54f5e3648.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_dark_oak_large_3_e6ef4f7ac7.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_dark_oak_large_4_535026f54d.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_jungle_large_1_6b27a17573.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_jungle_large_2_31f40274a9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_jungle_large_3_c0407c3be7.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_jungle_medium_1_eac06e5002.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_jungle_medium_2_eb3f93b40f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_jungle_small_1_c7ca99b080.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_jungle_small_2_b36f5f5f1d.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_large_1_6f6d990f7f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_large_2_e8c1837cd8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_large_3_6cab2e21e5.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_large_4_bca211801f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_large_5_1d7c2fa76c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_medium_1_5461b3ee9a.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_medium_3_ac99ba44cf.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_medium_4_0728b5c7c0.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_medium_5_e1fb17a06f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_small_1_360ad4c532.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_small_2_da70411f02.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_small_3_324ceba390.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_small_4_3d7bdfa8c9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_small_5_ca0e3531ca.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_small_6_b76cedc3f4.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_oak_small_7_d582e02a32.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_large_1_fc66c136e9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_large_2_82358861e7.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_large_3_8357101f40.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_1_195336b34c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_12_8b4b999cc4.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_2_9866840017.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_4_75b9b58bc0.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_5_e9ee5ecccf.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_6_136fbd2a66.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_7_d71970a212.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_8_4731326dfc.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_medium_9_41c7306e96.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_small_2_21f8f8237b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/fantasy_trees_fantasy_spruce_small_3_13cece83ef.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/far_end_exit_portal_deactivated_cc319f7e48.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/goblins_birchgobilnvillage1_e807ab974c.nbt",
         "isSelected": false
       },
@@ -3506,87 +3350,7 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_base_floor_ebca0804aa.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_base_roof_866835cf0b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_bridge_end_6c6d5e42fa.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_bridge_gentle_stairs_eb48d7a47b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_bridge_piece_b17d28d76b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_bridge_steep_stairs_97fcc39cd5.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_fat_tower_base_328de4fe45.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_fat_tower_middle_9528fddaf9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_fat_tower_top_68ed6ca5f4.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_second_floor_1_cd16833b2c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_second_floor_2_677d1c4070.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_second_roof_92019d85ab.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_ship_dcd2ec5d2e.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_third_floor_1_150e7d3c39.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_third_floor_2_faa8e2f826.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_third_roof_d4e257f5a2.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_tower_base_abd7f94208.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_tower_piece_5cde4cc836.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/minecraft_end_city_tower_top_ffdf8143f7.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/ogres_ogrehouse12_635d9e0d94.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_dungeon_0_08244b824c.nbt",
         "isSelected": false
       },
       {
@@ -3610,23 +3374,11 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_dungeon_2_87fd2c661d.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_dungeon_3_957aaf896b.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_ancient_dungeon_4_def47a3e97.nbt",
         "isSelected": false
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_ancient_dungeon_5_8328199c43.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_dungeon_7_d14704fd08.nbt",
         "isSelected": false
       },
       {
@@ -3639,14 +3391,6 @@
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_ancient_pyramid1_4e9229f359.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_pyramid2_c92598d701.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_10_926b08f710.nbt",
         "isSelected": false
       },
       {
@@ -3670,31 +3414,15 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_22_25223d6b40.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_25_172c66dcb8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_28_a79989b98d.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_29_08bc75ee2f.nbt",
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_33_637571e43a.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_34_ea4376bad9.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_36_8e28af34d4.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_38_c9331c2af8.nbt",
         "isSelected": false
       },
       {
@@ -3726,11 +3454,7 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin_soul1_eace3c9043.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin16_9a01d7cd78.nbt",
+        "path": "modernfix/structureCacheV1/philipsruins_ancient_ruin13_7508e16a98.nbt",
         "isSelected": false
       },
       {
@@ -3754,31 +3478,11 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_tower_0_cb96509d21.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_tower_1_b55dce19c6.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_ancient_tower_2_c2fe57fc64.nbt",
         "isSelected": false
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_ancient_tower_3_85fca82989.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_tower_4_675b83c82d.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_tower_5_cdf309de2a.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ancient_tower_6_d0460f485f.nbt",
         "isSelected": false
       },
       {
@@ -3790,87 +3494,11 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_antiquus_crypta_main_21cf3f76e6.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_badlands_ruin1_b3f1fe5412.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_badlands_ruin2_5e2060d079.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_badlands_start_dungeon_eb39c13a7e.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_battle_ancient_ruin_2e9c9553d6.nbt",
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_bone_dungeon_room1_e8bd47f4d4.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_bone_dungeon_room2_0c117340a6.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_bone_dungeon_room3_beb2d3c3c8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_bone_dungeon_room4_af9c58b896.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_bone_dungeon_room5_05dc6d3fd6.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_bone_dungeon_room6_9573e443e9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_bone_dungeon_start_5351b9c7a1.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_crypt_room1_ea715a830c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_crypt_room2_3656dc50c5.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_crypt_room3_8d6649ca6c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_crypt_room4_b58508e24f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_crypt_start_08cba68ee9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_deep_ruin5_7b1148281f.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_deep_ruin6_a7ab01bb23.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_deep_ruin8_08a4335626.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_deep_ruin9_e46b38cbf8.nbt",
         "isSelected": false
       },
       {
@@ -3883,14 +3511,6 @@
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_desert_pyramid_558ebd3e86.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_desert_ruin1_d6169736fe.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_desert_ruin2_f58efb7ff6.nbt",
         "isSelected": false
       },
       {
@@ -3918,6 +3538,10 @@
         "isSelected": false
       },
       {
+        "path": "modernfix/structureCacheV1/philipsruins_end_ruin3_a032ddf096.nbt",
+        "isSelected": false
+      },
+      {
         "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins_rock1_22dc7cf404.nbt",
         "isSelected": false
       },
@@ -3926,19 +3550,7 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins_rock3_a984ab6d7a.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins_rock4_209527824a.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins_rock5_a13890800d.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins_rock6_97ce81a4b2.nbt",
         "isSelected": false
       },
       {
@@ -3954,15 +3566,15 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins15_4ca06fc876.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins19_63a66f72e6.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins2_5568775cc1.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins20_86af6d7b8a.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins3_3edfc9f9ef.nbt",
         "isSelected": false
       },
       {
@@ -3975,10 +3587,6 @@
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins8_f73a862a7b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_field_stone_ruins9_6c54333532.nbt",
         "isSelected": false
       },
       {
@@ -4002,7 +3610,7 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_level_one_ruins3_435ee496df.nbt",
+        "path": "modernfix/structureCacheV1/philipsruins_level_one_ruins22_34b24d853f.nbt",
         "isSelected": false
       },
       {
@@ -4014,19 +3622,11 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_level_ruin_three6_95f5e1183b.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_level_ruin_three7_8fcdabe809.nbt",
         "isSelected": false
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_level_ruin_three8_c1126fc1b7.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_level_ruin_three9_2732e67371.nbt",
         "isSelected": false
       },
       {
@@ -4054,43 +3654,11 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_lost_soul_city_part1_2c697fd379.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_lost_soul_city_part2_6517c53cf2.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_lost_soul_city_part3_b634c9682e.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_lost_soul_city_part4_ad34a03db8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_lost_soul_city_start_0396a5c72c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_lost_soul_start_pool_43b519f7bd.nbt",
+        "path": "modernfix/structureCacheV1/philipsruins_lost_ruins_4a4be88f2d.nbt",
         "isSelected": false
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_lost_soul_walkway1_c9ce0d4232.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_mod_structures_desert_ruin4_5ceee305fe.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_mod_structures_desert_ruin5_0a0022989f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_mod_structures_desert_ruin6_c3003d0f57.nbt",
         "isSelected": false
       },
       {
@@ -4099,10 +3667,6 @@
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_mod_structures_desert_ruin8_383e71c710.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_mod_structures_desert_ruin9_6809c65ee4.nbt",
         "isSelected": false
       },
       {
@@ -4154,27 +3718,7 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_ocean_ruin1_3f0493b9f8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ocean_ruin10_cabc48451a.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ocean_ruin11_ce8aad3e58.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ocean_ruin2_69871cdba5.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_ocean_ruin3_084d2d6305.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_ocean_ruin4_75ff1c1a62.nbt",
         "isSelected": false
       },
       {
@@ -4190,15 +3734,7 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_ocean_ruin8_1d19d4e134.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_ocean_ruin9_53a14dd1ed.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_pumpkin_ruin_eight_af3e42b364.nbt",
         "isSelected": false
       },
       {
@@ -4206,23 +3742,7 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_pumpkin_ruin_four_ff8a53f164.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/philipsruins_pumpkin_ruin_nine_985259d856.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_pumpkin_ruin_one_95827e3606.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_pumpkin_ruin_seven_db55eff1e8.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_pumpkin_ruin_six_941067b439.nbt",
         "isSelected": false
       },
       {
@@ -4242,7 +3762,7 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/philipsruins_room1_antiquus_7c97cda81d.nbt",
+        "path": "modernfix/structureCacheV1/philipsruins_ruin_guardian_statue_3908a540a4.nbt",
         "isSelected": false
       },
       {
@@ -4259,14 +3779,6 @@
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_ruins_house_with_tree_baa26a8b9c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_sand_house_0f31dfda4f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/philipsruins_sculk_dungeon_start_6fc1a93b23.nbt",
         "isSelected": false
       },
       {
@@ -4294,6 +3806,10 @@
         "isSelected": false
       },
       {
+        "path": "modernfix/structureCacheV1/philipsruins_small_ruin6_30a62e529b.nbt",
+        "isSelected": false
+      },
+      {
         "path": "modernfix/structureCacheV1/philipsruins_start_nether_dungeon_f8479397d3.nbt",
         "isSelected": false
       },
@@ -4303,78 +3819,6 @@
       },
       {
         "path": "modernfix/structureCacheV1/philipsruins_walkway3_268d418e1d.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_altar_of_the_accursed_dbd917f017.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_campsite_1_b2d206811d.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_campsite_2_7a69e21c9c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_chapel_d06946f51a.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_monster_box_1_812d1b58ee.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_monster_box_2_6f49411047.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_monster_box_3_8489c05411.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_monster_box_4_efec07978f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_obsidian_spikes_1_3ea00be4c6.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_obsidian_spikes_2_0ad7d89fab.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_obsidian_spikes_3_81928c67b4.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_obsidian_spikes_4_f9a10cd4fa.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_obsidian_spikes_5_bd8df1b60f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_return_gateway_default_blackstone_f3a71d86c9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_return_gateway_default_crimson_430b75729a.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_return_gateway_default_mangrove_0aac7a78f2.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_return_gateway_default_purpur_e8e5ac9c6c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_return_gateway_default_warped_26aa6ae5bf.nbt",
         "isSelected": false
       },
       {
@@ -4610,263 +4054,11 @@
         "isSelected": false
       },
       {
-        "path": "modernfix/structureCacheV1/stellarity_village_animal_pen_1_7f66ae6741.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_archer_tower_3_ef4b2dec69.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_armorer_1_cd02be7836.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_butcher_1_88d819a974.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_butcher_big_57159892ac.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_cartographer_1_5c81f6bf6b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_cartographer_big_d8b791b030.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_campfire_1_ee73c7c35c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_campfire_2_f513132685.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_lamp_1_6428c9cec5.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_lamp_2_12233659fd.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_lamp_3_6e7e4718f0.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_lamp_4_34de7a66d6.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_lamp_5_b84258d920.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_lamp_6_4ed0244851.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_lamp_7_e725849fe5.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_planter_box_1_909ba56fb9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_planter_box_2_20240730eb.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_planter_box_3_57fa7c1245.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_planter_box_4_eb99f510dd.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_planter_box_5_1b2cf8d351.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_planter_box_6_a576c840f5.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_decorations_planter_box_7_ca2a46c45e.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_entities_1_bee_5c5cbea5b1.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_entities_1_villager_ab52407c23.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_entities_2_bees_9d7e0a3429.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_entities_2_villagers_7f50732f89.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_entities_3_villagers_588fe6a9e1.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_entities_golem_82d262e598.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_entities_pigs_440ee13e52.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_entities_sheep_23a1573967.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_farm_1_9c5b27bc3b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_farm_2_e44fe3dd2e.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_farm_3_ddec3d1e4b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_farm_4_2c54547a76.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_farm_6_8dba68a304.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_fisherman_1_30a52cfb1b.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_fletcher_big_c343f8c17e.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_layouts_1_ce8a75ed53.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_library_1_25d07f356c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_market_2_886d2a995e.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_mason_1_7ca2d44385.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_respawn_anchors_1_22ad5e3b0f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_respawn_anchors_2_d9c9b9d745.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_respawn_anchors_3_7a61858ea6.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_respawn_anchors_4_bd790d606c.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_shepherd_1_35002a37ff.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_shepherd_big_7af0ecdc55.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_small_house_1_c16fd65269.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_small_house_2_9e28a1f620.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_small_house_3_76f734e1a9.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_small_house_4_d437212630.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_small_house_5_ebc84bb777.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_tannery_1_564be36c42.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_temple_1_ee080b70ed.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_temple_big_034eac522e.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_toolsmith_1_d81f721310.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_town_center_1_4fdc25eb50.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_town_center_2_ce0466aff2.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_town_center_3_11f14b4007.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_town_center_4_06d84de54f.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/stellarity_village_weaponsmith_1_70202c4f17.nbt",
-        "isSelected": false
-      },
-      {
         "path": "modernfix/structureCacheV1/supplementaries_way_sign_62ca40a11e.nbt",
         "isSelected": false
       },
       {
         "path": "modernfix/structureCacheV1/trolls_trollvillage1_bd36a94257.nbt",
-        "isSelected": false
-      },
-      {
-        "path": "modernfix/structureCacheV1/waystones_village_common_waystone_8018c9c611.nbt",
         "isSelected": false
       },
       {
@@ -4906,6 +4098,10 @@
         "isSelected": true
       },
       {
+        "path": "mods/ancore-4.0.1-forge-1.20.1.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
         "isSelected": true
       },
@@ -4934,6 +4130,10 @@
         "isSelected": true
       },
       {
+        "path": "mods/bbv-2.03-forge-1.20.1.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/BetterThirdPerson-Forge-1.20-1.9.0.jar",
         "isSelected": true
       },
@@ -4955,6 +4155,14 @@
       },
       {
         "path": "mods/blessfulled-0.6.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/blueprint-1.20.1-7.1.4.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/bobo_lib-1.1-1.20.1-forge.jar",
         "isSelected": true
       },
       {
@@ -5010,6 +4218,10 @@
         "isSelected": true
       },
       {
+        "path": "mods/Controlling-forge-1.20.1-12.0.2.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/Corgilib-Forge-1.20.1-4.0.3.4.jar",
         "isSelected": true
       },
@@ -5018,11 +4230,11 @@
         "isSelected": true
       },
       {
-        "path": "mods/cosycritters-0.3.2+1.20.1-forge.jar",
+        "path": "mods/cosycritters-0.3.3+1.20.1-forge.jar",
         "isSelected": true
       },
       {
-        "path": "mods/CrashAssistant-forge-1.19-1.20.1-1.11.10.jar",
+        "path": "mods/CrashAssistant-forge-1.19-1.20.1-1.11.11.jar",
         "isSelected": true
       },
       {
@@ -5034,11 +4246,15 @@
         "isSelected": true
       },
       {
-        "path": "mods/cultofazazelforge-1.1.3.jar",
+        "path": "mods/cultofazazelforge-1.1.4.9a.jar",
         "isSelected": true
       },
       {
         "path": "mods/cupboard-1.20.1-3.7.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/curios-forge-5.14.1+1.20.1.jar",
         "isSelected": true
       },
       {
@@ -5047,6 +4263,10 @@
       },
       {
         "path": "mods/defaultoptions-forge-1.20.1-18.0.5.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/Disenchanting-forge-1.20.1-2.2.4.jar",
         "isSelected": true
       },
       {
@@ -5062,7 +4282,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/dynamicwaters-9.2.0.jar",
+        "path": "mods/dynamicwaters-11.1.2.jar",
         "isSelected": true
       },
       {
@@ -5094,15 +4314,15 @@
         "isSelected": true
       },
       {
-        "path": "mods/Epic Dungeons 1.2.0 (1.20+).jar",
+        "path": "mods/Epic Dungeons 1.2.3.jar",
         "isSelected": true
       },
       {
-        "path": "mods/Epic Villages 1.3.1 (1.20+).jar",
+        "path": "mods/Epic Villages 1.3.2.jar",
         "isSelected": true
       },
       {
-        "path": "mods/Epic Witch Huts v1.2.0 (1.20+).jar",
+        "path": "mods/Epic Witch Huts v1.3.1.jar",
         "isSelected": true
       },
       {
@@ -5194,11 +4414,23 @@
         "isSelected": true
       },
       {
+        "path": "mods/ftb-quests-entity-vis-1.5.0-1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/ftb-quests-forge-2001.4.22.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/ftb-teams-forge-2001.3.2.jar",
         "isSelected": true
       },
       {
-        "path": "mods/fusion-1.3.3-forge-mc1.20.1.jar",
+        "path": "mods/ftb-xmod-compat-forge-2.1.3.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/fusion-1.3.5-forge-mc1.20.1.jar",
         "isSelected": true
       },
       {
@@ -5242,7 +4474,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
+        "path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
         "isSelected": true
       },
       {
@@ -5263,6 +4495,10 @@
       },
       {
         "path": "mods/jei-1.20.1-forge-15.20.0.112.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/JustEnoughResources-1.20.1-1.4.0.247.jar",
         "isSelected": true
       },
       {
@@ -5314,6 +4550,10 @@
         "isSelected": true
       },
       {
+        "path": "mods/lootjs-forge-1.20.1-2.13.1.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/lootr-forge-1.20-0.7.35.94.jar",
         "isSelected": true
       },
@@ -5326,7 +4566,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/Luminous Nether V1.3.2 - Forge 1.20.1.jar",
+        "path": "mods/Luminous Nether V1.3.3 - Forge 1.20.1.jar",
         "isSelected": true
       },
       {
@@ -5334,15 +4574,23 @@
         "isSelected": true
       },
       {
+        "path": "mods/MendedMending-1.0.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/meteor_shower-0.0.4.2.jar",
         "isSelected": true
       },
       {
-        "path": "mods/modernfix-forge-5.27.51+mc1.20.1.jar",
+        "path": "mods/MMStorage-2.1-forge-1.20.1.jar",
         "isSelected": true
       },
       {
-        "path": "mods/monsterexpansion-1.20.1-v0.6.3.jar",
+        "path": "mods/modernfix-forge-5.27.65+mc1.20.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/monsterexpansion-1.20.1-v0.7.4.jar",
         "isSelected": true
       },
       {
@@ -5410,6 +4658,10 @@
         "isSelected": true
       },
       {
+        "path": "mods/overpacked-2.0.1-1.20.1-forge.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
         "isSelected": true
       },
@@ -5418,7 +4670,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/ParticleEffects-1.4.0+1.20.1+forge.jar",
+        "path": "mods/ParticleEffects-1.5.0+1.20.1+forge.jar",
         "isSelected": true
       },
       {
@@ -5466,6 +4718,10 @@
         "isSelected": true
       },
       {
+        "path": "mods/Quest Kill Task-0.2.0+1.20.1-forge.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/radium-mc1.20.1-0.12.4+git.26c9d8e.jar",
         "isSelected": true
       },
@@ -5490,7 +4746,15 @@
         "isSelected": true
       },
       {
+        "path": "mods/rpg_backpacks-5.0.3-forge-1.20.x.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods/saintsdragons-0.8.2+forge-1.20.1-alpha.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/Searchables-forge-1.20.1-1.0.3.jar",
         "isSelected": true
       },
       {
@@ -5518,19 +4782,11 @@
         "isSelected": true
       },
       {
-        "path": "mods/sophisticatedbackpacks-1.20.1-3.24.58.1917.jar",
-        "isSelected": true
-      },
-      {
-        "path": "mods/sophisticatedcore-1.20.1-1.3.56.2042.jar",
-        "isSelected": true
-      },
-      {
         "path": "mods/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
         "isSelected": true
       },
       {
-        "path": "mods/spark-1.10.53-forge.jar",
+        "path": "mods/spark-1.10.53-forge.jar.disabled",
         "isSelected": true
       },
       {
@@ -5618,19 +4874,19 @@
         "isSelected": true
       },
       {
-        "path": "mods/wits-1.1.0+1.20.1-forge.jar",
+        "path": "mods/wits-1.1.1+1.20.1-forge.jar",
         "isSelected": true
       },
       {
-        "path": "mods/xaerominimap-forge-1.20.1-26.1.0.jar",
+        "path": "mods/xaerominimap-forge-1.20.1-26.4.2.jar",
         "isSelected": true
       },
       {
-        "path": "mods/xaeroworldmap-forge-1.20.1-1.41.2.jar",
+        "path": "mods/xaeroworldmap-forge-1.20.1-1.44.2.jar",
         "isSelected": true
       },
       {
-        "path": "mods/xmxw-2.10.1+1.20.1-forge.jar",
+        "path": "mods/xmxw-2.11.1+1.20.1-forge.jar",
         "isSelected": true
       },
       {
@@ -5655,6 +4911,10 @@
       },
       {
         "path": "options.txt",
+        "isSelected": false
+      },
+      {
+        "path": "replay_pid35004.log",
         "isSelected": false
       },
       {
@@ -5919,6 +5179,10 @@
       },
       {
         "path": "screenshots/2026-06-25_11.03.53.png",
+        "isSelected": false
+      },
+      {
+        "path": "screenshots/2026-07-12_12.40.41.png",
         "isSelected": false
       },
       {
@@ -11202,8 +10466,12 @@
         "isSelected": true
       },
       {
-        "path": "shaderpacks/Solas Shader V3.6.zip",
+        "path": "shaderpacks/Solas Shader V3.7.zip",
         "isSelected": true
+      },
+      {
+        "path": "user-prefs.json",
+        "isSelected": false
       },
       {
         "path": "usercache.json",
@@ -11250,6 +10518,14 @@
         "isSelected": false
       },
       {
+        "path": "visual_keybinder/presets",
+        "isSelected": false
+      },
+      {
+        "path": "visual_keybinder/presets/Apotheotic Preset.preset.txt",
+        "isSelected": false
+      },
+      {
         "path": "xaero",
         "isSelected": false
       },
@@ -11262,11 +10538,19 @@
         "isSelected": false
       },
       {
-        "path": "xaero/minimap/New World",
+        "path": "xaero/minimap/New World (1)",
         "isSelected": false
       },
       {
-        "path": "xaero/minimap/New World/config.txt",
+        "path": "xaero/minimap/New World (1)/config.txt",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/minimap/New World (1)/dim%0",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/minimap/New World (1)/dim%0/waypoints.txt",
         "isSelected": false
       },
       {
@@ -11282,10 +10566,6 @@
         "isSelected": false
       },
       {
-        "path": "xaero/waypoints/New World.json",
-        "isSelected": false
-      },
-      {
         "path": "xaero/world-map",
         "isSelected": false
       },
@@ -11295,10 +10575,6 @@
       },
       {
         "path": "xaero/world-map/New World/null",
-        "isSelected": false
-      },
-      {
-        "path": "xaero/world-map/New World/null/.lock",
         "isSelected": false
       },
       {
@@ -11338,14 +10614,6 @@
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World/null/cache_1/0_-1.xwmc",
-        "isSelected": false
-      },
-      {
-        "path": "xaero/world-map/New World/null/cache_1/0_0.xwmc",
-        "isSelected": false
-      },
-      {
         "path": "xaero/world-map/New World/null/caves",
         "isSelected": false
       },
@@ -11366,23 +10634,135 @@
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World/null/dimension_config.txt",
-        "isSelected": false
-      },
-      {
-        "path": "xaero/world-map/New World/server_config.txt",
-        "isSelected": false
-      },
-      {
         "path": "xaero/world-map/New World (1)",
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World (1)/DIM-1",
+        "path": "xaero/world-map/New World (1)/bbv$endnew",
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World (1)/DIM-1/.lock",
+        "path": "xaero/world-map/New World (1)/bbv$endnew/.lock",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/1/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/1/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/1/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/1/0_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/2/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/2/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/2/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/2/0_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/3/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/3/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/3/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache/3/0_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache_1/-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/caves",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/caves/-2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/caves/-2/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/caves/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/caves/3/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/caves/3/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/caves/3/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/bbv$endnew/dimension_config.txt",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM-1",
         "isSelected": false
       },
       {
@@ -11418,7 +10798,67 @@
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World (1)/DIM1/.lock",
+        "path": "xaero/world-map/New World (1)/DIM1/cache",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/1_2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/1_3.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/2_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/2_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/2_4.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/3_2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/3_3.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/3_4.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/cache_1/4_3.xwmc",
         "isSelected": false
       },
       {
@@ -11426,7 +10866,51 @@
         "isSelected": false
       },
       {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/-2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/-2/cache_1",
+        "isSelected": false
+      },
+      {
         "path": "xaero/world-map/New World (1)/DIM1/caves/-5",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/-5/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/0",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/0/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/3/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/3/cache_1/-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/3/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/3/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/DIM1/caves/3/cache_1/0_0.xwmc.outdated",
         "isSelected": false
       },
       {
@@ -11474,7 +10958,139 @@
         "isSelected": false
       },
       {
+        "path": "xaero/world-map/New World (1)/null/cache",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-1_1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-2_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-2_-2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-2_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-2_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-3_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-3_-2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-3_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-4_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-6_-5.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/-7_-5.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/cache_1/0_1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
         "path": "xaero/world-map/New World (1)/null/caves",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-1/cache",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-1/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-1/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-1/cache_1/-6_-5.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-1/cache_1/-7_-5.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-2/cache",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-2/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-2/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-2/cache_1/-6_-4.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-2/cache_1/-6_-5.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-2/cache_1/-7_-4.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/-2/cache_1/-7_-5.xwmc.outdated",
         "isSelected": false
       },
       {
@@ -11482,7 +11098,15 @@
         "isSelected": false
       },
       {
+        "path": "xaero/world-map/New World (1)/null/caves/10/cache_1",
+        "isSelected": false
+      },
+      {
         "path": "xaero/world-map/New World (1)/null/caves/11",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/11/cache_1",
         "isSelected": false
       },
       {
@@ -11490,7 +11114,15 @@
         "isSelected": false
       },
       {
+        "path": "xaero/world-map/New World (1)/null/caves/12/cache_1",
+        "isSelected": false
+      },
+      {
         "path": "xaero/world-map/New World (1)/null/caves/2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/2/cache_1",
         "isSelected": false
       },
       {
@@ -11498,7 +11130,23 @@
         "isSelected": false
       },
       {
+        "path": "xaero/world-map/New World (1)/null/caves/3/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/3/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/3/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
         "path": "xaero/world-map/New World (1)/null/caves/4",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/4/cache_1",
         "isSelected": false
       },
       {
@@ -11506,7 +11154,15 @@
         "isSelected": false
       },
       {
+        "path": "xaero/world-map/New World (1)/null/caves/5/cache_1",
+        "isSelected": false
+      },
+      {
         "path": "xaero/world-map/New World (1)/null/caves/7",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World (1)/null/caves/7/cache_1",
         "isSelected": false
       },
       {
@@ -11522,23 +11178,7 @@
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World (2)/DIM1",
-        "isSelected": false
-      },
-      {
-        "path": "xaero/world-map/New World (2)/DIM1/.lock",
-        "isSelected": false
-      },
-      {
-        "path": "xaero/world-map/New World (2)/DIM1/dimension_config.txt",
-        "isSelected": false
-      },
-      {
         "path": "xaero/world-map/New World (2)/null",
-        "isSelected": false
-      },
-      {
-        "path": "xaero/world-map/New World (2)/null/.lock",
         "isSelected": false
       },
       {
@@ -11566,23 +11206,27 @@
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World (2)/null/dimension_config.txt",
-        "isSelected": false
-      },
-      {
-        "path": "xaero/world-map/New World (2)/server_config.txt",
-        "isSelected": false
-      },
-      {
         "path": "XaeroWaypoints_BACKUP240807",
         "isSelected": false
       },
       {
-        "path": "XaeroWaypoints_BACKUP240807/New World",
+        "path": "XaeroWaypoints_BACKUP240807/backup",
         "isSelected": false
       },
       {
-        "path": "XaeroWaypoints_BACKUP240807/New World/config.txt",
+        "path": "XaeroWaypoints_BACKUP240807/New World (1)",
+        "isSelected": false
+      },
+      {
+        "path": "XaeroWaypoints_BACKUP240807/New World (1)/config.txt",
+        "isSelected": false
+      },
+      {
+        "path": "XaeroWaypoints_BACKUP240807/New World (1)/dim%0",
+        "isSelected": false
+      },
+      {
+        "path": "XaeroWaypoints_BACKUP240807/New World (1)/dim%0/waypoints.txt",
         "isSelected": false
       }
     ],

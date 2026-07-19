@@ -725,6 +725,14 @@
     "curseForgeHash": 816412664,
     "modrinthHash": "c49023f5d471aa1ba7fc624d2565fe9e82b7117e"
   },
+  "ftb-xmod-compat-forge-2.1.3.jar": {
+    "jarName": "ftb-xmod-compat-forge-2.1.3.jar",
+    "modId": "ftbxmodcompat",
+    "name": "FTB XMod Compat",
+    "version": "2.1.3",
+    "curseForgeHash": 2853914731,
+    "modrinthHash": "0584f628d2bc6a612d79dee368324357ebae1423"
+  },
   "fusion-1.3.5-forge-mc1.20.1.jar": {
     "jarName": "fusion-1.3.5-forge-mc1.20.1.jar",
     "modId": "fusion",
