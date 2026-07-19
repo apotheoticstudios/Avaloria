@@ -27,7 +27,7 @@
 				value: 1L
 			}]
 			x: 4.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -49,7 +49,7 @@
 				value: 1L
 			}]
 			x: 4.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -74,6 +74,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["432874174B22DA10"]
 			entity_vis_size: 1.0f
 			id: "658B41B78CD6D4CA"
 			tasks: [{
@@ -96,6 +97,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["432874174B22DA10"]
 			entity_vis_size: 1.0f
 			id: "43C201CFFB2A94E2"
 			tasks: [{
@@ -118,6 +120,10 @@
 			y: -1.5d
 		}
 		{
+			dependencies: [
+				"658B41B78CD6D4CA"
+				"43C201CFFB2A94E2"
+			]
 			entity_vis_size: 1.0f
 			id: "6B278F815CFC604B"
 			tasks: [{
@@ -140,30 +146,14 @@
 			y: 0.0d
 		}
 		{
-			entity_vis_size: 1.0f
-			id: "12304C25A54D0EDC"
-			tasks: [{
-				entity: "monsterexpansion:rhyza"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "6DA3033D2B0CA592"
-				type: "kill"
-				value: 1L
-			}]
-			x: 23.0d
-			y: 0.0d
-		}
-		{
+			dependencies: [
+				"253C7CD0AE3C4E35"
+				"00551D267A9B3AA4"
+			]
+			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
 			id: "432874174B22DA10"
+			subtitle: "Not required to kill those dragons before going here, but you really should give them a try."
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "74B1CA9615647B49"
@@ -193,6 +183,29 @@
 			}]
 			x: 8.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["6B278F815CFC604B"]
+			entity_vis_size: 1.0f
+			id: "629A2B4DE686BF86"
+			tasks: [{
+				entity: "theinkarena:blot"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "504EB9B65FD0D5E7"
+				type: "kill"
+				value: 1L
+			}]
+			x: 13.0d
+			y: 0.0d
 		}
 	]
 	title: "Act II"

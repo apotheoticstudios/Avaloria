@@ -19,9 +19,9 @@ const GRID_BOSSES_CONFIG = [
     { boss: 'saintsdragons:varasuchus', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'purple' }, // Example of multiple requirements
     // { boss: 'saintsdragons:ignivorus', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'red' }, // TODO: END SHIT
     { boss: 'monsterexpansion:ignathos', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: ["luminous_beasts:the_scarecrow", "luminous_beasts:basalt_executioner"], color: 'red' },
-    { boss: 'monsterexpansion:rakoth', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: 'minecraft:wither', color: 'yellow' },
-    { boss: 'monsterexpansion:skrythe', biome: '#kubejs:wildlife_spawns/mountain_peaks', prereq: 'minecraft:wither', color: 'white' },
-    { boss: 'monsterexpansion:leivekilth', biome: '#kubejs:wildlife_spawns/cold_waters', prereq: 'minecraft:wither', color: 'pink' }
+    { boss: 'monsterexpansion:rakoth', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: 'foolish:astralis', color: 'yellow' },
+    { boss: 'monsterexpansion:skrythe', biome: '#kubejs:wildlife_spawns/mountain_peaks', prereq: 'foolish:astralis', color: 'white' },
+    { boss: 'monsterexpansion:leivekilth', biome: '#kubejs:wildlife_spawns/cold_waters', prereq: 'netherman:azazel', color: 'blue' }
 ];
 
 const GRID_BOSSES = GRID_BOSSES_CONFIG.map(cfg => cfg.boss);
@@ -340,4 +340,35 @@ LevelEvents.tick(event => {
             server.runCommandSilent(`bossbar remove ${bossbarId}`);
         }
     });
+});
+
+
+// 5. CONSUME MEMBRANE FOR BAD OMEN EFFECT
+ItemEvents.rightClicked(event => {
+    const player = event.player;
+    const item = event.item;
+    
+    // Only intercept if the player right-clicks with the specific membrane item
+    if (item.id !== 'theinkarena:ink_membrane') return;
+    
+    const server = event.server;
+    const level = event.level;
+
+    // 20 minutes = 20 * 60 seconds = 1200 seconds -> 1200 * 20 ticks = 24,000 ticks
+    // Effect parameters: (ID, Duration in ticks, Amplifier, Ambient particles hidden?, Show particles?)
+    player.potionEffects.add('minecraft:bad_omen', 24000, 0, false, true);
+
+    // Run the clear command silently to consume exactly 1 instance of the item from this player
+    server.runCommandSilent(`clear ${player.username} theinkarena:ink_membrane 1`);
+
+    // Play a thematic sound effect at the player's position
+    server.runCommandSilent(`execute in ${level.dimension.toString()} at ${player.x} ${player.y} ${player.z} run playsound minecraft:entity.evoker.prepare_wololo player @a ~ ~ ~ 1.0 0.6`);
+
+    // Send a message to the player confirming the action
+    player.tell(Text.darkRed("The membrane dissolves... A terrible curse settles over you."));
+
+    console.log(`[BossSystem] Item Action: Player ${player.username} consumed 'theinkarena:ink_membrane' and received 20 minutes of Bad Omen.`);
+    
+    // Prevent standard right-click actions from overriding this logic
+    event.success();
 });
