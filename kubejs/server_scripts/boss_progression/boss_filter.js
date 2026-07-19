@@ -1,6 +1,7 @@
 // List of all boss IDs to restrict. 
 const BANNED_BOSSES = [
-    "bbv:the_ender_dragonoverworld"
+    "bbv:the_ender_dragonoverworld",
+    "theinkarena:natural_ink_titan"
 ];
 
 // Configurable ambush system settings
@@ -9,18 +10,18 @@ const WARNING_COUNTDOWN_TIME = 5; // 5 seconds warning structure countdown
 const BOSSBAR_DESPAWN_DISTANCE = 64; // Distance at which boss bar disappears if player runs away
 
 // Bosses that should replace natural spawns with a 5-second countdown warning structure
+// NOTE: 'prereq' can now be a single string OR an array of strings!
 const GRID_BOSSES_CONFIG = [
-    { boss: 'opposing_force:guzzler', biome: 'minecraft:swamp', prereq: 'theinkarena:ink_titan', color: 'green' },
-    { boss: 'opposing_force:skyvern', biome: 'minecraft:the_end', prereq: 'minecraft:ender_dragon', color: 'blue' },
-    { boss: 'saintsdragons:volitans', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'purple' },
-    { boss: 'saintsdragons:raevyx', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'purple' },
-    { boss: 'saintsdragons:varasuchus', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'purple' },
-    { boss: 'saintsdragons:ignivorus', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'red' },
-    { boss: 'monsterexpansion:ignathos', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'red' },
-    { boss: 'monsterexpansion:rhyza', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'green' },
-    { boss: 'monsterexpansion:rakoth', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'yellow' },
-    { boss: 'monsterexpansion:skrythe', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'white' },
-    { boss: 'monsterexpansion:leivekilth', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'pink' }
+    { boss: 'opposing_force:guzzler', biome: '#kubejs:wildlife_spawns/wetlands', prereq: 'theinkarena:ink_titan', color: 'green' },
+    { boss: 'opposing_force:skyvern', biome: '#kubejs:wildlife_spawns/jungles_tropics', prereq: 'minecraft:ender_dragon', color: 'blue' },
+    { boss: 'saintsdragons:volitans', biome: '#kubejs:wildlife_spawns/coasts', prereq: "opposing_force:skyvern", color: 'blue' },
+    { boss: 'saintsdragons:raevyx', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'red' },
+    { boss: 'saintsdragons:varasuchus', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'purple' }, // Example of multiple requirements
+    // { boss: 'saintsdragons:ignivorus', biome: 'minecraft:plains', prereq: 'minecraft:wither', color: 'red' }, // TODO: END SHIT
+    { boss: 'monsterexpansion:ignathos', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: ["luminous_beasts:the_scarecrow", "luminous_beasts:basalt_executioner"], color: 'red' },
+    { boss: 'monsterexpansion:rakoth', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: 'minecraft:wither', color: 'yellow' },
+    { boss: 'monsterexpansion:skrythe', biome: '#kubejs:wildlife_spawns/mountain_peaks', prereq: 'minecraft:wither', color: 'white' },
+    { boss: 'monsterexpansion:leivekilth', biome: '#kubejs:wildlife_spawns/cold_waters', prereq: 'minecraft:wither', color: 'pink' }
 ];
 
 const GRID_BOSSES = GRID_BOSSES_CONFIG.map(cfg => cfg.boss);
@@ -179,17 +180,24 @@ ServerEvents.tick(event => {
 
     server.players.forEach(player => {
         let level = player.level;
-        let biomeId = player.block.biomeId.toString(); 
         let pUUID = player.uuid.toString();
 
-        let unlockedPrereqs = [];
+        let currentBiomeHolder = level.getBiome(player.block);
+        let biomeId = player.block.biomeId.toString(); 
+
+        // Gather all unique prerequisite IDs present across the configurations
+        let checkedPrereqs = [];
         GRID_BOSSES_CONFIG.forEach(cfg => {
-            let trackingKey = `grid_prereq_killed_${pUUID}_${cfg.prereq}`;
-            if (server.persistentData.getBoolean(trackingKey) === true) {
-                if (!unlockedPrereqs.includes(cfg.prereq)) {
-                    unlockedPrereqs.push(cfg.prereq);
-                }
-            }
+            let prereqs = Array.isArray(cfg.prereq) ? cfg.prereq : [cfg.prereq];
+            prereqs.forEach(p => {
+                if (!checkedPrereqs.includes(p)) checkedPrereqs.push(p);
+            });
+        });
+
+        // Filter out which ones this player has actually defeated
+        let unlockedPrereqs = checkedPrereqs.filter(prereq => {
+            let trackingKey = `grid_prereq_killed_${pUUID}_${prereq}`;
+            return server.persistentData.getBoolean(trackingKey) === true;
         });
         
         console.log(`[BossSystem] Diagnostic -> Player: ${player.username} | Current Biome: ${biomeId} | Defeated Prereqs: [${unlockedPrereqs.join(', ') || 'None'}]`);
@@ -204,13 +212,29 @@ ServerEvents.tick(event => {
             return;
         }
 
+        // Step 2: Check matching configurations supporting BOTH exact IDs, #tags, AND multi-prereqs
         let availableBosses = GRID_BOSSES_CONFIG.filter(cfg => {
-            let trackingKey = `grid_prereq_killed_${pUUID}_${cfg.prereq}`;
-            return cfg.biome === biomeId && server.persistentData.getBoolean(trackingKey) === true;
+            // Convert prereq property into an array format if specified as a plain string string
+            let requirements = Array.isArray(cfg.prereq) ? cfg.prereq : [cfg.prereq];
+
+            // Verify ALL listed prerequisites are satisfied
+            let satisfiesAllPrereqs = requirements.every(req => {
+                let trackingKey = `grid_prereq_killed_${pUUID}_${req}`;
+                return server.persistentData.getBoolean(trackingKey) === true;
+            });
+
+            if (!satisfiesAllPrereqs) return false;
+
+            // Handle standard Tag parsing versus direct string references
+            if (cfg.biome.startsWith('#')) {
+                return currentBiomeHolder.is(Utils.id(cfg.biome.substring(1)));
+            }
+            
+            return cfg.biome === biomeId;
         });
 
         if (availableBosses.length === 0) {
-            console.log(`[BossSystem] Loop Progress: Player ${player.username} has Bad Omen, but no registered boss configurations match their current biome.`);
+            console.log(`[BossSystem] Loop Progress: Player ${player.username} has Bad Omen, but no registered boss configurations match their current biome conditions and multi-prereq requirements.`);
             return;
         }
 
@@ -219,9 +243,8 @@ ServerEvents.tick(event => {
         let targetY = player.block.y;
         let targetZ = player.block.z;
 
-        console.log(`[BossSystem] AMBUSH TRIGGERED: Player ${player.username} matches conditions for ${selected.boss} in ${biomeId}. Starting 5s countdown sequence...`);
+        console.log(`[BossSystem] AMBUSH TRIGGERED: Player ${player.username} matches conditions for ${selected.boss} via matching rule "${selected.biome}". Starting 5s countdown sequence...`);
 
-        // Using safe unique formatting matching your layout
         let cleanBarName = selected.boss.split(':')[1].replace(/_/g, ' ').toUpperCase();
         let barId = `ambush_warn_${player.username.toLowerCase()}_${server.tickCount}`;
         
@@ -246,7 +269,6 @@ ServerEvents.tick(event => {
             countdownCount++;
             let remaining = WARNING_COUNTDOWN_TIME - countdownCount;
 
-            // Make sure player hasn't run out of bounds before running next loop tick
             let checkActive = global.activeCountdowns.find(a => a.bossBarId === barId);
             if (!checkActive) {
                 callback.clear();
@@ -257,13 +279,11 @@ ServerEvents.tick(event => {
                 server.runCommandSilent(`bossbar set ${barId} value ${remaining}`);
                 player.tell(Text.yellow(`Spawning in ${remaining}...`));
             } else {
-                // Clear warning bar before spawning actual boss entity bar
                 server.runCommandSilent(`bossbar remove ${barId}`);
                 global.activeCountdowns = global.activeCountdowns.filter(a => a.bossBarId !== barId);
 
                 let currentLevel = server.getLevel(level.dimension);
                 
-                // Strike lightning sequence
                 let lightning = currentLevel.createEntity('minecraft:lightning_bolt');
                 if (lightning) {
                     lightning.setPosition(targetX, targetY, targetZ);
@@ -273,7 +293,6 @@ ServerEvents.tick(event => {
 
                 let spawned = global.spawnCustomBoss(currentLevel, selected.boss, targetX, targetY, targetZ);
                 if (spawned) {
-                    // Inject persistent data onto the spawned boss so the Level tick handler finds it automatically
                     let bossBarId = `grid_bar_${spawned.uuid.toString().replace(/-/g, '_')}`;
                     let maxHp = Math.ceil(spawned.maxHealth);
 
@@ -282,7 +301,6 @@ ServerEvents.tick(event => {
                     spawned.persistentData.putString('GridBossBarColor', selected.color.toLowerCase());
                     spawned.persistentData.putString('GridBossBarName', cleanBarName);
 
-                    // Add the base bossbar configuration instantly
                     server.runCommandSilent(`bossbar add ${bossBarId} "${cleanBarName}"`);
                     server.runCommandSilent(`bossbar set ${bossBarId} max ${maxHp}`);
                     server.runCommandSilent(`bossbar set ${bossBarId} value ${maxHp}`);
@@ -303,10 +321,8 @@ ServerEvents.tick(event => {
 // 4. ACTIVE BOSS TRACKING MONITOR (Updates BossBar Data & Clean Removal)
 LevelEvents.tick(event => {
     const { level, server } = event;
-    // Run evaluation every 10 game ticks to reduce server payload footprint
     if (level.time % 10 !== 0) return;
 
-    // Grab all entities loaded in the current dimension running our tracking tag
     let activeGridBosses = level.getEntities().filter(e => {
         if (!e || !e.persistentData) return false;
         return e.persistentData.getBoolean('IsGridAmbushBoss') === true;
@@ -316,13 +332,9 @@ LevelEvents.tick(event => {
         let bossbarId = boss.persistentData.getString('GridBossBarId');
         let currentHp = Math.max(0, Math.ceil(boss.health));
         
-        // Update current boss health state tracking
         server.runCommandSilent(`bossbar set ${bossbarId} value ${currentHp}`);
-        
-        // Dynamically append / remove players in the radius loop selection rule matching your requirement
         server.runCommandSilent(`execute in ${level.dimension.toString()} run bossbar set ${bossbarId} players @a[x=${boss.x},y=${boss.y},z=${boss.z},distance=..${BOSSBAR_DESPAWN_DISTANCE}]`);
         
-        // If the boss gets removed, dies, or drops health values to zero, clear the visual UI trace
         if (boss.isRemoved() || !boss.isAlive() || currentHp <= 0) {
             console.log(`[BossSystem] Active Tracking Ended: Removing bossbar ${bossbarId} (Boss defeated/despawned).`);
             server.runCommandSilent(`bossbar remove ${bossbarId}`);

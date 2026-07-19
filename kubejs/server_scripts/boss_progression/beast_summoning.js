@@ -23,49 +23,49 @@ const BEAST_SUMMONS = [
     {
         mobId: "luminous_beasts:red_mummy",
         itemId: "minecraft:mutton",
-        biome: "minecraft:desert", 
+        biome: "#kubejs:wildlife_spawns/arid_wildlands", 
         radius: 8, filters: { inWater: false, padding: 1 }
     },
     {
         mobId: "luminous_beasts:cherry_tree_ent",
         itemId: "minecraft:apple",
-        biome: "minecraft:cherry_groves", 
+        biome: "minecraft:cherry_grove", 
         radius: 12, filters: { inWater: false, padding: 2 }
     },
     {
         mobId: "luminous_beasts:golden_hermit_king",
         itemId: "minecraft:rabbit",
-        biome: "minecraft:is_beach",
+        biome: "kubejs:wildlife_spawns/coasts",
         radius: 6, filters: { inWater: false, padding: 1 }
     },
     {
         mobId: "luminous_beasts:coral_sea_viper",
         itemId: "minecraft:tropical_fish",
-        biome: "minecraft:is_ocean",
+        biome: "kubejs:wildlife_spawns/oceans",
         radius: 15, filters: { inWater: true, padding: 2 }
     },
     {
         mobId: "luminous_beasts:arid_yeti",
         itemId: "minecraft:porkchop",
-        biome: "minecraft:is_desert",
+        biome: "kubejs:wildlife_spawns/arid_wildlands",
         radius: 12, filters: { inWater: false, padding: 2 }
     },
     {
         mobId: "luminous_beasts:frigid_gator",
         itemId: "minecraft:cod",
-        biome: "minecraft:river",
+        biome: "kubejs:wildlife_spawns/oceans",
         radius: 10, filters: { inWater: true, padding: 1 }
     },
     {
         mobId: "luminous_beasts:wind_phoenix",
         itemId: "minecraft:feather",
-        biome: "minecraft:is_mountain",
+        biome: "kubejs:wildlife_spawns/taiga_dark",
         radius: 16, filters: { inWater: false, padding: 3 }
     },
     {
         mobId: "luminous_beasts:bogged_bone_stalker",
         itemId: "minecraft:bone",
-        biome: "minecraft:swamp",
+        biome: "kubejs:wildlife_spawns/wetlands",
         radius: 8, filters: { inWater: false, padding: 1 }
     },
     {
@@ -85,7 +85,7 @@ const BEAST_SUMMONS = [
     {
         mobId: "luminous_beasts:albino_moth",
         itemId: "minecraft:spider_eye",
-        biome: "minecraft:is_taiga",
+        biome: "kubejs:wildlife_spawns/taiga_dark",
         radius: 12, filters: { inWater: false, padding: 1 }
     }
 ];
@@ -172,7 +172,8 @@ BlockEvents.rightClicked(event => {
                 entity.persistentData.putBoolean('IsBeastSummon', true);
                 entity.persistentData.putString('BeastMobId', match.mobId);
                 entity.persistentData.putString('SummonerUUID', player.uuid.toString());
-                
+                entity.persistentData.putBoolean('allow_boss_spawn', true);
+
                 entity.mergeNbt({
                     ForgeData: {
                         IsBeastSummon: true,

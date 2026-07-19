@@ -31,9 +31,12 @@
 		}
 		{
 			entity_vis_size: 1.0f
-			id: "0F45ACD32F2F85A6"
+			icon_scale: 2.0d
+			id: "1E1E6B87BFCF546F"
+			shape: "none"
+			size: 2.5d
 			tasks: [{
-				entity: "saintsdragons:ignivorus"
+				entity: "netherman:azazel"
 				entity_use_tag: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
@@ -44,12 +47,46 @@
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "7AAE83C3C4B93E7F"
+				id: "583DD16C2E24486E"
 				type: "kill"
 				value: 1L
 			}]
-			x: 1.0d
+			x: 1.25d
 			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "56685780E084C557"
+			tasks: [{
+				count: 12L
+				id: "3DCDC8D5B80BF210"
+				item: { Count: 12, id: "minecraft:ender_eye" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5311E7F9F2571F11"
+			tasks: [{
+				id: "6C9677CC53E3945C"
+				structure: "minecraft:stronghold"
+				type: "structure"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4A5E106AD9462698"
+			tasks: [{
+				dimension: "bbv:endnew"
+				id: "17A743D49601C69E"
+				type: "dimension"
+			}]
+			x: 3.0d
+			y: 4.0d
 		}
 	]
 	title: "Act V"
