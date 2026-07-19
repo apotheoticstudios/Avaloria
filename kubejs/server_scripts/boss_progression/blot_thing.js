@@ -5,13 +5,13 @@ function checkStellarHollowUse(player, event) {
         
         // If they haven't killed the blot yet, trigger the penalty
         if (!player.persistentData.getBoolean('killed_blot')) {
-            event.cancel();
-
             player.tell(Text.red("There still is a stain upon this world."));
 
             // Apply debuffs for 15 seconds (300 ticks)
             player.potionEffects.add('minecraft:darkness', 300, 0, false, true);
             player.potionEffects.add('theinkarena:inked', 300, 0, false, true);
+
+            event.cancel();
             
             return true; // Used to stop further checks if needed
         }
@@ -38,7 +38,7 @@ ItemEvents.rightClicked('foolish:stellar_hollow', event => {
 
     if (!player.persistentData.getBoolean('killed_blot')) {
         event.cancel();
-        player.tell(Text.red("There still is a stain upon this world."));
+        player.tell(Text.red("There still is a stain upon this world!"));
         player.potionEffects.add('minecraft:darkness', 300, 0, false, true);
         player.potionEffects.add('theinkarena:inked', 300, 0, false, true);
         player.addItemCooldown(item, 20);
@@ -53,6 +53,7 @@ BlockEvents.broken(event => {
     }
 });
 
+
 // 4. Block placing blocks while holding the item
 BlockEvents.placed(event => {
     const { player } = event;
@@ -60,3 +61,10 @@ BlockEvents.placed(event => {
         checkStellarHollowUse(player, event);
     }
 });
+
+BlockEvents.rightClicked(event => {
+    const { player } = event;
+    if (player) {
+        checkStellarHollowUse(player, event);
+    }
+})
