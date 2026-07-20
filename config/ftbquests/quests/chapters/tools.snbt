@@ -1,0 +1,264 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tools"
+	group: "43EDEE406998F8A6"
+	id: "4B64F9B3A2E2F21B"
+	images: [{
+		height: 8.0d
+		image: "tmg:textures/mob_effect/miners_grace_bg.png"
+		rotation: 0.0d
+		width: 8.0d
+		x: 0.5d
+		y: 1.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "498D99F9E645074F"
+			tasks: [{
+				id: "77B278C2E3D311AC"
+				item: {
+					Count: 1
+					id: "foolish:timewelder_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3B2000E234332B2B"
+			tasks: [{
+				id: "0991BC5C3650EB35"
+				item: {
+					Count: 1
+					id: "netherman:azazel_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1891FD2C7EC38DCA"
+			tasks: [{
+				id: "48DA86053221F728"
+				item: {
+					Count: 1
+					id: "netherman:manipulator_stick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "17F8CFA25CD7F8E5"
+			tasks: [{
+				id: "397283D89041FD13"
+				item: "foolish:voidrider_item"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "632F08BEFF0DC076"
+			tasks: [{
+				id: "4F2A936489D65467"
+				item: {
+					Count: 1
+					id: "theinkarena:inkstained_grimoire"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3ED957F650002CCF"
+			tasks: [{
+				id: "43B5EA3DF30CACD0"
+				item: "tmg:ancient_pickaxe_charging"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "415F48C1C975FCFB"
+			tasks: [{
+				id: "19C42A2FB974FFF3"
+				item: "tmg:gold_pendant"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3BFBC99305D4D741"
+			tasks: [{
+				id: "3ABDD41A3790BA6E"
+				item: "tmg:phantom_ring"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "40CB44E9DEBF2836"
+			tasks: [{
+				id: "1CED4807E03EBC21"
+				item: "tmg:evoker_staff"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1387E476880A1662"
+			tasks: [{
+				id: "7116B13783829B9E"
+				item: {
+					Count: 1
+					id: "foolish:nether_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "29D138213EC4882C"
+			tasks: [{
+				id: "0FC8055A99AEE87F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 27
+						}
+					}
+					id: "rpgbackpacks:leather_backpack"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["29D138213EC4882C"]
+			entity_vis_size: 1.0f
+			id: "0AD763752B7A0C91"
+			tasks: [{
+				id: "478904273C3F93D3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 36
+						}
+					}
+					id: "rpgbackpacks:iron_backpack"
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0AD763752B7A0C91"]
+			entity_vis_size: 1.0f
+			id: "56C6E8333C658A66"
+			tasks: [{
+				id: "27AFB7C0B064B4EB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 45
+						}
+					}
+					id: "rpgbackpacks:golden_backpack"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["56C6E8333C658A66"]
+			entity_vis_size: 1.0f
+			id: "7F595F8A40131A79"
+			tasks: [{
+				id: "72E50A4C3FA1E4D2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 60
+						}
+					}
+					id: "rpgbackpacks:diamond_backpack"
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F595F8A40131A79"]
+			entity_vis_size: 1.0f
+			id: "22BFA79C281C9603"
+			tasks: [{
+				id: "5A840B40418AA203"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 77
+						}
+					}
+					id: "rpgbackpacks:netherite_backpack"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+	]
+	title: "Tools"
+}

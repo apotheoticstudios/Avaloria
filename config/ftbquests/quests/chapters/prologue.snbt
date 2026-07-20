@@ -3,13 +3,18 @@
 	default_quest_shape: ""
 	filename: "prologue"
 	group: "61FCFB164DAE895F"
+	hide_quest_until_deps_complete: true
 	id: "120317F05E0A16A0"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["Welcome to &6Avaloria.&r Your goal is to eradicate every &4&lbeast.&r"]
 			entity_vis_size: 1.0f
 			id: "07316F5FC72883E9"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "You feel empty..."
 			tasks: [{
 				id: "50D0ADDECBB1B2D4"
 				title: "Here You Are"
@@ -22,6 +27,7 @@
 			dependencies: ["07316F5FC72883E9"]
 			entity_vis_size: 1.0f
 			id: "75C7135332A281B7"
+			subtitle: "You suffer."
 			tasks: [{
 				id: "4A9E881BC0B12B0C"
 				title: "You Exist"
@@ -34,6 +40,7 @@
 			dependencies: ["75C7135332A281B7"]
 			entity_vis_size: 1.0f
 			id: "2EDCD9D1384BBF73"
+			subtitle: "In this prison."
 			tasks: [{
 				id: "24AE053AF0D91D50"
 				title: "In This World"
@@ -46,6 +53,7 @@
 			dependencies: ["2EDCD9D1384BBF73"]
 			entity_vis_size: 1.0f
 			id: "591FF9100E236A70"
+			subtitle: "Of pain."
 			tasks: [{
 				id: "45278507153A3AA5"
 				title: "Of Mystery"
@@ -58,6 +66,7 @@
 			dependencies: ["591FF9100E236A70"]
 			entity_vis_size: 1.0f
 			id: "23969033A0FB0E37"
+			subtitle: "And exile."
 			tasks: [{
 				id: "5D709B7DD8CB429D"
 				title: "And Enchantment."
@@ -95,6 +104,7 @@
 			dependencies: ["5FADC4BCE1607375"]
 			entity_vis_size: 1.0f
 			id: "5403865941F9DB96"
+			subtitle: "This is your first step in cleaning up the realms..."
 			tasks: [{
 				entity: "minecraft:zombie"
 				entity_use_tag: false
@@ -123,6 +133,7 @@
 				tag: { }
 			}
 			id: "77F083BF1DB92B93"
+			subtitle: "Use this to find every stain..."
 			tasks: [
 				{
 					id: "6202E63B28A00B50"

@@ -3,14 +3,45 @@
 	default_quest_shape: ""
 	filename: "act_iv"
 	group: "61FCFB164DAE895F"
+	hide_quest_until_deps_complete: true
 	id: "7DC445FFF6C854EA"
+	images: [
+		{
+			height: 10.0d
+			image: "minecraft:item/netherite_sword"
+			rotation: -90.0d
+			width: 10.0d
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			height: 10.0d
+			image: "minecraft:item/netherite_sword"
+			rotation: 0.0d
+			width: 10.0d
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			height: 12.0d
+			image: "monsterexpansion:item/charcraw_2d"
+			rotation: 135.0d
+			width: 12.0d
+			x: 1.5d
+			y: 5.0d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["1EA046F5540281D0"]
+			description: ["Attracted to troublemakers..."]
 			entity_vis_size: 1.0f
 			id: "6A9FD62C54B153E8"
+			shape: "none"
+			size: 4.0d
+			subtitle: "Found in the wildlands..."
 			tasks: [{
 				entity: "monsterexpansion:rakoth"
 				entity_use_tag: false
@@ -27,13 +58,17 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1EA046F5540281D0"]
+			description: ["&mHybristophile&r."]
 			entity_vis_size: 1.0f
 			id: "626A672E61E386F0"
+			shape: "none"
+			size: 4.0d
+			subtitle: "Found in the highest peaks of this world!"
 			tasks: [{
 				entity: "monsterexpansion:skrythe"
 				entity_use_tag: false
@@ -50,7 +85,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 0.0d
 		}
 	]

@@ -4,8 +4,4271 @@
 	filename: "armor"
 	group: "43EDEE406998F8A6"
 	id: "528D4E07DBF3E454"
+	images: [
+		{
+			height: 9.0d
+			image: "tmg:item/hammer_9"
+			rotation: -45.0d
+			width: 9.0d
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			height: 12.0d
+			image: "minecraft:block/smithing_table_front"
+			rotation: 0.0d
+			width: 12.0d
+			x: -12.0d
+			y: 2.5d
+		}
+		{
+			height: 8.0d
+			image: "minecraft:item/netherite_ingot"
+			rotation: 0.0d
+			width: 8.0d
+			x: -4.0d
+			y: 23.5d
+		}
+		{
+			height: 5.0d
+			image: "foolish:block/starforgetop"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.5d
+			y: 29.0d
+		}
+		{
+			height: 8.0d
+			image: "minecraft:item/gold_ingot"
+			rotation: 0.0d
+			width: 8.0d
+			x: -4.0d
+			y: 18.5d
+		}
+		{
+			height: 8.0d
+			image: "minecraft:item/diamond"
+			rotation: 0.0d
+			width: 8.0d
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			height: 8.0d
+			image: "lowlands_clothing:item/heavy_iron_ingots"
+			rotation: 0.0d
+			width: 8.0d
+			x: -4.0d
+			y: 12.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "7EAD5A164118BA20"
+			tasks: [{
+				id: "44A17A08B2C8AA81"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:bret_corsair_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3D01DDB15353D4E7"
+			tasks: [{
+				id: "04F584FD512AF7EB"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:bret_corsair_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3FF095FAAF0A82A5"
+			tasks: [{
+				id: "2B41E84B978B025F"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:bret_corsair_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1AD72CD5AB25745A"
+			tasks: [{
+				id: "3AEF7E4C4412EA1E"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:bret_corsair_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "70344B4E8C17D313"
+			tasks: [{
+				id: "3B515E7D085B5962"
+				item: {
+					Count: 1
+					id: "opposing_force:deepwoven_hat"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7EC4FC140D043C8B"
+			tasks: [{
+				id: "1BDAF5A3873D0AC0"
+				item: {
+					Count: 1
+					id: "opposing_force:deepwoven_tunic"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3BA1CF45EC93B5B7"
+			tasks: [{
+				id: "3801703694E4655E"
+				item: {
+					Count: 1
+					id: "opposing_force:deepwoven_pants"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5018FE9F47EA62BB"
+			tasks: [{
+				id: "5D5AA12DA93663C0"
+				item: {
+					Count: 1
+					id: "opposing_force:deepwoven_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "26C503B06C5D88AD"
+			tasks: [{
+				id: "5E62776FE3950B3F"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:executorarmor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2111B0C36C56342E"
+			tasks: [{
+				id: "1A71015BDD659720"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:executorarmor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5DF58CF4B4F8444E"
+			tasks: [{
+				id: "0576E4FB3F08C2EE"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:executorarmor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7EEF19A47A686A4E"
+			tasks: [{
+				id: "380C1C096946289F"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:executorarmor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "29E44165F90247FF"
+			tasks: [{
+				id: "2940D2FDC4FBA5F7"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:gamekeeper_attires_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "13858658353E39B6"
+			tasks: [{
+				id: "3C25D5BC55A29A18"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:gamekeeper_attires_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "316CA53DA2D1C21E"
+			tasks: [{
+				id: "148342D33A6788A8"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:gamekeeper_attires_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "68F7822FA83D31A7"
+			tasks: [{
+				id: "4C7DEB4C944D71F6"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:gamekeeper_attires_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0734C9E27B004168"
+			tasks: [{
+				id: "1F0316FF8BE2D0EC"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:gatesentry_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2527E8CBEE493B44"
+			tasks: [{
+				id: "76123F5FD1BE5567"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:gatesentry_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "503849A27B26872D"
+			tasks: [{
+				id: "2C43600882998FF1"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:gatesentry_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "34B1BB47A0F1E2F5"
+			tasks: [{
+				id: "7870D6EB1CCB1378"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:gatesentry_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "630F070F6F820C70"
+			tasks: [{
+				id: "3F0A43AB54FE8E6E"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:guard_captain_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6AED01AEE0FFB0BD"
+			tasks: [{
+				id: "11F8B2F5282BCCE7"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:guard_captain_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6351A8647C9BD9D6"
+			tasks: [{
+				id: "099293901AB8624E"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:guard_captain_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6E5807EE7D1BEC85"
+			tasks: [{
+				id: "444A13CF603FFA3F"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:guard_captain_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "50E1272D1E712222"
+			tasks: [{
+				id: "57E1A275B5620B8D"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:highlandslongkilt_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "49957AD9C31927EF"
+			tasks: [{
+				id: "012C4452B44BD64F"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:highlandslongkilt_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "020230B605F35AEF"
+			tasks: [{
+				id: "7DAD85DAA10799AE"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:highlandslongkilt_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7E788108EBCE5FA3"
+			tasks: [{
+				id: "394308932293AC8F"
+				item: {
+					Count: 1
+					id: "armoroftheages:japanese_light_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0BDEB51B2235A29A"
+			tasks: [{
+				id: "5826C8A817E99D8D"
+				item: {
+					Count: 1
+					id: "armoroftheages:japanese_light_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6A62CED610ACC59F"
+			tasks: [{
+				id: "7C46321CF6C5CFD1"
+				item: {
+					Count: 1
+					id: "armoroftheages:japanese_light_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7D85332B4A0DBCF6"
+			tasks: [{
+				id: "76BD11CE93CB5E33"
+				item: {
+					Count: 1
+					id: "armoroftheages:japanese_light_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4109C3F9F5E7A16F"
+			tasks: [{
+				id: "50595851FFC07CB7"
+				item: {
+					Count: 1
+					id: "minecraft:leather_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "041B507C16E00014"
+			tasks: [{
+				id: "2309B13C7A8269C1"
+				item: {
+					Count: 1
+					id: "minecraft:leather_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "20C4F09594A52309"
+			tasks: [{
+				id: "6CED228121B31944"
+				item: {
+					Count: 1
+					id: "minecraft:leather_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5E75F819394F3F1A"
+			tasks: [{
+				id: "29F1B2A067D01B74"
+				item: {
+					Count: 1
+					id: "minecraft:leather_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3DFC4FCA2D38AE4D"
+			tasks: [{
+				id: "2BD9174A2D6DE877"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:mountainmenclothes_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "438C001281003017"
+			tasks: [{
+				id: "21E2CE5CBF819927"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:mountainmenclothes_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "654574C54A6A4021"
+			tasks: [{
+				id: "67184005B7A07E7A"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:mountainmenclothes_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "74593D33EB2341B5"
+			tasks: [{
+				id: "7D8A2A1A87E20BFE"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:mountainmenclothes_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7743CB07335ADA55"
+			tasks: [{
+				id: "5135B706D45D4BE1"
+				item: {
+					Count: 1
+					id: "ogres:ogre_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "513042BA750B0C6B"
+			tasks: [{
+				id: "5D6A5CB011FA1CA4"
+				item: {
+					Count: 1
+					id: "ogres:ogre_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3F268382B4BBAC2B"
+			tasks: [{
+				id: "3D164A780C06D727"
+				item: {
+					Count: 1
+					id: "ogres:ogre_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "359457CCE6BF1E8E"
+			tasks: [{
+				id: "583A35D849F51AD1"
+				item: {
+					Count: 1
+					id: "ogres:ogre_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "366322D39CE6419B"
+			tasks: [{
+				id: "4365EEA0FC131B73"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:penitent_rags_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "77DE0124B93C5F6E"
+			tasks: [{
+				id: "3CD4C3587CD8CF5D"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:penitent_rags_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "04B79B735E2C51CD"
+			tasks: [{
+				id: "7E573B64A78B1ABD"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:penitent_rags_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "63CE92E15A513432"
+			tasks: [{
+				id: "54A09F03FDD14ED9"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:penitent_rags_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "33BF83DB2BB87CA0"
+			tasks: [{
+				id: "775374FC95620DDF"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:plague_doctor_suit_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "30DD28569D28BD08"
+			tasks: [{
+				id: "3D5D92328DE10D69"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:plague_doctor_suit_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2FB90D567810681B"
+			tasks: [{
+				id: "644727975BE12F61"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:plague_doctor_suit_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4F362A32DD584DAB"
+			tasks: [{
+				id: "46E7CC0911021A83"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:plague_doctor_suit_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "29409C820E240217"
+			tasks: [{
+				id: "18B028C74DEB6782"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:ratcatcherrobes_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "596BEE85813290B8"
+			tasks: [{
+				id: "3036CCA7769A8AD7"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:ratcatcherrobes_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5B5A15B4CA81B6A6"
+			tasks: [{
+				id: "4743D4CABB2A02FE"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:ratcatcherrobes_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "25DCBF34CF41DC0D"
+			tasks: [{
+				id: "132E7F5A97AF44BA"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:ratcatcherrobes_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "07E7919AA669CF4C"
+			tasks: [{
+				id: "07AC3DFC7536B356"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:swampland_folks_attires_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2907DF223A3A482A"
+			tasks: [{
+				id: "28885B30154C433A"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:swampland_folks_attires_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0F97ABFD5CD4B6E4"
+			tasks: [{
+				id: "7950FC2A32859AD1"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:swampland_folks_attires_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "06267A7FDA100E98"
+			tasks: [{
+				id: "78E6288E54DE3EA6"
+				item: {
+					Count: 1
+					id: "opposing_force:wooden_mask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "681E682C6D0F8797"
+			tasks: [{
+				id: "1AF67F3D013F2BBE"
+				item: {
+					Count: 1
+					id: "opposing_force:wooden_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1C564490F4EDEA28"
+			tasks: [{
+				id: "5E15B35D5012432A"
+				item: {
+					Count: 1
+					id: "opposing_force:wooden_cover"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "309831EF6C12DAF3"
+			tasks: [{
+				id: "42569DDD2BE4C22E"
+				item: {
+					Count: 1
+					id: "opposing_force:wooden_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3DC41A2AE9F08CCD"
+			tasks: [{
+				id: "0CED3A01F5D31E61"
+				item: {
+					Count: 1
+					id: "opposing_force:stone_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "167C4F4297E9A0DE"
+			tasks: [{
+				id: "712DC7FAABA5E347"
+				item: {
+					Count: 1
+					id: "opposing_force:stone_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6D7F8D70AF0E4998"
+			tasks: [{
+				id: "256F23D583CCC605"
+				item: {
+					Count: 1
+					id: "opposing_force:stone_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1D78F104FA8626F8"
+			tasks: [{
+				id: "02C6291F5F06CEDE"
+				item: {
+					Count: 1
+					id: "opposing_force:stone_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "67BDA59BD18F2FDC"
+			tasks: [{
+				id: "4E5C98DBFFA3B773"
+				item: {
+					Count: 1
+					id: "opposing_force:bone_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2D632460131BA6F6"
+			tasks: [{
+				id: "49FABDDF6EDCAC8E"
+				item: {
+					Count: 1
+					id: "opposing_force:bone_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6ECC300726005295"
+			tasks: [{
+				id: "341F5A1BC0F8C027"
+				item: {
+					Count: 1
+					id: "opposing_force:bone_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0EDE87D6886F7AAE"
+			tasks: [{
+				id: "30B016BADF1D334A"
+				item: {
+					Count: 1
+					id: "opposing_force:bone_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "191B6CD0821A7148"
+			tasks: [{
+				id: "1A3AAC7864EAFEF2"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:axolotl_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "699120A5B2E4D243"
+			tasks: [{
+				id: "7E80AF4EE1C0EB12"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:axolotl_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "699AD6709A49C65A"
+			tasks: [{
+				id: "4E0AE499C880B4B2"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:axolotl_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "00C197BBE6B0CBD5"
+			tasks: [{
+				id: "010E1DFA91DF77A6"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:axolotl_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "57D523041E2910AE"
+			tasks: [{
+				id: "1B79B29015178EC8"
+				item: {
+					Count: 1
+					id: "minecraft:chainmail_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3F35454C583A4B3A"
+			tasks: [{
+				id: "3AF0DBF465935FB7"
+				item: {
+					Count: 1
+					id: "minecraft:chainmail_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6CFA3A5060C01BD4"
+			tasks: [{
+				id: "299B9C36F16797A2"
+				item: {
+					Count: 1
+					id: "minecraft:chainmail_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3ABFE7DAC5EA0AFF"
+			tasks: [{
+				id: "2AAFB940EE2CDC35"
+				item: {
+					Count: 1
+					id: "minecraft:chainmail_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "18E96FA7CB066A6C"
+			tasks: [{
+				id: "36A210372230D355"
+				item: {
+					Count: 1
+					id: "foolish:coccinium_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3B4CBB0595912E78"
+			tasks: [{
+				id: "5FD18A8430B08DD2"
+				item: {
+					Count: 1
+					id: "foolish:coccinium_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "377E73005E4F047B"
+			tasks: [{
+				id: "10EEEE8196E60663"
+				item: {
+					Count: 1
+					id: "foolish:coccinium_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6BB6D0D08BD6AB11"
+			tasks: [{
+				id: "7CB5E06769037E6A"
+				item: {
+					Count: 1
+					id: "foolish:coccinium_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "32DBA298AD681C9F"
+			subtitle: "Pretty overpowered..."
+			tasks: [{
+				id: "100FCE30A74AE130"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:furnacemasteramor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "19A19E3FD3DA0621"
+			subtitle: "Pretty overpowered..."
+			tasks: [{
+				id: "4C5A3CC5FF6002B3"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:furnacemasteramor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6A8AA595B8CE6BCA"
+			subtitle: "Pretty overpowered..."
+			tasks: [{
+				id: "4EFD7B78643AD71B"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:furnacemasteramor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4CFFE2655D41C412"
+			subtitle: "Pretty overpowered..."
+			tasks: [{
+				id: "5E5D8F8E7C8BC522"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:furnacemasteramor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "17F234450CD6E653"
+			tasks: [{
+				id: "049BDC11D1038252"
+				item: {
+					Count: 1
+					id: "minecraft:iron_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6DE8B39FAF4E06A5"
+			tasks: [{
+				id: "7ABE62DFD15B2BF9"
+				item: {
+					Count: 1
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "35D04CCEB90E99BF"
+			tasks: [{
+				id: "49DFF57273D1248B"
+				item: {
+					Count: 1
+					id: "minecraft:iron_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "15552221F6117DEB"
+			tasks: [{
+				id: "3CC4419529EA2D68"
+				item: {
+					Count: 1
+					id: "minecraft:iron_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6509E4BEDD3E7854"
+			tasks: [{
+				id: "73F9D768CC74AADE"
+				item: {
+					Count: 1
+					id: "armoroftheages:iron_plate_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "69E06976562AB993"
+			tasks: [{
+				id: "11991894BF467478"
+				item: {
+					Count: 1
+					id: "armoroftheages:iron_plate_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "775AE4B702FB23D6"
+			tasks: [{
+				id: "22A4CE05F9BD37CC"
+				item: {
+					Count: 1
+					id: "armoroftheages:iron_plate_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5742C35FD4FD613F"
+			tasks: [{
+				id: "4ECD517E79B206B4"
+				item: {
+					Count: 1
+					id: "armoroftheages:iron_plate_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "10087A5AFED55D80"
+			tasks: [{
+				id: "11FE170A32003302"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:mercenary_swordman_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3A3676F5A7C7D069"
+			tasks: [{
+				id: "704594CE97BE83E8"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:mercenary_swordman_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "285F6DE3295D60A7"
+			tasks: [{
+				id: "0BA8364ACE7A2D31"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:mercenary_swordman_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "77E3041C79293015"
+			tasks: [{
+				id: "576BB684B02E812F"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:mercenary_swordman_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2A5D98C10CFE679B"
+			tasks: [{
+				id: "77CCE1DBE7C6C087"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:norsian_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6268E8A5F29A576F"
+			tasks: [{
+				id: "7692294C97AA4413"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:norsian_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3CD4B37BA50FDD71"
+			tasks: [{
+				id: "55E44DD760643234"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:norsian_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "51E31303830F929F"
+			tasks: [{
+				id: "1ECA17557D91E192"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:norsian_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "470E286402B04DC6"
+			tasks: [{
+				id: "38C13A44C2F5796B"
+				item: {
+					Count: 1
+					id: "armoroftheages:o_yoroi_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "32E62BC18C40D13D"
+			tasks: [{
+				id: "5AC8CA6F8F7BF62D"
+				item: {
+					Count: 1
+					id: "armoroftheages:o_yoroi_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "65DFA41BA6A5F2F1"
+			tasks: [{
+				id: "4A67D5DC1D6DEF21"
+				item: {
+					Count: 1
+					id: "armoroftheages:o_yoroi_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2E363C0768415770"
+			tasks: [{
+				id: "1B93EACF32A3CBE7"
+				item: {
+					Count: 1
+					id: "armoroftheages:o_yoroi_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4ECFE801BFFA1BC2"
+			tasks: [{
+				id: "346B59EAE24A326D"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:wald_knight_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5FB188C9550896BB"
+			tasks: [{
+				id: "59DD360A7A87EDA9"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:wald_knight_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "540290706D979D01"
+			tasks: [{
+				id: "4851027AECA3FC5A"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:wald_knight_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "056A5144E7D64D50"
+			tasks: [{
+				id: "6DB900726DE2156C"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:wald_knight_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6C90D86E9B8C78C2"
+			tasks: [{
+				id: "32BAF51B00959BC9"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:wingedcavaleryarmor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2251BE482299E4F4"
+			tasks: [{
+				id: "769C327424969ED5"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:wingedcavaleryarmor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "001A97336F49AE67"
+			tasks: [{
+				id: "795E0A351FC211DE"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:wingedcavaleryarmor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "170BED53318E7A94"
+			tasks: [{
+				id: "0E9F2B8A91AD99ED"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:wingedcavaleryarmor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "322674CCDD4EDE9A"
+			tasks: [{
+				id: "34B53121BFC7ACCD"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:bret_clothes_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "046F3CEC87E92317"
+			tasks: [{
+				id: "28BC0F373D657E15"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:bret_clothes_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5B580237E3471108"
+			tasks: [{
+				id: "3B51F2A2B69E209B"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:bret_clothes_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0B665A53469DDFD5"
+			tasks: [{
+				id: "51AED7EF2F453F5C"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:bret_clothes_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2E32605AFCFA89BA"
+			tasks: [{
+				id: "5169D8E0D6DA3D2B"
+				item: {
+					Count: 1
+					id: "armoroftheages:centurion_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6AB489890BED569C"
+			tasks: [{
+				id: "4BCBCF48E4A93231"
+				item: {
+					Count: 1
+					id: "armoroftheages:centurion_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2F32E2AED1175D4B"
+			tasks: [{
+				id: "2A34A38AF0A32FCB"
+				item: {
+					Count: 1
+					id: "armoroftheages:centurion_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3E8771FC89847C49"
+			tasks: [{
+				id: "4EEA49BBCCB09F71"
+				item: {
+					Count: 1
+					id: "armoroftheages:centurion_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2D27449D536357FC"
+			tasks: [{
+				id: "434A5E75BD770D51"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:depth_scaphander_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2AC21BD34CD2F470"
+			tasks: [{
+				id: "224FA386E34DD259"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:depth_scaphander_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4311649313350FCB"
+			tasks: [{
+				id: "4E29E99D7C2B5703"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:depth_scaphander_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5BE1036022129240"
+			tasks: [{
+				id: "05548A0FA66653A2"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:depth_scaphander_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "30698EA439B2DE59"
+			tasks: [{
+				id: "4699B406C9F02F1A"
+				item: {
+					Count: 1
+					id: "minecraft:golden_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "27D085768B7E5733"
+			tasks: [{
+				id: "41FC643367ADF3D2"
+				item: {
+					Count: 1
+					id: "minecraft:golden_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "35578679ED8D6471"
+			tasks: [{
+				id: "03AD44D2812D82BA"
+				item: {
+					Count: 1
+					id: "minecraft:golden_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "516D1927598F7A23"
+			tasks: [{
+				id: "4DC7BA1CE0E1DF5F"
+				item: {
+					Count: 1
+					id: "minecraft:golden_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1324054EB1049B66"
+			tasks: [{
+				id: "26F9DC63486B4878"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:maskerade_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "726E19EBE528410F"
+			tasks: [{
+				id: "3CCDAF0F78573CB9"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:maskerade_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "450DF7C94F36E838"
+			tasks: [{
+				id: "093C454B376E012E"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:maskerade_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1347AEE2374AA01E"
+			tasks: [{
+				id: "325DD94F808D1770"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:maskerade_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6916C0FD7E1F144D"
+			tasks: [{
+				id: "7A27A41101627197"
+				item: {
+					Count: 1
+					id: "opposing_force:recon_knight_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "746F784E10DF0503"
+			tasks: [{
+				id: "5F487FC6ECC3A845"
+				item: {
+					Count: 1
+					id: "opposing_force:recon_knight_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "00FDD34EEE4971DF"
+			tasks: [{
+				id: "7F1E73E618F5A17E"
+				item: {
+					Count: 1
+					id: "opposing_force:recon_knight_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "583E278B6CF87570"
+			tasks: [{
+				id: "3E9D297F91CA0498"
+				item: {
+					Count: 1
+					id: "opposing_force:recon_knight_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "622B1939F65DDC20"
+			tasks: [{
+				id: "6B5EE55969328575"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7AFCE291F6D1C0A5"
+			tasks: [{
+				id: "2BA7264FEE572790"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2E3EDE8797160054"
+			tasks: [{
+				id: "5FB3DE5A31E14101"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2FDB0387E0BB8ED5"
+			tasks: [{
+				id: "324F14AC78853564"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0C354D346AD504A8"
+			tasks: [{
+				id: "0CDD87223C683685"
+				item: {
+					Count: 1
+					id: "opposing_force:emerald_mask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "589B8EBF780457E2"
+			tasks: [{
+				id: "290A14D42E17907E"
+				item: {
+					Count: 1
+					id: "opposing_force:emerald_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7F9308485FBD34E2"
+			tasks: [{
+				id: "2673E0AAC38E3FBE"
+				item: {
+					Count: 1
+					id: "opposing_force:emerald_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1BC410FBDA626633"
+			tasks: [{
+				id: "7FE057C77677E6BE"
+				item: {
+					Count: 1
+					id: "opposing_force:emerald_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "63006250C3CECD97"
+			tasks: [{
+				id: "15E833430E34F076"
+				item: {
+					Count: 1
+					id: "armoroftheages:pharaoh_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "734BF1EA33E7A7EC"
+			tasks: [{
+				id: "53F5FBF470DE18BA"
+				item: {
+					Count: 1
+					id: "armoroftheages:pharaoh_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0A88C098A31F4D5D"
+			tasks: [{
+				id: "514113E6D4F2CCAA"
+				item: {
+					Count: 1
+					id: "armoroftheages:pharaoh_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0D10BEFA45E67B56"
+			tasks: [{
+				id: "7C01926546F3F0E1"
+				item: {
+					Count: 1
+					id: "armoroftheages:pharaoh_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "36554198A2278AFD"
+			tasks: [{
+				id: "35C39C9F577BE619"
+				item: {
+					Count: 1
+					id: "armoroftheages:anubis_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "730E999B2CDF5BE3"
+			tasks: [{
+				id: "23965ABA2DA9A0E6"
+				item: {
+					Count: 1
+					id: "armoroftheages:anubis_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1D795C7B04DBD655"
+			tasks: [{
+				id: "3B73C0C90FB1F302"
+				item: {
+					Count: 1
+					id: "armoroftheages:anubis_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7C9A54350357874F"
+			tasks: [{
+				id: "21A63B2DAE2139C5"
+				item: {
+					Count: 1
+					id: "armoroftheages:anubis_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6A4A7620F75D346D"
+			tasks: [{
+				id: "52B39D85969D9C94"
+				item: {
+					Count: 1
+					id: "foolish:blunt_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 16.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6C3D56A4692300BF"
+			tasks: [{
+				id: "4B826CCA7B1247F0"
+				item: {
+					Count: 1
+					id: "foolish:blunt_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 17.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4643888DB22A434D"
+			tasks: [{
+				id: "45BF0831834042D4"
+				item: {
+					Count: 1
+					id: "foolish:blunt_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2BE85743647D40D8"
+			tasks: [{
+				id: "18EA06B625859DA3"
+				item: {
+					Count: 1
+					id: "foolish:blunt_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 19.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "05E185C0F4D45676"
+			tasks: [{
+				id: "15EEF0AA0779A656"
+				item: {
+					Count: 1
+					id: "armoroftheages:exalted_aurum_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "49445F3FD2AB1AB9"
+			tasks: [{
+				id: "3AE7432361DD4BBE"
+				item: {
+					Count: 1
+					id: "armoroftheages:exalted_aurum_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2DA8DBFC46DC47A7"
+			tasks: [{
+				id: "36C3B6831278F6E0"
+				item: {
+					Count: 1
+					id: "armoroftheages:exalted_aurum_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4A25560F098868D5"
+			tasks: [{
+				id: "65C61C7078EF4483"
+				item: {
+					Count: 1
+					id: "armoroftheages:exalted_aurum_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "34F8FB72C9722524"
+			tasks: [{
+				id: "2038CE32A33CED27"
+				item: {
+					Count: 1
+					id: "armoroftheages:holy_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "21461C38CC4BBDCF"
+			tasks: [{
+				id: "1003D0D1411FDAA8"
+				item: {
+					Count: 1
+					id: "armoroftheages:holy_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0B54B18719FF3E10"
+			tasks: [{
+				id: "5B1D907D5075C05A"
+				item: {
+					Count: 1
+					id: "armoroftheages:holy_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "662F98AC498E0010"
+			tasks: [{
+				id: "11A2C182A205C816"
+				item: {
+					Count: 1
+					id: "armoroftheages:holy_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2DE9224E22FAD122"
+			tasks: [{
+				id: "3534799B1B74B931"
+				item: {
+					Count: 1
+					id: "monsterexpansion:ignathos_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "12DF8B9A8C3A2AF0"
+			tasks: [{
+				id: "51C538FF1918B0D1"
+				item: {
+					Count: 1
+					id: "monsterexpansion:ignathos_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "538CA3B7F96915FA"
+			tasks: [{
+				id: "5209796E680EFE87"
+				item: {
+					Count: 1
+					id: "monsterexpansion:ignathos_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "348EA58E0EFA02AF"
+			tasks: [{
+				id: "3644E618030426A9"
+				item: {
+					Count: 1
+					id: "monsterexpansion:ignathos_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "57CAE4CAD004025D"
+			tasks: [{
+				id: "64EE714574A0F094"
+				item: {
+					Count: 1
+					id: "foolish:keepsteel_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "686140C6DE5535FE"
+			tasks: [{
+				id: "092E98DE99F89DD4"
+				item: {
+					Count: 1
+					id: "foolish:keepsteel_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "428C0B909B0BB687"
+			tasks: [{
+				id: "4C0DEA340EBFDBEA"
+				item: {
+					Count: 1
+					id: "foolish:keepsteel_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4C6B56FDAC78D8C8"
+			tasks: [{
+				id: "62516491B4AB26A4"
+				item: {
+					Count: 1
+					id: "foolish:keepsteel_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "297BA6D1D742EAF9"
+			tasks: [{
+				id: "2CCCE36117B966B9"
+				item: {
+					Count: 1
+					id: "monsterexpansion:leivekilth_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 27.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "66B613F99D5C35E6"
+			tasks: [{
+				id: "60FA783FDA14FD4C"
+				item: {
+					Count: 1
+					id: "monsterexpansion:leivekilth_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 28.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "07E1F8036FF0D5E9"
+			tasks: [{
+				id: "38A9E50A86A6DE90"
+				item: {
+					Count: 1
+					id: "monsterexpansion:leivekilth_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 29.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5E5BF5170890EAF3"
+			tasks: [{
+				id: "6C98851C41029FAB"
+				item: {
+					Count: 1
+					id: "monsterexpansion:leivekilth_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 30.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4C4C0E2E358A12E7"
+			tasks: [{
+				id: "3038DBFF3538A7FC"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:netherborn_pirate_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "16656E996D96DA58"
+			tasks: [{
+				id: "7FE9B747D7A0A587"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:netherborn_pirate_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7CF682130CCB5548"
+			tasks: [{
+				id: "546ECE9E112990E9"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:netherborn_pirate_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "586413FDAD05FCF2"
+			tasks: [{
+				id: "682C82CAC0143B10"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:netherborn_pirate_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2760F1A01ABBB3F3"
+			tasks: [{
+				id: "3AEA6AE35ACA7B1A"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "193D34C987617C72"
+			tasks: [{
+				id: "1741DDA77C7E0E0E"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "37F9C779D6DD0400"
+			tasks: [{
+				id: "3DE38D7D8B9740E8"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2E05E980244FDCFE"
+			tasks: [{
+				id: "141923AE8E5469FE"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5516DC6612402E28"
+			tasks: [{
+				id: "3341FE709DFAD4F6"
+				item: {
+					Count: 1
+					id: "armoroftheages:quetzalcoatl_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5BFA6761CD5D9552"
+			tasks: [{
+				id: "54F0F63F2DC6FB00"
+				item: {
+					Count: 1
+					id: "armoroftheages:quetzalcoatl_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "318F8CF4DF459E23"
+			tasks: [{
+				id: "7BE2B0B82E779AC6"
+				item: {
+					Count: 1
+					id: "armoroftheages:quetzalcoatl_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2295E6F70143DBBC"
+			tasks: [{
+				id: "63B6E1926250B412"
+				item: {
+					Count: 1
+					id: "armoroftheages:quetzalcoatl_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3828931A3440D0C4"
+			tasks: [{
+				id: "3DDDA002DC21EEA7"
+				item: {
+					Count: 1
+					id: "armoroftheages:raijin_armor_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0884528305AFC04D"
+			tasks: [{
+				id: "65D59001CC6843BF"
+				item: {
+					Count: 1
+					id: "armoroftheages:raijin_armor_chest"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "07C8F220BF6B8610"
+			tasks: [{
+				id: "4284081E4A5F4945"
+				item: {
+					Count: 1
+					id: "armoroftheages:raijin_armor_legs"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "519591BF0CA3F429"
+			tasks: [{
+				id: "3B5789CBBCE0FA5D"
+				item: {
+					Count: 1
+					id: "armoroftheages:raijin_armor_feet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3007224D633DB074"
+			tasks: [{
+				id: "0D385A731EE9BD8D"
+				item: {
+					Count: 1
+					id: "monsterexpansion:rakoth_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6FDB252B2A7FBA76"
+			tasks: [{
+				id: "78B9DC6986FD1464"
+				item: {
+					Count: 1
+					id: "monsterexpansion:rakoth_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3AA2384DAF960910"
+			tasks: [{
+				id: "59608F23DEAB01F3"
+				item: {
+					Count: 1
+					id: "monsterexpansion:rakoth_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7BDB705D1E3E9ADA"
+			tasks: [{
+				id: "34A14028B679B42A"
+				item: {
+					Count: 1
+					id: "monsterexpansion:rakoth_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7F09723CC28247DC"
+			tasks: [{
+				id: "7C4AF5439C9E12AB"
+				item: {
+					Count: 1
+					id: "monsterexpansion:rhyza_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 27.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "26BD0A0F5EDF3634"
+			tasks: [{
+				id: "09B97024B98518B8"
+				item: {
+					Count: 1
+					id: "monsterexpansion:rhyza_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 28.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "538743A404971537"
+			tasks: [{
+				id: "086E1378C966DAFD"
+				item: {
+					Count: 1
+					id: "monsterexpansion:rhyza_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 29.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "27966DF6D483B0EC"
+			tasks: [{
+				id: "4924B8F4E205857F"
+				item: {
+					Count: 1
+					id: "monsterexpansion:rhyza_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 30.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "47205E6436571536"
+			tasks: [{
+				id: "6C367D6F60D7910A"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:siege_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2CAE662E0F787C93"
+			tasks: [{
+				id: "1D6B6FBB9F16269F"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:siege_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "315A035B5A43454B"
+			tasks: [{
+				id: "5999C953065ED65B"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:siege_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4D2818B3F8F066D4"
+			tasks: [{
+				id: "775D6909063A3964"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:siege_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0690EA403C0B4ABE"
+			tasks: [{
+				id: "38ACE13C8BAEDD0C"
+				item: {
+					Count: 1
+					id: "monsterexpansion:skrythe_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 27.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3E760B0C94510CF0"
+			tasks: [{
+				id: "74A6DF2BE642EF62"
+				item: {
+					Count: 1
+					id: "monsterexpansion:skrythe_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 28.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5B88583CE1AEA703"
+			tasks: [{
+				id: "67E5F21D2E699E69"
+				item: {
+					Count: 1
+					id: "monsterexpansion:skrythe_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 29.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "19ABE8A5EC32B31A"
+			tasks: [{
+				id: "0E572DF791776570"
+				item: {
+					Count: 1
+					id: "monsterexpansion:skrythe_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 30.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "23480A37337A2F81"
+			tasks: [{
+				id: "73DB8C200249C448"
+				item: {
+					Count: 1
+					id: "opposing_force:slug_baron_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 27.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7A2B5C1317967B49"
+			tasks: [{
+				id: "3C0841C79DE79522"
+				item: {
+					Count: 1
+					id: "opposing_force:slug_baron_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 28.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "252988BBBF6D135A"
+			tasks: [{
+				id: "1CB9A8FE7D4A2106"
+				item: {
+					Count: 1
+					id: "opposing_force:slug_baron_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 29.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "70B40B37DF72EB4E"
+			tasks: [{
+				id: "5462B746B38C4854"
+				item: {
+					Count: 1
+					id: "opposing_force:slug_baron_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 30.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1F1C692DF312B9BB"
+			tasks: [{
+				id: "7569E02C050CDCA0"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:snowtigerarmor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7690FF18B372E442"
+			tasks: [{
+				id: "21A1E5A3877D0520"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:snowtigerarmor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4C44DCDBCCE0E132"
+			tasks: [{
+				id: "5E0F89AB2C7E3EAF"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:snowtigerarmor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1E49FFC1755976F5"
+			tasks: [{
+				id: "0C97010743E5F5A7"
+				item: {
+					Count: 1
+					id: "lowlands_clothing:snowtigerarmor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 25.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1CC0515BF2B52069"
+			tasks: [{
+				id: "3AF8F5E338D05D83"
+				item: {
+					Count: 1
+					id: "foolish:stellar_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 27.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "51683959B4DB6290"
+			tasks: [{
+				id: "3AA322739AE26304"
+				item: {
+					Count: 1
+					id: "foolish:stellar_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 28.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "40B53BFFAFFF163B"
+			tasks: [{
+				id: "2D393A6506E9D999"
+				item: {
+					Count: 1
+					id: "foolish:stellar_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 29.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3302794ADCC1405C"
+			tasks: [{
+				id: "4EF3BF033FA767F0"
+				item: {
+					Count: 1
+					id: "foolish:stellar_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 30.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&7Basic Defense Trim&r"
+				""
+				"Trimming your armor with Iron Ingot provides a modest boost to your vitality."
+				""
+				"&a+1.0 Max Health&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000001"
+			tasks: [{
+				id: "2001000000000001"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&bHeavy Armor Trim&r"
+				""
+				"Adds significant physical protection and extra health."
+				""
+				"&a+1.0 Max Health&r"
+				"&a+2.0 Armor&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000002"
+			tasks: [{
+				id: "2001000000000002"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&4Pinnacle Heavy Protection&r"
+				""
+				"The ultimate martial trim combining top-tier armor, bonus health, and intrinsic fire resistance."
+				""
+				"&a+1.0 Max Health&r"
+				"&a+2.0 Armor&r"
+				"&a+0.5 Fire Resistance&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000003"
+			tasks: [{
+				id: "2001000000000003"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&5Fortress Vitality Trim&r"
+				""
+				"Surrounds you with dark obsidian energy. Grants high health at the cost of slight encumbrance."
+				""
+				"&a+2.0 Max Health&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000005"
+			tasks: [{
+				id: "2001000000000005"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&dColossal Vitality Trim&r"
+				""
+				"Infuses armor with tear-stained obsidian, granting immense bonus health while slightly slowing attack recovery."
+				""
+				"&a+3.0 Max Health&r"
+				"&c-0.1 Attack Speed&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000006"
+			tasks: [{
+				id: "2001000000000006"
+				item: "minecraft:crying_obsidian"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&cAgility \\& Traversal Trim&r"
+				""
+				"Energizes armor with redstone currents to dramatically increase movement speed and step height."
+				""
+				"&a+20% Movement Speed&r"
+				"&a+0.5 Step Height&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000007"
+			tasks: [{
+				id: "2001000000000007"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&eAgility Attack Trim&r"
+				""
+				"Gold highlights streamline movement, slightly increasing attack velocity."
+				""
+				"&a+0.1 Attack Speed&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000008"
+			tasks: [{
+				id: "2001000000000008"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&3Deep Echo Attack Trim&r"
+				""
+				"Resonates with sculk vibration, boosting attack speed significantly."
+				""
+				"&a+0.25 Attack Speed&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000009"
+			tasks: [{
+				id: "2001000000000009"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&eMinor Thermal Protection&r"
+				""
+				"Inscribes nether rack into armor lining for lightweight heat resistance."
+				""
+				"&a+0.25 Fire Resistance&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000010"
+			tasks: [{
+				id: "2001000000000010"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&cReinforced Heat Shield&r"
+				""
+				"Infuses molten magma cream into the armor structure."
+				""
+				"&a+0.5 Fire Resistance&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000011"
+			tasks: [{
+				id: "2001000000000011"
+				item: "minecraft:magma_cream"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&8Hardened Nether Plating&r"
+				""
+				"Rough netherite plating offering decent armor protection alongside ambient heat resistance."
+				""
+				"&a+1.0 Armor&r"
+				"&a+0.25 Fire Resistance&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000012"
+			tasks: [{
+				id: "2001000000000012"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&6Basic Aquatic Trim&r"
+				""
+				"A light copper coating that helps cut through water resistance."
+				""
+				"&a+10% Swim Speed&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000013"
+			tasks: [{
+				id: "2001000000000013"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&bOceanic Mobility Trim&r"
+				""
+				"Prismarine lattice that sharply boosts aquatic propulsion."
+				""
+				"&a+20% Swim Speed&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000014"
+			tasks: [{
+				id: "2001000000000014"
+				item: "minecraft:prismarine_shard"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&dSpatiotemporal Reach Trim&r"
+				""
+				"Warped Ender Pearl trim extending your physical reach distance."
+				""
+				"&a+0.25 Reach Distance&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000015"
+			tasks: [{
+				id: "2001000000000015"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&5Void Reach Trim&r"
+				""
+				"Popped Chorus Fruit trim allowing your strikes to project further through dimensional folds."
+				""
+				"&a+0.5 Reach Distance&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000016"
+			tasks: [{
+				id: "2001000000000016"
+				item: "minecraft:popped_chorus_fruit"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&dDim Crystal Vision Trim&r"
+				""
+				"Amethyst crystal resonance providing clear vision in dark environments."
+				""
+				"&a+0.5 Night Vision&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000017"
+			tasks: [{
+				id: "2001000000000017"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&eRadiant Vision Trim&r"
+				""
+				"Glowstone dust inlay providing absolute night vision in all environments."
+				""
+				"&a+1.0 Night Vision&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000018"
+			tasks: [{
+				id: "2001000000000018"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&9Scholarly Experience Trim&r"
+				""
+				"Lapis lazuli trimming attunes armor to experience essence gains."
+				""
+				"&a+20% Experience Boost&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000019"
+			tasks: [{
+				id: "2001000000000019"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&fForceful Impact Trim&r"
+				""
+				"Quartz lining that adds substantial knockback to melee strikes."
+				""
+				"&a+0.2 Attack Knockback&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000020"
+			tasks: [{
+				id: "2001000000000020"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C5190956583F58A"]
+			description: [
+				"&aMerchant Charisma Trim&r"
+				""
+				"Emerald ornamentations that make villager traders far more receptive."
+				""
+				"&a+10% Gossip Boost&r"
+			]
+			entity_vis_size: 1.0f
+			id: "1001000000000021"
+			tasks: [{
+				id: "2001000000000021"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.5d
+		}
+		{
+			description: [
+				"&eArmor trims&r now do something!"
+				"Each gives some sort of buff, be it &dmobility,&r &autility,&r or extra &cdamage.&r"
+				"Choose wisely!"
+			]
+			entity_vis_size: 1.0f
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "6C5190956583F58A"
+			tasks: [{
+				id: "7D5712731C45DF6E"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Armor in &eAvaloria&r works slightly different."
+				""
+				"Introducting&4 SCRAPPING!&r"
+				""
+				"Using scrapping &6hammers&r, you can deconstruct armor back into its constituent parts!"
+				""
+				"The more more full the durability, the more &2materials&r you'll recieve in return."
+			]
+			entity_vis_size: 1.0f
+			id: "2329E479C665EC92"
+			shape: "hexagon"
+			size: 4.0d
+			tasks: [{
+				id: "05954455AF63E03F"
+				title: "Avalorian Armor"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 	title: "Armor"
 }

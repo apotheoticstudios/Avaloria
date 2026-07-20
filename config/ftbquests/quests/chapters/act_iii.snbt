@@ -3,11 +3,13 @@
 	default_quest_shape: ""
 	filename: "act_iii"
 	group: "61FCFB164DAE895F"
+	hide_quest_until_deps_complete: true
 	id: "59714BE797D7BA87"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["629A2B4DE686BF86"]
 			entity_vis_size: 1.0f
 			id: "31301B881C4337EB"
 			rewards: [{
@@ -25,6 +27,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["629A2B4DE686BF86"]
 			entity_vis_size: 1.0f
 			id: "532D91FBFE0D64E6"
 			tasks: [{
@@ -78,6 +81,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "16CD578BDF31BC4B"
+			subtitle: "Light the portal!"
 			tasks: [{
 				id: "1E3162DFB6AC67EB"
 				item: {
@@ -121,6 +125,7 @@
 			id: "1EA046F5540281D0"
 			shape: "none"
 			size: 4.0d
+			subtitle: "Tyrant of the Stellar Hollows..."
 			tasks: [{
 				entity: "foolish:astralis"
 				entity_use_tag: false

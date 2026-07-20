@@ -3,7 +3,16 @@
 	default_quest_shape: ""
 	filename: "act_v"
 	group: "61FCFB164DAE895F"
+	hide_quest_until_deps_complete: true
 	id: "5E7C7585A5DF9CDF"
+	images: [{
+		height: 8.0d
+		image: "netherman:textures/mob_effect/praemium.png"
+		rotation: 0.0d
+		width: 8.0d
+		x: 3.0d
+		y: 0.0d
+	}]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
@@ -29,15 +38,21 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 6.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"626A672E61E386F0"
+				"6A9FD62C54B153E8"
+			]
+			description: ["His temple can be found in the nether..."]
 			entity_vis_size: 1.0f
 			icon_scale: 2.0d
 			id: "1E1E6B87BFCF546F"
 			shape: "none"
 			size: 1.5d
+			subtitle: "A beast that has plagued the nether for aeons. Kill him."
 			tasks: [{
 				entity: "netherman:azazel"
 				entity_use_tag: false
@@ -54,7 +69,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -2.25d
+			x: -3.75d
 			y: 0.0d
 		}
 		{

@@ -3,13 +3,44 @@
 	default_quest_shape: ""
 	filename: "act_2"
 	group: "61FCFB164DAE895F"
+	hide_quest_until_deps_complete: true
 	id: "3E55AC5528BADA8B"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_enabled: true
+			entity_vis_entity: "theinkarena:blot"
+			entity_vis_idle_mode: "USE_GLOBAL"
+			entity_vis_offset_x: 0.0f
+			entity_vis_offset_y: 0.0f
+			entity_vis_rotation: 0.0f
+			entity_vis_silhouette: false
+			entity_vis_size: 10.0f
+			entity_vis_spin_mode: "USE_GLOBAL"
+			entity_vis_walk_mode: "USE_GLOBAL"
+			height: 1.0d
+			image: ""
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.5d
+			y: 0.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["Only one is required. Found in blossoming fields."]
 			entity_vis_size: 1.0f
 			id: "253C7CD0AE3C4E35"
+			subtitle: "Flowers will mark your grave..."
 			tasks: [{
 				entity: "saintsdragons:raevyx"
 				entity_use_tag: false
@@ -30,8 +61,10 @@
 			y: -1.0d
 		}
 		{
+			description: ["Only one is required. Found in blossoming fields."]
 			entity_vis_size: 1.0f
 			id: "00551D267A9B3AA4"
+			subtitle: "Flowers will mark your grave..."
 			tasks: [{
 				entity: "saintsdragons:varasuchus"
 				entity_use_tag: false
@@ -52,70 +85,98 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["432874174B22DA10"]
+			description: ["Use the bait on a lit beast pit to summon. Use quartz as an offhand catalyst."]
 			entity_vis_size: 1.0f
 			id: "4B8C3A106EF06E5D"
-			tasks: [{
-				entity: "luminous_nether:soul_furnace"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "2299916016319A65"
-				type: "kill"
-				value: 1L
-			}]
-			x: 9.5d
+			subtitle: "Found in the valley of lost souls."
+			tasks: [
+				{
+					entity: "luminous_nether:soul_furnace"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "2299916016319A65"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "5747BF2FA0AA7FF0"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
+			x: 6.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["432874174B22DA10"]
+			description: ["Use the bait on a lit beast pit to summon. Use quartz as an offhand catalyst."]
 			entity_vis_size: 1.0f
 			id: "658B41B78CD6D4CA"
-			tasks: [{
-				entity: "luminous_nether:basalt_executioner"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "0993306EEB6D0871"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in the deltas."
+			tasks: [
+				{
+					entity: "luminous_nether:basalt_executioner"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "0993306EEB6D0871"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "6C239F5A90483810"
+					item: "minecraft:magma_cream"
+					type: "item"
+				}
+			]
 			x: 8.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["432874174B22DA10"]
+			description: ["Use the bait on a lit beast pit to summon. Use quartz as an offhand catalyst."]
 			entity_vis_size: 1.0f
 			id: "43C201CFFB2A94E2"
-			tasks: [{
-				entity: "luminous_beasts:the_scarecrow"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "76C15ECC0BA5B5BF"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in temperate forests."
+			tasks: [
+				{
+					entity: "luminous_beasts:the_scarecrow"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "76C15ECC0BA5B5BF"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "0C086A17AF466BE5"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+			]
 			x: 8.0d
 			y: -1.5d
 		}
@@ -124,8 +185,10 @@
 				"658B41B78CD6D4CA"
 				"43C201CFFB2A94E2"
 			]
+			description: ["Found in arid places."]
 			entity_vis_size: 1.0f
 			id: "6B278F815CFC604B"
+			subtitle: "King of the wildlands."
 			tasks: [{
 				entity: "monsterexpansion:ignathos"
 				entity_use_tag: false
@@ -153,7 +216,7 @@
 			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
 			id: "432874174B22DA10"
-			subtitle: "Not required to kill those dragons before going here, but you really should give them a try."
+			subtitle: "Not required to kill those dragons before going here, but you really should give them a try. You'll have to kill them some time either way."
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "74B1CA9615647B49"
@@ -163,31 +226,43 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["432874174B22DA10"]
+			description: ["Use the bait on a lit beast pit to summon. Use quartz as an offhand catalyst."]
 			entity_vis_size: 1.0f
 			id: "426100535F0325FF"
-			tasks: [{
-				entity: "luminous_beasts:warped_mushlin_king"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "71F66AF3B4946E63"
-				type: "kill"
-				value: 1L
-			}]
-			x: 8.0d
+			subtitle: "Take a wild guess..."
+			tasks: [
+				{
+					entity: "luminous_beasts:warped_mushlin_king"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "71F66AF3B4946E63"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1265607998E090F8"
+					item: "minecraft:warped_fungus"
+					type: "item"
+				}
+			]
+			x: 5.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["6B278F815CFC604B"]
+			description: ["Return to the ink arena. Clear the &0stain&r upon this world."]
 			entity_vis_size: 1.0f
 			id: "629A2B4DE686BF86"
+			subtitle: "You must finish what you've started."
 			tasks: [{
 				entity: "theinkarena:blot"
 				entity_use_tag: false
@@ -206,6 +281,35 @@
 			}]
 			x: 13.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["432874174B22DA10"]
+			description: ["Once you start the &cfermentation&r process, put the stack of potions in your &noffhand&r to slowly increase the &aduration!&r"]
+			entity_vis_size: 1.0f
+			id: "431C8B0D36ED21B0"
+			subtitle: "Potions have been reworked!"
+			tasks: [
+				{
+					count: 16L
+					id: "4702DAD956C88EC9"
+					item: { Count: 16, id: "minecraft:nether_wart" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "60FE908995614E9C"
+					item: {
+						Count: 6
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.5d
 		}
 	]
 	title: "Act II"

@@ -2,6 +2,5 @@
 	chapter_groups: [
 		{ id: "61FCFB164DAE895F", title: "Journeys" }
 		{ id: "43EDEE406998F8A6", title: "Tools" }
-		{ id: "4EF45A58C4A41225", title: "Side Quests" }
 	]
 }

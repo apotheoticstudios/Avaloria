@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "epilogue"
 	group: "61FCFB164DAE895F"
+	hide_quest_until_deps_complete: true
 	id: "1AFD952EB7D69EFF"
 	images: [
 		{
@@ -38,12 +39,28 @@
 				"35704C9EFB4B1CBA"
 				"31720F6CD67AF884"
 			]
+			description: [
+				"Place the beast pit atop the altar of the dragon and sacrafice the child of the beast..."
+				""
+				""
+				""
+				""
+				""
+				"Place the beast pit atop the dragon altar."
+				"Place the &5dragon egg&r onto the beast pit."
+			]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "0F45ACD32F2F85A6"
+			rewards: [{
+				id: "267D2686E4DD3880"
+				item: "foolish:starburger"
+				type: "item"
+			}]
 			shape: "none"
 			size: 6.0d
+			subtitle: "Slay the final beast remaining in the world!"
 			tasks: [{
 				entity: "saintsdragons:ignivorus"
 				entity_use_tag: false
@@ -68,6 +85,7 @@
 			id: "31720F6CD67AF884"
 			shape: "none"
 			size: 4.0d
+			subtitle: "Kill them all!"
 			tasks: [{
 				entity: "bbv:the_ender_dragonoverworld"
 				entity_use_tag: false
@@ -86,6 +104,21 @@
 			}]
 			x: 0.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["0F45ACD32F2F85A6"]
+			entity_vis_size: 1.0f
+			id: "0348DD6E381FEBF7"
+			shape: "hexagon"
+			size: 4.0d
+			tasks: [{
+				id: "19368EBE31293A66"
+				item: "saintsdragons:ignivorus_heart"
+				type: "item"
+			}]
+			title: "Can you feel it? In your veins? The warmth? The anguish boiling away from your brow? The sweat, rolling down your neck? The memories, fleeting, yet somehow stuck in this heart. In your heart. In the heart of a beast."
+			x: 0.0d
+			y: -5.5d
 		}
 	]
 	title: "Epilogue"

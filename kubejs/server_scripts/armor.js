@@ -4,10 +4,10 @@ var SYSTEM_CONFIG = {
         LEATHER:      { name: 'leather',         hammer: 'minecraft:wooden_axe',                            },
         WOOD:         { name: 'wood',            hammer: 'minecraft:wooden_hoe',                            },
         STONE:        { name: 'stone',           hammer: 'minecraft:stone_pickaxe',                         },
+        BONE:         { name: 'bone',            hammer: 'opposing_force:sawblade',                         },
         IRON:         { name: 'iron',            hammer: 'lowlands_clothing:blacksmith_hammer',             },
         GOLD:         { name: 'gold',            hammer: 'minecraft:golden_hoe',                            },
         DIAMOND:      { name: 'diamond',         hammer: 'farmersdelight:diamond_knife',                    },
-        BONE:         { name: 'bone',            hammer: 'opposing_force:sawblade',                         },
         NETHERITE:    { name: 'netherite',       hammer: 'minecraft:netherite_hoe',                         },
         STELLAR:      { name: 'stellar',         hammer: 'foolish:meteordrive_hammer',                      },
     }

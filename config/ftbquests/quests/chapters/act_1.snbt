@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "act_1"
 	group: "61FCFB164DAE895F"
+	hide_quest_until_deps_complete: true
 	id: "7A7FC3D4D86A543D"
 	images: [{
 		entity_vis_enabled: true
@@ -55,8 +56,10 @@
 		}
 		{
 			dependencies: ["5AAFD59DF249101E"]
+			description: ["Same thing as last time..."]
 			entity_vis_size: 1.0f
 			id: "02F4E0B9F92B8F2F"
+			subtitle: "Found in jungles."
 			tasks: [{
 				entity: "opposing_force:skyvern"
 				entity_use_tag: false
@@ -77,9 +80,11 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["47E8009EB42D5D94"]
+			dependencies: ["6F6891222288503F"]
+			description: ["Once in the swamp, consume an ink membrane and he will find you..."]
 			entity_vis_size: 1.0f
 			id: "5AAFD59DF249101E"
+			subtitle: "Found in the swamp."
 			tasks: [{
 				entity: "opposing_force:guzzler"
 				entity_use_tag: false
@@ -112,8 +117,10 @@
 				"21A3DCB4BBD6168B"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Attracted to ominous auras..."]
 			entity_vis_size: 1.0f
 			id: "6EA6A2BBB9187EDF"
+			subtitle: "Found on the coasts..."
 			tasks: [{
 				entity: "saintsdragons:volitans"
 				entity_use_tag: false
@@ -134,211 +141,362 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: ["Use the bait on a lit beast pit to summon."]
 			entity_vis_size: 1.0f
 			id: "7E9ACEFFDF18C895"
-			tasks: [{
-				entity: "luminous_beasts:coral_sea_viper"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "302F4D22FCD0E63A"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in the sea."
+			tasks: [
+				{
+					entity: "luminous_beasts:coral_sea_viper"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "302F4D22FCD0E63A"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "57FB1AE83470EE49"
+					item: "minecraft:tropical_fish"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: ["Use the bait on a lit beast pit to summon."]
 			entity_vis_size: 1.0f
 			id: "341FB2AA40A43E79"
-			tasks: [{
-				entity: "luminous_beasts:cherry_tree_ent"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "4D74B7C990D05AE1"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "I wonder where I could find this beast..."
+			tasks: [
+				{
+					entity: "luminous_beasts:cherry_tree_ent"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4D74B7C990D05AE1"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "5713499C264C01F8"
+					item: "minecraft:apple"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: [
+				"Use the bait on a lit beast pit to summon."
+				""
+				"Hint: You only need to kill one..."
+			]
 			entity_vis_size: 1.0f
 			id: "784DDDB43A0ADEDE"
-			tasks: [{
-				entity: "luminous_beasts:golden_hermit_king"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "0E8E9C6EF18C46EC"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found along the coasts"
+			tasks: [
+				{
+					entity: "luminous_beasts:golden_hermit_king"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "0E8E9C6EF18C46EC"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "0FAF7DBE2F4BB927"
+					item: "minecraft:rabbit"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: ["Use the bait on a lit beast pit to summon."]
 			entity_vis_size: 1.0f
 			id: "02A09C529A75E481"
-			tasks: [{
-				entity: "luminous_beasts:bogged_bone_stalker"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "31CF2E1FD3F8FE37"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in wetlands."
+			tasks: [
+				{
+					entity: "luminous_beasts:bogged_bone_stalker"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "31CF2E1FD3F8FE37"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "14ACB7AB265EA24D"
+					item: "minecraft:bone"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: ["Use the bait on a lit beast pit to summon."]
 			entity_vis_size: 1.0f
 			id: "33FD7B81A3BEB00A"
-			tasks: [{
-				entity: "luminous_beasts:arid_yeti"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "1EA713D32416AA3B"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in arid wildlands."
+			tasks: [
+				{
+					entity: "luminous_beasts:arid_yeti"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "1EA713D32416AA3B"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1AF7B987E50AC9E8"
+					item: "minecraft:porkchop"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: -3.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: ["Use the bait on a lit beast pit to summon."]
 			entity_vis_size: 1.0f
 			id: "5146B7A5107490F4"
-			tasks: [{
-				entity: "luminous_beasts:frigid_gator"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "147F165D09FA1EAD"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in oceans."
+			tasks: [
+				{
+					entity: "luminous_beasts:frigid_gator"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "147F165D09FA1EAD"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "41B8BAD793CD3606"
+					item: "minecraft:cod"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: -5.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: ["Use the bait on a lit beast pit to summon."]
 			entity_vis_size: 1.0f
 			id: "3D7F697DF377EC93"
-			tasks: [{
-				entity: "luminous_beasts:red_mummy"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "0D3F58C8A0A6030C"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in the dryest parts of the overworld."
+			tasks: [
+				{
+					entity: "luminous_beasts:red_mummy"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "0D3F58C8A0A6030C"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "15462F236E7E3D51"
+					item: "minecraft:mutton"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: -7.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: ["Use the bait on a lit beast pit to summon."]
 			entity_vis_size: 1.0f
 			id: "21A3DCB4BBD6168B"
-			tasks: [{
-				entity: "luminous_beasts:wind_phoenix"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "17BDFD24A8109176"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in dark taigas."
+			tasks: [
+				{
+					entity: "luminous_beasts:wind_phoenix"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "17BDFD24A8109176"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "5BD74DA8C8D49247"
+					item: "minecraft:feather"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: 6.5d
 		}
 		{
-			dependencies: ["02F4E0B9F92B8F2F"]
+			dependencies: [
+				"02F4E0B9F92B8F2F"
+				"51A99122578A8F30"
+			]
+			description: ["Use the bait on a lit beast pit to summon."]
 			entity_vis_size: 1.0f
 			id: "322B4ADC6DD34797"
-			tasks: [{
-				entity: "luminous_beasts:albino_moth"
-				entity_use_tag: false
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "6E02882DF637BA9D"
-				type: "kill"
-				value: 1L
-			}]
+			subtitle: "Found in dark taigas."
+			tasks: [
+				{
+					entity: "luminous_beasts:albino_moth"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "6E02882DF637BA9D"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "5714852F17EFC187"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: 8.5d
+		}
+		{
+			dependencies: ["47E8009EB42D5D94"]
+			entity_vis_size: 1.0f
+			id: "6F6891222288503F"
+			subtitle: "Consume to gain bad omen!"
+			tasks: [{
+				id: "7FE290E1DF6F1FA2"
+				item: "theinkarena:ink_membrane"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			description: ["Used to summon beasts."]
+			entity_vis_size: 1.0f
+			id: "51A99122578A8F30"
+			subtitle: "Not reusable!"
+			tasks: [
+				{
+					id: "5BB64BEDC3C9FD57"
+					item: "luminous_beasts:beast_pit_off"
+					type: "item"
+				}
+				{
+					id: "7E9C73A3747FAC89"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 0.5d
 		}
 	]
 	title: "Act I"

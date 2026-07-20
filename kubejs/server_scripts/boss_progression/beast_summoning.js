@@ -11,13 +11,13 @@ const BEAST_SUMMONS = [
         mobId: "luminous_beasts:the_scarecrow",
         itemId: "minecraft:rotten_flesh",
         offHandItemId: "minecraft:nether_quartz",
-        biome: "minecraft:is_forest",
+        biome: "kubejs:wildlife_spawns/temperate_forests",
         radius: 10, filters: { inWater: false, padding: 1 }
     },
     {
         mobId: "luminous_beasts:woodland_witch_doctor",
         itemId: "minecraft:chicken",
-        biome: "minecraft:is_forest",
+        biome: "kubejs:wildlife_spawns/temperate_forests",
         radius: 10, filters: { inWater: false, padding: 1 }
     },
     {
@@ -112,8 +112,13 @@ BlockEvents.rightClicked(event => {
                        level.getBlock(secondBelow).id === 'minecraft:bedrock';
                        
         if (isPillar) {
-            // Deterministic position: exactly 20 blocks above the beast pit
-            const spawnPos = block.pos.above(20);
+            // Convert BlockPos to plain JS object with block-center offsets
+            let targetPos = block.pos.above(20);
+            let spawnPos = {
+                x: targetPos.x + 0.5,
+                y: targetPos.y,
+                z: targetPos.z + 0.5
+            };
             
             if (!player.isCreative()) {
                 server.runCommandSilent(`clear ${player.username} minecraft:dragon_egg 1`);
@@ -122,7 +127,7 @@ BlockEvents.rightClicked(event => {
             block.set('minecraft:air');
             player.setStatusMessage("§6The skies tear open... Ignivorus descends!§r");
             
-            // Trigger cinematic sequence using the deterministic spawn position
+            // Trigger cinematic sequence using the formatted spawn position
             triggerCinematicSpawn(server, level, player, spawnPos, 'saintsdragons:ignivorus');
             event.success();
             return;
@@ -188,7 +193,6 @@ BlockEvents.rightClicked(event => {
 });
 
 // --- HELPER FUNCTION FOR CINEMATIC SEQUENCING ---
-// Extracted to keep the main event clean and reusable for both standard and special spawns
 function triggerCinematicSpawn(server, level, player, spawnPos, mobId) {
     server.runCommandSilent(`weather thunder`);
 
@@ -220,14 +224,29 @@ function triggerCinematicSpawn(server, level, player, spawnPos, mobId) {
                 
                 entity.spawn();
 
-                server.runCommandSilent(`effect give ${entity.uuid.toString()} minecraft:glowing 10 0 true`);
+                // Instantly heal entity to its maximum capacity
+                entity.setHealth(entity.maxHealth);
+
+                let uuid = entity.uuid.toString();
+
+                // NEW: Instant health burst (tier 255) to guarantee full HP if modded attributes take a tick to apply
+                server.runCommandSilent(`effect give ${uuid} minecraft:instant_health 1 255 true`);
+
+                // Glowing effect (10 seconds, hidden particles)
+                server.runCommandSilent(`effect give ${uuid} minecraft:glowing 10 0 true`);
                 
-                let bossbarId = `beast_bar_${entity.uuid.toString().replace(/-/g, '_')}`;
+                // 5 seconds of max-tier status effects with particles hidden
+                server.runCommandSilent(`effect give ${uuid} minecraft:regeneration 5 255 true`);
+                server.runCommandSilent(`effect give ${uuid} minecraft:resistance 5 255 true`);
+                server.runCommandSilent(`effect give ${uuid} minecraft:weakness 5 255 true`);
+                
+                let bossbarId = `beast_bar_${uuid.replace(/-/g, '_')}`;
                 let cleanMobName = mobId.split(':')[1].replace(/_/g, ' ').toUpperCase();
                 let maxHp = Math.ceil(entity.maxHealth);
                 
                 server.runCommandSilent(`bossbar add ${bossbarId} "${cleanMobName}"`);
                 server.runCommandSilent(`bossbar set ${bossbarId} max ${maxHp}`);
+                server.runCommandSilent(`bossbar set ${bossbarId} value ${maxHp}`);
                 server.runCommandSilent(`bossbar set ${bossbarId} color red`);
                 server.runCommandSilent(`bossbar set ${bossbarId} style progress`);
                 
@@ -253,7 +272,7 @@ LevelEvents.tick(event => {
         
         server.runCommandSilent(`bossbar set ${bossbarId} value ${currentHp}`);
         
-        // NEW: Dynamically updates the visible player list strictly to those within 60 blocks of the beast
+        // Dynamically updates the visible player list strictly to those within 60 blocks of the beast
         server.runCommandSilent(`execute in ${level.dimension.toString()} run bossbar set ${bossbarId} players @a[x=${beast.x},y=${beast.y},z=${beast.z},distance=..60]`);
         
         if (beast.isRemoved() || !beast.isAlive() || currentHp <= 0) {
@@ -277,7 +296,7 @@ EntityEvents.death(event => {
     
     let player = source.actualEntity;
     if (!player || !player.isPlayer()) {
-        if (summonerUUID) player = server.getPlayerByUUID(summonerUUID);
+        if (summonerUUID) player = server.getPlayer(summonerUUID);
     }
     
     if (player && player.isPlayer()) {
@@ -289,7 +308,7 @@ EntityEvents.death(event => {
         let currentKills = server.persistentData.beasts_killed[playerUUID][mobId] || 0;
         server.persistentData.beasts_killed[playerUUID][mobId] = currentKills + 1;
         
-        player.tell(`§aYou have slain a summoned ${mobId}! Total tracking: ${server.persistentData.beasts_killed[playerUUID][mobId]}§r`);
+        // player.tell(`§aYou have slain a summoned ${mobId}! Total tracking: ${server.persistentData.beasts_killed[playerUUID][mobId]}§r`);
     }
 });
 

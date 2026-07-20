@@ -4,8 +4,958 @@
 	filename: "weapons"
 	group: "43EDEE406998F8A6"
 	id: "4E2E6C37DA7EA8EC"
+	images: [
+		{
+			height: 8.0d
+			image: "simplybows:item/blossom_bow/small/blossom_bow_pulling_0_small"
+			rotation: -45.0d
+			width: 8.0d
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			height: 12.0d
+			image: "monsterexpansion:item/rimescourge_2d"
+			rotation: -30.0d
+			width: 12.0d
+			x: 2.5d
+			y: -6.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "19706468FA83A793"
+			tasks: [{
+				id: "284096251E04DEAC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "59BB371EB2CED463"
+			tasks: [{
+				id: "680E23F00016CAD3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "minecraft:stone_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "414ADE33CB85C033"
+			tasks: [{
+				id: "4650F29C8DD5032F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "264E6E2EDD447A73"
+			tasks: [{
+				id: "4DADB1B19921F71E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3F042F68C9F383A5"
+			tasks: [{
+				id: "06F0E34865FF09BA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "minecraft:golden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "29033781AD1C7726"
+			tasks: [{
+				id: "674A40A29DFF9178"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "minecraft:netherite_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5B05F74EEE3229BA"
+			tasks: [{
+				id: "114728A3407BDFB6"
+				item: {
+					Count: 1
+					id: "foolish:sacilite_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "53AA82C791B9B5DF"
+			tasks: [{
+				id: "69DA9A941EF5F4A3"
+				item: {
+					Count: 1
+					id: "foolish:scarlant_broadsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3D1442801CB9D650"
+			tasks: [{
+				id: "2CBC9B3741D0235B"
+				item: {
+					Count: 1
+					id: "foolish:thunderstone_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5ABFD0E80D80F76B"
+			tasks: [{
+				id: "70B2387465F07DFB"
+				item: {
+					Count: 1
+					id: "foolish:infernal_alloy_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3D3D8A997743BB58"
+			subtitle: "Meta"
+			tasks: [{
+				id: "1B293A557A47A6B2"
+				item: {
+					Count: 1
+					id: "foolish:keepsteel_greatsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "57AA99E6AC06500F"
+			tasks: [{
+				id: "3751407086349F39"
+				item: {
+					Count: 1
+					id: "foolish:stellar_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6DCBBE758B31DA2E"
+			tasks: [{
+				id: "1FA22B8C4D29143D"
+				item: {
+					Count: 1
+					id: "foolish:sacilite_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "394F23390418F5FD"
+			tasks: [{
+				id: "17E4FF78F4F85905"
+				item: "foolish:astral_edge_sword"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3E7677D5FEB42177"
+			tasks: [{
+				id: "192D607D3C9E59C0"
+				item: "foolish:starsplitter_spear"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2B01DBE56B22C9D5"
+			tasks: [{
+				id: "34BD663D8D9DED60"
+				item: "foolish:meteordrive_hammer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -10.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "179B82DFCA5DF9D6"
+			tasks: [{
+				id: "0759E603F212F915"
+				item: {
+					Count: 1
+					id: "foolish:immortal_artillery_melee"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1D437BD4BF0439FF"
+			tasks: [{
+				id: "5A64E361A4FFA77F"
+				item: {
+					Count: 1
+					id: "foolish:triple_threat"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -9.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "395FAA5CD150B4B8"
+			tasks: [{
+				id: "185299377C9D2115"
+				item: {
+					Count: 1
+					id: "foolish:brandbladedagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "211A7F0EC502EC02"
+			tasks: [{
+				id: "50E58A80D4F28B77"
+				item: {
+					Count: 1
+					id: "foolish:wooden_club"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1096A29E31C00917"
+			tasks: [{
+				id: "3C4987C848547759"
+				item: {
+					Count: 1
+					id: "foolish:witherfork_trident"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "41B9CEECCD4FA883"
+			tasks: [{
+				id: "4DEE8CEB5150276A"
+				item: {
+					Count: 1
+					id: "foolish:hands_of_time_greatsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6B03C92BC9308724"
+			tasks: [{
+				id: "21C5456EBDB8889A"
+				item: {
+					Count: 1
+					id: "foolish:boneweaver_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "574193E061F951E8"
+			tasks: [{
+				id: "29CFEE257F7DDB91"
+				item: {
+					Count: 1
+					id: "foolish:blazing_pitchfork"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "195A3A8F0520ADA8"
+			tasks: [{
+				id: "0F5CE1A6845A43F9"
+				item: {
+					Count: 1
+					id: "foolish:petal_whip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4280B85645820A4A"
+			tasks: [{
+				id: "6C216555BAABE034"
+				item: {
+					Count: 1
+					id: "foolish:battle_fan"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6C816E60CCA46121"
+			tasks: [{
+				id: "3D98909579A4FBD4"
+				item: "foolish:thrashing_apparatus"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "276E507F097F526C"
+			tasks: [{
+				id: "227D959B95A5A6A9"
+				item: {
+					Count: 1
+					id: "foolish:florasabre_rapier"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2E7E3019C7D83949"
+			tasks: [{
+				id: "0C3AA3DEEF6F24B9"
+				item: {
+					Count: 1
+					id: "foolish:waste_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "50F1422CE9DDFFD5"
+			tasks: [{
+				id: "4BDC053E706CE200"
+				item: {
+					Count: 1
+					id: "foolish:scarlet_scepter_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "350D88522DDA3C42"
+			tasks: [{
+				id: "1D9861F1264F65E7"
+				item: {
+					Count: 1
+					id: "opposing_force:laser_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "37FFCCA9472EDEEE"
+			tasks: [{
+				id: "215E28CEE9FE7D7A"
+				item: {
+					Count: 1
+					id: "opposing_force:spark_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "66D683BE2DEDC7EE"
+			tasks: [{
+				id: "11024CA73CC7BB9A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "monsterexpansion:horn_of_the_shattercry"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2CBE7B5D844B7607"
+			tasks: [{
+				id: "4380349521DDA145"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "monsterexpansion:charcraw"
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "66BB2DF0DF62CA1D"
+			tasks: [{
+				id: "29505D3A1D1B6578"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "monsterexpansion:rimescourge"
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -10.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6DB5EAFC7BAFFD36"
+			tasks: [{
+				id: "0F26663695B35B80"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "monsterexpansion:duskrend"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "72A374F26452A462"
+			tasks: [{
+				id: "01F76E7D05B2FC9D"
+				item: {
+					Count: 1
+					id: "foolish:ultrafist"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3A8581B2D4F90D7A"
+			tasks: [{
+				id: "407261F0B44561C7"
+				item: {
+					Count: 1
+					id: "theinkarena:soul_slasher"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7B507C1A7117FB02"
+			tasks: [{
+				id: "768AEA077A0E79A5"
+				item: {
+					Count: 1
+					id: "theinkarena:soul_brush"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "78DEC2A017A78E11"
+			tasks: [{
+				id: "2B9B8F3F12631E53"
+				item: {
+					Count: 1
+					id: "netherman:azazel_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1E6CBDF678AB9DA8"
+			tasks: [{
+				id: "2E69714ABBB7C965"
+				item: {
+					Count: 1
+					id: "netherman:azazel_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4DF4B03365CE3C8E"
+			tasks: [{
+				id: "77200C987EB471B9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "minecraft:bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "669E785DE1A1FFA2"
+			tasks: [{
+				id: "34B23B3A04BAE5EB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"monsterexpansion:weapon_data": { }
+					}
+					id: "minecraft:crossbow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3FA70C6D0D0B0A56"
+			tasks: [{
+				id: "24D873233F496F30"
+				item: {
+					Count: 1
+					id: "simplybows:vine_bow/vine_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "176316F5F99B76DC"
+			tasks: [{
+				id: "2C88C0DC0E986BC6"
+				item: {
+					Count: 1
+					id: "simplybows:ice_bow/ice_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "14055F46DBB1603A"
+			tasks: [{
+				id: "5DE32933CEEE551B"
+				item: {
+					Count: 1
+					id: "simplybows:bubble_bow/bubble_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4E5CE36F2FB6912F"
+			tasks: [{
+				id: "18FE006104299503"
+				item: {
+					Count: 1
+					id: "simplybows:bee_bow/bee_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "47F20D646EE5AFEE"
+			tasks: [{
+				id: "07031361E7ECAC6D"
+				item: {
+					Count: 1
+					id: "simplybows:blossom_bow/blossom_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "31428EF723ECE999"
+			tasks: [{
+				id: "0BDC73497EF76AD9"
+				item: {
+					Count: 1
+					id: "simplybows:earth_bow/earth_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4AE79077C4AE597F"
+			tasks: [{
+				id: "5A6A3229E1288DC1"
+				item: {
+					Count: 1
+					id: "simplybows:echo_bow/echo_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7E009E2830A62816"
+			tasks: [{
+				id: "03AC86EB1CA31E01"
+				item: {
+					Count: 1
+					id: "opposing_force:blaster"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2BF8806372821DB7"
+			tasks: [{
+				id: "03E0DBA35D4B9C44"
+				item: {
+					Count: 1
+					id: "opposing_force:strato_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5DA015758909DAE4"
+			tasks: [{
+				id: "43C94D9E117A0E0A"
+				item: {
+					Count: 1
+					id: "opposing_force:tesla_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4813534EE16B0667"
+			tasks: [{
+				id: "6811B25955F8C962"
+				item: "tmg:end_bow"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6A6AD40CAC2BFD1D"
+			subtitle: "You have compromised your morals to get here..."
+			tasks: [{
+				id: "4C203828263CF16B"
+				item: {
+					Count: 1
+					id: "foolish:stick_of_disposal"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.0d
+		}
+	]
 	title: "Weapons"
 }
