@@ -77,6 +77,14 @@
     "curseForgeHash": 650675257,
     "modrinthHash": "787a8482dadcc9d3257efd5860ed22f6b797e7b3"
   },
+  "AnvilNeverTooExpensive-1.20.1-1.1.jar": {
+    "jarName": "AnvilNeverTooExpensive-1.20.1-1.1.jar",
+    "modId": "ante",
+    "name": "Anvil Never Too Expensive",
+    "version": "1.1",
+    "curseForgeHash": 3213619668,
+    "modrinthHash": "099ac070195ec98a5bf2c7c5aef88f00a9fd2c12"
+  },
   "appleskin-forge-mc1.20.1-2.5.1.jar": {
     "jarName": "appleskin-forge-mc1.20.1-2.5.1.jar",
     "modId": "appleskin",
@@ -213,13 +221,13 @@
     "curseForgeHash": 4263061721,
     "modrinthHash": "9df4908f606c6dc62a358b3e04e3fdedba59a12c"
   },
-  "chat_heads-0.15.2-forge-1.20.jar": {
-    "jarName": "chat_heads-0.15.2-forge-1.20.jar",
+  "chat_heads-0.15.3-forge-1.20.jar": {
+    "jarName": "chat_heads-0.15.3-forge-1.20.jar",
     "modId": "chat_heads",
     "name": "Chat Heads",
-    "version": "0.15.2",
-    "curseForgeHash": 2721917406,
-    "modrinthHash": "fe49c0f42f21f4c0ea71c3cda7757914cb875ae7"
+    "version": "0.15.3",
+    "curseForgeHash": 3981519860,
+    "modrinthHash": "5068015885175bee8f8829e74fb62feb97538b2e"
   },
   "Chunky-1.3.146.jar": {
     "jarName": "Chunky-1.3.146.jar",
@@ -357,13 +365,13 @@
     "curseForgeHash": 3260091100,
     "modrinthHash": "aef9a8ebdf0be50b6bd8da8ab4153f5085f71a80"
   },
-  "cultofazazelforge-1.1.4.9a.jar": {
-    "jarName": "cultofazazelforge-1.1.4.9a.jar",
+  "cultofazazelforge-killfix.jar": {
+    "jarName": "cultofazazelforge-killfix.jar",
     "modId": "netherman",
     "name": "Cult of Azazel",
     "version": "1.1.4.9a",
-    "curseForgeHash": 888807499,
-    "modrinthHash": "a2dd786a44ef231286d51b94a02b4766a4b77846"
+    "curseForgeHash": 1265010760,
+    "modrinthHash": "286fc7381140b336efe8b421f4730661f1b5f0a4"
   },
   "cupboard-1.20.1-3.7.jar": {
     "jarName": "cupboard-1.20.1-3.7.jar",
@@ -725,6 +733,14 @@
     "curseForgeHash": 2853914731,
     "modrinthHash": "0584f628d2bc6a612d79dee368324357ebae1423"
   },
+  "functionalarmortrim-1.20.1-6.jar": {
+    "jarName": "functionalarmortrim-1.20.1-6.jar",
+    "modId": "functionalarmortrim",
+    "name": "Funtional Armor Trim",
+    "version": "6",
+    "curseForgeHash": 993363708,
+    "modrinthHash": "7a3addd8dfb8c2e961e2a9cd52241c9b756a97f2"
+  },
   "fusion-1.3.5-forge-mc1.20.1.jar": {
     "jarName": "fusion-1.3.5-forge-mc1.20.1.jar",
     "modId": "fusion",
@@ -951,6 +967,14 @@
     "curseForgeHash": 1956694745,
     "modrinthHash": "e44a12eb51813b16faaab89b8073ec63c746c1b0"
   },
+  "locator-1.20.2-1.1.0.jar": {
+    "jarName": "locator-1.20.2-1.1.0.jar",
+    "modId": "locator",
+    "name": "Locator",
+    "version": "1.1.0",
+    "curseForgeHash": 301444,
+    "modrinthHash": "7a3c6d03ecaffa7c482cb854ac5d8cf8e5ca9b6f"
+  },
   "loot_journal-forge-1.20.1-6.2.1.jar": {
     "jarName": "loot_journal-forge-1.20.1-6.2.1.jar",
     "modId": "loot_journal",
@@ -1039,13 +1063,13 @@
     "curseForgeHash": 3972845838,
     "modrinthHash": "322fdb7aadc06b540cff69a2a0a513bf37050f0f"
   },
-  "monsterexpansion-1.20.1-v0.7.4.jar": {
-    "jarName": "monsterexpansion-1.20.1-v0.7.4.jar",
+  "monsterexpansion-1.20.1-v0.7.5.jar": {
+    "jarName": "monsterexpansion-1.20.1-v0.7.5.jar",
     "modId": "monsterexpansion",
     "name": "Monster Expansion",
-    "version": "1.20.1-v0.7.4",
-    "curseForgeHash": 789776052,
-    "modrinthHash": "f9f274a39857d5893b6c52a3c8592054582ecdd3"
+    "version": "1.20.1-v0.7.5",
+    "curseForgeHash": 2865817859,
+    "modrinthHash": "792f178df247ac51631f572f71ab432e59d47801"
   },
   "moonlight-1.20-2.16.34-forge.jar": {
     "jarName": "moonlight-1.20-2.16.34-forge.jar",
@@ -1054,6 +1078,14 @@
     "version": "1.20-2.16.34",
     "curseForgeHash": 1757026364,
     "modrinthHash": "5e20f2f0ce56a534accb32f80853d5a246599a4d"
+  },
+  "morejs-forge-1.20.1-0.10.1.jar": {
+    "jarName": "morejs-forge-1.20.1-0.10.1.jar",
+    "modId": "morejs",
+    "name": "MoreJS",
+    "version": "0.10.1",
+    "curseForgeHash": 2038968762,
+    "modrinthHash": "c460ca3e95e40894c78fd327c5ba73c7da83f6d3"
   },
   "moremobvariants-forge+1.20.1-1.3.0.1.jar": {
     "jarName": "moremobvariants-forge+1.20.1-1.3.0.1.jar",
@@ -1174,14 +1206,6 @@
     "version": "8.0.1",
     "curseForgeHash": 1976454581,
     "modrinthHash": "047ac47549ae0a21b05f70d74bcf436ee0221eef"
-  },
-  "overpacked-2.0.1-1.20.1-forge.jar": {
-    "jarName": "overpacked-2.0.1-1.20.1-forge.jar",
-    "modId": "overpacked",
-    "name": "Overpacked",
-    "version": "2.0.1",
-    "curseForgeHash": 2239481726,
-    "modrinthHash": "22adc4b78d516356bea5cab3f5c3e91c2c5c4445"
   },
   "packetfixer-3.3.2-1.18-1.20.4-merged.jar": {
     "jarName": "packetfixer-3.3.2-1.18-1.20.4-merged.jar",
@@ -1319,13 +1343,13 @@
     "curseForgeHash": 1086106655,
     "modrinthHash": "08ddef7ff6a0934f316fbac37b2a00599c9c577c"
   },
-  "recipeessentials-1.20.1-4.1.jar": {
-    "jarName": "recipeessentials-1.20.1-4.1.jar",
+  "recipeessentials-1.20.1-4.7.jar": {
+    "jarName": "recipeessentials-1.20.1-4.7.jar",
     "modId": "recipeessentials",
     "name": "recipeessentials mod",
-    "version": "1.20.1-4.1",
-    "curseForgeHash": 2529214632,
-    "modrinthHash": "c2e961462610cc696ab77abc9d36c12f405acb20"
+    "version": "1.20.1-4.7",
+    "curseForgeHash": 2081161564,
+    "modrinthHash": "e689f61f6799acf2af6b970c964aa65f50290ec4"
   },
   "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
     "jarName": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
