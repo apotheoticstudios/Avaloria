@@ -81,6 +81,11 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"253C7CD0AE3C4E35"
+				"4A5E106AD9462698"
+				"00551D267A9B3AA4"
+			]
 			entity_vis_size: 1.0f
 			id: "31720F6CD67AF884"
 			shape: "none"

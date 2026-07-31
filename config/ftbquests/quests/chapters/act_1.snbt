@@ -5,24 +5,34 @@
 	group: "61FCFB164DAE895F"
 	hide_quest_until_deps_complete: true
 	id: "7A7FC3D4D86A543D"
-	images: [{
-		entity_vis_enabled: true
-		entity_vis_entity: "theinkarena:ink_titan"
-		entity_vis_idle_mode: "USE_GLOBAL"
-		entity_vis_offset_x: 0.0f
-		entity_vis_offset_y: 0.0f
-		entity_vis_rotation: 0.0f
-		entity_vis_silhouette: false
-		entity_vis_size: 5.0f
-		entity_vis_spin_mode: "USE_GLOBAL"
-		entity_vis_walk_mode: "USE_GLOBAL"
-		height: 1.0d
-		image: ""
-		rotation: 0.0d
-		width: 1.0d
-		x: 0.5d
-		y: -2.5d
-	}]
+	images: [
+		{
+			entity_vis_enabled: true
+			entity_vis_entity: "theinkarena:ink_titan"
+			entity_vis_idle_mode: "USE_GLOBAL"
+			entity_vis_offset_x: 0.0f
+			entity_vis_offset_y: 0.0f
+			entity_vis_rotation: 0.0f
+			entity_vis_silhouette: false
+			entity_vis_size: 5.0f
+			entity_vis_spin_mode: "USE_GLOBAL"
+			entity_vis_walk_mode: "USE_GLOBAL"
+			height: 1.0d
+			image: ""
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			height: 5.0d
+			image: "opposing_force:block/guzzler_scale_lamp_active"
+			rotation: 0.0d
+			width: 5.0d
+			x: 5.0d
+			y: 0.5d
+		}
+	]
 	order_index: 1
 	quest_links: [{
 		id: "49387BF2ADC9FE26"
@@ -33,6 +43,7 @@
 	quests: [
 		{
 			dependencies: ["689400837A10EB1D"]
+			description: ["Only found as part of the INK HORDE!"]
 			entity_vis_size: 1.0f
 			id: "47E8009EB42D5D94"
 			tasks: [{
@@ -48,6 +59,7 @@
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "7F91D9221D2DF3A3"
+				title: "Fell the TITAN"
 				type: "kill"
 				value: 1L
 			}]
@@ -461,6 +473,12 @@
 		}
 		{
 			dependencies: ["47E8009EB42D5D94"]
+			description: [
+				"Gives access to the &6AMBUSH&r system!"
+				"Consume some ink to gain &5Bad Omen.&r"
+				"Journey to the correct &2Biome&r and wait..."
+				"Twice a day, the targeted beast will &6Ambush&r you!"
+			]
 			entity_vis_size: 1.0f
 			id: "6F6891222288503F"
 			subtitle: "Consume to gain bad omen!"
@@ -469,12 +487,24 @@
 				item: "theinkarena:ink_membrane"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: 0.5d
 		}
 		{
-			description: ["Used to summon beasts."]
+			dependencies: ["02F4E0B9F92B8F2F"]
+			description: [
+				"Used to summon &4beasts.&r"
+				"How to use:"
+				"- Find the right &2biome.&r"
+				"- Place the &6Beast Pit.&r"
+				"- &eLight&r the pit."
+				"&7- (Optional) Wield the Catalyst in your offhand.&r"
+				"- Click on the pit with your &aBait.&r"
+				"- &4FIGHT!&r"
+			]
 			entity_vis_size: 1.0f
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "51A99122578A8F30"
 			subtitle: "Not reusable!"
 			tasks: [

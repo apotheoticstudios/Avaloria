@@ -5,6 +5,25 @@
 	group: "61FCFB164DAE895F"
 	hide_quest_until_deps_complete: true
 	id: "59714BE797D7BA87"
+	images: [
+		{
+			height: 6.0d
+			image: "foolish:block/stellarportal"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			height: 8.0d
+			image: "foolish:block/new_piskel-1.png_2"
+			rotation: 0.0d
+			width: 8.0d
+			x: 1.5d
+			y: 0.0d
+		}
+	]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -24,7 +43,7 @@
 				type: "structure"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["629A2B4DE686BF86"]
@@ -36,7 +55,7 @@
 				type: "structure"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [

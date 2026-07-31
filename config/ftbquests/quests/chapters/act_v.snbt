@@ -5,14 +5,40 @@
 	group: "61FCFB164DAE895F"
 	hide_quest_until_deps_complete: true
 	id: "5E7C7585A5DF9CDF"
-	images: [{
-		height: 8.0d
-		image: "netherman:textures/mob_effect/praemium.png"
-		rotation: 0.0d
-		width: 8.0d
-		x: 3.0d
-		y: 0.0d
-	}]
+	images: [
+		{
+			height: 8.0d
+			image: "netherman:textures/mob_effect/praemium.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			height: 1.2d
+			image: "minecraft:block/end_portal_frame_side"
+			rotation: 0.0d
+			width: 1.2d
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			height: 1.2d
+			image: "minecraft:block/end_portal_frame_side"
+			rotation: 0.0d
+			width: 1.2d
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			height: 1.2d
+			image: "minecraft:block/end_portal_frame_side"
+			rotation: 0.0d
+			width: 1.2d
+			x: 4.0d
+			y: 5.5d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
@@ -106,7 +132,7 @@
 				id: "17A743D49601C69E"
 				type: "dimension"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 4.0d
 		}
 		{
@@ -118,7 +144,7 @@
 				structure: "foolish:end_keep"
 				type: "structure"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: 4.0d
 		}
 		{

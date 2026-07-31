@@ -22,14 +22,6 @@
 			x: 6.5d
 			y: -1.5d
 		}
-		{
-			height: 12.0d
-			image: "monsterexpansion:item/charcraw_2d"
-			rotation: 135.0d
-			width: 12.0d
-			x: 1.5d
-			y: 5.0d
-		}
 	]
 	order_index: 4
 	quest_links: [ ]

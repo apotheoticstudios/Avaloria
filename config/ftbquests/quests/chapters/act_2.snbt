@@ -32,11 +32,124 @@
 			x: 15.5d
 			y: 0.0d
 		}
+		{
+			height: 6.0d
+			image: "minecraft:item/brewing_stand"
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/cornflower"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/allium"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/amethyst_cluster"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "netherdescent:block/arisian_blossom_lit"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "bloomingnature:block/amaryllis"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "opposing_force:block/apple_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "opposing_force:block/apple_leaves_overlay"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/azure_bluet"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/birch_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			height: 4.0d
+			image: "minecraft:block/nether_gold_ore"
+			rotation: 0.0d
+			width: 4.0d
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/acacia_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "primal:block/thorny_acacia_sapling"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			height: 8.0d
+			image: "theinkarena:block/thin_layer_ink"
+			rotation: 0.0d
+			width: 8.0d
+			x: 14.749999999999979d
+			y: 1.6785714285714235d
+		}
 	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["6EA6A2BBB9187EDF"]
 			description: ["Only one is required. Found in blossoming fields."]
 			entity_vis_size: 1.0f
 			id: "253C7CD0AE3C4E35"
@@ -61,6 +174,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["6EA6A2BBB9187EDF"]
 			description: ["Only one is required. Found in blossoming fields."]
 			entity_vis_size: 1.0f
 			id: "00551D267A9B3AA4"
@@ -262,6 +376,8 @@
 			description: ["Return to the ink arena. Clear the &0stain&r upon this world."]
 			entity_vis_size: 1.0f
 			id: "629A2B4DE686BF86"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "You must finish what you've started."
 			tasks: [{
 				entity: "theinkarena:blot"

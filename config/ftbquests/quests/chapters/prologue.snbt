@@ -12,6 +12,11 @@
 			description: ["Welcome to &6Avaloria.&r Your goal is to eradicate every &4&lbeast.&r"]
 			entity_vis_size: 1.0f
 			id: "07316F5FC72883E9"
+			rewards: [{
+				id: "5C55EE551941E4A4"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "You feel empty..."
@@ -25,8 +30,15 @@
 		}
 		{
 			dependencies: ["07316F5FC72883E9"]
+			description: ["This bed will allow you to rest."]
 			entity_vis_size: 1.0f
+			icon: "minecraft:sniffer_egg"
 			id: "75C7135332A281B7"
+			rewards: [{
+				id: "7C8024753537723A"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
 			subtitle: "You suffer."
 			tasks: [{
 				id: "4A9E881BC0B12B0C"
@@ -38,8 +50,24 @@
 		}
 		{
 			dependencies: ["75C7135332A281B7"]
+			description: ["Use the tools at your disposal to break out!"]
 			entity_vis_size: 1.0f
+			icon: "netherdescent:pendorite_bars"
 			id: "2EDCD9D1384BBF73"
+			rewards: [
+				{
+					command: "/ftbquests open_book 4B64F9B3A2E2F21B"
+					icon: "tmg:ancient_pickaxe_charging"
+					id: "5B3D1D7DDB23C4A6"
+					title: "Tools"
+					type: "command"
+				}
+				{
+					id: "06E6653CD53135D7"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+			]
 			subtitle: "In this prison."
 			tasks: [{
 				id: "24AE053AF0D91D50"
@@ -51,8 +79,42 @@
 		}
 		{
 			dependencies: ["2EDCD9D1384BBF73"]
+			description: ["Use armor to protect yourself."]
 			entity_vis_size: 1.0f
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "foolish:potion_of_scarlant_offense"
+				}
+			}
 			id: "591FF9100E236A70"
+			rewards: [
+				{
+					command: "/ftbquests open_book 528D4E07DBF3E454"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"monsterexpansion:monster_armor": {
+								FIRE: -3
+								ICE: 3
+							}
+						}
+						id: "monsterexpansion:leivekilth_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "65C7F3FA624C1EB2"
+					title: "Armor"
+					type: "command"
+				}
+				{
+					id: "2FB08FB738F2BBB2"
+					item: "minecraft:smithing_table"
+					type: "item"
+				}
+			]
 			subtitle: "Of pain."
 			tasks: [{
 				id: "45278507153A3AA5"
@@ -64,8 +126,44 @@
 		}
 		{
 			dependencies: ["591FF9100E236A70"]
+			description: ["Let the blade guide you."]
 			entity_vis_size: 1.0f
+			icon: "supplementaries:slice_map"
 			id: "23969033A0FB0E37"
+			rewards: [
+				{
+					command: "/ftbquests open_book 4E2E6C37DA7EA8EC"
+					icon: {
+						Count: 1
+						id: "foolish:stellar_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "64DEB1303818F723"
+					title: "Weapons"
+					type: "command"
+				}
+				{
+					id: "43E1F6E6248601BC"
+					item: "fantasy_trees:fantasy_birch_crafting_table"
+					type: "item"
+				}
+				{
+					id: "77B38DB52AB09039"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 0
+							}
+						}
+						id: "mm_storage:item_experience_book"
+					}
+					type: "item"
+				}
+			]
 			subtitle: "And exile."
 			tasks: [{
 				id: "5D709B7DD8CB429D"
@@ -85,18 +183,11 @@
 				type: "item"
 			}]
 			subtitle: "Set up a quick base!"
-			tasks: [
-				{
-					id: "30523FAAD83E2DB0"
-					item: "minecraft:chest"
-					type: "item"
-				}
-				{
-					id: "11D461E5D1DEA934"
-					item: "minecraft:crafting_table"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4367E092CCCE6820"
+				item: "mm_storage:block_chest_wood"
+				type: "item"
+			}]
 			x: 0.0d
 			y: -2.0d
 		}
@@ -104,6 +195,12 @@
 			dependencies: ["5FADC4BCE1607375"]
 			entity_vis_size: 1.0f
 			id: "5403865941F9DB96"
+			rewards: [{
+				count: 12
+				id: "6A46E795517F23E0"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			subtitle: "This is your first step in cleaning up the realms..."
 			tasks: [{
 				entity: "minecraft:zombie"
@@ -133,6 +230,15 @@
 				tag: { }
 			}
 			id: "77F083BF1DB92B93"
+			rewards: [{
+				id: "3A41AAA216FC2F2D"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "Use this to find every stain..."
 			tasks: [
 				{
@@ -168,10 +274,12 @@
 		{
 			dependencies: ["77F083BF1DB92B93"]
 			entity_vis_size: 1.0f
+			icon: "theinkarena:ink_titan_skull"
 			id: "689400837A10EB1D"
 			tasks: [{
 				id: "7F0E040563E2FE9C"
 				structure: "theinkarena:ink_arena_structure"
+				title: "Find the INK ARENA"
 				type: "structure"
 			}]
 			x: 2.0d
