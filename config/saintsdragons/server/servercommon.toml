@@ -17,10 +17,10 @@
 	happinessDecayEnabled = true
 	#Whether players receive the one-time Saint's Dragons wiki reminder when joining a world.
 	wikiReminderEnabled = true
+	#Whether Ignivorus and Cindervane attacks may place fire blocks. Also requires dragonGriefingEnabled and the vanilla mobGriefing gamerule.
+	fireDragonBlockIgnitionEnabled = true
 
 [ivy]
-	#Global toggle for Ivy's house structure generation and Ivy spawning from that structure.
-	ivyHouseEnabled = true
 	#Ticks between Ivy's trade restocks (20 ticks = 1 second, 24000 = 20 minutes).
 	#Range: 20 ~ 72000
 	ivyRestockInterval = 24000

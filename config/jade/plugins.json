@@ -53,6 +53,7 @@
   },
   "saintsdragons": {
     "egg_timer": true,
+    "draconic_crucible_timer": true,
     "dragon_info": true
   },
   "treechop": {

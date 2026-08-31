@@ -1,18 +1,11 @@
 
 [spawning]
-	#Dragon spawn configuration - control where and how often dragons spawn
-	#Note: spawn weights are relative per biome/category roll.
-	#Final spawn frequency also depends on each dragon's spawn predicate and placement checks.
-	#Natural wild spawns are also filtered by shared density rules to stop creature-category dragons from piling up.
-	#Raevyx additionally requires a thunderstorm for natural/chunk-generation spawning.
-	#Raevyx spawn settings
 	#Range: 0 ~ 5000
 	raevyxSpawnWeight = 5
 	#Range: 1 ~ 10
 	raevyxMinGroupSize = 1
 	#Range: 1 ~ 10
 	raevyxMaxGroupSize = 2
-	#Stegonaut spawn settings
 	#Range: 0 ~ 5000
 	stegonautSpawnWeight = 25
 	#Range: 1 ~ 10
@@ -26,25 +19,6 @@
 	cindervaneMinGroupSize = 1
 	#Range: 1 ~ 10
 	cindervaneMaxGroupSize = 3
-	#Whether Cindervane egg blocks generate in worldgen feature patches
-	cindervaneEggBlockWorldgen = true
-	#Varasuchus spawn settings
-	#Range: 0 ~ 5000
-	varasuchusSpawnWeight = 10
-	#Range: 1 ~ 10
-	varasuchusMinGroupSize = 1
-	#Range: 1 ~ 10
-	varasuchusMaxGroupSize = 2
-	#Whether Varasuchus egg blocks generate in worldgen feature patches
-	varasuchusEggBlockWorldgen = true
-	#Ignivorus spawn settings
-	#Range: 0 ~ 5000
-	ignivorusSpawnWeight = 5
-	#Range: 1 ~ 10
-	ignivorusMinGroupSize = 1
-	#Range: 1 ~ 10
-	ignivorusMaxGroupSize = 1
-	#Volitans spawn settings (custom underwater spawner for ocean/wetland habitats)
 	#Range: 0 ~ 5000
 	volitansSpawnWeight = 5
 	#Range: 1 ~ 10
@@ -58,4 +32,37 @@
 	nulljawMinGroupSize = 4
 	#Range: 1 ~ 10
 	nulljawMaxGroupSize = 4
+	#Entity spawn configuration - control how often Saint's Dragons creatures spawn
+	#Note: spawn weights are relative per biome/category roll.
+	#Final spawn frequency also depends on each entity's spawn predicate and placement checks.
+	#Natural wild dragon spawns are also filtered by shared density rules to stop creature-category dragons from piling up.
+	#With custom spawning enabled, Raevyx spawns are driven by thunderstorms.
+	#Disabling custom spawning restores vanilla biome spawning for Raevyx.
+	#Raevyx spawn settings
+	raevyxCustomSpawningEnabled = true
+	#Stegonaut spawn settings
+	stegonautCustomSpawningEnabled = true
+	#Atroxiia spawn settings
+	#Range: 0 ~ 5000
+	atroxiiaSpawnWeight = 10
+	#Range: 1 ~ 10
+	atroxiiaMinGroupSize = 1
+	#Range: 1 ~ 10
+	atroxiiaMaxGroupSize = 1
+	#Volitans spawn settings (custom underwater spawner for ocean/wetland habitats)
+	volitansCustomSpawningEnabled = true
+	#Moop spawn settings
+	#Range: 0 ~ 5000
+	moopSpawnWeight = 4
+	#Range: 1 ~ 10
+	moopMinGroupSize = 1
+	#Range: 1 ~ 10
+	moopMaxGroupSize = 1
+	#Mossback spawn settings
+	#Range: 0 ~ 5000
+	mossbackSpawnWeight = 10
+	#Range: 1 ~ 10
+	mossbackMinGroupSize = 1
+	#Range: 1 ~ 10
+	mossbackMaxGroupSize = 2
 

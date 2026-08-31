@@ -1,0 +1,841 @@
+{
+  "description": "Generated deterministic structure compatibility for active Biome Replacer rules. Regenerate with tools/generate_structure_biome_compat.py after changing mods or rules.",
+  "minecraft_version": "1.20.1",
+  "replacements": [
+    {
+      "source": "minecraft:windswept_hills",
+      "replacement": "foolish:storm_jungle"
+    },
+    {
+      "source": "minecraft:birch_forest",
+      "replacement": "foolish:overgrowth"
+    },
+    {
+      "source": "minecraft:old_growth_birch_forest",
+      "replacement": "foolish:sacilite_bloom"
+    },
+    {
+      "source": "minecraft:desert",
+      "replacement": "foolish:sands_of_time"
+    },
+    {
+      "source": "minecraft:badlands",
+      "replacement": "foolish:sands_of_time"
+    },
+    {
+      "source": "minecraft:wooded_badlands",
+      "replacement": "foolish:sands_of_time"
+    },
+    {
+      "source": "minecraft:forest",
+      "replacement": "foolish:scarlet_fields"
+    },
+    {
+      "source": "minecraft:sparse_jungle",
+      "replacement": "fantasy_trees:fantasy_jungle"
+    },
+    {
+      "source": "minecraft:jungle",
+      "replacement": "fantasy_trees:fantasy_jungle"
+    },
+    {
+      "source": "minecraft:dark_forest",
+      "replacement": "fantasy_trees:fantasy_dark_forest"
+    }
+  ],
+  "skipped_vanilla_targets": [
+    {
+      "source": "fantasy_trees:fantasy_birch_forest",
+      "replacement": "minecraft:meadow",
+      "reason": "The replacement is an existing vanilla biome with its own structure eligibility; inheriting the removed biome would affect every occurrence of the vanilla biome."
+    },
+    {
+      "source": "minecraft:savanna",
+      "replacement": "minecraft:plains",
+      "reason": "The replacement is an existing vanilla biome with its own structure eligibility; inheriting the removed biome would affect every occurrence of the vanilla biome."
+    },
+    {
+      "source": "minecraft:savanna_plateau",
+      "replacement": "minecraft:plains",
+      "reason": "The replacement is an existing vanilla biome with its own structure eligibility; inheriting the removed biome would affect every occurrence of the vanilla biome."
+    },
+    {
+      "source": "minecraft:windswept_savanna",
+      "replacement": "minecraft:plains",
+      "reason": "The replacement is an existing vanilla biome with its own structure eligibility; inheriting the removed biome would affect every occurrence of the vanilla biome."
+    }
+  ],
+  "structure_definitions_scanned": 320,
+  "biome_tags_scanned": 417,
+  "structures_extended": 114,
+  "tags_extended": 51,
+  "direct_structure_overrides": 0,
+  "eligibility_audit": "passed",
+  "generated_files": [
+    "kubejs/data/ancientstructures/tags/worldgen/biome/german.json",
+    "kubejs/data/ancientstructures/tags/worldgen/biome/precolumbian.json",
+    "kubejs/data/epic/tags/worldgen/biome/large_dungeon.json",
+    "kubejs/data/epic/tags/worldgen/biome/large_sand_dungeon.json",
+    "kubejs/data/epic/tags/worldgen/biome/medium_plains_dungeon.json",
+    "kubejs/data/epic/tags/worldgen/biome/medium_sand_dungeon.json",
+    "kubejs/data/epic/tags/worldgen/biome/small_plains_dungeon.json",
+    "kubejs/data/epic/tags/worldgen/biome/small_sand_dungeon.json",
+    "kubejs/data/farmers_structures/tags/worldgen/biome/is_aquaculture_carp_spawn.json",
+    "kubejs/data/farmers_structures/tags/worldgen/biome/is_aquaculture_common_spawn.json",
+    "kubejs/data/farmers_structures/tags/worldgen/biome/is_cook_spawn.json",
+    "kubejs/data/forge/tags/worldgen/biome/is_desert.json",
+    "kubejs/data/forgottenruins/tags/worldgen/biome/desert.json",
+    "kubejs/data/forgottenruins/tags/worldgen/biome/jungle.json",
+    "kubejs/data/illagerstructures/tags/worldgen/biome/grounds.json",
+    "kubejs/data/illagerstructures/tags/worldgen/biome/undergrounds.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/desert_pyramid.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/jungle_temple.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/mineshaft.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/mineshaft_mesa.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/pillager_outpost.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_desert.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_jungle.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_mountain.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_standard.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/stronghold.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/trail_ruins.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/village_desert.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/has_structure/woodland_mansion.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/is_badlands.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/is_forest.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/is_jungle.json",
+    "kubejs/data/minecraft/tags/worldgen/biome/is_overworld.json",
+    "kubejs/data/monsterexpansion/tags/worldgen/biome/ignathos_biomes.json",
+    "kubejs/data/monsterexpansion/tags/worldgen/biome/rakoth_biomes.json",
+    "kubejs/data/monsterexpansion/tags/worldgen/biome/skrythe_biomes.json",
+    "kubejs/data/netherman/tags/worldgen/biome/overworld_land.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/ancient_dungeon_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/ancient_pyramid_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/ancient_ruins_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/ancient_towers_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/badlands_structures_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/bone_dungeon_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/desert_structures_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/field_stone_ruins_rocks_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/level_two_ruins_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/lost_soul_city_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/pumpkin_ruins_biomes.json",
+    "kubejs/data/philipsruins/tags/worldgen/biome/has_structure/rare_ruin_biomes.json",
+    "kubejs/data/saintsdragons/tags/worldgen/biome/has_igni_roost.json",
+    "kubejs/data/saintsdragons/tags/worldgen/biome/has_ivy_house.json"
+  ],
+  "tag_additions": {
+    "ancientstructures:german": [
+      "foolish:scarlet_fields"
+    ],
+    "ancientstructures:precolumbian": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "epic:large_dungeon": [
+      "foolish:scarlet_fields"
+    ],
+    "epic:large_sand_dungeon": [
+      "foolish:sands_of_time"
+    ],
+    "epic:medium_plains_dungeon": [
+      "foolish:scarlet_fields"
+    ],
+    "epic:medium_sand_dungeon": [
+      "foolish:sands_of_time"
+    ],
+    "epic:small_plains_dungeon": [
+      "foolish:scarlet_fields"
+    ],
+    "epic:small_sand_dungeon": [
+      "foolish:sands_of_time"
+    ],
+    "farmers_structures:is_aquaculture_carp_spawn": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "farmers_structures:is_aquaculture_common_spawn": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "farmers_structures:is_cook_spawn": [
+      "foolish:storm_jungle"
+    ],
+    "forge:is_desert": [
+      "foolish:sands_of_time"
+    ],
+    "forgottenruins:desert": [
+      "foolish:sands_of_time"
+    ],
+    "forgottenruins:jungle": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "illagerstructures:grounds": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:undergrounds": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:has_structure/desert_pyramid": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:has_structure/jungle_temple": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "minecraft:has_structure/mineshaft": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "minecraft:has_structure/mineshaft_mesa": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:has_structure/pillager_outpost": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:has_structure/ruined_portal_desert": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:has_structure/ruined_portal_jungle": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "minecraft:has_structure/ruined_portal_mountain": [
+      "foolish:sands_of_time",
+      "foolish:storm_jungle"
+    ],
+    "minecraft:has_structure/ruined_portal_standard": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "minecraft:has_structure/stronghold": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "minecraft:has_structure/trail_ruins": [
+      "fantasy_trees:fantasy_jungle",
+      "foolish:sacilite_bloom"
+    ],
+    "minecraft:has_structure/village_desert": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:has_structure/woodland_mansion": [
+      "fantasy_trees:fantasy_dark_forest"
+    ],
+    "minecraft:is_badlands": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:is_forest": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "minecraft:is_jungle": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "minecraft:is_overworld": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "monsterexpansion:ignathos_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "monsterexpansion:rakoth_biomes": [
+      "foolish:sands_of_time"
+    ],
+    "monsterexpansion:skrythe_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields"
+    ],
+    "netherman:overworld_land": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:has_structure/ancient_dungeon_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "philipsruins:has_structure/ancient_pyramid_biomes": [
+      "foolish:sands_of_time"
+    ],
+    "philipsruins:has_structure/ancient_ruins_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:has_structure/ancient_towers_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:has_structure/badlands_structures_biomes": [
+      "foolish:sands_of_time"
+    ],
+    "philipsruins:has_structure/bone_dungeon_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:has_structure/desert_structures_biomes": [
+      "foolish:sands_of_time"
+    ],
+    "philipsruins:has_structure/field_stone_ruins_rocks_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:has_structure/level_two_ruins_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "philipsruins:has_structure/lost_soul_city_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:has_structure/pumpkin_ruins_biomes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:has_structure/rare_ruin_biomes": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "saintsdragons:has_igni_roost": [
+      "foolish:sands_of_time",
+      "foolish:storm_jungle"
+    ],
+    "saintsdragons:has_ivy_house": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ]
+  },
+  "structure_additions": {
+    "ancientstructures:german_farm": [
+      "foolish:scarlet_fields"
+    ],
+    "ancientstructures:german_town": [
+      "foolish:scarlet_fields"
+    ],
+    "ancientstructures:lone_german_farmer": [
+      "foolish:scarlet_fields"
+    ],
+    "ancientstructures:lone_german_house": [
+      "foolish:scarlet_fields"
+    ],
+    "ancientstructures:lone_priest": [
+      "foolish:scarlet_fields"
+    ],
+    "ancientstructures:lone_school": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "ancientstructures:mayan_ruins": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "ancientstructures:mayan_temple": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "ancientstructures:mayan_temple2": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "ancientstructures:mayan_temple3": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "ancientstructures:mayan_temple4": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "ancientstructures:mayan_village": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "ancientstructures:ruined_german_village": [
+      "foolish:scarlet_fields"
+    ],
+    "ancientstructures:windmill": [
+      "foolish:scarlet_fields"
+    ],
+    "bbv:stronghold": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "bloomingnature:little_house": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "epic:large_dungeon": [
+      "foolish:scarlet_fields"
+    ],
+    "epic:large_sand_dungeon": [
+      "foolish:sands_of_time"
+    ],
+    "epic:medium_plains_dungeon": [
+      "foolish:scarlet_fields"
+    ],
+    "epic:medium_sand_dungeon": [
+      "foolish:sands_of_time"
+    ],
+    "epic:small_plains_dungeon": [
+      "foolish:scarlet_fields"
+    ],
+    "epic:small_sand_dungeon": [
+      "foolish:sands_of_time"
+    ],
+    "farmers_structures:aquaculture_carp": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "farmers_structures:aquaculture_common": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "farmers_structures:cook": [
+      "foolish:storm_jungle"
+    ],
+    "feur_extension_fossil:bones_tree": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_fossil:fossil_arc": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_fossil:fossil_chest": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_fossil:fossil_dragon": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_fossil:fossil_fang": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_fossil:fossil_snake": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_fossil:rex_camp": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_fossil:small_coal_rex_camp": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_fossil:small_rex_camp": [
+      "foolish:sands_of_time"
+    ],
+    "feur_extension_jungle:ancient_statue": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:big_melon": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:fountain": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:lost_explorer": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:old_house": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:pyramid": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:tree_ancestral": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:tree_ancestral_house": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:tree_double": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:tree_giant": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:tree_old": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:tree_spline": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:tree_stump": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "feur_extension_jungle:village": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "forgottenruins:desert_library": [
+      "foolish:sands_of_time"
+    ],
+    "forgottenruins:desert_temple": [
+      "foolish:sands_of_time"
+    ],
+    "forgottenruins:jungle_ancient_city": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "forgottenruins:savaged_library": [
+      "foolish:sands_of_time"
+    ],
+    "illagerstructures:balloon_tower": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_balloon": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_camp": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_fort": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_mole_maintenance": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_mole_surface": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_mole_underground": [
+      "foolish:sands_of_time"
+    ],
+    "illagerstructures:illager_stable": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_tipi_camp": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_tower": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_tower2": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:illager_tower3": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:lava_extractor": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:lone_house": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:mohai_illager": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:simple_cart": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:simple_well": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:smeltery": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:tipi": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:totem": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "illagerstructures:well": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:scarlet_fields"
+    ],
+    "minecraft:desert_pyramid": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:jungle_pyramid": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "minecraft:mansion": [
+      "fantasy_trees:fantasy_dark_forest"
+    ],
+    "minecraft:mineshaft": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "minecraft:mineshaft_mesa": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:pillager_outpost": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:ruined_portal": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "minecraft:ruined_portal_desert": [
+      "foolish:sands_of_time"
+    ],
+    "minecraft:ruined_portal_jungle": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "minecraft:ruined_portal_mountain": [
+      "foolish:sands_of_time",
+      "foolish:storm_jungle"
+    ],
+    "minecraft:stronghold": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "minecraft:trail_ruins": [
+      "fantasy_trees:fantasy_jungle",
+      "foolish:sacilite_bloom"
+    ],
+    "minecraft:village_desert": [
+      "foolish:sands_of_time"
+    ],
+    "monsterexpansion:ignathos_structure": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "monsterexpansion:rakoth_structure": [
+      "foolish:sands_of_time"
+    ],
+    "monsterexpansion:skrythe_structure": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields"
+    ],
+    "netherman:believer_house": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields"
+    ],
+    "netherman:maze": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "netherman:monument": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "netherman:nether_geyser": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields"
+    ],
+    "netherman:pipes": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:ancient_dungeon": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ],
+    "philipsruins:ancient_ruins": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:ancient_towers": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:badlands_start_dungeon": [
+      "foolish:sands_of_time"
+    ],
+    "philipsruins:badlands_structures": [
+      "foolish:sands_of_time"
+    ],
+    "philipsruins:bone_dungeon": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:desert_structures": [
+      "foolish:sands_of_time"
+    ],
+    "philipsruins:field_stone_ruins": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "philipsruins:field_stone_ruins_rocks": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:level_one_ruins": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "philipsruins:level_three_ruins": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "philipsruins:level_two_ruins": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "philipsruins:level_two_ruins_pool": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "philipsruins:lost_soul_city": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:pumpkin_ruins": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "philipsruins:rare_ruin": [
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "philipsruins:start_nether_ruin": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle"
+    ],
+    "saintsdragons:ignivorus_roost": [
+      "foolish:sands_of_time",
+      "foolish:storm_jungle"
+    ],
+    "saintsdragons:ivy_house": [
+      "fantasy_trees:fantasy_dark_forest",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:scarlet_fields"
+    ],
+    "stellarity:old_stronghold": [
+      "fantasy_trees:fantasy_dark_forest",
+      "fantasy_trees:fantasy_jungle",
+      "foolish:overgrowth",
+      "foolish:sacilite_bloom",
+      "foolish:sands_of_time",
+      "foolish:scarlet_fields",
+      "foolish:storm_jungle"
+    ]
+  },
+  "warnings": []
+}
