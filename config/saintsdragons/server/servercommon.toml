@@ -16,7 +16,7 @@
 	#Global toggle for tame dragon happiness decay.
 	happinessDecayEnabled = true
 	#Whether players receive the one-time Saint's Dragons wiki reminder when joining a world.
-	wikiReminderEnabled = true
+	wikiReminderEnabled = false
 	#Whether Ignivorus and Cindervane attacks may place fire blocks. Also requires dragonGriefingEnabled and the vanilla mobGriefing gamerule.
 	fireDragonBlockIgnitionEnabled = true
 

@@ -3489,20 +3489,6 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 
-#Options for the meteor_shower mod.
-[meteor_shower]
-
-	#Spawning options for meteor_shower:fallen_star_entity
-	[meteor_shower.fallen_star_entity]
-		#Should the entity be allowed to spawn normally?
-		allowNormalSpawning = true
-		#Should spawners be able to spawn the entity?
-		allowSpawners = true
-		#Should spawn eggs be able to spawn the entity?
-		allowSpawnEggs = true
-		#Should the entity spawn via mob conversion? i.e. villager -> zombie
-		allowConversions = true
-
 #Options for the saintsdragons mod.
 [saintsdragons]
 
@@ -6021,6 +6007,50 @@
 
 	#Spawning options for legendarycreatures:peacock_spider
 	[legendarycreatures.peacock_spider]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+
+	#Spawning options for legendarycreatures:shroomling
+	[legendarycreatures.shroomling]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+
+	#Spawning options for legendarycreatures:frogman
+	[legendarycreatures.frogman]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+
+	#Spawning options for legendarycreatures:jinx
+	[legendarycreatures.jinx]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+
+	#Spawning options for legendarycreatures:jinx_dart
+	[legendarycreatures.jinx_dart]
 		#Should the entity be allowed to spawn normally?
 		allowNormalSpawning = true
 		#Should spawners be able to spawn the entity?
