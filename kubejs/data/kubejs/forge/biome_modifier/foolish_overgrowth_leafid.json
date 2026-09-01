@@ -3,8 +3,8 @@
   "biomes": "#kubejs:foolish_spawns/overgrowth",
   "spawners": {
     "type": "foolish:leafid",
-    "weight": 8,
-    "minCount": 2,
-    "maxCount": 5
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
   }
 }

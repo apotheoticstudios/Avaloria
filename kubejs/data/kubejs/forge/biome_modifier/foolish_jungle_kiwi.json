@@ -3,8 +3,8 @@
   "biomes": "#kubejs:foolish_spawns/jungle_supplemental",
   "spawners": {
     "type": "foolish:kiwi",
-    "weight": 3,
-    "minCount": 2,
-    "maxCount": 4
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
   }
 }

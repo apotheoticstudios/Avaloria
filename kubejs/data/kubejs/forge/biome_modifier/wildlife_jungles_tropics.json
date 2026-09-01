@@ -15,24 +15,6 @@
       "maxCount": 2
     },
     {
-      "type": "luminous_butterflies:birdwing",
-      "weight": 18,
-      "minCount": 1,
-      "maxCount": 3
-    },
-    {
-      "type": "luminous_butterflies:emerald_swallowtail",
-      "weight": 16,
-      "minCount": 1,
-      "maxCount": 3
-    },
-    {
-      "type": "luminous_butterflies:zebra_longwing",
-      "weight": 16,
-      "minCount": 1,
-      "maxCount": 3
-    },
-    {
       "type": "legendarycreatures:mantis",
       "weight": 12,
       "minCount": 1,

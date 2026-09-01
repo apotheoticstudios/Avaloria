@@ -3,7 +3,7 @@
   "biomes": "#kubejs:foolish_spawns/cold_supplemental",
   "spawners": {
     "type": "foolish:winter_moth",
-    "weight": 3,
+    "weight": 1,
     "minCount": 1,
     "maxCount": 1
   }

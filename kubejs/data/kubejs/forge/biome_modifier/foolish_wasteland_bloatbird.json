@@ -3,8 +3,8 @@
   "biomes": "#kubejs:foolish_spawns/wasteland",
   "spawners": {
     "type": "foolish:bloatbird",
-    "weight": 4,
+    "weight": 1,
     "minCount": 1,
-    "maxCount": 3
+    "maxCount": 1
   }
 }
