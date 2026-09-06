@@ -3723,17 +3723,6 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 
-	#Spawning options for saintsdragons:stegonaut_ground_crack
-	[saintsdragons.stegonaut_ground_crack]
-		#Should the entity be allowed to spawn normally?
-		allowNormalSpawning = true
-		#Should spawners be able to spawn the entity?
-		allowSpawners = true
-		#Should spawn eggs be able to spawn the entity?
-		allowSpawnEggs = true
-		#Should the entity spawn via mob conversion? i.e. villager -> zombie
-		allowConversions = true
-
 	#Spawning options for saintsdragons:dragon_water_wake
 	[saintsdragons.dragon_water_wake]
 		#Should the entity be allowed to spawn normally?
@@ -3857,6 +3846,17 @@
 
 	#Spawning options for saintsdragons:arrow_of_venom
 	[saintsdragons.arrow_of_venom]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+
+	#Spawning options for saintsdragons:ground_crack
+	[saintsdragons.ground_crack]
 		#Should the entity be allowed to spawn normally?
 		allowNormalSpawning = true
 		#Should spawners be able to spawn the entity?

@@ -1,5 +1,26 @@
 console.log('[Ignivorus Script] Script loaded successfully.')
 
+const ENDING_CREDITS_PENDING_KEY = 'fantasiaEndingCreditsPending'
+const ENDING_CREDITS_GUI = 'ending_credits'
+
+function queueEndingCredits(player, server) {
+    if (!player.persistentData.getBoolean(ENDING_CREDITS_PENDING_KEY)) return
+
+    const playerName = `${player.username}`
+
+    // Give the client enough time to leave the death screen before opening the cutscene.
+    server.scheduleInTicks(10, () => {
+        const opened = server.runCommandSilent(`openguiscreen ${ENDING_CREDITS_GUI} ${playerName}`)
+
+        if (opened > 0) {
+            player.persistentData.remove(ENDING_CREDITS_PENDING_KEY)
+            console.log(`[Ending Credits] Opened for ${playerName}`)
+        } else {
+            console.log(`[Ending Credits] Could not dispatch the credits screen for ${playerName}.`)
+        }
+    })
+}
+
 // -------------------------------------------------------------
 // Helper: Execute Ritual
 // -------------------------------------------------------------
@@ -95,6 +116,9 @@ function startRitualSequence(player, level, server) {
         let finalZ = Number(player.getZ())
         spawnLightningAt(finalX, finalY, finalZ, false)
         
+        // This marker survives the death clone and is consumed only after respawning.
+        player.persistentData.putBoolean(ENDING_CREDITS_PENDING_KEY, true)
+
         // Instant death
         player.kill()
     })
@@ -140,7 +164,14 @@ PlayerEvents.tick(event => {
 })
 
 // -------------------------------------------------------------
-// 3. Item Right-Click Listener
+// 3. Play the ending credits after the ritual death is respawned
+// -------------------------------------------------------------
+PlayerEvents.respawned(event => {
+    queueEndingCredits(event.player, event.server)
+})
+
+// -------------------------------------------------------------
+// 4. Item Right-Click Listener
 // -------------------------------------------------------------
 ItemEvents.rightClicked('saintsdragons:ignivorus_heart', event => {
     const player = event.player
@@ -157,7 +188,7 @@ ItemEvents.rightClicked('saintsdragons:ignivorus_heart', event => {
 })
 
 // -------------------------------------------------------------
-// 4. Testing Command: /trigger_ritual
+// 5. Testing Commands: /trigger_ritual and /test_ending_credits
 // -------------------------------------------------------------
 ServerEvents.commandRegistry(event => {
     const { commands: Commands } = event
@@ -174,6 +205,19 @@ ServerEvents.commandRegistry(event => {
                     player.tell("§e[Testing] Triggering Ignivorus Heart Ritual Sequence...")
                     startRitualSequence(player, level, server)
                     return 1
+                }
+                return 0
+            })
+    )
+
+    event.register(
+        Commands.literal('test_ending_credits')
+            .requires(src => src.hasPermission(2))
+            .executes(ctx => {
+                let player = ctx.source.player
+
+                if (player) {
+                    return ctx.source.server.runCommandSilent(`openguiscreen ${ENDING_CREDITS_GUI} ${player.username}`)
                 }
                 return 0
             })

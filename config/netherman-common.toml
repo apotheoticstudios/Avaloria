@@ -192,3 +192,7 @@
 	#A list of mod IDs (namespaces) allowed to be given as potions by the Doctor if doctorVanillaPotionsOnly is true.
 	doctorAllowedModNamespaces = ["minecraft"]
 
+["Azazel Armor Configuration"]
+	#Allows the Chestplate to break blocks when flying into them at high speed.
+	azazelArmorBlockBreaking = true
+

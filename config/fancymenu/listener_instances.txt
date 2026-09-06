@@ -1,0 +1,17 @@
+type = listener_instances
+
+listener_instance {
+  listener_instance_identifier = fantasia-ending-credits-finished
+  listener_provider_identifier = video_playback_status_changed
+  listener_instance_action_script_identifier = fantasia-ending-credits-listener-root
+  listener_instance_display_name = Close ending credits when finished
+  [executable_block:fantasia-ending-credits-listener-root][type:generic] = [executables:fantasia-ending-credits-listener-if;]
+  [executable_block:fantasia-ending-credits-listener-if][type:if] = [executables:fantasia-ending-credits-close;]
+  [if_executable_block_body:fantasia-ending-credits-listener-if] = fantasia-ending-credits-finished-conditions
+  [if_executable_block_collapsed:fantasia-ending-credits-listener-if] = false
+  [loading_requirement_container_meta:fantasia-ending-credits-finished-conditions] = [groups:][instances:fantasia-ending-credits-status;fantasia-ending-credits-source;fantasia-ending-credits-screen;]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:fantasia-ending-credits-status] = ["mode":"equals","text":"$$new_status","compare_with":"FINISHED"]$
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:fantasia-ending-credits-source] = ["mode":"ends-with","text":"$$video_source","compare_with":"viking_credits.mp4"]$
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:fantasia-ending-credits-screen] = ["mode":"equals","text":"{"placeholder":"screenid"}","compare_with":"ending_credits"]$
+  [executable_action_instance:fantasia-ending-credits-close][action_type:closegui] =
+}

@@ -1,0 +1,34 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = ending_credits
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1788566400000
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+menu_background {
+  instance_identifier = fantasia-ending-credits-black
+  background_type = color_fancymenu
+  show_background = true
+  color = #000000FF
+}
+
+menu_background {
+  instance_identifier = fantasia-ending-credits-video
+  background_type = video
+  show_background = true
+  source = [source:local]/config/fancymenu/assets/viking_credits.mp4
+  loop = false
+  volume = 1.0
+  sound_source = master
+  parallax = false
+  parallax_intensity_x = 0.02
+  parallax_intensity_y = 0.02
+  invert_parallax = false
+  play_in_editor = false
+}
