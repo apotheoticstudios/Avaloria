@@ -13,7 +13,7 @@ const BOSSBAR_DESPAWN_DISTANCE = 64; // Distance at which boss bar disappears if
 // NOTE: 'prereq' can now be a single string OR an array of strings!
 const GRID_BOSSES_CONFIG = [
     { boss: 'opposing_force:guzzler', biome: '#kubejs:wildlife_spawns/wetlands', prereq: 'theinkarena:ink_titan', color: 'green' },
-    { boss: 'opposing_force:skyvern', biome: '#kubejs:wildlife_spawns/jungles_tropics', prereq: 'minecraft:ender_dragon', color: 'blue' },
+    { boss: 'opposing_force:skyvern', biome: '#kubejs:wildlife_spawns/jungles_tropics', prereq: 'opposing_force:guzzler', color: 'blue' },
     { boss: 'saintsdragons:volitans', biome: '#kubejs:wildlife_spawns/coasts', prereq: "opposing_force:skyvern", color: 'blue' },
     { boss: 'saintsdragons:raevyx', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'red' },
     { boss: 'saintsdragons:varasuchus', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'purple' }, // Example of multiple requirements
