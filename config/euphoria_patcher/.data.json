@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "shaderHash": "70c5c4c4a772654316bc7c8dac78e2d0737bfc981421830c8789f7bccdcf4355",
   "EPVersion": "1.9.3",
-=======
-  "shaderHash": "880c1ba5d9966dde0645c2a4010af343e805ad6a629a4ebda3c97897bca99597",
-  "EPVersion": "1.10.0",
->>>>>>> cdf8e56b5c7a21b734295b6e456954da1a72acdf
   "styleReimagined": false,
   "styleUnbound": false
 }
