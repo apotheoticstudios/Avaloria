@@ -3,8 +3,8 @@
   "biomes": "#kubejs:foolish_spawns/scarlet_fields",
   "spawners": {
     "type": "foolish:sanguine",
-    "weight": 4,
-    "minCount": 2,
-    "maxCount": 5
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
   }
 }

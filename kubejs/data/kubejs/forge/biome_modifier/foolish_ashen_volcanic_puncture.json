@@ -3,7 +3,7 @@
   "biomes": "#kubejs:foolish_spawns/ashen_volcanic",
   "spawners": {
     "type": "foolish:puncture",
-    "weight": 2,
+    "weight": 1,
     "minCount": 1,
     "maxCount": 1
   }

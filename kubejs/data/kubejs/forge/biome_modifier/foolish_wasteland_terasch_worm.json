@@ -3,7 +3,7 @@
   "biomes": "#kubejs:foolish_spawns/wasteland",
   "spawners": {
     "type": "foolish:terasch_worm",
-    "weight": 2,
+    "weight": 1,
     "minCount": 1,
     "maxCount": 1
   }

@@ -3,8 +3,8 @@
   "biomes": "#kubejs:foolish_spawns/sacilite_bloom",
   "spawners": {
     "type": "foolish:gemstal",
-    "weight": 2,
-    "minCount": 2,
-    "maxCount": 4
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
   }
 }

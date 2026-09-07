@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#kubejs:disabled_worldgen",
+  "features": "foolish:sands_of_time_delta",
+  "step": "surface_structures"
+}

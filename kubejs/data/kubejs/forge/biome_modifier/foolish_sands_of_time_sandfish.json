@@ -3,8 +3,8 @@
   "biomes": "#kubejs:foolish_spawns/sands_of_time",
   "spawners": {
     "type": "foolish:sandfish",
-    "weight": 5,
-    "minCount": 2,
-    "maxCount": 5
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
   }
 }
