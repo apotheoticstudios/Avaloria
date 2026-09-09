@@ -3,6 +3,7 @@
   "values": [
     "minecraft:lush_caves",
     "minecraft:mangrove_swamp",
+    "#minecraft:is_river",
     "minecraft:river",
     "minecraft:swamp",
     "mysticsbiomes:lagoon",

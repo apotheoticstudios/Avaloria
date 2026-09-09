@@ -1,4 +1,7 @@
 // List of all boss IDs to restrict. 
+const BossMob = Java.loadClass('net.minecraft.world.entity.Mob');
+const BossSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType');
+
 const BANNED_BOSSES = [
     "bbv:the_ender_dragonoverworld",
     "theinkarena:natural_ink_titan"
@@ -14,10 +17,10 @@ const BOSSBAR_DESPAWN_DISTANCE = 64; // Distance at which boss bar disappears if
 const GRID_BOSSES_CONFIG = [
     { boss: 'opposing_force:guzzler', biome: '#kubejs:wildlife_spawns/wetlands', prereq: 'theinkarena:ink_titan', color: 'green' },
     { boss: 'opposing_force:skyvern', biome: '#kubejs:wildlife_spawns/jungles_tropics', prereq: 'opposing_force:guzzler', color: 'blue' },
-    { boss: 'saintsdragons:volitans', biome: '#kubejs:wildlife_spawns/coasts', prereq: "opposing_force:skyvern", color: 'blue' },
+    { boss: 'saintsdragons:volitans', biome: '#kubejs:wildlife_spawns/volitans', prereq: "opposing_force:skyvern", color: 'blue' },
     { boss: 'saintsdragons:raevyx', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'red' },
     { boss: 'saintsdragons:varasuchus', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'purple' }, // Example of multiple requirements
-    { boss: 'saintsdragons:ignivorus', biome: '#c:in_overworld', prereq: 'saintsdragons:ignivorus', color: 'red' }, // TODO: END SHIT
+    { boss: 'saintsdragons:ignivorus', biome: '#minecraft:is_overworld', prereq: 'saintsdragons:ignivorus', color: 'red' }, // TODO: END SHIT
     { boss: 'monsterexpansion:ignathos', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: ["luminous_beasts:the_scarecrow", "luminous_beasts:basalt_executioner"], color: 'red' },
     { boss: 'monsterexpansion:rakoth', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: 'foolish:astralis', color: 'yellow' },
     { boss: 'monsterexpansion:skrythe', biome: '#kubejs:wildlife_spawns/mountain_peaks', prereq: 'foolish:astralis', color: 'white' },
@@ -57,8 +60,30 @@ global.spawnCustomBoss = (level, entityId, x, y, z) => {
     if (entity) {
         entity.setPosition(x, y, z);
         entity.persistentData.putBoolean('allow_boss_spawn', true);
-        entity.spawn();
-        return entity;
+
+        // Modded mobs such as Skyvern build their body segments and combat data here.
+        // createEntity().spawn() skips this initialization entirely.
+        if (entity instanceof BossMob) {
+            try {
+                entity.finalizeSpawn(
+                    level,
+                    level.getCurrentDifficultyAt(entity.blockPosition()),
+                    BossSpawnType.EVENT,
+                    null,
+                    null
+                );
+            } catch (error) {
+                console.error(`[BossSystem] Failed to initialize ${entityId}: ${error}`);
+                return null;
+            }
+        }
+
+        if (level.addFreshEntity(entity)) {
+            return entity;
+        }
+
+        console.error(`[BossSystem] Failed to add initialized entity to the level: ${entityId}`);
+        return null;
     }
     console.error(`[BossSystem] Failed to create entity object for: ${entityId}`);
     return null;
@@ -87,7 +112,27 @@ function isLuminousUnlocked(server, level, x, y, z, mobId) {
     return false;
 }
 
-// 1. Intercept spawns and evaluate rule sets
+// 1. Mark explicit creative/admin spawns before the join filter runs. This keeps
+// natural Grid Boss spawns progression-locked without breaking eggs or /summon.
+EntityEvents.checkSpawn(event => {
+    const entity = event.entity;
+    if (!entity || !GRID_BOSSES.includes(entity.type)) return;
+
+    if (entity.persistentData.getBoolean('allow_boss_spawn')) return;
+
+    const spawnType = `${event.type}`.toUpperCase();
+    if (spawnType === 'SPAWN_EGG' || spawnType === 'COMMAND') {
+        entity.persistentData.putBoolean('allow_boss_spawn', true);
+        console.log(`[BossSystem] Filter Bypass Prepared: Allowed ${entity.type} from ${spawnType}.`);
+        return;
+    }
+
+    // Reject automatic Grid Boss attempts before multipart mobs initialize, while
+    // the spawned-event check below remains a fallback for custom mod spawners.
+    event.cancel();
+});
+
+// 2. Intercept spawns and evaluate rule sets
 EntityEvents.spawned(event => {
     const entity = event.entity;
     if (!entity || !entity.type) return;
@@ -121,7 +166,7 @@ EntityEvents.spawned(event => {
     }
 });
 
-// 2. Track Prerequisite Kills for the Ambush System
+// 3. Track Prerequisite Kills for the Ambush System
 EntityEvents.death(event => {
     const entity = event.entity;
     const source = event.source;
@@ -141,7 +186,7 @@ EntityEvents.death(event => {
     console.log(`[BossSystem] Data Update: Player ${player.username} has logged a prerequisite kill for: ${deadEntityId} (Key: ${trackingKey})`);
 });
 
-// 3. Ambush Warning Countdown Initialization
+// 4. Ambush Warning Countdown Initialization
 ServerEvents.tick(event => {
     const server = event.server;
     
@@ -267,6 +312,11 @@ ServerEvents.tick(event => {
         let targetY = player.block.y;
         let targetZ = player.block.z;
 
+        // Skyvern is an aerial multipart boss; ground-level spawning embeds it in terrain.
+        if (selected.boss === 'opposing_force:skyvern') {
+            targetY = Math.min(level.getMaxBuildHeight() - 16, Math.floor(player.y) + 32);
+        }
+
         console.log(`[BossSystem] AMBUSH TRIGGERED: Player ${player.username} matches conditions for ${selected.boss} via matching rule "${selected.biome}". Starting 5s countdown sequence...`);
 
         let cleanBarName = selected.boss.split(':')[1].replace(/_/g, ' ').toUpperCase();
@@ -342,7 +392,7 @@ ServerEvents.tick(event => {
     });
 });
 
-// 4. ACTIVE BOSS TRACKING MONITOR (Updates BossBar Data & Clean Removal)
+// 5. ACTIVE BOSS TRACKING MONITOR (Updates BossBar Data & Clean Removal)
 LevelEvents.tick(event => {
     const { level, server } = event;
     if (level.time % 10 !== 0) return;
@@ -367,7 +417,7 @@ LevelEvents.tick(event => {
 });
 
 
-// 5. CONSUME MEMBRANE FOR BAD OMEN EFFECT
+// 6. CONSUME MEMBRANE FOR BAD OMEN EFFECT
 ItemEvents.rightClicked(event => {
     const player = event.player;
     const item = event.item;

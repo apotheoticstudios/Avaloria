@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#kubejs:wildlife_spawns/coasts",
+    "#kubejs:wildlife_spawns/oceans",
+    "#kubejs:wildlife_spawns/wetlands"
+  ]
+}
