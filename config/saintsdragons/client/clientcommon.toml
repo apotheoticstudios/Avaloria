@@ -14,4 +14,6 @@
 	#Local Draconian Swarm battle music volume, in percent
 	#Range: 0 ~ 100
 	swarm_battle_music_volume = 100
+	#Automatically switch to the first-person beam camera while riding a beaming Raevyx; disable to keep the normal riding camera
+	raevyx_beam_first_person = true
 

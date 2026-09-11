@@ -150,7 +150,14 @@
 	quests: [
 		{
 			dependencies: ["6EA6A2BBB9187EDF"]
-			description: ["Only one is required. Found in blossoming fields."]
+			description: [
+				"With Bad Omen active after defeating Volitans, it can be summoned in:"
+				""
+				"Cherry Grove, Flower Forest, Meadow, Sunflower Plains, Autumnal Grove,"
+				"Lavender Meadow, Strawberry Fields, Overgrowth, and Sacilite Bloom."
+				""
+				"Only one of the two blossoming-field bosses is required here."
+			]
 			entity_vis_size: 1.0f
 			id: "253C7CD0AE3C4E35"
 			subtitle: "Flowers will mark your grave..."
@@ -175,7 +182,14 @@
 		}
 		{
 			dependencies: ["6EA6A2BBB9187EDF"]
-			description: ["Only one is required. Found in blossoming fields."]
+			description: [
+				"With Bad Omen active after defeating Volitans, it can be summoned in:"
+				""
+				"Cherry Grove, Flower Forest, Meadow, Sunflower Plains, Autumnal Grove,"
+				"Lavender Meadow, Strawberry Fields, Overgrowth, and Sacilite Bloom."
+				""
+				"Only one of the two blossoming-field bosses is required here."
+			]
 			entity_vis_size: 1.0f
 			id: "00551D267A9B3AA4"
 			subtitle: "Flowers will mark your grave..."
@@ -200,7 +214,11 @@
 		}
 		{
 			dependencies: ["432874174B22DA10"]
-			description: ["Use the bait on a lit beast pit to summon. Use quartz as an offhand catalyst."]
+			description: [
+				"Use Cooked Beef on a lit Beast Pit with Nether Quartz in your offhand."
+				""
+				"Valid biome: Soul Sand Valley."
+			]
 			entity_vis_size: 1.0f
 			id: "4B8C3A106EF06E5D"
 			subtitle: "Found in the valley of lost souls."
@@ -232,7 +250,11 @@
 		}
 		{
 			dependencies: ["432874174B22DA10"]
-			description: ["Use the bait on a lit beast pit to summon. Use quartz as an offhand catalyst."]
+			description: [
+				"Use Magma Cream on a lit Beast Pit with Nether Quartz in your offhand."
+				""
+				"Valid biome: Basalt Deltas."
+			]
 			entity_vis_size: 1.0f
 			id: "658B41B78CD6D4CA"
 			subtitle: "Found in the deltas."
@@ -264,7 +286,14 @@
 		}
 		{
 			dependencies: ["432874174B22DA10"]
-			description: ["Use the bait on a lit beast pit to summon. Use quartz as an offhand catalyst."]
+			description: [
+				"Use Rotten Flesh on a lit Beast Pit with Nether Quartz in your offhand."
+				""
+				"Valid biomes: Forest, Flower Forest, Birch Forest, Old Growth Birch Forest,"
+				"Dark Forest, Grove, Meadow, Plains, Sunflower Plains, Fantasy Birch Forest,"
+				"Fantasy Dark Forest, Fantasy Forest, Autumnal Grove, Lavender Meadow,"
+				"Strawberry Fields, Aspen Forest, Mountanious Forest, Overgrowth, and Thicket."
+			]
 			entity_vis_size: 1.0f
 			id: "43C201CFFB2A94E2"
 			subtitle: "Found in temperate forests."
@@ -299,7 +328,14 @@
 				"658B41B78CD6D4CA"
 				"43C201CFFB2A94E2"
 			]
-			description: ["Found in arid places."]
+			description: [
+				"With Bad Omen active after defeating the Scarecrow and Basalt Executioner,"
+				"it can be summoned in:"
+				""
+				"Badlands, Eroded Badlands, Wooded Badlands, Desert, Savanna,"
+				"Savanna Plateau, Windswept Savanna, Fantasy Savanna, Lush Oasis,"
+				"Highlands, Oasis, Sands of Time, Scarlet Fields, and Wasteland."
+			]
 			entity_vis_size: 1.0f
 			id: "6B278F815CFC604B"
 			subtitle: "King of the wildlands."
@@ -341,7 +377,11 @@
 		}
 		{
 			dependencies: ["432874174B22DA10"]
-			description: ["Use the bait on a lit beast pit to summon. Use quartz as an offhand catalyst."]
+			description: [
+				"Use Warped Fungus on a lit Beast Pit with Nether Quartz in your offhand."
+				""
+				"Valid biome: Warped Forest."
+			]
 			entity_vis_size: 1.0f
 			id: "426100535F0325FF"
 			subtitle: "Take a wild guess..."

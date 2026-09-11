@@ -68,7 +68,12 @@
 		}
 		{
 			dependencies: ["5AAFD59DF249101E"]
-			description: ["Same thing as last time..."]
+			description: [
+				"With Bad Omen active after defeating the Guzzler, it can be summoned in:"
+				""
+				"Bamboo Jungle, Jungle, Sparse Jungle, Fantasy Jungle,"
+				"Bamboo Blossom Forest, Tropics, and Storm Jungle."
+			]
 			entity_vis_size: 1.0f
 			id: "02F4E0B9F92B8F2F"
 			subtitle: "Found in jungles."
@@ -93,7 +98,13 @@
 		}
 		{
 			dependencies: ["6F6891222288503F"]
-			description: ["Once in the swamp, consume an ink membrane and he will find you..."]
+			description: [
+				"After defeating the Ink Titan, consume an Ink Membrane for Bad Omen. Valid biomes:"
+				""
+				"Lush Caves, Mangrove Swamp, Swamp, River, Frozen River,"
+				"Cold River, Lukewarm River, Warm River, Lagoon, Miserable Mire,"
+				"Storm Jungle, and Toxic Wake."
+			]
 			entity_vis_size: 1.0f
 			id: "5AAFD59DF249101E"
 			subtitle: "Found in the swamp."
@@ -129,7 +140,15 @@
 				"21A3DCB4BBD6168B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Attracted to ominous auras..."]
+			description: [
+				"With Bad Omen active after defeating Skyvern, it can be summoned in:"
+				""
+				"Beach, Snowy Beach, Stony Shore, Ocean, Deep Ocean, Warm Ocean,"
+				"Lukewarm Ocean, Deep Lukewarm Ocean, Cold Ocean, Deep Cold Ocean,"
+				"Frozen Ocean, Deep Frozen Ocean, River, Frozen River, Cold River,"
+				"Lukewarm River, Warm River, Swamp, Mangrove Swamp, Lush Caves,"
+				"Lagoon, Tropics, Miserable Mire, Storm Jungle, Toxic Wake, and Trench."
+			]
 			entity_vis_size: 1.0f
 			id: "6EA6A2BBB9187EDF"
 			subtitle: "Found on the coasts..."
@@ -157,7 +176,13 @@
 				"02F4E0B9F92B8F2F"
 				"51A99122578A8F30"
 			]
-			description: ["Use the bait on a lit beast pit to summon."]
+			description: [
+				"Use Tropical Fish on a lit Beast Pit in one of these biomes:"
+				""
+				"Ocean, Deep Ocean, Warm Ocean, Lukewarm Ocean, Deep Lukewarm Ocean,"
+				"Cold Ocean, Deep Cold Ocean, Frozen Ocean, Deep Frozen Ocean,"
+				"Lagoon, Toxic Wake, and Trench."
+			]
 			entity_vis_size: 1.0f
 			id: "7E9ACEFFDF18C895"
 			subtitle: "Found in the sea."
@@ -192,7 +217,11 @@
 				"02F4E0B9F92B8F2F"
 				"51A99122578A8F30"
 			]
-			description: ["Use the bait on a lit beast pit to summon."]
+			description: [
+				"Use an Apple on a lit Beast Pit."
+				""
+				"Valid biome: Cherry Grove."
+			]
 			entity_vis_size: 1.0f
 			id: "341FB2AA40A43E79"
 			subtitle: "I wonder where I could find this beast..."
@@ -228,7 +257,9 @@
 				"51A99122578A8F30"
 			]
 			description: [
-				"Use the bait on a lit beast pit to summon."
+				"Use Raw Rabbit on a lit Beast Pit in one of these biomes:"
+				""
+				"Beach, Snowy Beach, Stony Shore, Lagoon, Tropics, and Toxic Wake."
 				""
 				"Hint: You only need to kill one..."
 			]
@@ -266,7 +297,13 @@
 				"02F4E0B9F92B8F2F"
 				"51A99122578A8F30"
 			]
-			description: ["Use the bait on a lit beast pit to summon."]
+			description: [
+				"Use a Bone on a lit Beast Pit in one of these biomes:"
+				""
+				"Lush Caves, Mangrove Swamp, Swamp, River, Frozen River,"
+				"Cold River, Lukewarm River, Warm River, Lagoon, Miserable Mire,"
+				"Storm Jungle, and Toxic Wake."
+			]
 			entity_vis_size: 1.0f
 			id: "02A09C529A75E481"
 			subtitle: "Found in wetlands."
@@ -301,7 +338,13 @@
 				"02F4E0B9F92B8F2F"
 				"51A99122578A8F30"
 			]
-			description: ["Use the bait on a lit beast pit to summon."]
+			description: [
+				"Use Raw Porkchop on a lit Beast Pit in one of these biomes:"
+				""
+				"Badlands, Eroded Badlands, Wooded Badlands, Desert, Savanna,"
+				"Savanna Plateau, Windswept Savanna, Fantasy Savanna, Lush Oasis,"
+				"Highlands, Oasis, Sands of Time, Scarlet Fields, and Wasteland."
+			]
 			entity_vis_size: 1.0f
 			id: "33FD7B81A3BEB00A"
 			subtitle: "Found in arid wildlands."
@@ -336,7 +379,13 @@
 				"02F4E0B9F92B8F2F"
 				"51A99122578A8F30"
 			]
-			description: ["Use the bait on a lit beast pit to summon."]
+			description: [
+				"Use Raw Cod on a lit Beast Pit in one of these biomes:"
+				""
+				"Ocean, Deep Ocean, Warm Ocean, Lukewarm Ocean, Deep Lukewarm Ocean,"
+				"Cold Ocean, Deep Cold Ocean, Frozen Ocean, Deep Frozen Ocean,"
+				"Lagoon, Toxic Wake, and Trench."
+			]
 			entity_vis_size: 1.0f
 			id: "5146B7A5107490F4"
 			subtitle: "Found in oceans."
@@ -371,7 +420,13 @@
 				"02F4E0B9F92B8F2F"
 				"51A99122578A8F30"
 			]
-			description: ["Use the bait on a lit beast pit to summon."]
+			description: [
+				"Use Raw Mutton on a lit Beast Pit in one of these biomes:"
+				""
+				"Badlands, Eroded Badlands, Wooded Badlands, Desert, Savanna,"
+				"Savanna Plateau, Windswept Savanna, Fantasy Savanna, Lush Oasis,"
+				"Highlands, Oasis, Sands of Time, Scarlet Fields, and Wasteland."
+			]
 			entity_vis_size: 1.0f
 			id: "3D7F697DF377EC93"
 			subtitle: "Found in the dryest parts of the overworld."
@@ -406,7 +461,14 @@
 				"02F4E0B9F92B8F2F"
 				"51A99122578A8F30"
 			]
-			description: ["Use the bait on a lit beast pit to summon."]
+			description: [
+				"Use a Feather on a lit Beast Pit in one of these biomes:"
+				""
+				"Taiga, Snowy Taiga, Old Growth Pine Taiga, Old Growth Spruce Taiga,"
+				"Dark Forest, Grove, Old Growth Birch Forest, Fantasy Dark Forest,"
+				"Fantasy Taiga, Boreal Grove, Darkened Forest, Permafrost Fields,"
+				"and Somber Forest."
+			]
 			entity_vis_size: 1.0f
 			id: "21A3DCB4BBD6168B"
 			subtitle: "Found in dark taigas."
@@ -441,7 +503,14 @@
 				"02F4E0B9F92B8F2F"
 				"51A99122578A8F30"
 			]
-			description: ["Use the bait on a lit beast pit to summon."]
+			description: [
+				"Use a Spider Eye on a lit Beast Pit in one of these biomes:"
+				""
+				"Taiga, Snowy Taiga, Old Growth Pine Taiga, Old Growth Spruce Taiga,"
+				"Dark Forest, Grove, Old Growth Birch Forest, Fantasy Dark Forest,"
+				"Fantasy Taiga, Boreal Grove, Darkened Forest, Permafrost Fields,"
+				"and Somber Forest."
+			]
 			entity_vis_size: 1.0f
 			id: "322B4ADC6DD34797"
 			subtitle: "Found in dark taigas."

@@ -28,7 +28,13 @@
 	quests: [
 		{
 			dependencies: ["1EA046F5540281D0"]
-			description: ["Attracted to troublemakers..."]
+			description: [
+				"With Bad Omen active after defeating Astralis, it can be summoned in:"
+				""
+				"Badlands, Eroded Badlands, Wooded Badlands, Desert, Savanna,"
+				"Savanna Plateau, Windswept Savanna, Fantasy Savanna, Lush Oasis,"
+				"Highlands, Oasis, Sands of Time, Scarlet Fields, and Wasteland."
+			]
 			entity_vis_size: 1.0f
 			id: "6A9FD62C54B153E8"
 			shape: "none"
@@ -55,7 +61,13 @@
 		}
 		{
 			dependencies: ["1EA046F5540281D0"]
-			description: ["&mHybristophile&r."]
+			description: [
+				"With Bad Omen active after defeating Astralis, it can be summoned in:"
+				""
+				"Meadow, Frozen Peaks, Jagged Peaks, Stony Peaks, Snowy Slopes, Cherry Grove,"
+				"Windswept Gravelly Hills, Windswept Hills, Storm Jungle, Frigid Mountains,"
+				"Highlands, and Ledged Cliffs."
+			]
 			entity_vis_size: 1.0f
 			id: "626A672E61E386F0"
 			shape: "none"

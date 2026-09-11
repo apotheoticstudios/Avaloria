@@ -3855,8 +3855,8 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 
-	#Spawning options for saintsdragons:ground_crack
-	[saintsdragons.ground_crack]
+	#Spawning options for saintsdragons:ground_fissure
+	[saintsdragons.ground_fissure]
 		#Should the entity be allowed to spawn normally?
 		allowNormalSpawning = true
 		#Should spawners be able to spawn the entity?
@@ -6051,6 +6051,17 @@
 
 	#Spawning options for legendarycreatures:jinx_dart
 	[legendarycreatures.jinx_dart]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+
+	#Spawning options for legendarycreatures:fertile_slimeball
+	[legendarycreatures.fertile_slimeball]
 		#Should the entity be allowed to spawn normally?
 		allowNormalSpawning = true
 		#Should spawners be able to spawn the entity?
