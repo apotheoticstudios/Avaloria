@@ -99,6 +99,9 @@ BlockEvents.rightClicked(event => {
     const heldItem = player.getMainHandItem();
     const offHandItem = player.getOffHandItem();
     const dimensionId = level.dimension.toString();
+
+    // Track recognized bait so every handled exit can stop vanilla from eating it.
+    const isKnownBeastBait = BEAST_SUMMONS.some(cfg => heldItem.id === cfg.itemId);
     
     console.log(`[Beast Summoner] Interaction detected by player: ${player.username}`);
     
@@ -169,11 +172,18 @@ BlockEvents.rightClicked(event => {
         return false;
     });
     
-    if (!match) return;
+    if (!match) {
+        if (isKnownBeastBait) {
+            player.setStatusMessage("This bait cannot summon a beast here. Check the required biome and offhand catalyst.");
+            event.success();
+        }
+        return;
+    }
     
     const spawnPos = findSpawnPosition(level, block.pos, match.radius, match.filters);
     if (!spawnPos) {
         player.setStatusMessage("No suitable space nearby to summon the beast!");
+        event.success();
         return;
     }
     

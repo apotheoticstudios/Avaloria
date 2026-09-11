@@ -8,23 +8,24 @@ const BANNED_BOSSES = [
 ];
 
 // Configurable ambush system settings
-const AMBUSH_CHECK_COOLDOWN = 12000; // 10 minutes in ticks (20 ticks = 1 second)
+const AMBUSH_CHECK_COOLDOWN = 2400; // 2 minutes in ticks (20 ticks = 1 second)
 const WARNING_COUNTDOWN_TIME = 5; // 5 seconds warning structure countdown
 const BOSSBAR_DESPAWN_DISTANCE = 64; // Distance at which boss bar disappears if player runs away
+const LATEST_UNLOCKED_BOSS_CHANCE = 0.90; // Strongly prefer the newest undefeated progression stage
 
 // Bosses that should replace natural spawns with a 5-second countdown warning structure
 // NOTE: 'prereq' can now be a single string OR an array of strings!
 const GRID_BOSSES_CONFIG = [
-    { boss: 'opposing_force:guzzler', biome: '#kubejs:wildlife_spawns/wetlands', prereq: 'theinkarena:ink_titan', color: 'green' },
-    { boss: 'opposing_force:skyvern', biome: '#kubejs:wildlife_spawns/jungles_tropics', prereq: 'opposing_force:guzzler', color: 'blue' },
-    { boss: 'saintsdragons:volitans', biome: '#kubejs:wildlife_spawns/volitans', prereq: "opposing_force:skyvern", color: 'blue' },
-    { boss: 'saintsdragons:raevyx', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'red' },
-    { boss: 'saintsdragons:varasuchus', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'purple' }, // Example of multiple requirements
-    { boss: 'saintsdragons:ignivorus', biome: '#minecraft:is_overworld', prereq: 'saintsdragons:ignivorus', color: 'red' }, // TODO: END SHIT
-    { boss: 'monsterexpansion:ignathos', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: ["luminous_beasts:the_scarecrow", "luminous_beasts:basalt_executioner"], color: 'red' },
-    { boss: 'monsterexpansion:rakoth', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: 'foolish:astralis', color: 'yellow' },
-    { boss: 'monsterexpansion:skrythe', biome: '#kubejs:wildlife_spawns/mountain_peaks', prereq: 'foolish:astralis', color: 'white' },
-    { boss: 'monsterexpansion:leivekilth', biome: '#kubejs:wildlife_spawns/cold_waters', prereq: 'foolish:end_knight', color: 'blue' }
+    { boss: 'opposing_force:guzzler', biome: '#kubejs:wildlife_spawns/wetlands', prereq: 'theinkarena:ink_titan', color: 'green', stage: 1 },
+    { boss: 'opposing_force:skyvern', biome: '#kubejs:wildlife_spawns/jungles_tropics', prereq: 'opposing_force:guzzler', color: 'blue', stage: 2 },
+    { boss: 'saintsdragons:volitans', biome: '#kubejs:wildlife_spawns/volitans', prereq: "opposing_force:skyvern", color: 'blue', stage: 3 },
+    { boss: 'saintsdragons:raevyx', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'red', stage: 4 },
+    { boss: 'saintsdragons:varasuchus', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'purple', stage: 4 },
+    { boss: 'saintsdragons:ignivorus', biome: '#minecraft:is_overworld', prereq: 'saintsdragons:ignivorus', color: 'red', stage: 8 }, // TODO: END SHIT
+    { boss: 'monsterexpansion:ignathos', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: ["luminous_beasts:the_scarecrow", "luminous_beasts:basalt_executioner"], color: 'red', stage: 5 },
+    { boss: 'monsterexpansion:rakoth', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: 'foolish:astralis', color: 'yellow', stage: 6 },
+    { boss: 'monsterexpansion:skrythe', biome: '#kubejs:wildlife_spawns/mountain_peaks', prereq: 'foolish:astralis', color: 'white', stage: 6 },
+    { boss: 'monsterexpansion:leivekilth', biome: '#kubejs:wildlife_spawns/cold_waters', prereq: 'foolish:end_knight', color: 'blue', stage: 7 }
 ];
 
 const GRID_BOSSES = GRID_BOSSES_CONFIG.map(cfg => cfg.boss);
@@ -219,12 +220,13 @@ ServerEvents.tick(event => {
         }
     }
 
-    // Core ~10 minute ambush trigger check
+    // Core 2-minute ambush trigger check
     if (server.tickCount % AMBUSH_CHECK_COOLDOWN !== 0) return;
 
-    console.log(`[BossSystem] Interval Check: Running 10-minute ambush evaluation loop across all online players...`);
-
     server.players.forEach(player => {
+        // Do no biome or progression work unless this player can trigger an ambush.
+        if (!player.hasEffect('minecraft:bad_omen')) return;
+
         let level = player.level;
         let pUUID = player.uuid.toString();
 
@@ -247,11 +249,6 @@ ServerEvents.tick(event => {
         });
         
         console.log(`[BossSystem] Diagnostic -> Player: ${player.username} | Current Biome: ${biomeId} | Defeated Prereqs: [${unlockedPrereqs.join(', ') || 'None'}]`);
-
-        if (!player.hasEffect('minecraft:bad_omen')) {
-            console.log(`[BossSystem] Loop Progress: Player ${player.username} skipped (Missing Bad Omen).`);
-            return;
-        }
 
         if (unlockedPrereqs.length === 0) {
             console.log(`[BossSystem] Loop Progress: Player ${player.username} has Bad Omen, but has no unlocked prerequisites.`);
@@ -307,7 +304,23 @@ ServerEvents.tick(event => {
             return;
         }
 
-        let selected = availableBosses[Math.floor(Math.random() * availableBosses.length)];
+        // Prefer bosses the player has not defeated, then strongly favor the
+        // highest currently unlocked progression stage. Older bosses retain a
+        // small chance so repeat encounters remain possible.
+        let undefeatedBosses = availableBosses.filter(cfg => {
+            let killedKey = `grid_prereq_killed_${pUUID}_${cfg.boss}`;
+            return server.persistentData.getBoolean(killedKey) !== true;
+        });
+        let candidateBosses = undefeatedBosses.length > 0 ? undefeatedBosses : availableBosses;
+        let highestStage = candidateBosses.reduce((highest, cfg) => Math.max(highest, cfg.stage || 0), 0);
+        let latestBosses = candidateBosses.filter(cfg => (cfg.stage || 0) === highestStage);
+        let olderBosses = candidateBosses.filter(cfg => (cfg.stage || 0) < highestStage);
+
+        let selectedPool = latestBosses;
+        if (olderBosses.length > 0 && Math.random() > LATEST_UNLOCKED_BOSS_CHANCE) {
+            selectedPool = olderBosses;
+        }
+        let selected = selectedPool[Math.floor(Math.random() * selectedPool.length)];
         let targetX = player.block.x;
         let targetY = player.block.y;
         let targetZ = player.block.z;
@@ -428,9 +441,9 @@ ItemEvents.rightClicked(event => {
     const server = event.server;
     const level = event.level;
 
-    // 20 minutes = 20 * 60 seconds = 1200 seconds -> 1200 * 20 ticks = 24,000 ticks
+    // 6 minutes = 6 * 60 seconds = 360 seconds * 20 ticks = 7200ticks
     // Effect parameters: (ID, Duration in ticks, Amplifier, Ambient particles hidden?, Show particles?)
-    player.potionEffects.add('minecraft:bad_omen', 24000, 0, false, true);
+    player.potionEffects.add('minecraft:bad_omen', 7200, 0, false, true);
 
     // Run the clear command silently to consume exactly 1 instance of the item from this player
     server.runCommandSilent(`clear ${player.username} theinkarena:ink_membrane 1`);
