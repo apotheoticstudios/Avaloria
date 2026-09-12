@@ -1,11 +1,9 @@
 {
-  "config_version": "2.0.34",
-  "config_datetime": "2026-09-02_09-10-52",
+  "config_version": "2.0.35",
+  "config_datetime": "2026-09-12_08-20-13",
   "general": {
-    "disable_all_structures": false,
-    "prevent_structure_overlap": false,
-    "enable_global_spacing_and_separation_modifier": false,
-    "global_spacing_and_separation_modifier": 1.0
+    "enable_global_spacing_and_separation_modifier": true,
+    "global_spacing_and_separation_modifier": 0.7
   },
   "structure_namespaces": [],
   "structures": [
@@ -29,711 +27,689 @@
   "structure_sets": [
     {
       "name": "ancientstructures:german_buildings",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 110,
-      "separation": 10
+      "separation": 10,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ancientstructures:japanese_buildings",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 110,
-      "separation": 9
+      "separation": 9,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ancientstructures:mayan_buildings",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 100,
-      "separation": 10
+      "separation": 10,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ancientstructures:roman_buildings",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 100,
-      "separation": 10
+      "separation": 10,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "bbv:stronghold",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 183,
-      "separation": 91
+      "separation": 91,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "bloomingnature:cottage",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 117,
-      "separation": 58
+      "separation": 58,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "bloomingnature:little_house",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 23,
-      "separation": 20
+      "separation": 20,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "bloomingnature:swamp_hut",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 22,
-      "separation": 11
+      "separation": 11,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "bloomingnature:tree_stump",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 22,
-      "separation": 16
-    },
-    {
-      "name": "epic:large_dungeons",
-      "override_global_spacing_and_separation_modifier": true,
-      "spacing": 56,
-      "separation": 55
-    },
-    {
-      "name": "epic:medium_dungeons",
-      "override_global_spacing_and_separation_modifier": true,
-      "spacing": 41,
-      "separation": 28
-    },
-    {
-      "name": "epic:small_dungeons",
-      "override_global_spacing_and_separation_modifier": true,
-      "spacing": 28,
-      "separation": 4
+      "separation": 16,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "epic:witch_hut",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:bones_tree",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 58,
-      "separation": 14
+      "separation": 14,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_arc",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 27,
-      "separation": 10
+      "separation": 10,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_baby_fish",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 22,
-      "separation": 13
+      "separation": 13,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_bone_fish",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 26,
-      "separation": 13
+      "separation": 13,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_chest",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 37,
-      "separation": 27
+      "separation": 27,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_dragon",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 61,
-      "separation": 22
+      "separation": 22,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_fang",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 59,
-      "separation": 27
+      "separation": 27,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_fish",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 25,
-      "separation": 13
+      "separation": 13,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_guardian",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 61,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:fossil_snake",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 35,
-      "separation": 16
+      "separation": 16,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:rex_camp",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 33,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:skull_camp",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 80,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:small_coal_rex_camp",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 43,
-      "separation": 16
+      "separation": 16,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_fossil:small_rex_camp",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 30,
-      "separation": 25
+      "separation": 25,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:ancient_statue",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 40,
-      "separation": 14
+      "separation": 14,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:big_melon",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 27,
-      "separation": 10
+      "separation": 10,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:fountain",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 63,
-      "separation": 14
+      "separation": 14,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:lost_explorer",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 42,
-      "separation": 12
+      "separation": 12,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:old_house",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 48,
-      "separation": 8
+      "separation": 8,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:protector",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 27,
-      "separation": 26
+      "separation": 26,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:pyramid",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 31,
-      "separation": 26
+      "separation": 26,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:tree_ancestral",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 25,
-      "separation": 11
+      "separation": 11,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:tree_ancestral_house",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 67,
-      "separation": 22
+      "separation": 22,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:tree_giant",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 15
+      "separation": 15,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:tree_old",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 50,
-      "separation": 11
+      "separation": 11,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:tree_spline",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 26,
-      "separation": 19
+      "separation": 19,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:tree_stump",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 36,
-      "separation": 6
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "feur_extension_jungle:village",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 82,
-      "separation": 4
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:archaic_library",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 27,
-      "separation": 15
+      "separation": 15,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:ashen_temple",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 32,
-      "separation": 23
+      "separation": 23,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:berserker_base",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 18,
-      "separation": 8
+      "separation": 8,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:berserker_platform",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 24,
-      "separation": 11
+      "separation": 11,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:explorers_house",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 32,
-      "separation": 27
+      "separation": 27,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:giant_hive",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 228,
-      "separation": 146
+      "separation": 146,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:kappa_kolosseum",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 41,
-      "separation": 9
+      "separation": 9,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:nightshade_garden",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 24,
-      "separation": 11
+      "separation": 11,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:plateau_garden",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 27,
-      "separation": 16
+      "separation": 16,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:rainbow_sacilite_geode",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 11
+      "separation": 11,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:rattling_arena",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 24,
-      "separation": 11
+      "separation": 11,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:sacilite_palace",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 27,
-      "separation": 22
+      "separation": 22,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:scarlant_colony",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 27,
-      "separation": 14
+      "separation": 14,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:scarlant_nest",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 24,
-      "separation": 11
+      "separation": 11,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:stellar_portal_structure",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 37,
-      "separation": 9
+      "separation": 9,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:thunder_tower",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 27,
-      "separation": 14
+      "separation": 14,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:turmoil_camp_1",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 18,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:turmoil_camp_2",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 18,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:turmoil_camp_3",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 18,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "foolish:wendigo_ritual",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 32,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "forgottenruins:ruins_desert",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 31,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "forgottenruins:ruins_jungle",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 31,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "forgottenruins:ruins_mangrove_swamp",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 31,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "forgottenruins:ruins_swamp",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 31,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "grim_kingdoms:snowy",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 46,
-      "separation": 27
+      "separation": 27,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "illagerstructures:grounds",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 46,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "illagerstructures:ice",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 46,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "illagerstructures:monks",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 46,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "illagerstructures:pirates",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 46,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "illagerstructures:ruins",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 46,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "illagerstructures:undergrounds",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 46,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "lowlands_clothing:abandonnedlogcabin",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 38,
-      "separation": 20
+      "separation": 20,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "lowlands_clothing:lighthouse",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 19,
-      "separation": 14
+      "separation": 14,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "lowlands_clothing:pillager_war_forge",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 35,
-      "separation": 20
+      "separation": 20,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "lowlands_clothing:pillagerlogcabin",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 16
+      "separation": 16,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:ancient_cities",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 22,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:desert_pyramids",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:igloos",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:jungle_temples",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:ocean_monuments",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 5
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:ocean_ruins",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 18,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:pillager_outposts",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:shipwrecks",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 22,
-      "separation": 4
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:swamp_huts",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 29,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:trail_ruins",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 31,
-      "separation": 7
+      "separation": 7,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:villages",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 32,
-      "separation": 8
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:woodland_mansions",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 73,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "monsterexpansion:ignathos_placement",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "monsterexpansion:leivekilth_placement",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "monsterexpansion:rakoth_placement",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "monsterexpansion:skrythe_placement",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "netherman:believer_house",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 61,
-      "separation": 38
+      "separation": 38,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "netherman:head_altar",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 76,
-      "separation": 28
+      "separation": 28,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "netherman:maze",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 76,
-      "separation": 28
+      "separation": 28,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "netherman:nether_geyser",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 38,
-      "separation": 19
+      "separation": 19,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "netherman:pipes",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 38,
-      "separation": 19
+      "separation": 19,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:butcherhouse",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:farm",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 57,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:farmerhouse",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:fishermanhouse",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:fletcherhouse",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:forge",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:hay",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 57,
-      "separation": 33
+      "separation": 33,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:house_1",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 58,
-      "separation": 35
+      "separation": 35,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:library",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:market",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:mason",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:shepherd",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:stable",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:temple",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:toolsmith",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 32
+      "separation": 32,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "ocean_lily_pad_village:watchtower",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 58,
-      "separation": 35
+      "separation": 35,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "saintsdragons:igni_roost_set",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "saintsdragons:ivy_house",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 37,
-      "separation": 18
+      "separation": 18,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "saintsdragons:varasuchus_roost",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 18,
-      "separation": 9
+      "separation": 9,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "theinkarena:ancient_ink_temple",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 58,
-      "separation": 37
+      "separation": 37,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "theinkarena:ink_arena_structure",
-      "override_global_spacing_and_separation_modifier": true,
       "spacing": 55,
-      "separation": 37
+      "separation": 37,
+      "override_global_spacing_and_separation_modifier": true
     }
   ],
   "structure_template_pools": []

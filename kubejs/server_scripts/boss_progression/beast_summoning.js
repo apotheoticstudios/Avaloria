@@ -17,7 +17,7 @@ const BEAST_SUMMONS = [
     {
         mobId: "luminous_beasts:woodland_witch_doctor",
         itemId: "minecraft:chicken",
-        biome: "kubejs:wildlife_spawns/temperate_forests",
+        biome: "#kubejs:wildlife_spawns/temperate_forests",
         radius: 10, filters: { inWater: false, padding: 1 }
     },
     {
@@ -35,37 +35,37 @@ const BEAST_SUMMONS = [
     {
         mobId: "luminous_beasts:golden_hermit_king",
         itemId: "minecraft:rabbit",
-        biome: "kubejs:wildlife_spawns/coasts",
+        biome: "#kubejs:wildlife_spawns/coasts",
         radius: 6, filters: { inWater: false, padding: 1 }
     },
     {
         mobId: "luminous_beasts:coral_sea_viper",
         itemId: "minecraft:tropical_fish",
-        biome: "kubejs:wildlife_spawns/oceans",
+        biome: "#kubejs:wildlife_spawns/oceans",
         radius: 15, filters: { inWater: true, padding: 2 }
     },
     {
         mobId: "luminous_beasts:arid_yeti",
         itemId: "minecraft:porkchop",
-        biome: "kubejs:wildlife_spawns/arid_wildlands",
+        biome: "#kubejs:wildlife_spawns/arid_wildlands",
         radius: 12, filters: { inWater: false, padding: 2 }
     },
     {
         mobId: "luminous_beasts:frigid_gator",
         itemId: "minecraft:cod",
-        biome: "kubejs:wildlife_spawns/oceans",
+        biome: "#kubejs:wildlife_spawns/oceans",
         radius: 10, filters: { inWater: true, padding: 1 }
     },
     {
         mobId: "luminous_beasts:wind_phoenix",
         itemId: "minecraft:feather",
-        biome: "kubejs:wildlife_spawns/taiga_dark",
+        biome: "#kubejs:wildlife_spawns/taiga_dark",
         radius: 16, filters: { inWater: false, padding: 3 }
     },
     {
         mobId: "luminous_beasts:bogged_bone_stalker",
         itemId: "minecraft:bone",
-        biome: "kubejs:wildlife_spawns/wetlands",
+        biome: "#kubejs:wildlife_spawns/wetlands",
         radius: 8, filters: { inWater: false, padding: 1 }
     },
     {
@@ -85,7 +85,7 @@ const BEAST_SUMMONS = [
     {
         mobId: "luminous_beasts:albino_moth",
         itemId: "minecraft:spider_eye",
-        biome: "kubejs:wildlife_spawns/taiga_dark",
+        biome: "#kubejs:wildlife_spawns/taiga_dark",
         radius: 12, filters: { inWater: false, padding: 1 }
     }
 ];
@@ -99,6 +99,9 @@ BlockEvents.rightClicked(event => {
     const heldItem = player.getMainHandItem();
     const offHandItem = player.getOffHandItem();
     const dimensionId = level.dimension.toString();
+
+    // Track recognized bait so every handled exit can stop vanilla from eating it.
+    const isKnownBeastBait = BEAST_SUMMONS.some(cfg => heldItem.id === cfg.itemId);
     
     console.log(`[Beast Summoner] Interaction detected by player: ${player.username}`);
     
@@ -169,11 +172,18 @@ BlockEvents.rightClicked(event => {
         return false;
     });
     
-    if (!match) return;
+    if (!match) {
+        if (isKnownBeastBait) {
+            player.setStatusMessage("This bait cannot summon a beast here. Check the required biome and offhand catalyst.");
+            event.success();
+        }
+        return;
+    }
     
     const spawnPos = findSpawnPosition(level, block.pos, match.radius, match.filters);
     if (!spawnPos) {
         player.setStatusMessage("No suitable space nearby to summon the beast!");
+        event.success();
         return;
     }
     

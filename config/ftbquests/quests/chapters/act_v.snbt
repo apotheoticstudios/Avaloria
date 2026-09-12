@@ -44,6 +44,12 @@
 	quests: [
 		{
 			dependencies: ["4194B9C408C245EB"]
+			description: [
+				"With Bad Omen active after defeating the End Knight, it can be summoned in:"
+				""
+				"Cold Ocean, Deep Cold Ocean, Frozen Ocean, Deep Frozen Ocean, Frozen River,"
+				"Snowy Beach, Cold River, Frigid Mountains, and Permafrost Fields."
+			]
 			entity_vis_size: 1.0f
 			id: "35704C9EFB4B1CBA"
 			shape: "none"

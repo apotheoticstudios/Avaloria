@@ -161,6 +161,11 @@ ServerEvents.recipes(event => {
                 
                 fermentedNBT.BaseDuration = Math.floor(configSeconds * 20 * tierMultiplier);
                 fermentedNBT.CurrentDuration = fermentedNBT.BaseDuration;
+                fermentedNBT.CustomPotionEffects = [{
+                    Id: numId,
+                    Amplifier: tier - 1,
+                    Duration: isInstant ? 1 : fermentedNBT.BaseDuration
+                }];
                 fermentedNBT.display = { Name: `{"text":"Fermented ${tierPrefixes[tier]} ${pName}","italic":false,"color":"purple"}` };
                 
                 updatePotionLore(fermentedNBT, fermentedNBT.BaseDuration, isInstant);
@@ -220,6 +225,14 @@ PlayerEvents.tick(event => {
             let amplifier = Math.max(0, tier - 1); 
 
             nbt.CurrentDuration = finalDuration;
+            // CurrentDuration is pack metadata; vanilla drinking reads this list.
+            // Rebuild it so both newly crafted and older fermented potions use the
+            // duration shown in their lore when consumed.
+            nbt.CustomPotionEffects = [{
+                Id: getNumericalId(effectStrId),
+                Amplifier: amplifier,
+                Duration: finalDuration
+            }];
             updatePotionLore(nbt, finalDuration, false);
 
             player.potionEffects.add(effectStrId, finalDuration, amplifier, false, false);

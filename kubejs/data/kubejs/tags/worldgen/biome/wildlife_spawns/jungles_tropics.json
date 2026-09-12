@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#minecraft:is_jungle",
+    "fantasy_trees:fantasy_jungle",
     "mysticsbiomes:bamboo_blossom_forest",
     "mysticsbiomes:tropics",
     "foolish:storm_jungle"
