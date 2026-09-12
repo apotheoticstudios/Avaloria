@@ -3,14 +3,14 @@ const BEAST_SUMMONS = [
     {
         mobId: "luminous_beasts:soul_furnace",
         itemId: "minecraft:cooked_beef",
-        offHandItemId: "minecraft:nether_quartz",
+        offHandItemId: "minecraft:quartz",
         biome: "minecraft:soul_sand_valley",
         radius: 8, filters: { inWater: false, padding: 1 }
     },
     {
         mobId: "luminous_beasts:the_scarecrow",
         itemId: "minecraft:rotten_flesh",
-        offHandItemId: "minecraft:nether_quartz",
+        offHandItemId: "minecraft:quartz",
         biome: "kubejs:wildlife_spawns/temperate_forests",
         radius: 10, filters: { inWater: false, padding: 1 }
     },
@@ -71,14 +71,14 @@ const BEAST_SUMMONS = [
     {
         mobId: "luminous_beasts:basalt_executioner",
         itemId: "minecraft:magma_cream",
-        offHandItemId: "minecraft:nether_quartz",
+        offHandItemId: "minecraft:quartz",
         biome: "minecraft:basalt_deltas",
         radius: 8, filters: { inWater: false, padding: 2 }
     },
     {
         mobId: "luminous_beasts:warped_mushlin_king",
         itemId: "minecraft:warped_fungus",
-        offHandItemId: "minecraft:nether_quartz",
+        offHandItemId: "minecraft:quartz",
         biome: "minecraft:warped_forest",
         radius: 10, filters: { inWater: false, padding: 2 }
     },
