@@ -35,10 +35,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"35704C9EFB4B1CBA"
-				"31720F6CD67AF884"
-			]
+			dependencies: ["31720F6CD67AF884"]
 			description: [
 				"Place the beast pit atop the altar of the dragon and sacrafice the child of the beast..."
 				""
@@ -91,10 +88,10 @@
 			entity_vis_size: 1.0f
 			id: "31720F6CD67AF884"
 			shape: "none"
-			size: 4.0d
+			size: 7.0d
 			subtitle: "Kill them all!"
 			tasks: [{
-				entity: "bbv:the_ender_dragonoverworld"
+				entity: "bbv:the_ender_dragon"
 				entity_use_tag: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f

@@ -5361,7 +5361,7 @@
 	#Spawning options for luminous_beasts:albino_moth
 	[luminous_beasts.albino_moth]
 		#Should the entity be allowed to spawn normally?
-		allowNormalSpawning = true
+		allowNormalSpawning = false
 		#Should spawners be able to spawn the entity?
 		allowSpawners = true
 		#Should spawn eggs be able to spawn the entity?

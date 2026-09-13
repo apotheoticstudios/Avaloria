@@ -1,7 +1,7 @@
 // --- CONFIGURATION ARRAY SCAFFOLD ---
 const BEAST_SUMMONS = [
     {
-        mobId: "luminous_beasts:soul_furnace",
+        mobId: "luminous_nether:soul_furnace",
         itemId: "minecraft:cooked_beef",
         offHandItemId: "minecraft:quartz",
         biome: "minecraft:soul_sand_valley",
@@ -69,7 +69,7 @@ const BEAST_SUMMONS = [
         radius: 8, filters: { inWater: false, padding: 1 }
     },
     {
-        mobId: "luminous_beasts:basalt_executioner",
+        mobId: "luminous_nether:basalt_executioner",
         itemId: "minecraft:magma_cream",
         offHandItemId: "minecraft:quartz",
         biome: "minecraft:basalt_deltas",
@@ -123,15 +123,21 @@ BlockEvents.rightClicked(event => {
                 z: targetPos.z + 0.5
             };
             
+            // Do not consume the ritual or pit unless the entity was fully
+            // initialized and successfully added to the level.
+            let spawned = triggerCinematicSpawn(server, level, player, spawnPos, 'saintsdragons:ignivorus');
+            if (!spawned) {
+                player.setStatusMessage("§cIgnivorus could not be summoned. Your ritual items were not consumed.§r");
+                event.success();
+                return;
+            }
+
             if (!player.isCreative()) {
                 server.runCommandSilent(`clear ${player.username} minecraft:dragon_egg 1`);
             }
-            
+
             block.set('minecraft:air');
             player.setStatusMessage("§6The skies tear open... Ignivorus descends!§r");
-            
-            // Trigger cinematic sequence using the formatted spawn position
-            triggerCinematicSpawn(server, level, player, spawnPos, 'saintsdragons:ignivorus');
             event.success();
             return;
         }
@@ -187,23 +193,66 @@ BlockEvents.rightClicked(event => {
         return;
     }
     
+    // Initialize and add the boss first. Failed spawns leave the pit and all
+    // ingredients untouched instead of silently destroying the ritual.
+    let spawned = triggerCinematicSpawn(server, level, player, spawnPos, match.mobId);
+    if (!spawned) {
+        player.setStatusMessage("§cThe beast could not enter this world. Your bait and pit were not consumed.§r");
+        event.success();
+        return;
+    }
+
     if (!player.isCreative()) {
         server.runCommandSilent(`clear ${player.username} ${match.itemId} 1`);
         if (match.offHandItemId) {
             server.runCommandSilent(`clear ${player.username} ${match.offHandItemId} 1`);
         }
     }
-    
+
     block.set('minecraft:air');
     player.setStatusMessage("§6Something ancient stirs... prepare yourself!§r");
-
-    // Trigger standard cinematic sequence
-    triggerCinematicSpawn(server, level, player, spawnPos, match.mobId);
     event.success();
 });
 
 // --- HELPER FUNCTION FOR CINEMATIC SEQUENCING ---
 function triggerCinematicSpawn(server, level, player, spawnPos, mobId) {
+    if (typeof global.spawnCustomBoss !== 'function') {
+        console.error(`[Beast Summoner] Managed boss spawner is unavailable for ${mobId}.`);
+        return null;
+    }
+
+    // spawnCustomBoss marks the bypass, runs finalizeSpawn for Mob entities,
+    // and confirms that the entity was actually added to the level.
+    let entity = global.spawnCustomBoss(level, mobId, spawnPos.x, spawnPos.y, spawnPos.z);
+    if (!entity) {
+        console.error(`[Beast Summoner] Failed to create or add ${mobId}.`);
+        return null;
+    }
+
+    entity.persistentData.putBoolean('IsBeastSummon', true);
+    entity.persistentData.putString('BeastMobId', mobId);
+    entity.persistentData.putString('SummonerUUID', player.uuid.toString());
+
+    entity.mergeNbt({
+        ForgeData: {
+            IsBeastSummon: true,
+            BeastMobId: mobId,
+            SummonerUUID: player.uuid.toString(),
+            allow_boss_spawn: true
+        }
+    });
+
+    entity.setHealth(entity.maxHealth);
+
+    let uuid = entity.uuid.toString();
+
+    // Protect the boss during the warning sequence now that it exists.
+    server.runCommandSilent(`effect give ${uuid} minecraft:instant_health 1 255 true`);
+    server.runCommandSilent(`effect give ${uuid} minecraft:glowing 10 0 true`);
+    server.runCommandSilent(`effect give ${uuid} minecraft:regeneration 5 255 true`);
+    server.runCommandSilent(`effect give ${uuid} minecraft:resistance 5 255 true`);
+    server.runCommandSilent(`effect give ${uuid} minecraft:weakness 5 255 true`);
+
     server.runCommandSilent(`weather thunder`);
 
     let lightningDelays = [0, 20, 40, 60, 80, 95];
@@ -216,40 +265,8 @@ function triggerCinematicSpawn(server, level, player, spawnPos, mobId) {
             if (index === lightningDelays.length - 1) {
                 server.runCommandSilent(`execute in ${level.dimension.toString()} at ${spawnPos.x} ${spawnPos.y} ${spawnPos.z} run playsound minecraft:entity.wither.spawn host @a ~ ~ ~ 1.0 1.0`);
 
-                let entity = level.createEntity(mobId);
-                entity.setPosition(spawnPos.x, spawnPos.y, spawnPos.z);
-                
-                entity.persistentData.putBoolean('IsBeastSummon', true);
-                entity.persistentData.putString('BeastMobId', mobId);
-                entity.persistentData.putString('SummonerUUID', player.uuid.toString());
-                entity.persistentData.putBoolean('allow_boss_spawn', true);
+                if (!entity.isAlive() || entity.isRemoved()) return;
 
-                entity.mergeNbt({
-                    ForgeData: {
-                        IsBeastSummon: true,
-                        BeastMobId: mobId,
-                        SummonerUUID: player.uuid.toString()
-                    }
-                });
-                
-                entity.spawn();
-
-                // Instantly heal entity to its maximum capacity
-                entity.setHealth(entity.maxHealth);
-
-                let uuid = entity.uuid.toString();
-
-                // NEW: Instant health burst (tier 255) to guarantee full HP if modded attributes take a tick to apply
-                server.runCommandSilent(`effect give ${uuid} minecraft:instant_health 1 255 true`);
-
-                // Glowing effect (10 seconds, hidden particles)
-                server.runCommandSilent(`effect give ${uuid} minecraft:glowing 10 0 true`);
-                
-                // 5 seconds of max-tier status effects with particles hidden
-                server.runCommandSilent(`effect give ${uuid} minecraft:regeneration 5 255 true`);
-                server.runCommandSilent(`effect give ${uuid} minecraft:resistance 5 255 true`);
-                server.runCommandSilent(`effect give ${uuid} minecraft:weakness 5 255 true`);
-                
                 let bossbarId = `beast_bar_${uuid.replace(/-/g, '_')}`;
                 let cleanMobName = mobId.split(':')[1].replace(/_/g, ' ').toUpperCase();
                 let maxHp = Math.ceil(entity.maxHealth);
@@ -264,6 +281,8 @@ function triggerCinematicSpawn(server, level, player, spawnPos, mobId) {
             }
         });
     });
+
+    return entity;
 }
 
 // --- LEVEL TICK MONITORING (Updates BossBar Data & Clean Removal) ---

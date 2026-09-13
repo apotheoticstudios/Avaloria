@@ -173,6 +173,18 @@ ArmorSet.prototype.registerScrapRecipes = function(event) {
     var self = this;
     var hammerItem = self.itemTier.hammer;
 
+    // Salvage output must be a concrete item. Crafting tags are valid recipe
+    // ingredients, but they cannot be handed directly to Item.of() as rewards.
+    var scrapRewardOverrides = {
+        "#minecraft:logs_that_burn": "minecraft:oak_log",
+        "#minecraft:stone_tool_materials": "minecraft:cobblestone",
+        "#bloomingnature:small_flower": "minecraft:dandelion"
+    };
+
+    function rewardItemId(materialId) {
+        return scrapRewardOverrides[materialId] || materialId;
+    }
+
     this.ids.forEach(function(itemId) {
         var costs = self.materialCosts[itemId];
         if (!costs) return;
@@ -184,7 +196,11 @@ ArmorSet.prototype.registerScrapRecipes = function(event) {
         var formulaDivisor = totalMaterials + 1;
         var reductionRate = 1.0 / totalMaterials;
         var maxDurability = Item.of(itemId).getItem().getMaxDamage();
-        var durDmg = Math.round(maxDurability * reductionRate);
+        if (maxDurability <= 0) {
+            console.warn(`[Scrapping] Skipping non-damageable equipment: ${itemId}`);
+            return;
+        }
+        var durDmg = Math.max(1, Math.round(maxDurability * reductionRate));
 
         // Pre-formatted Clean Truncated Percentages
         var mainPercentStr = Math.round((costs.mainCount / formulaDivisor) * 100) + "%";
@@ -196,10 +212,10 @@ ArmorSet.prototype.registerScrapRecipes = function(event) {
         var baseNBT = {
             TargetArmor: itemId,
             Rewards: {
-                main:      costs.mainCount ?      { id: costs.mainItem } : null,
-                secondary: costs.secondaryCount ? { id: costs.secondaryItem } : null,
-                tertiary:  costs.tertiaryCount ?  { id: costs.tertiaryItem } : null,
-                gem:       costs.gemCount ?       { id: costs.gemItem } : null
+                main:      costs.mainCount ?      { id: rewardItemId(costs.mainItem), chance: costs.mainCount / formulaDivisor } : null,
+                secondary: costs.secondaryCount ? { id: rewardItemId(costs.secondaryItem), chance: costs.secondaryCount / formulaDivisor } : null,
+                tertiary:  costs.tertiaryCount ?  { id: rewardItemId(costs.tertiaryItem), chance: costs.tertiaryCount / formulaDivisor } : null,
+                gem:       costs.gemCount ?       { id: rewardItemId(costs.gemItem), chance: costs.gemCount / formulaDivisor } : null
             },
             display: {
                 Name: '{"text":"Equipment Scrap","color":"gold","italic":false}',
@@ -219,25 +235,6 @@ ArmorSet.prototype.registerScrapRecipes = function(event) {
         event.shapeless(Item.of('kubejs:custom_scrap_box').withNBT(baseNBT), [itemId, hammerItem])
         .damageIngredient(hammerItem, 1) 
         .damageIngredient(itemId, durDmg) 
-        .modifyResult(function(gridInv, resultStack) {
-            var armorStack = null;
-            for (var i = 0; i < 9; i++) {
-                var slotItem = gridInv.get(i);
-                if (slotItem && slotItem.id === itemId) {
-                    armorStack = slotItem;
-                    break;
-                }
-            }
-            if (!armorStack) return resultStack;
-
-            var currentDamage = armorStack.getDamageValue();
-            var remainingDurability = maxDurability - currentDamage;
-            var actualDamageToApply = Math.min(durDmg, remainingDurability);
-            
-            var nbt = resultStack.getOrCreateTag();
-            nbt.putInt('DmgToApply', actualDamageToApply);
-            return resultStack;
-        })
         .id("avaloria:scrapping_"+itemId.replace(":", "_"));
     });
 };
@@ -280,10 +277,22 @@ PlayerEvents.inventoryChanged(function(event) {
     var item = event.item;
     if (item.id === 'kubejs:custom_scrap_box' && item.nbt && item.nbt.Rewards) {
         var rewards = item.nbt.Rewards;
-        if (rewards.main)      { player.give(Item.of(rewards.main.id)); }
-        if (rewards.secondary) { player.give(Item.of(rewards.secondary.id)); }
-        if (rewards.tertiary)  { player.give(Item.of(rewards.tertiary.id)); }
-        if (rewards.gem)       { player.give(Item.of(rewards.gem.id)); }
+        var rewardOrder = [rewards.main, rewards.secondary, rewards.tertiary, rewards.gem];
+        var roll = Math.random();
+        var cumulativeChance = 0;
+
+        // The displayed percentages are mutually exclusive chances. The extra
+        // denominator slot is the intended chance to recover nothing.
+        for (var i = 0; i < rewardOrder.length; i++) {
+            var reward = rewardOrder[i];
+            if (!reward) continue;
+
+            cumulativeChance += Number(reward.chance || 0);
+            if (roll < cumulativeChance) {
+                player.give(Item.of(reward.id.toString()));
+                break;
+            }
+        }
         
         item.setCount(0);
         player.playSound('minecraft:block.anvil.use', 0.6, 1.2);

@@ -7,6 +7,11 @@ const BANNED_BOSSES = [
     "theinkarena:natural_ink_titan"
 ];
 
+// Ignivorus is summoned by the dedicated End ritual, not by Bad Omen ambushes.
+const RITUAL_ONLY_BOSSES = [
+    "saintsdragons:ignivorus"
+];
+
 // Configurable ambush system settings
 const AMBUSH_CHECK_COOLDOWN = 2400; // 2 minutes in ticks (20 ticks = 1 second)
 const WARNING_COUNTDOWN_TIME = 5; // 5 seconds warning structure countdown
@@ -21,8 +26,7 @@ const GRID_BOSSES_CONFIG = [
     { boss: 'saintsdragons:volitans', biome: '#kubejs:wildlife_spawns/volitans', prereq: "opposing_force:skyvern", color: 'blue', stage: 3 },
     { boss: 'saintsdragons:raevyx', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'red', stage: 4 },
     { boss: 'saintsdragons:varasuchus', biome: '#kubejs:wildlife_spawns/flower_meadows', prereq: 'saintsdragons:volitans', color: 'purple', stage: 4 },
-    { boss: 'saintsdragons:ignivorus', biome: '#minecraft:is_overworld', prereq: 'saintsdragons:ignivorus', color: 'red', stage: 8 }, // TODO: END SHIT
-    { boss: 'monsterexpansion:ignathos', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: ["luminous_beasts:the_scarecrow", "luminous_beasts:basalt_executioner"], color: 'red', stage: 5 },
+    { boss: 'monsterexpansion:ignathos', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: ["luminous_beasts:the_scarecrow", "luminous_nether:basalt_executioner"], color: 'red', stage: 5 },
     { boss: 'monsterexpansion:rakoth', biome: '#kubejs:wildlife_spawns/arid_wildlands', prereq: 'foolish:astralis', color: 'yellow', stage: 6 },
     { boss: 'monsterexpansion:skrythe', biome: '#kubejs:wildlife_spawns/mountain_peaks', prereq: 'foolish:astralis', color: 'white', stage: 6 },
     { boss: 'monsterexpansion:leivekilth', biome: '#kubejs:wildlife_spawns/cold_waters', prereq: 'foolish:end_knight', color: 'blue', stage: 7 }
@@ -39,8 +43,12 @@ const LUMINOUS_PAIRS = {
     "luminous_beasts:yeti": "luminous_beasts:arid_yeti",
     "luminous_beasts:vile_gator": "luminous_beasts:frigid_gator",
     "luminous_beasts:bone_stalker": "luminous_beasts:bogged_bone_stalker",
-    "luminous_beasts:piglin_executioner": "luminous_beasts:basalt_executioner",
-    "luminous_beasts:the_furnace": "luminous_beasts:soul_furnace",
+    "luminous_beasts:piglin_executioner": "luminous_nether:basalt_executioner",
+    "luminous_beasts:basalt_executioner": "luminous_nether:basalt_executioner",
+    "luminous_nether:piglin_executioner": "luminous_nether:basalt_executioner",
+    "luminous_beasts:the_furnace": "luminous_nether:soul_furnace",
+    "luminous_beasts:soul_furnace": "luminous_nether:soul_furnace",
+    "luminous_nether:the_furnace": "luminous_nether:soul_furnace",
     "luminous_beasts:horseless_headsman": "luminous_beasts:the_scarecrow",
     "luminous_beasts:witch_doctor": "luminous_beasts:woodland_witch_doctor",
     "luminous_beasts:phoenix": "luminous_beasts:wind_phoenix",
@@ -50,7 +58,7 @@ const LUMINOUS_PAIRS = {
 
 // Flatten out all luminous keys and values for quick array checks
 const LUMINOUS_ALL = Object.keys(LUMINOUS_PAIRS).concat(Object.values(LUMINOUS_PAIRS));
-const ALL_RESTRICTED = BANNED_BOSSES.concat(GRID_BOSSES, LUMINOUS_ALL);
+const ALL_RESTRICTED = BANNED_BOSSES.concat(RITUAL_ONLY_BOSSES, GRID_BOSSES, LUMINOUS_ALL);
 
 /**
  * Custom function to spawn a restricted boss safely.
@@ -117,7 +125,7 @@ function isLuminousUnlocked(server, level, x, y, z, mobId) {
 // natural Grid Boss spawns progression-locked without breaking eggs or /summon.
 EntityEvents.checkSpawn(event => {
     const entity = event.entity;
-    if (!entity || !GRID_BOSSES.includes(entity.type)) return;
+    if (!entity || (!GRID_BOSSES.includes(entity.type) && !RITUAL_ONLY_BOSSES.includes(entity.type))) return;
 
     if (entity.persistentData.getBoolean('allow_boss_spawn')) return;
 
@@ -150,6 +158,12 @@ EntityEvents.spawned(event => {
 
     if (BANNED_BOSSES.includes(type)) {
         console.log(`[BossSystem] Filter Blocked: ${type} tried to spawn, but is explicitly listed in BANNED_BOSSES.`);
+        event.cancel();
+        return;
+    }
+
+    if (RITUAL_ONLY_BOSSES.includes(type)) {
+        console.log(`[BossSystem] Filter Blocked: ${type} tried to spawn outside its dedicated ritual.`);
         event.cancel();
         return;
     }

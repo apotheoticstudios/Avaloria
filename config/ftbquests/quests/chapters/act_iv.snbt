@@ -31,8 +31,7 @@
 			description: [
 				"With Bad Omen active after defeating Astralis, it can be summoned in:"
 				""
-				"Badlands, Eroded Badlands, Wooded Badlands, Desert, Savanna,"
-				"Savanna Plateau, Windswept Savanna, Fantasy Savanna, Lush Oasis,"
+				"Eroded Badlands, Fantasy Savanna, Lush Oasis,"
 				"Highlands, Oasis, Sands of Time, Scarlet Fields, and Wasteland."
 			]
 			entity_vis_size: 1.0f
@@ -65,7 +64,7 @@
 				"With Bad Omen active after defeating Astralis, it can be summoned in:"
 				""
 				"Meadow, Frozen Peaks, Jagged Peaks, Stony Peaks, Snowy Slopes, Cherry Grove,"
-				"Windswept Gravelly Hills, Windswept Hills, Storm Jungle, Frigid Mountains,"
+				"Windswept Gravelly Hills, Storm Jungle, Frigid Mountains,"
 				"Highlands, and Ledged Cliffs."
 			]
 			entity_vis_size: 1.0f

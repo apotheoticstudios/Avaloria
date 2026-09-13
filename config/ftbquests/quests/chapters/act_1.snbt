@@ -71,7 +71,7 @@
 			description: [
 				"With Bad Omen active after defeating the Guzzler, it can be summoned in:"
 				""
-				"Bamboo Jungle, Jungle, Sparse Jungle, Fantasy Jungle,"
+				"Bamboo Jungle, Fantasy Jungle,"
 				"Bamboo Blossom Forest, Tropics, and Storm Jungle."
 			]
 			entity_vis_size: 1.0f
@@ -341,8 +341,7 @@
 			description: [
 				"Use Raw Porkchop on a lit Beast Pit in one of these biomes:"
 				""
-				"Badlands, Eroded Badlands, Wooded Badlands, Desert, Savanna,"
-				"Savanna Plateau, Windswept Savanna, Fantasy Savanna, Lush Oasis,"
+				"Eroded Badlands, Fantasy Savanna, Lush Oasis,"
 				"Highlands, Oasis, Sands of Time, Scarlet Fields, and Wasteland."
 			]
 			entity_vis_size: 1.0f
@@ -423,8 +422,7 @@
 			description: [
 				"Use Raw Mutton on a lit Beast Pit in one of these biomes:"
 				""
-				"Badlands, Eroded Badlands, Wooded Badlands, Desert, Savanna,"
-				"Savanna Plateau, Windswept Savanna, Fantasy Savanna, Lush Oasis,"
+				"Eroded Badlands, Fantasy Savanna, Lush Oasis,"
 				"Highlands, Oasis, Sands of Time, Scarlet Fields, and Wasteland."
 			]
 			entity_vis_size: 1.0f
@@ -465,8 +463,8 @@
 				"Use a Feather on a lit Beast Pit in one of these biomes:"
 				""
 				"Taiga, Snowy Taiga, Old Growth Pine Taiga, Old Growth Spruce Taiga,"
-				"Dark Forest, Grove, Old Growth Birch Forest, Fantasy Dark Forest,"
-				"Fantasy Taiga, Boreal Grove, Darkened Forest, Permafrost Fields,"
+				"Grove, Fantasy Dark Forest, Fantasy Taiga, Boreal Grove,"
+				"Darkened Forest, Permafrost Fields, Sacilite Bloom,"
 				"and Somber Forest."
 			]
 			entity_vis_size: 1.0f
@@ -507,8 +505,8 @@
 				"Use a Spider Eye on a lit Beast Pit in one of these biomes:"
 				""
 				"Taiga, Snowy Taiga, Old Growth Pine Taiga, Old Growth Spruce Taiga,"
-				"Dark Forest, Grove, Old Growth Birch Forest, Fantasy Dark Forest,"
-				"Fantasy Taiga, Boreal Grove, Darkened Forest, Permafrost Fields,"
+				"Grove, Fantasy Dark Forest, Fantasy Taiga, Boreal Grove,"
+				"Darkened Forest, Permafrost Fields, Sacilite Bloom,"
 				"and Somber Forest."
 			]
 			entity_vis_size: 1.0f

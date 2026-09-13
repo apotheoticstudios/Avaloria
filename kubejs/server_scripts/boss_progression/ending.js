@@ -3,17 +3,37 @@ console.log('[Ignivorus Script] Script loaded successfully.')
 const ENDING_CREDITS_PENDING_KEY = 'fantasiaEndingCreditsPending'
 const ENDING_CREDITS_GUI = 'ending_credits'
 
+if (!global.activeEndingRituals) {
+    global.activeEndingRituals = {}
+}
+
+function getActiveRitualPlayer(server, playerUUID, ritualToken) {
+    if (!global.activeEndingRituals || global.activeEndingRituals[playerUUID] !== ritualToken) return null
+
+    const livePlayer = server.getPlayer(playerUUID)
+    if (!livePlayer) {
+        delete global.activeEndingRituals[playerUUID]
+        return null
+    }
+
+    return livePlayer
+}
+
 function queueEndingCredits(player, server) {
     if (!player.persistentData.getBoolean(ENDING_CREDITS_PENDING_KEY)) return
 
     const playerName = `${player.username}`
+    const playerUUID = player.uuid.toString()
 
     // Give the client enough time to leave the death screen before opening the cutscene.
     server.scheduleInTicks(10, () => {
+        const livePlayer = server.getPlayer(playerUUID)
+        if (!livePlayer || !livePlayer.persistentData.getBoolean(ENDING_CREDITS_PENDING_KEY)) return
+
         const opened = server.runCommandSilent(`openguiscreen ${ENDING_CREDITS_GUI} ${playerName}`)
 
         if (opened > 0) {
-            player.persistentData.remove(ENDING_CREDITS_PENDING_KEY)
+            livePlayer.persistentData.remove(ENDING_CREDITS_PENDING_KEY)
             console.log(`[Ending Credits] Opened for ${playerName}`)
         } else {
             console.log(`[Ending Credits] Could not dispatch the credits screen for ${playerName}.`)
@@ -25,6 +45,12 @@ function queueEndingCredits(player, server) {
 // Helper: Execute Ritual
 // -------------------------------------------------------------
 function startRitualSequence(player, level, server) {
+    const playerUUID = player.uuid.toString()
+    if (global.activeEndingRituals[playerUUID]) return false
+
+    const ritualToken = `${server.tickCount}_${Math.random()}`
+    global.activeEndingRituals[playerUUID] = ritualToken
+
     console.log(`[Ritual Start] Starting ritual sequence for player: ${player.username}`)
 
     // Apply initial levitation (18 seconds)
@@ -41,14 +67,14 @@ function startRitualSequence(player, level, server) {
     ]
 
     // Safe helper function to spawn lightning
-    function spawnLightningAt(x, y, z, visualOnly) {
+    function spawnLightningAt(targetLevel, x, y, z, visualOnly) {
         if (isNaN(x) || isNaN(y) || isNaN(z)) {
             console.log(`[Lightning Error] Aborted spawn due to NaN coordinates! (X:${x}, Y:${y}, Z:${z})`)
             return
         }
 
         try {
-            let bolt = level.createEntity('minecraft:lightning_bolt')
+            let bolt = targetLevel.createEntity('minecraft:lightning_bolt')
             if (bolt) {
                 bolt.setPosition(x, y, z)
                 if (visualOnly && typeof bolt.setVisualOnly === 'function') {
@@ -63,6 +89,7 @@ function startRitualSequence(player, level, server) {
 
     // Circle calculation using explicit PI value to avoid Rhino engine NaN issue
     function spawnLightningCircle(targetPlayer, radius, points) {
+        const targetLevel = targetPlayer.level
         let playerX = Number(targetPlayer.getX())
         let playerY = Number(targetPlayer.getY())
         let playerZ = Number(targetPlayer.getZ())
@@ -77,7 +104,7 @@ function startRitualSequence(player, level, server) {
             let ringX = playerX + (radius * cosVal)
             let ringZ = playerZ + (radius * sinVal)
 
-            spawnLightningAt(ringX, playerY, ringZ, true)
+            spawnLightningAt(targetLevel, ringX, playerY, ringZ, true)
         }
     }
 
@@ -86,43 +113,69 @@ function startRitualSequence(player, level, server) {
         let delayTicks = index * 60
 
         server.scheduleInTicks(delayTicks, () => {
-            player.tell(line)
+            const livePlayer = getActiveRitualPlayer(server, playerUUID, ritualToken)
+            if (!livePlayer || !livePlayer.isAlive()) return
+
+            livePlayer.tell(line)
 
             let radius = (index + 1) * 2.5
-            spawnLightningCircle(player, radius, 8)
+            spawnLightningCircle(livePlayer, radius, 8)
         })
     })
 
     // Climax setup at Line 6 (300 ticks / 15 seconds in)
     server.scheduleInTicks(300, () => {
-        player.potionEffects.add('minecraft:blindness', 300, 0, false, false)
-        player.potionEffects.add('minecraft:slowness', 300, 4, false, false)
-        player.potionEffects.add('minecraft:resistance', 300, 255, false, false)
+        const livePlayer = getActiveRitualPlayer(server, playerUUID, ritualToken)
+        if (!livePlayer || !livePlayer.isAlive()) return
 
-        player.health = 1.0
+        livePlayer.potionEffects.add('minecraft:blindness', 300, 0, false, false)
+        livePlayer.potionEffects.add('minecraft:slowness', 300, 4, false, false)
+        livePlayer.potionEffects.add('minecraft:resistance', 300, 255, false, false)
+
+        livePlayer.health = 1.0
     })
 
     // Final Death sequence after 15-second pause (600 ticks / 30 seconds total)
     server.scheduleInTicks(600, () => {
-        player.health = 1.0
-        player.tell("§c§lMaybe, maybe you are the beast.")
+        const livePlayer = getActiveRitualPlayer(server, playerUUID, ritualToken)
+        if (!livePlayer || !livePlayer.isAlive()) return
+
+        const liveLevel = livePlayer.level
+        livePlayer.health = 1.0
+        livePlayer.tell("§c§lMaybe, maybe you are the beast.")
 
         // Play Wither spawn sound on MASTER channel
-        server.runCommandSilent(`execute as ${player.username} run playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 1.0 1.0`)
+        server.runCommandSilent(`execute as ${livePlayer.username} run playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 1.0 1.0`)
 
         // Direct fatal strike on player live position
-        let finalX = Number(player.getX())
-        let finalY = Number(player.getY())
-        let finalZ = Number(player.getZ())
-        spawnLightningAt(finalX, finalY, finalZ, false)
-        
-        // This marker survives the death clone and is consumed only after respawning.
-        player.persistentData.putBoolean(ENDING_CREDITS_PENDING_KEY, true)
+        let finalX = Number(livePlayer.getX())
+        let finalY = Number(livePlayer.getY())
+        let finalZ = Number(livePlayer.getZ())
+
+        // Set this before any lethal action so the respawn hook cannot race it.
+        livePlayer.persistentData.putBoolean(ENDING_CREDITS_PENDING_KEY, true)
+        delete global.activeEndingRituals[playerUUID]
+
+        spawnLightningAt(liveLevel, finalX, finalY, finalZ, false)
 
         // Instant death
-        player.kill()
+        if (livePlayer.isAlive()) livePlayer.kill()
     })
+
+    return true
 }
+
+// Any premature death invalidates the scheduled callbacks. The intended final
+// death removes the active token immediately before killing the player.
+EntityEvents.death(event => {
+    const deadPlayer = event.entity
+    if (!deadPlayer || !deadPlayer.isPlayer()) return
+
+    const playerUUID = deadPlayer.uuid.toString()
+    if (global.activeEndingRituals && global.activeEndingRituals[playerUUID]) {
+        delete global.activeEndingRituals[playerUUID]
+    }
+})
 
 // -------------------------------------------------------------
 // 1. Clear default drops & drop Heart with custom Lore
@@ -183,8 +236,14 @@ ItemEvents.rightClicked('saintsdragons:ignivorus_heart', event => {
 
     if (!loreText.includes("Whose heart is this?")) return
 
+    if (!startRitualSequence(player, level, server)) {
+        player.tell("§cThe heart is already answering you.")
+        event.cancel()
+        return
+    }
+
     event.item.count--
-    startRitualSequence(player, level, server)
+    event.cancel()
 })
 
 // -------------------------------------------------------------

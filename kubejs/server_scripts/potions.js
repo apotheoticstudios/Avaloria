@@ -14,7 +14,7 @@ const POTION_CONFIG = {
     "minecraft:resistance":       { tier: "minecraft:diamond", tuning: "minecraft:shulker_shell", name: "Potion of Resistance", baseDuration: 90 },
 
     // === UTILITY & MINING ===
-    "minecraft:haste":            { tier: "minecraft:gold_ingot", tuning: "minecraft:pickaxe", name: "Potion of Haste", baseDuration: 240 },
+    "minecraft:haste":            { tier: "minecraft:gold_ingot", tuning: "#minecraft:pickaxes", name: "Potion of Haste", baseDuration: 240 },
     "minecraft:mining_fatigue":   { tier: "minecraft:gold_ingot", tuning: "minecraft:prismarine_crystals", name: "Potion of Dullness", baseDuration: 60 },
 
     // === RECOVERY & HEALTH ===

@@ -27,7 +27,7 @@ var armor_sets = {
 
     // --- Foolish Mod ---
     coccinium: new ArmorSet("foolish", "coccinium_armor", "chestplate").setTier("IRON").withCrafting("foolish:coccinium", "minecraft:iron_ingot"),
-    blunt_armor: new ArmorSet("foolish", "blunt_armor", "chestplate").setTier("NETHERITE").withCrafting("foolish:blunt_metal_ingot", "foolish:inferal_alloy_plate_item", "minecraft:netherite_ingot"),
+    blunt_armor: new ArmorSet("foolish", "blunt_armor", "chestplate").setTier("NETHERITE").withCrafting("foolish:blunt_metal_ingot", "foolish:infernal_alloy_plate_item", "minecraft:netherite_ingot"),
     keepsteel: new ArmorSet("foolish", "keepsteel", "chestplate").setTier("NETHERITE").withFoundry("foolish:enderslate", "foolish:chorus_leather", "foolish:rotary_core", "foolish:keepsteel_ingot"),
     stellar_armor: new ArmorSet("foolish", "stellar_armor", "chestplate").setTier("STELLAR").withFoundry("foolish:infernal_alloy_plate", "minecraft:netherite_scrap", "foolish:star_shard", "minecraft:diamond_block"),
 
@@ -39,7 +39,7 @@ var armor_sets = {
     iron_plate: new ArmorSet("armoroftheages", "iron_plate_armor", "chest").setTier("IRON").withCrafting("minecraft:iron_block", "lowlands_clothing:heavy_iron_ingot"),
     japanese_light: new ArmorSet("armoroftheages", "japanese_light_armor", "chest").setTier("LEATHER").withCrafting("minecraft:leather", "minecraft:string", "minecraft:redstone"),
     o_yoroi: new ArmorSet("armoroftheages", "o_yoroi_armor", "chest").setTier("IRON").withCrafting("minecraft:redstone_block", "minecraft:coal_block", "minecraft:iron_block"),
-    pharaoh: new ArmorSet("armoroftheages", "pharaoh_armor", "chest").setTier("DIAMOND").withCrafting("minecraft:diamond_ingot", "minecraft:gold_ingot", "minecraft:white_wool"),
+    pharaoh: new ArmorSet("armoroftheages", "pharaoh_armor", "chest").setTier("DIAMOND").withCrafting("minecraft:diamond", "minecraft:gold_ingot", "minecraft:white_wool"),
     quetzalcoatl: new ArmorSet("armoroftheages", "quetzalcoatl_armor", "chest").setTier("NETHERITE").withFoundry("ogres:ogre_bone", "minecraft:egg", "minecraft:netherite_scrap", "supplementaries:feather_block"),
     raijin: new ArmorSet("armoroftheages", "raijin_armor", "chest").setTier("NETHERITE").withFoundry("foolish:electrical_charge", "minecraft:lightning_rod", "minecraft:netherite_scrap", "minecraft:copper_block"),
 
@@ -59,7 +59,7 @@ var armor_sets = {
     norsian: new ArmorSet("lowlands_clothing", "norsian_armor", "chestplate").setTier("IRON").withCrafting("minecraft:iron_ingot", "lowlands_clothing:furpelt", "minecraft:goat_horn"),
     wald_knight: new ArmorSet("lowlands_clothing", "wald_knight_armor", "chestplate").setTier("IRON").withCrafting("minecraft:iron_ingot", "#minecraft:saplings", "minecraft:dark_oak_wood"),
     maskerade: new ArmorSet("lowlands_clothing", "maskerade_armor", "chestplate").setTier("GOLD").withCrafting("minecraft:gold_ingot", "lowlands_clothing:cloth_fabric", "minecraft:totem_of_undying"),
-    bret_corsair: new ArmorSet("lowlands_clothing", "bret_corsair_armor", "chestplate").setTier("LEATHER").withCrafting("minecraft:woolen_fabric", "minecraft:kelp"),
+    bret_corsair: new ArmorSet("lowlands_clothing", "bret_corsair_armor", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:woolen_fabric", "minecraft:kelp"),
     bret_clothes: new ArmorSet("lowlands_clothing", "bret_clothes", "chestplate").setTier("GOLD").withCrafting("minecraft:gold_ingot", "minecraft:prismarine_crystals", "minecraft:heart_of_the_sea"),
     depth_scaphander: new ArmorSet("lowlands_clothing", "depth_scaphander", "chestplate").setTier("GOLD").withCrafting("minecraft:copper_ingot", "minecraft:prismarine_crystals", "minecraft:prismarine_crystals"),
     gamekeeper: new ArmorSet("lowlands_clothing", "gamekeeper_attires", "chestplate").setTier("LEATHER").withCrafting("lowlands_clothing:laced_woolen_fabric", "minecraft:bone", "minecraft:lead"),

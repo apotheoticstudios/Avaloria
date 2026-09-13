@@ -7,7 +7,6 @@ StartupEvents.registry('item', function(event) {
 });
 
 ForgeEvents.onEvent('net.minecraftforge.event.AnvilUpdateEvent', event => {
-    console.log("test")
     // Check if the item being repaired/modified is one you want to block
     let leftItem = event.getLeft()
     let rightItem = event.getRight()

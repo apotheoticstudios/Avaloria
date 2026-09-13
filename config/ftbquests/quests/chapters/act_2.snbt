@@ -289,10 +289,10 @@
 			description: [
 				"Use Rotten Flesh on a lit Beast Pit with Nether Quartz in your offhand."
 				""
-				"Valid biomes: Forest, Flower Forest, Birch Forest, Old Growth Birch Forest,"
-				"Dark Forest, Grove, Meadow, Plains, Sunflower Plains, Fantasy Birch Forest,"
+				"Valid biomes: Flower Forest, Grove, Meadow, Plains, Sunflower Plains,"
 				"Fantasy Dark Forest, Fantasy Forest, Autumnal Grove, Lavender Meadow,"
-				"Strawberry Fields, Aspen Forest, Mountanious Forest, Overgrowth, and Thicket."
+				"Strawberry Fields, Aspen Forest, Mountanious Forest, Overgrowth, Sacilite Bloom,"
+				"Scarlet Fields, and Thicket."
 			]
 			entity_vis_size: 1.0f
 			id: "43C201CFFB2A94E2"
@@ -332,8 +332,7 @@
 				"With Bad Omen active after defeating the Scarecrow and Basalt Executioner,"
 				"it can be summoned in:"
 				""
-				"Badlands, Eroded Badlands, Wooded Badlands, Desert, Savanna,"
-				"Savanna Plateau, Windswept Savanna, Fantasy Savanna, Lush Oasis,"
+				"Eroded Badlands, Fantasy Savanna, Lush Oasis,"
 				"Highlands, Oasis, Sands of Time, Scarlet Fields, and Wasteland."
 			]
 			entity_vis_size: 1.0f
@@ -413,7 +412,11 @@
 		}
 		{
 			dependencies: ["6B278F815CFC604B"]
-			description: ["Return to the ink arena. Clear the &0stain&r upon this world."]
+			description: [
+				"Return to the ink arena. Clear the &0stain&r upon this world."
+				""
+				"The final boss after clearing all waves of the &l&0Ink Horde&r"
+			]
 			entity_vis_size: 1.0f
 			id: "629A2B4DE686BF86"
 			shape: "gear"

@@ -137,10 +137,8 @@ UTILITY AND MINING
 ------------------
 
 Potion of Haste
-  Gold Ingot + Pickaxe
+  Gold Ingot + Any Pickaxe
   Duration: 4:00 / 5:19 / 8:00
-  IMPORTANT: The current script references "minecraft:pickaxe", which is not a
-  valid vanilla item. This recipe will need correction before players can use it.
 
 Potion of Dullness (Mining Fatigue)
   Gold Ingot + Prismarine Crystals
@@ -264,4 +262,3 @@ To make a Fermented Mighty Splash Potion of Speed:
   4. Combine pairs of Raw Strong Splash Potions with Netherite Scrap to produce
      Raw Mighty Splash Potions.
   5. Ferment each finished potion with two Nether Wart at a smithing table.
-
