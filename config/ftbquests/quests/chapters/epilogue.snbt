@@ -76,15 +76,12 @@
 				type: "kill"
 				value: 1L
 			}]
+			title: "Defeat &l&6Ignivorus"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"253C7CD0AE3C4E35"
-				"4A5E106AD9462698"
-				"00551D267A9B3AA4"
-			]
+			dependencies: ["4A5E106AD9462698"]
 			entity_vis_size: 1.0f
 			id: "31720F6CD67AF884"
 			shape: "none"
@@ -106,6 +103,7 @@
 				type: "kill"
 				value: 1L
 			}]
+			title: "Slay &l&5The Ender Dragon"
 			x: 0.0d
 			y: 9.0d
 		}
