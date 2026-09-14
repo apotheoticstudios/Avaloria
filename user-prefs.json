@@ -814,6 +814,14 @@
         "isSelected": true
       },
       {
+        "path": "config/jei/world/local/testr",
+        "isSelected": true
+      },
+      {
+        "path": "config/jei/world/local/testr/lookupHistory.ini",
+        "isSelected": true
+      },
+      {
         "path": "config/jeresources-common.toml",
         "isSelected": true
       },
@@ -2790,6 +2798,10 @@
         "isSelected": true
       },
       {
+        "path": "config/structurify/structurify_backup_2026-09-12_08-20-13.json",
+        "isSelected": true
+      },
+      {
         "path": "config/structurify.json",
         "isSelected": true
       },
@@ -3062,6 +3074,10 @@
         "isSelected": false
       },
       {
+        "path": "crash-reports/crash-2026-09-12_08.14.36-fml.txt",
+        "isSelected": false
+      },
+      {
         "path": "data",
         "isSelected": false
       },
@@ -3139,10 +3155,6 @@
       },
       {
         "path": "fancymenu_data/fancymenu_temp",
-        "isSelected": false
-      },
-      {
-        "path": "fancymenu_data/fancymenu_temp/watermedia_videos",
         "isSelected": false
       },
       {
@@ -4266,6 +4278,10 @@
         "isSelected": true
       },
       {
+        "path": "kubejs/server_scripts/misc_recipes.js",
+        "isSelected": true
+      },
+      {
         "path": "kubejs/server_scripts/MultiMachineRecipe.js",
         "isSelected": true
       },
@@ -4298,19 +4314,19 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/56113_1788690912352_app.jar",
+        "path": "local/crash_assistant/25615_1789260984812_app.jar",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/56113_1788690912352_args.info",
+        "path": "local/crash_assistant/25615_1789260984812_args.info",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/56113_1788690912352_mod.jar",
+        "path": "local/crash_assistant/25615_1789260984812_mod.jar",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/56113_1788690912352.info",
+        "path": "local/crash_assistant/25615_1789260984812.info",
         "isSelected": false
       },
       {
@@ -4318,7 +4334,7 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/joined_world_pid56113.tmp",
+        "path": "local/crash_assistant/joined_world_pid25615.tmp",
         "isSelected": false
       },
       {
@@ -5274,6 +5290,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v5/async-locator-forge-1.20-1.3.0.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v5/asynclogger-2.2.2+1.20.1-forge.jar.mod_data.json",
         "isSelected": false
       },
@@ -5742,6 +5762,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v5/jei-1.20.1-forge-15.57.0.208.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v5/JustEnoughResources-1.20.1-1.4.0.247.jar.mod_data.json",
         "isSelected": false
       },
@@ -5775,6 +5799,10 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v5/legendarycreatures-1.20.1-1.1.3.0.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v5/legendarycreatures-1.20.1-1.1.3.2.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -5871,6 +5899,10 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v5/moonlight-1.20-2.16.34-forge.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v5/moonlight-1.20-2.16.35-forge.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -5982,6 +6014,10 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v5/polymorph-forge-0.49.11+1.20.1.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v5/PresenceFootsteps-1.20.1-1.9.1-beta.1.jar.mod_data.json",
         "isSelected": false
       },
@@ -6039,6 +6075,10 @@
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v5/saintsdragons-0.9.52+forge-1.20.1.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v5/saintsdragons-0.9.6+forge-1.20.1.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -6210,11 +6250,19 @@
         "isSelected": false
       },
       {
+        "path": "local/crash_assistant/mod_data_cache_v5/xaerominimap-forge-1.20.1-26.5.0.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
         "path": "local/crash_assistant/mod_data_cache_v5/xaeroworldmap-forge-1.20.1-1.44.2.jar.mod_data.json",
         "isSelected": false
       },
       {
         "path": "local/crash_assistant/mod_data_cache_v5/xaeroworldmap-forge-1.20.1-1.45.0.jar.mod_data.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/mod_data_cache_v5/xaeroworldmap-forge-1.20.1-1.46.0.jar.mod_data.json",
         "isSelected": false
       },
       {
@@ -6342,15 +6390,47 @@
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/normal_stop_pid56113.tmp",
+        "path": "local/crash_assistant/modlist_history/1789164246067.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/renderer_pid56113.tmp",
+        "path": "local/crash_assistant/modlist_history/1789164754365.json",
         "isSelected": false
       },
       {
-        "path": "local/crash_assistant/successful_launch_pid56113.tmp",
+        "path": "local/crash_assistant/modlist_history/1789164861973.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/modlist_history/1789164912454.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/modlist_history/1789256165895.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/modlist_history/1789257596817.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/modlist_history/1789260735100.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/modlist_history/1789260984812.json",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/normal_stop_pid25615.tmp",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/renderer_pid25615.tmp",
+        "isSelected": false
+      },
+      {
+        "path": "local/crash_assistant/successful_launch_pid25615.tmp",
         "isSelected": false
       },
       {
@@ -6478,75 +6558,35 @@
         "isSelected": false
       },
       {
-        "path": "logs/2026-09-06-7.log.gz",
+        "path": "logs/2026-09-12-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/2026-09-12-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/2026-09-12-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/2026-09-12-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/2026-09-13-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/2026-09-13-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/2026-09-13-3.log.gz",
         "isSelected": false
       },
       {
         "path": "logs/crash_assistant",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-08-31_08-47-05.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-08-31_09-18-23.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-08-31_10-00-38.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-08-31_11-12-56.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-08-31_11-26-46.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-08-31_11-34-22.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-02_08-57-36.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-02_09-05-53.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-02_09-14-55.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-02_09-33-13.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-02_09-38-36.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-02_09-51-16.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-02_09-54-24.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-02_09-54-56.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-05_07-40-41.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs/crash_assistant/crash_assistant_app_2026-09-05_08-11-19.log.gz",
         "isSelected": false
       },
       {
@@ -6587,6 +6627,38 @@
       },
       {
         "path": "logs/crash_assistant/crash_assistant_app_2026-09-06_20-30-12.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-09-06_20-35-16.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-09-12_08-04-09.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-09-12_08-12-37.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-09-12_08-14-25.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-09-12_08-15-15.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-09-13_09-36-09.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-09-13_10-00-01.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs/crash_assistant/crash_assistant_app_2026-09-13_10-52-18.log.gz",
         "isSelected": false
       },
       {
@@ -6638,7 +6710,7 @@
         "isSelected": false
       },
       {
-        "path": "logs/telemetry/20260906-1.json.gz",
+        "path": "logs/telemetry/20260912-1.json.gz",
         "isSelected": false
       },
       {
@@ -7626,6 +7698,10 @@
         "isSelected": false
       },
       {
+        "path": "modernfix/structureCacheV1/waystones_village_desert_waystone_88488c210f.nbt",
+        "isSelected": false
+      },
+      {
         "path": "mods",
         "isSelected": true
       },
@@ -7679,6 +7755,10 @@
       },
       {
         "path": "mods/Armor of the Ages-forge-1.20.1-1.3.15.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/async-locator-forge-1.20-1.3.0.jar",
         "isSelected": true
       },
       {
@@ -8106,7 +8186,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/jei-1.20.1-forge-15.56.0.205.jar",
+        "path": "mods/jei-1.20.1-forge-15.57.0.208.jar",
         "isSelected": true
       },
       {
@@ -8138,7 +8218,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/legendarycreatures-1.20.1-1.1.3.0.jar",
+        "path": "mods/legendarycreatures-1.20.1-1.1.3.2.jar",
         "isSelected": true
       },
       {
@@ -8163,10 +8243,6 @@
       },
       {
         "path": "mods/lmft-1.0.4+1.20.1-forge.jar",
-        "isSelected": true
-      },
-      {
-        "path": "mods/locator-1.20.2-1.1.0.jar",
         "isSelected": true
       },
       {
@@ -8222,7 +8298,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/moonlight-1.20-2.16.34-forge.jar",
+        "path": "mods/moonlight-1.20-2.16.35-forge.jar",
         "isSelected": true
       },
       {
@@ -8322,7 +8398,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/polymorph-forge-0.49.10+1.20.1.jar",
+        "path": "mods/polymorph-forge-0.49.11+1.20.1.jar",
         "isSelected": true
       },
       {
@@ -8370,7 +8446,7 @@
         "isSelected": true
       },
       {
-        "path": "mods/saintsdragons-0.9.52+forge-1.20.1.jar",
+        "path": "mods/saintsdragons-0.9.6+forge-1.20.1.jar",
         "isSelected": true
       },
       {
@@ -8514,11 +8590,11 @@
         "isSelected": true
       },
       {
-        "path": "mods/xaerominimap-forge-1.20.1-26.4.2.jar",
+        "path": "mods/xaerominimap-forge-1.20.1-26.5.0.jar",
         "isSelected": true
       },
       {
-        "path": "mods/xaeroworldmap-forge-1.20.1-1.45.0.jar",
+        "path": "mods/xaeroworldmap-forge-1.20.1-1.46.0.jar",
         "isSelected": true
       },
       {
@@ -8551,10 +8627,6 @@
       },
       {
         "path": "options.txt",
-        "isSelected": false
-      },
-      {
-        "path": "POTION_RECIPES.txt",
         "isSelected": false
       },
       {
@@ -14434,6 +14506,22 @@
         "isSelected": false
       },
       {
+        "path": "xaero/minimap/testr",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/minimap/testr/config.txt",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/minimap/testr/dim%-1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/minimap/testr/dim%-1/waypoints.txt",
+        "isSelected": false
+      },
+      {
         "path": "xaero/waypoints",
         "isSelected": false
       },
@@ -14562,7 +14650,115 @@
         "isSelected": false
       },
       {
+        "path": "xaero/world-map/New World/null/cache/1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-2_-2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-2_-3.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-3_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-4_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-5_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-5_2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-6_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/-6_2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/1/0_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2/-1_-2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2/-2_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2/-3_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2/-3_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/2/0_0.xwmc",
+        "isSelected": false
+      },
+      {
         "path": "xaero/world-map/New World/null/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/3/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/3/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/3/-2_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/3/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache/3/0_0.xwmc",
         "isSelected": false
       },
       {
@@ -14570,23 +14766,71 @@
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World/null/cache_1/-1_-1.xwmc.outdated",
+        "path": "xaero/world-map/New World/null/cache_1/-1_-1.xwmc",
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World/null/cache_1/-1_0.xwmc.outdated",
+        "path": "xaero/world-map/New World/null/cache_1/-1_0.xwmc",
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World/null/cache_1/-4_-4.xwmc.outdated",
+        "path": "xaero/world-map/New World/null/cache_1/-10_3.xwmc",
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World/null/cache_1/0_-1.xwmc.outdated",
+        "path": "xaero/world-map/New World/null/cache_1/-10_4.xwmc",
         "isSelected": false
       },
       {
-        "path": "xaero/world-map/New World/null/cache_1/0_0.xwmc.outdated",
+        "path": "xaero/world-map/New World/null/cache_1/-11_3.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-11_4.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-4_-4.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-4_-5.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-6_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-6_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-7_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-7_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-8_3.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-9_3.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/-9_4.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/cache_1/0_0.xwmc",
         "isSelected": false
       },
       {
@@ -14666,7 +14910,143 @@
         "isSelected": false
       },
       {
+        "path": "xaero/world-map/New World/null/caves/4/cache_1/-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/4/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/4/cache_1/-10_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/4/cache_1/-10_4.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/4/cache_1/-11_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/4/cache_1/-11_4.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/4/cache_1/-2_0.xwmc",
+        "isSelected": false
+      },
+      {
         "path": "xaero/world-map/New World/null/caves/4/cache_1/-4_-4.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/5",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/5/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/5/cache_1/-10_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/5/cache_1/-10_4.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/5/cache_1/-11_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/5/cache_1/-11_4.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/5/cache_1/-8_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/6",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/6/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/6/cache_1/-6_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/6/cache_1/-6_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/6/cache_1/-7_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/6/cache_1/-7_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/7",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/7/cache",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/7/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/7/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/7/cache_1/-6_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/7/cache_1/-6_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/7/cache_1/-7_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/7/cache_1/-7_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/8",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/8/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/8/cache_1/-6_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/8/cache_1/-6_3.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/8/cache_1/-7_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/New World/null/caves/8/cache_1/-7_3.xwmc.outdated",
         "isSelected": false
       },
       {
@@ -15319,6 +15699,466 @@
       },
       {
         "path": "xaero/world-map/New World (2)/server_config.txt",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/.lock",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/cache_1/1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/10",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/10/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/10/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/10/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/11",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/11/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/11/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/11/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/11/cache_1/1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/11/cache_1/1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/12",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/12/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/12/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/12/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/12/cache_1/1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/2/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/2/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/2/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/3/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/3/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/3/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/4",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/4/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/4/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/4/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/5",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/5/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/5/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/5/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/5/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/6",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/6/cache",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/6/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/6/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/6/cache_1/-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/6/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/6/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/6/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/7",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/7/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/7/cache_1/-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/7/cache_1/-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/7/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/7/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/8",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/8/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/8/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/8/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/9",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/9/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/9/cache_1/0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/caves/9/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/DIM-1/dimension_config.txt",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/.lock",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/-2_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/0_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/0_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/1_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/2_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/1/2_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/2/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/2/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/2/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/2/0_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/2/1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/3/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/3/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/3/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache/3/0_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/-1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/-1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/-2_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/-3_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/0_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/0_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/0_2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/1_-1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/1_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/1_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/1_2.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/2_0.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/2_1.xwmc",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/3_1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/3_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/4_1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/cache_1/4_2.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/caves",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/caves/6",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/caves/6/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/caves/6/cache_1/1_1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/caves/7",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/caves/7/cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/null/dimension_config.txt",
+        "isSelected": false
+      },
+      {
+        "path": "xaero/world-map/testr/server_config.txt",
         "isSelected": false
       },
       {
