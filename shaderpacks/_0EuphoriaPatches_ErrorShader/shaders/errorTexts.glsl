@@ -22,9 +22,9 @@ endText(textColor);
 offset.y += 1;
 
 beginTextError(3, offset);
-    printString((_S, _O, _L, _U, _T, _I, _O, _N, _colon, _space, _U, _p, _d, _a, _t, _e, _space, _t, _o, _space, _v, _e, _r, _s, _i, _o, _n, _space, _1, _dot, _1, _0, _dot, _1, _space, _a, _l, _o, _n, _g, _space, _w, _i, _t, _h, _space, _t, _h, _e, _space, _c, _o, _m, _p, _a, _t, _i, _b, _l, _e, _space, _s, _h, _a, _d, _e, _r, _space, _v, _e, _r, _s, _i, _o, _n, _colon));
+    printString((_S, _O, _L, _U, _T, _I, _O, _N, _colon, _space, _U, _p, _d, _a, _t, _e, _space, _t, _o, _space, _v, _e, _r, _s, _i, _o, _n, _space, _1, _dot, _1, _0, _dot, _3, _space, _a, _l, _o, _n, _g, _space, _w, _i, _t, _h, _space, _t, _h, _e, _space, _c, _o, _m, _p, _a, _t, _i, _b, _l, _e, _space, _s, _h, _a, _d, _e, _r, _space, _v, _e, _r, _s, _i, _o, _n, _colon));
     printLine();
-    printString((_C, _o, _m, _p, _l, _e, _m, _e, _n, _t, _a, _r, _y, _under, _r, _5, _dot, _9, _dot, _1));
+    printString((_C, _o, _m, _p, _l, _e, _m, _e, _n, _t, _a, _r, _y, _under, _r, _5, _dot, _9, _dot, _2));
 endText(textColor);
 
 offset.y += 2;

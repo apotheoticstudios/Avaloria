@@ -27,6 +27,7 @@
     "valkyrienskies": false,
     "minecraft:arrow": false,
     "create": false,
+    "foolish": false,
     "minecraft:ender_dragon": false
   },
   "version": 2,
